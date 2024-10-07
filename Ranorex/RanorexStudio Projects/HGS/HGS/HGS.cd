@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Cottbus_3000CR.Modules.Test" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="1.344606" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.Utils" Collapsed="False">
+    <Position X="0.5" Y="3.2" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary" Collapsed="False">
+    <Position X="0.5" Y="4.9" Width="2.757565" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.ExceptionExtensions" Collapsed="False">
+    <Position X="0.5" Y="7.9" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.HGSFolders" Collapsed="False">
+    <Position X="0.5" Y="9.4" Width="6.209616" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Zoom_80" Collapsed="False">
+    <Position X="0.5" Y="105.7" Width="1.534567" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Zoom_100" Collapsed="False">
+    <Position X="0.5" Y="108.4" Width="1.660573" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.Modules.EmailModule" Collapsed="False">
+    <Position X="0.5" Y="111.1" Width="2.552067" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.Modules.CleanupRanorexReport" Collapsed="False">
+    <Position X="0.5" Y="116.1" Width="2.959948" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.OEffnen" Collapsed="False">
+    <Position X="0.5" Y="118.3" Width="1.452257" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Installation_pruefen" Collapsed="False">
+    <Position X="0.5" Y="121.1" Width="2.558942" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.WebLibrary" Collapsed="False">
+    <Position X="0.5" Y="123.8" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.DragNDropLibrary" Collapsed="False">
+    <Position X="0.5" Y="125.8" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Daten_des_Schichtreports" Collapsed="False">
+    <Position X="0.5" Y="127.2" Width="3.247838" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Meldung_generieren" Collapsed="False">
+    <Position X="0.5" Y="129.1" Width="2.658307" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.HGS" Collapsed="False">
+    <Position X="0.5" Y="132.8" Width="5.190055" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Menue_Ausklappen" Collapsed="False">
+    <Position X="0.5" Y="139.7" Width="2.581608" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.StringLibrary" Collapsed="False">
+    <Position X="0.5" Y="142.5" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary" Collapsed="False">
+    <Position X="0.5" Y="144" Width="2.355646" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Abmelden" Collapsed="False">
+    <Position X="0.5" Y="146.3" Width="1.59988" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Modules.GaExecuteCommand" Collapsed="False">
+    <Position X="0.5" Y="149" Width="2.74446" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.Modules.CollectRetryErrorMessagesModule" Collapsed="False">
+    <Position X="0.5" Y="151.3" Width="4.095397" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary" Collapsed="False">
+    <Position X="0.5" Y="154.3" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Modules.activateTreeObject" Collapsed="False">
+    <Position X="0.5" Y="157.8" Width="2.482672" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Positionmeldung" Collapsed="False">
+    <Position X="0.5" Y="161.2" Width="2.257516" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.In_Betrieb_pruefen" Collapsed="False">
+    <Position X="0.5" Y="163.9" Width="2.504909" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Schichreport_pruefen" Collapsed="False">
+    <Position X="0.5" Y="167" Width="2.744997" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Schichtreport" Collapsed="False">
+    <Position X="0.5" Y="170.4" Width="1.914518" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.EmailLibrary" Collapsed="False">
+    <Position X="0.5" Y="173.1" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Ausser_Betrieb_pruefen" Collapsed="False">
+    <Position X="0.5" Y="175" Width="3.021178" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Program" Collapsed="False">
+    <Position X="0.5" Y="177.7" Width="1.029215" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Positionsmeldung_pruefen" Collapsed="False">
+    <Position X="0.5" Y="179.1" Width="3.264274" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Sequenznummern" Collapsed="False">
+    <Position X="0.5" Y="181.8" Width="2.429713" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Drei" Collapsed="False">
+    <Position X="0.5" Y="183.3" Width="1.344606" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Modules.Schliessen" Collapsed="False">
+    <Position X="0.5" Y="186" Width="1.676794" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.Modules.ReportToPDFModule" Collapsed="False">
+    <Position X="0.5" Y="188.8" Width="2.764899" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.UserCodeCollections.test" Collapsed="False">
+    <Position X="0.5" Y="194.1" Width="1.849342" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Ranorex.AutomationHelpers.UserCodeCollections.ValidationLibrary" Collapsed="False">
+    <Position X="0.5" Y="196" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Cottbus_3000CR.Anmelden" Collapsed="False">
+    <Position X="0.5" Y="197.4" Width="1.59988" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

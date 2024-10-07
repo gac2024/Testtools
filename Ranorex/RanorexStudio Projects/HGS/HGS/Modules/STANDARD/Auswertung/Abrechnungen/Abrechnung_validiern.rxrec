@@ -1,0 +1,1888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="37e41eef-faf3-4d93-a8e5-5adeefb7f5a4"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Abrechnung_validiern"
+	namespace="Cottbus_3000CR.Modules.STANDARD.Auswertung.Abrechnungen">
+	</codegen>
+	<variables>
+		<var
+		id="7ef62abc-26d4-4e08-b013-9bcffcea2818"
+		name="Automatennummer">
+			999000
+		</var>
+		<var
+		id="b99eb4d4-ddad-4cb4-98c7-cac613802c46"
+		name="Abrechnungsnummer">
+			10018
+		</var>
+		<var
+		id="f5ace19c-003a-4ebb-b202-c38cea9814ab"
+		name="stoerbetrag">
+			2,40
+		</var>
+		<var
+		id="c0a6129f-59bb-49fd-bfee-597ded06c94a"
+		name="umsatzGesamt">
+			5,00
+		</var>
+		<var
+		id="ec6f3637-0fdb-4d34-a93d-aa55907821ef"
+		name="prodPreis">
+			2,60
+		</var>
+		<var
+		id="b9bcfffc-3505-4ced-8a83-3a27f78338f3"
+		name="summeVerkaeufe">
+			2,60
+		</var>
+		<var
+		id="2c88b327-bff4-4ef2-a599-5f0d177948f9"
+		name="VerkaufsZeitraum">
+		</var>
+		<var
+		id="cd273e81-e05f-44a3-bf3f-4200a6da5fb2"
+		name="AnzahlVerkaeufe">
+			3
+		</var>
+		<var
+		id="f381b351-a2bc-4310-ba16-bc4d5362c2ed"
+		name="UmsatzGiro">
+			0,00 €
+		</var>
+		<var
+		id="1189c2a9-ff5d-4291-a807-8c6b69965e2b"
+		name="UmsatzKredit">
+			0,00 €
+		</var>
+		<var
+		id="062014b8-256d-46fe-b1ac-299d808bd1d1"
+		name="UmsatzBar">
+			5,00
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a4314b7d-8924-48fd-8b64-abd7f245500f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c604fa8f-5c4a-4f72-a901-7de4df3cdc95"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'root']/div/div/div/div//ul/div//ul/div//p[@innertext='Abrechnungen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Verkaufszeitraum festlegen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="setTimePeriod"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f8f2125d-95cb-459e-a9da-50d4779ca148">
+				<argument
+				argname="Popup"
+				id="a96b51ff-05e3-4fe2-8259-8393d857dacc">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="e0738412-afdf-4dd7-b0e5-4024fb3026bb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="DatePicker"
+				id="c969397c-750f-4f36-bf06-72ff4cce117f">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="c9f11d86-6509-4c33-9e11-2ca31a28399b"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[3]/div[1]//button[@id='datePickerButton']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="Auswahl"
+				id="c2a457d5-8c58-456c-b54f-67bf595d1a50"
+				variable="VerkaufsZeitraum">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Abrechnungen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fill_textfilter"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2b37634c-7451-405b-aebc-de0c1d55fba0">
+				<argument
+				argname="inputField"
+				id="10105cb9-a62d-494c-a8f9-d0668796d7ff">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="116614e9-0faf-4234-af50-bce36ebcc7c6"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//input[#'number-filter-from-deviceNumber']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="input"
+				id="4040515f-f86d-424d-bfe4-c6da5c00713f"
+				variable="Automatennummer">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fill_textfilter"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2b37634c-7451-405b-aebc-de0c1d55fba0">
+				<argument
+				argname="inputField"
+				id="10105cb9-a62d-494c-a8f9-d0668796d7ff">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="afcaa12a-ec9e-44a8-a518-5cb0648de9d2"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//input[#'number-filter-from-settlementNumber']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="input"
+				id="4040515f-f86d-424d-bfe4-c6da5c00713f"
+				variable="Abrechnungsnummer">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Prüfe Tabelle
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9edf7c5e-0b2b-44b7-86d6-2db684ff79d3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Automatennummer">
+				</binding>
+			</bindings>
+			<info
+			id="dbc820cb-3f26-4d56-8dbb-c483f694a4db"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-table']//tbody/tr[1]/td[1]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				- - -|Tarif_3
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9edf7c5e-0b2b-44b7-86d6-2db684ff79d3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Abrechnungsnummer">
+				</binding>
+			</bindings>
+			<info
+			id="bfc1dac7-ca26-4656-bfc7-19fbd76ee891"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-table']//tbody/tr[1]/td[2]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				- - -|Tarif_3
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9edf7c5e-0b2b-44b7-86d6-2db684ff79d3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="AnzahlVerkaeufe">
+				</binding>
+			</bindings>
+			<info
+			id="9e46837b-7154-4215-ac41-80cf2fbdb7d1"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-table']//tbody/tr[1]/td[5]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9edf7c5e-0b2b-44b7-86d6-2db684ff79d3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="UmsatzBar">
+				</binding>
+			</bindings>
+			<info
+			id="b45cdd87-0c5b-4329-a00f-674d526a407d"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-table']//tbody/tr[1]/td[6]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				5,00 €
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9edf7c5e-0b2b-44b7-86d6-2db684ff79d3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="UmsatzGiro">
+				</binding>
+			</bindings>
+			<info
+			id="d36e2c63-89bb-4595-8939-dc45adbc6a4d"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-table']//tbody/tr[1]/td[7]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				0,00 €
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9edf7c5e-0b2b-44b7-86d6-2db684ff79d3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="UmsatzKredit">
+				</binding>
+			</bindings>
+			<info
+			id="aa120edd-1ff1-43f6-8726-e218b299df15"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-table']//tbody/tr[1]/td[8]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				0,00 €
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="346504ed-c4f9-4de6-a5df-15fd58ad69b9"
+		sx="371"
+		sy="436"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dbc820cb-3f26-4d56-8dbb-c483f694a4db"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-table']//tbody/tr[1]/td[1]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				VK Kopfwerte
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ac4684d5-e311-4e27-a4a7-85952a9fb479"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Automatennummer">
+				</binding>
+			</bindings>
+			<info
+			id="1958360c-af12-47a0-ab87-26d5c7bdede5"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="284,237,197,29"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 css-bpz0xh
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						999000
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-bpz0xh MuiGrid-grid-sm-12 MuiGrid-grid-xs-12 MuiGrid-item MuiGrid-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div[1]/?/?/div[@innertext='999000']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="5a9f516f-02d2-4f4b-b842-b48f1778f40f">
+				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
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				999000
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="38207891-571d-4147-9c2d-3d30f1000bd1"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Abrechnungsnummer">
+				</binding>
+			</bindings>
+			<info
+			id="db2f653e-c104-4f17-8062-d31ab6c3726e"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div[2]/div/div[2]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				innerText
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="84211055-26a4-4460-9db7-2e29d30d70f1"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="AnzahlVerkaeufe">
+				</binding>
+			</bindings>
+			<info
+			id="af9052a2-ce18-4cec-9773-5cef6cf3413a"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="284,305,197,29"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 css-bpz0xh
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-bpz0xh MuiGrid-grid-sm-12 MuiGrid-grid-xs-12 MuiGrid-item MuiGrid-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div[5]/?/?/div[@innertext='1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="1a70c83e-96d1-4205-bc01-e81df27768d7">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABkAOYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACmTyiGIuwJ5AAHUknAp9MmTzImT5OR/Gu4fiKAIftgzsETmXcVKZGRgZ65x0IpPtyHlUcqACzcf
+Ln15pgsNsJUeQWZ953Q5XpjgZ4/OkbTlKRx/utiKASY/nODng54/KgCX7agfBRgm4qH4wSM59+xp
+Pty4+aKRWYAopxlsnA70hsSzbWkBh3M4Xbzk5zzn3Pak+xSHDPMpdAojITAGDnkZ5/SgH5FiGUSq
+TtKlTtZT2NSVFbxGJW3MGd2LMQMDP0qWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigCOaXygP3buT2QZoqQ0VLv0AKKKKoAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooqG8k8q0lcdQvH1oAbb3kdw5VFcEDI3DqM4yK
+sVmxCWCe18yERqF8rIbOe/8AMVEkaLbRzKoEnn43d/vVfKibmvRWUn2R9SyNqFGwB3dqZHIhuoJF
+EUbGQgqv3h1HNHKO5qQTCePeoIGSMH2NEUol34BGxiprMSNFtoplUCTz8bu/3qvWXW4/67N/Sk0F
+xwuozatcYYKucg9eKmU7lB6ZGcGsyTAlks/+ekwYD/ZPJ/lUc+WuZ1doUk3jYzkhgO2KfLcLmux2
+qT6DNNhlE0KyqCAwyAapJEj3l27DLJjHPT5ahs2ZfKaZQ37k+SB0PqPrS5dAuaUbuxAaIrlck5Bw
+fSpKx7dkNzGY/KXzI2BWP1x0PvUkMsb/AGCNWBZMhh6cU3EVy/DP5zuFjYKpK7jjkipayWiWOxuH
+iQA+aVJH93PT6VY04DzJWR4dpA+SInAPrSa0uO5eoooqRhRRRQAUUUUAFFFFABRRRQBBcXSW5UMr
+szdAgyaKjvltWKfaJDG3O0g4NFXFK2pLv0LdVtQvPsUCyeXvy23Gcdj/AIVZrM8Qf8eKf9dB/I1l
+J2QTdotoP7Tuv+gbN+v+FH9p3X/QNm/X/CtOiiz7i5ZdzM/tO6/6Bs36/wCFH9p3X/QNm/X/AArT
+oos+4csu5mf2ndf9A2b9f8KP7Tuv+gZN+v8AhWnRRZ9w5ZdzM/tO6/6Bs36/4Uf2ndf9A2b9f8K0
+6KLPuHLLuZn9p3X/AEDZv1/wo/tO6/6Bk36/4Vp0UWfcOWXczP7Tuv8AoGzfr/hR/ad1/wBA2b9f
+8K06KLPuHLLuZn9p3X/QMm/X/Cj+07r/AKBs36/4Vp0UWfcOWXczP7Tuv+gbN+v+FH9p3X/QMm/X
+/CtOiiz7hyy7mZ/ad1/0DZv1/wAKP7Tuv+gbN+v+FadFFn3Dll3Mz+07r/oGzfr/AIUf2ndf9A2b
+9f8ACtOiiz7hyy7mZ/ad1/0DZv1/wo/tO6/6Bs36/wCFadFFn3Dll3Mz+07r/oGzfr/hR/ad1/0D
+Zv1/wrToos+4csu5lPq08aln0+RVHUsSB/KtKCTzYI5MY3qGx6ZFVdY/5Bc3/Af/AEIVPZf8eNv/
+ANc1/lQr3sCupWbJqKKKosKzPEH/AB4p/wBdB/I1p1meIP8AjxT/AK6D+RqZ/CyJ/CzToopGG5SA
+xXI6jqKosWiq2nkm1+ZmYh3GWOTgMRVmgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooApax/yC5v+A/8AoQqey/48bf8A65r/ACqDWP8AkFzf8B/9CFT2X/Hjb/8AXNf5VP2i
+Ptk1FFFUWFZniD/jxT/roP5GtOik1dWFJXVjM/t21/55zfkP8aP7dtf+ec35D/GtOilaXcm0u5mf
+27a/885vyH+NH9u2v/POb8h/jWnRRaXcLS7mZ/btr/zzm/If40f27a/885vyH+NadFFpdwtLuZn9
+u2v/ADzm/If40f27a/8APOb8h/jWnRRaXcLS7mZ/btr/AM85vyH+NH9u2v8Azzm/If41p0UWl3C0
+u5mf27a/885vyH+NH9u2v/POb8h/jWnRRaXcLS7mZ/btr/zzm/If40f27a/885vyH+NadFFpdwtL
+uZn9u2v/ADzm/If40f27a/8APOb8h/jWnRRaXcLS7mZ/btr/AM85vyH+NH9u2v8Azzm/If41p0UW
+l3C0u5mf27a/885vyH+NH9u2v/POb8h/jWnRRaXcLS7mZ/btr/zzm/If40f27a/885vyH+NadFFp
+dwtLuZn9u2v/ADzm/If40f27a/8APOb8h/jWnRRaXcLS7mJf6tBc2ckKJIGbGCwGOoPrWrZf8eNv
+/wBc1/lU1FCTvdjUWndsKKKKooKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooA//2Q==
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c1e659e7-4303-44fe-a778-d95b22c6bdbd"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="stoerbetrag">
+				</binding>
+			</bindings>
+			<info
+			id="86202abe-f0c3-4e90-9c0b-7b72bf211478"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="520,318,30,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						2,40 €
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div[6]//p[@innertext='2,40 €']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="04408f03-bb84-4ada-99cb-eb085080c2c6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABkAGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACkY7VJOeBngZpaKAKy3iuilIpCzOUCHAOR17+1NN+m3csbsFXc/T5Bkjnn2P5Uv2RlAMcoDrIzg
+suR82eMZ96YdPIQqkoAkTZJlM7uSeOeOp9aAJVu1aQKEbazFFfjBYdv0NPhnMkjxtG0bKAcEg8HP
+p9KiWzZZFxIPLVzIq7eQxz3z05Pan2sMsIbzZEkLHJYIVJPvyaAJ6KKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigApsjrHGzucKoyadTJghhcS/cx830oAjiuTIR+4lQEZ
+DMBj+dPE2+FZIlLhug6VSiZTMsEM5uIWU7lbnb6c1BH5IsYQMbfMHn4/HrV8pNzWRmbO5NuDgc5y
+PWmmYC4WHByVLZrMcIYphD/qDKm3HTPfFS3EdrFeRJKFEQjbAY980co7mlTXkVHRWPLnArIJIgtd
+4Xysvjzc7evGfwp5jiWK2aYxvH5jDcOVA54o5Qua1FZ8ccZu7qXZvMYUqAf9mobRk+2QmMxJvQ5E
+fb2PvS5Qua1FYPkxzxqpeCJkJDOz/Mxz3FFUoLuS5Psb1FFFZlhRRRQAUUUUAFFFFABRRRQAUEAg
+j1oooAonTi0Yia4Yxr90bRkfjRV6iq5mAUUUVIBRRRQAUUUUAZmrtL59pHFM8XmMVJUkdxR/Zl1/
+0Epv1/xo1X/j+0//AK6f1WpYpoDfSNHOAEVt6mTOT64J4A/rUWTk7mfKnJ3Iv7Muv+glN+v+NH9m
+XX/QSm/X/GpWunS+C7HxI2xeDjG0nPp1/lTLCTdLFtkLsYiZgWJ2tx19D1p8iHyRK95aXVravN/a
+Ez7ccZIzzj1rUtCWs4GYkkxqST34rFu5HaK7WeQb93Ck4ONwxxuPGPatmy/48bf/AK5r/KklZiSt
+JpE1FFFWaBRRRQAUUUUAFFFFAGVrUgiubKRskI5Y49itK2t2jqVaKUg8EFR/jWpRU2d7pkcrvdMz
+P7dtf+ec35D/ABo/t21/55zfkP8AGtOii0u4Wl3MS/1WC5s5IUSQM2MEgY6g+tatl/x42/8A1zX+
+VTUUJO92NRad2woooqigooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				2,40 €
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a909ea34-9720-4a49-bf2e-2be2c32c9ab3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="umsatzGesamt">
+				</binding>
+			</bindings>
+			<info
+			id="83a9e10d-aeb4-4551-a3c4-2246999ef21a"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="718,318,30,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						5,00 €
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div[7]//p[@innertext='5,00 €']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="90347096-7fdc-4502-a78c-ecf6d7a23878">
+				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
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Umsatz
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Tabelle Zeile 1
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="9edf7c5e-0b2b-44b7-86d6-2db684ff79d3"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7dedf0b2-d62a-448f-840d-537516f4601e"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="272,475,102,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						- - -|Tarif_3
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						overflow-wrap: break-word;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']/?/?/table/tbody/tr/td[1]/p[@innertext='- - -|Tarif_3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="dfec09b1-e68a-4a8b-a787-d7fde8245abb">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA4AJQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDok6mu
+e1b/AJCUv4fyFdCnU1TudNhuJ2ldpAzYzgjHT6VcJKL1Jkro5+itv+x7f+/L+Y/wo/se3/vy/mP8
+K29pEjkZiUVt/wBj2/8Afl/Mf4Uf2Pb/AN+X8x/hR7SIcjMQEqwZSQRyCO1Tfa7n/n4l/wC+zWr/
+AGPb/wB+X8x/hR/Y9v8A35fzH+FL2kQ5WZX2u5/5+Jf++zR9ruf+fiX/AL7Nav8AY9v/AH5fzH+F
+H9j2/wDfl/Mf4Uc8Q5ZGV9ruf+fiX/vs0fa7n/n4l/77Nav9j2/9+X8x/hR/Y9v/AH5fzH+FHPEO
+WRiUVt/2Pb/35fzH+FH9j2/9+X8x/hT9pEORmJRW3/Y9v/fl/Mf4Uf2Pb/35fzH+FHtIhyMxKK2/
+7Ht/78v5j/Cj+x7f+/L+Y/wo9pEORmJRW3/Y9v8A35fzH+FFHtIhyM0U6mg9aE6mg9a5jUzNWaXz
+7WOKV4/MYqSpI7ij+zbn/oIy/r/jRqn/AB+2H/XT+q1fRpChLR7WHRd2c1Fk27mfKnJ3KH9m3P8A
+0EZf1/xo/s25/wCgjL+v+NX98nlbvK+f+7u/rVSRfMluPMXBEKnGeh+anyor2cSP+zbn/oIy/r/j
+R/Ztz/0EZf1/xpRcLbtFGjBc7NwYjndxx3oMkskUbu67nRyCFxjik4pCUIsT+zbn/oIy/r/jR/Zt
+z/0EZf1/xq7aJ5drGvH3ewxVe5dRfRKsi79w3KJDux/u+lPkVw5I2Iv7Nuf+gjL+v+NH9m3P/QRl
+/X/GtKijkQckTN/s25/6CMv6/wCNH9m3P/QRl/X/ABrSoo5EHJEzf7Nuf+gjL+v+NQ3dpc21s832
++VtuOMkd8etbFU9X/wCQbL+H8xScUkKUEk2T2hLWkLMSSY1JJ78VLUNn/wAeUH/XNf5VNVLYtbBR
+RRTGKnU0HrQnU0jHmgDL1lxFcWcjZwjljj2Ip39t239yX8h/jWlke/5UZHv+VTZ3umRyu90zN/tu
+2/uS/kP8aaNYtBI0gjm3MADwOgz7+9amR7/lRke/5UWl3C0u5m/23bf885fyH+NH9t239yX8h/jW
+lke/5UZHv+VFpdwtLuZMuqWcxBdbkY/usV/k1Sf23bf3JvyH+NaWR7/lRke/5UWl3C0u5m/23bf3
+JfyH+NH9t239yX8h/jWlke/5UZHv+VFpdwtLuZv9t239yX8h/jR/bdt/cl/If41pZHv+VGR7/lRa
+XcLS7mb/AG3bf3JfyH+NQX2qQXNm8SJIGbGMgY6g+tbOR7/lRke/5Umm+oOMmrXIbP8A48oP+ua/
+yqajI9/yoyPf8qstBRRke/5UUAKnU0jfeoooAjjlWR2C8hcc+tRzswcYJHHY0UUARb3/ALzfnRvf
++8350UUAG9/7zfnRvf8AvN+dFFABvf8AvN+dG9/7zfnRRQAb3/vN+dG9/wC8350UUAG9/wC8350b
+3/vN+dFFABvf+8350b3/ALzfnRRQAb3/ALzfnRvf+8350UUAG9/7zfnRRRQB/9k=
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				- - -|Tarif_3
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="a0688708-1b09-4215-8669-e9b61c14bedd"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="44750c3e-4996-437c-8775-369ed997ecf2"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="400,475,100,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						IDP_GVH_4
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						overflow-wrap: break-word;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']/?/?/table/tbody/tr/td[2]/p[@innertext='IDP_GVH_4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="3bbffbc6-3e29-4252-895a-5b196c773a1d">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA4AJIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCrRW3/
+AGPb/wB+X8x/hR/Y9v8A35fzH+FdPtImXIzEorb/ALHt/wC/L+Y/wo/se3/vy/mP8KPaRDkZiUVt
+/wBj2/8Afl/Mf4Uf2Pb/AN+X8x/hR7SIcjMQEqwZSQRyCO1Tfa7n/n4l/wC+zWr/AGPb/wB+X8x/
+hR/Y9v8A35fzH+FL2kQ5WZX2u5/5+Jf++zR9ruf+fiX/AL7Nav8AY9v/AH5fzH+FH9j2/wDfl/Mf
+4Uc8Q5ZGV9ruf+fiX/vs017id1KvNIynqCxIrX/se3/vy/mP8KP7Ht/78v5j/CjniHLIxKK2/wCx
+7f8Avy/mP8KP7Ht/78v5j/Cn7SIcjMSitv8Ase3/AL8v5j/Cj+x7f+/L+Y/wo9pEORmJRW3/AGPb
+/wB+X8x/hR/Y9v8A35fzH+FHtIhyMxKK2/7Ht/78v5j/AAoo9pEORmhRRRXMambqzS+faxxSvH5j
+FSVJHcUf2bc/9BGX9f8AGk1b/j7sf+un9VqFHj8sebJiT7Mhj+cgluenqelRZNu5moqTdyf+zbn/
+AKCMv6/40f2bc/8AQRl/X/Gl8uWW4kwp8wFPn3Y28DPFaDZ2nHXHFPlQ+SJnf2bc/wDQRl/X/Gj+
+zbn/AKCMv6/402J0ki8mIqZjAWZt+WDDHBH1pxlaYrPCQQ0qquTxwOf1J/KjkQckQ/s25/6CMv6/
+40f2bc/9BGX9f8atWZcmfzMbvM6A5A4FR6hO8AV1VyqKznAOCQOAcdv8KORByRIf7Nuf+gjL+v8A
+jR/Ztz/0EZf1/wAa0lO5QfUZ5oo5EHJEzf7Nuf8AoIy/r/jR/Ztz/wBBGX9f8a0qKORByRM3+zbn
+/oIy/r/jUEsVxaXdqrXksokkAIJI7j3962azdU/4/bD/AK6f1WplFJXRMopK6NKiiitDUKKKKACi
+jI9/yoyPf8qAMvWXEVxZyNnCOWOPYinf23bf3JfyH+NaWR7/AJUZHv8AlU2d7pkcrvdMzf7btv7k
+v5D/ABqMapZiXzAtzuPqxI/LditbI9/yoyPf8qLS7haXczf7btv+ecv5D/Gj+27b+5L+Q/xrSyPf
+8qMj3/Ki0u4Wl3MuXV7SVdrJcAf7J2n8waE1i1jQKqT4HryfzJrUyPf8qMj3/Ki0u4Wl3M3+27b+
+5L+Q/wAaP7btv7kv5D/GtLI9/wAqMj3/ACotLuFpdzN/tu2/uS/kP8aP7btv7kv5D/GtLI9/yoyP
+f8qLS7haXczf7btv7kv5D/Gq1xfRXl7Z+UrjZIM7gO5H+FbeR7/lRke/5UnFvqDjJ7sKKMj3/KjI
+9/yqywooyPf8qKAKW9/7zfnRvf8AvN+dFFABvf8AvN+dG9/7zfnRRQAb3/vN+dG9/wC8350UUAG9
+/wC8350b3/vN+dFFABvf+8350b3/ALzfnRRQAb3/ALzfnRvf+8350UUAG9/7zfnRvf8AvN+dFFAB
+vf8AvN+dG9/7zfnRRQAb3/vN+dG9/wC8350UUAG9/wC8350UUUAf/9k=
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				IDP_GVH_4
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="0124b3a2-2509-458a-8682-8dee2a0ce6d8"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fcc02634-66ab-4d83-a7d6-40de517d8145"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="526,475,96,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						9298
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						overflow-wrap: break-word;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']/?/?/table/tbody/tr/td[3]/p[@innertext='9298']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="fc04760b-5b9d-4d89-bd5f-efd2152d1718">
+				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
+oA//2Q==
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				9298
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="da2959fa-ceb3-4f3c-b7f2-38a4e321804f"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="prodPreis">
+				</binding>
+			</bindings>
+			<info
+			id="047dc1d2-abf6-47ed-b882-285143bade2a"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="648,475,96,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						2,60 €
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						overflow-wrap: break-word;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']/?/?/table/tbody/tr/td[4]/p[@innertext='2,60 €']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="f94023ee-843e-4dd0-a61d-f3bdabbcfa41">
+				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
+nRRQB//Z
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				2,60 €
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="f5aabcc0-9294-450e-83e6-254dfdb51fdd"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="35f8cad2-154e-4c2b-8321-273002f8d48d"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="769,475,87,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Bar
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						overflow-wrap: break-word;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']/?/?/table/tbody/tr/td[5]/p[@innertext='Bar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="356583cb-cc0d-4e0e-8715-22e65ecb6e6e">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA4AIQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCrRW3/
+AGPb/wB+X8x/hR/Y9v8A35fzH+FdPtImXIzEorb/ALHt/wC/L+Y/wo/se3/vy/mP8KPaRDkZiUVt
+/wBj2/8Afl/Mf4Uf2Pb/AN+X8x/hR7SIcjMSitv+x7f+/L+Y/wAKP7Ht/wC/L+Y/wo9pEORmJRW3
+/Y9v/fl/Mf4Uf2Pb/wB+X8x/hR7SIcjMSitv+x7f+/L+Y/wo/se3/vy/mP8ACj2kQ5GYlFbf9j2/
+9+X8x/hR/Y9v/fl/Mf4Ue0iHIzEorb/se3/vy/mP8KP7Ht/78v5j/Cj2kQ5GYlFbf9j2/wDfl/Mf
+4UUe0iHIzQooormNTN1ZpfPtY4pXj8xipKkjuKP7Nuf+gjL+v+NGqf8AH7Yf9dP6rUNrMEbfvU7V
+csEcs3HqOgrOybdzPlTk7k39m3P/AEEZf1/xo/s25/6CMv6/40sd3LJIsaSIcy7d2AeNuexrRquR
+D5Imb/Ztz/0EZf1/xo/s25/6CMv6/wCNaVFHIg5Imb/Ztz/0EZf1/wAaP7Nuf+gjL+v+NaVFHIg5
+Imb/AGbc/wDQRl/X/Gj+zbn/AKCMv6/41pUUciDkiZv9m3P/AEEZf1/xpk1jcxQSSf2hKdilsc84
+H1rVqG8/48p/+ubfypOKsDgrEelu0mnxM7FmOcknJ6mrVU9I/wCQbF+P8zVyqjshx+FBRRRTKCij
+I9/yoyPf8qAMvWXEVxZyNnCOWOPYinf23bf3JfyH+NaWR7/lRke/5VNne6ZHK73TM3+27b/nnL+Q
+/wAaP7btv7kv5D/GtLI9/wAqMj3/ACotLuFpdzN/tu2/uS/kP8aP7btv7kv5D/GtLI9/yoyPf8qL
+S7haXczf7btv7kv5D/Gj+27b+5L+Q/xrSyPf8qMj3/Ki0u4Wl3M3+27b+5L+Q/xo/tu2/uS/kP8A
+GtLI9/yoyPf8qLS7haXczf7btv7kv5D/ABqO41i3lt5I1SXLoVGQO4+ta2R7/lRke/5UWl3C0u5T
+0j/kGxfj/M1coyPf8qMj3/KmlZWKSsrBRRke/wCVFMZS3v8A3m/Oje/95vzoooAN7/3m/Oje/wDe
+b86KKADe/wDeb86N7/3m/OiigA3v/eb86N7/AN5vzoooAN7/AN5vzo3v/eb86KKADe/95vzo3v8A
+3m/OiigA3v8A3m/Oje/95vzoooAN7/3m/Oje/wDeb86KKADe/wDeb86KKKAP/9k=
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Bar
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="f8512630-9f81-4173-a37d-a91895d29d7f"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20d53de8-e533-456f-b4da-87686730a4bb"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="881,475,98,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body2 css-1j53ypr
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1j53ypr MuiTypography-body2 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						overflow-wrap: break-word;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']/?/?/table/tbody/tr/td[6]/p[@innertext='1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="115b7b45-ca03-441e-9816-6d3dbf5fd651">
+				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
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		searchpropertyid="f8512630-9f81-4173-a37d-a91895d29d7f"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="summeVerkaeufe">
+				</binding>
+			</bindings>
+			<info
+			id="39b2990c-357a-4065-a59f-79c6e4765e6c"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-settlement-details-table']//tbody/tr[1]/td[7]/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				2,60 €
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="dfafa012-1221-4a8e-a6a9-a793b9381236"
+		sx="339"
+		sy="193"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1ba9cd7a-a660-4655-9b10-e3b3fc236044"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, svgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="svgtag"
+				rect="316,163,48,48"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						svg
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="viewBox"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article//button/svg
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="5d88ab62-6465-4e53-bcd4-72d83aea6460">
+				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
+QAUUUUAFFFFABRRRQAUUUUAf/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				zurück
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8b042df2-11b3-4c88-b054-db59054f5c50"
+		sx="160"
+		sy="656"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99803588-25a6-4cf2-897e-e0d6a0c1057c"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//button[@id='tab-settlements']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Abrechnung_validiern.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6e6d19c2-b3bf-4c42-86af-1f040f46e678"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Abmelden"
+	namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e40b40d7-feb5-428e-99fa-3a5579ffdb35"
+		sx="1055"
+		sy="120"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="754eb567-e081-4f50-8bee-2f1192ce1887"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, svgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="svgtag"
+				rect="1036,95,36,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						svg
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="viewBox"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//button/svg
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="27468245-5173-4cf3-8c0c-46f800fbe2c0">
+				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
+iigD/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="6d6662e4-d0bc-492e-a386-2109f8d98dc3"
+		sx="1009"
+		sy="221"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4cb06ba9-678a-41da-b7af-ec2eae1d6499"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="941,202,107,37"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1emuir9
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						logout
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Ausloggen
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-1emuir9 MuiButtonBase-root MuiButton-root MuiButton-root MuiButton-sizeMedium MuiButton-sizeMedium MuiButton-text MuiButton-text MuiButton-textPrimary MuiButton-textPrimary MuiButton-textSizeMedium MuiButton-textSizeMedium
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-test-id"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//button[#'logout']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="90633cf3-0cdf-4e0d-a896-6e532dc7e785">
+				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
+HbHIrYWiiie447H/2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Abmelden.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

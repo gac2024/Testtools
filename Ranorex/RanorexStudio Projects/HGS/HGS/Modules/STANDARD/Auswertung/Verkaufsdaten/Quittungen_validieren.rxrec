@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="59f3f847-b53e-401c-8c82-c30d3d7ef6eb"
+mode="Global">
+	<description>
+		The Quittungen_validieren recording.
+	</description>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Quittungen_validieren"
+	namespace="Cottbus_3000CR.Modules.STANDARD.Auswertung.Verkaufsdaten">
+	</codegen>
+	<variables>
+		<var
+		id="b9e265f3-e384-4e22-be2e-8726cb81c601"
+		name="VerkaufsZeitraum">
+			Dieser Monat
+		</var>
+		<var
+		id="e044aab2-cde9-490f-bf0b-7351d7f0cb0f"
+		name="AutomatenNr">
+		</var>
+		<var
+		id="942721cb-05ed-4c9e-a701-7bc473471f6f"
+		name="AbrechnungsNr">
+			{NumPad0}{NumPad0}{NumPad0}
+		</var>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Menue
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="56;10"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ea829d18-3113-4fc4-8ce6-3e53afce8624"
+		sx="397"
+		sy="776"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="93572782-3e13-4c43-829b-1c3156350f90"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="341,766,128,26"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body1 css-g5goji
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Verkaufsdaten
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-g5goji MuiTypography-body1 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//div[#'root']/div/div/div/div//ul/div//ul/div//p[@innertext='Verkaufsdaten']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="bdc7d71b-44c7-4082-9bf2-80fdce6104ee">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Navigation
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="49;15"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="6c55a0c5-749f-463e-8272-181892d6d764"
+		sx="897"
+		sy="205"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5e549860-8907-4814-911c-fa6c6c1add40"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="divtag"
+				rect="848,190,125,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Quittungen
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[1]/?/?/div/button[2]/div[@innertext='Quittungen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="a3c9101f-1e84-4a6b-9c1d-686615821178">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABcANEDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+YgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigBGIVSzEAAZJPaovtdt/z8Rf99ii8/48p/8Arm38qoadYWs1jHJJFuc5ydxHc+9S272RvCEO
+Tmlfcv8A2u2/5+Iv++xR9rtv+fiL/vsVD/Zdl/zx/wDHm/xo/suy/wCeP/jzf40e8FqPd/h/mTfa
+7b/n4i/77FH2u2/5+Iv++xUP9l2X/PH/AMeb/Gj+y7L/AJ4/+PN/jR7wWo93+H+ZN9rtv+fiL/vs
+Ufa7b/n4i/77FQ/2XZf88f8Ax5v8aP7Lsv8Anj/483+NHvBaj3f4f5k32u2/5+Iv++xR9rtv+fiL
+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
+			</helperscreenshot>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Verkaufszeitraum
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="setTimePeriod"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8470ed5c-a08f-493c-9453-85c21530ccab">
+				<argument
+				argname="Popup"
+				id="4600f000-3081-452a-b961-0afb47335f03">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="e0738412-afdf-4dd7-b0e5-4024fb3026bb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="DatePicker"
+				id="f562c28c-7f84-4b36-bcec-29f45a5e3cbc">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="4b081a47-b8aa-4310-8fab-a264feedd96f"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div[1]/div/div[1]/div[1]//button[@id='datePickerButton']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="Auswahl"
+				id="ded1ee0e-67af-40be-92a5-b30e2062b960"
+				variable="VerkaufsZeitraum">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Filtern
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fill_textfilter"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ec269830-b052-4394-bc24-e1724994db3e">
+				<argument
+				argname="inputField"
+				id="ac16fdca-e89d-47d6-aea2-80d26ee105b5">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="fc645afa-8145-45fa-a4ba-895dd701e5e2"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div[@id='mpDplus-receipts-table']/div/table/thead//input[#'number-filter-from-settlement.deviceNumber']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="input"
+				id="9d13aea2-0a23-493f-95e1-0c4b4e2a74d7"
+				variable="AutomatenNr">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fill_textfilter"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ec269830-b052-4394-bc24-e1724994db3e">
+				<argument
+				argname="inputField"
+				id="ac16fdca-e89d-47d6-aea2-80d26ee105b5">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="821c4b24-d662-4d33-84fd-b8865ca7bbf0"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div[@id='mpDplus-receipts-table']/div/table/thead//input[#'number-filter-from-settlement.settlementNumber']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="input"
+				id="9d13aea2-0a23-493f-95e1-0c4b4e2a74d7"
+				variable="AbrechnungsNr">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validierung
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="870a4c9c-df77-43fb-9a99-e2fbe44c3496"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="AutomatenNr">
+				</binding>
+			</bindings>
+			<info
+			id="49c9afdd-139b-433e-a8e5-5aad27ee39ab"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article//div[@id='mpDplus-receipts-table']/div[3]/table/tbody/tr[1]/td[@data-test-id='mat-table-cell-settlement.deviceNumber']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="870a4c9c-df77-43fb-9a99-e2fbe44c3496"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="AbrechnungsNr">
+				</binding>
+			</bindings>
+			<info
+			id="069c6cb2-25fd-48ab-9e43-3d1a1660ee58"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article//div[@id='mpDplus-receipts-table']/div[3]/table/tbody/tr[1]/td[@data-test-id='mat-table-cell-settlement.settlementNumber']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="Quittungen_validieren"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Validate_Quittungentable"
+		namespace="Cottbus_3000CR.Modules.STANDARD.Auswertung.Verkaufsdaten"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="07ed9a9b-e4a6-42fe-9854-7df6e79ee588">
+				<argument
+				argname="ersteZeile"
+				id="4e934b2e-1d49-4d9d-b18b-7d93f9fbd67f">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="b90b7f88-af4d-4b3c-9308-00d9f965ad3a"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article//div[@id='mpDplus-receipts-table']/div[3]/table/tbody/tr[1]
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Quittungen_validieren.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="216eb8bd-dfd6-4861-98fe-a5dfe6671bc1"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ExpandiertMenue"
+	namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ExpandiertMenue"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="expandtree"
+		namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="77afb785-b36d-40d4-9715-d6af17889f7a">
+				<argument
+				argname="menue"
+				id="aebfeefb-e7da-4ba2-8b17-4c497dec929e">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="c56ab5e6-66e4-4455-89fe-3dc20c2a9282"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//div[#'root']/div/div/div/div//ul
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ExpandiertMenue.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,38 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{909D1AB6-5D02-438A-8E77-1BFA5A4786C6}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>7ed7cad9-2b84-4e83-ac15-cd3914ee7c24</string>
+      <string>Modules</string>
+      <string>180fbaeb-2ba8-48e3-97b6-a29e6b34926e</string>
+      <string>2b700f09-75f6-4698-ad0c-eef5cc96564d</string>
+      <string>2c8c5314-eff2-4670-89f3-3e20b9d06f85</string>
+      <string>37e41eef-faf3-4d93-a8e5-5adeefb7f5a4</string>
+      <string>4ad2d11a-c832-48ee-9734-baa3cbbe9d66</string>
+      <string>cd8e60c5-c4fb-41b8-9738-77fcabc45044</string>
+      <string>76fd654a-6b90-4d42-aa54-46b45966e418</string>
+      <string>f9ec2cb7-e5fe-4e22-892f-723e266e01a7</string>
+      <string>8bc9ada4-b1e0-48cf-9c52-d147a8ffc7e3</string>
+      <string>6527f4b0-6a40-4940-8538-cb682f824294</string>
+      <string>c2d7d96c-ccf7-42e2-afa7-b0646a83edc7</string>
+      <string>c4e272b6-f6ae-4c47-a75c-82b4b39d35cf</string>
+      <string>4003701f-e3a6-4158-a017-3c4bbc42a166</string>
+      <string>1f68d760-ec36-4641-816a-7b488708b68a</string>
+      <string>19addb00-f90c-4b5a-b315-84fabc729ce8</string>
+      <string>ff32e6d6-70ac-4179-9c26-e070603b72d0</string>
+      <string>6f41aaab-db38-43c4-b08c-37641e688c27</string>
+      <string>69d0f269-47c3-4a87-a93c-fd66d60e0bbb</string>
+      <string>54755917-01fd-4894-8051-e6f219b1c4aa</string>
+      <string>9ccdee18-761e-4a17-ba0c-a4ad556b1566</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution HGS[HGS[Browser[]Modules[STANDARD[Auswertung[Verkaufsdaten[Verkaufsdaten_validieren.rxrec[]]]Geraeteverwaltung[Baugruppen[]]Monitoring[Automatenmeldung[]Geldspeicherinhalt[Geldspeicherinhalt_pruefen.rxrec[]]Monitoring[]]Papierrollenverwaltung[Ticketverfolgung[]]]]SETUP[]UserCodeCollections[]]]]&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec" />
+  <StartupProject value="{909D1AB6-5D02-438A-8E77-1BFA5A4786C6}" />
+</Properties>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="bc61f436-20b0-45d8-b183-c1641a77a31f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Schliessen"
+	namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="3b10a0e8-4ed4-4774-bcf4-d77b61ab805f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="66a2aef8-25b9-4d63-8469-0e9a28b3cc5a"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

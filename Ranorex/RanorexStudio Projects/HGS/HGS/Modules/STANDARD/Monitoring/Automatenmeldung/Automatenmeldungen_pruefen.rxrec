@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="afcd90ee-1eae-4a41-ae5d-5b2d158923c4"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Automatenmeldungen_pruefen"
+	namespace="Cottbus_3000CR.Modules.STANDARD.Monitoring.Automatenmeldung">
+	</codegen>
+	<variables>
+		<var
+		id="a4f5f273-aae8-4e65-8c44-c32708a3047a"
+		name="AutomatenNr">
+			999000
+		</var>
+		<var
+		id="dd164dce-fcb3-4274-bcfd-ee347f8363f7"
+		name="NachrichtenTyp">
+			Schicht
+		</var>
+		<var
+		id="d574123d-e2a9-4948-b091-66b37c17ec2e"
+		name="Verarbeitungsstatus">
+			Verarbeitet
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="84;7"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8f0b795d-6dd2-4efe-ad4d-c3f46429969d"
+		sx="141"
+		sy="1001"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0428bbe0-1fcb-4cb8-95e4-a2a5d8b99081"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="57,994,144,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body1 css-l98o2u
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Automatenmeldungen
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-l98o2u MuiTypography-body1 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//a[#'side-nav-dplus-device-messages']/p[@innertext='Automatenmeldungen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="e462a29b-8335-42d7-a760-bba11e94107f">
+				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
+UUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Filter
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fill_textfilter"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ac7776fa-47f4-4c5e-b071-19b15c8ef401">
+				<argument
+				argname="inputField"
+				id="90e4bd81-0472-4ffe-a96f-c9b8f4f007d1">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="7d015e0d-be3f-4799-9f10-8761fc40982f"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-device-message-table']/div/table/thead//input[#'number-filter-from-deviceId']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="input"
+				id="438bcb83-9617-45b1-924c-732c013a2b88"
+				variable="AutomatenNr">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						$AutomatenNr
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validierung
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7dae7662-3579-41fa-8d29-6d168690374e"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="AutomatenNr">
+				</binding>
+			</bindings>
+			<info
+			id="2c0587a7-20a7-4913-b12f-79737ca93891"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-device-message-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-deviceId']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				999000
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6482208e-f352-40ad-af16-4ebc811cbfe5"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="NachrichtenTyp">
+				</binding>
+			</bindings>
+			<info
+			id="a10edae2-eec1-4627-bdec-1748fc18d492"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-device-message-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-messageType']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Schicht
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4d06b6e2-cf2e-4b3c-878b-62e34d8065b8"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f45cd4ff-1986-4be9-9897-1025092de41c"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-device-message-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-source']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				0.0.0.0
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d9485545-cd8b-4fbb-836f-c0b8094edd72"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Verarbeitungsstatus">
+				</binding>
+			</bindings>
+			<info
+			id="9ada3616-b24b-4f80-bd59-e37043d3ef37"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-device-message-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-processingStatus']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Verarbeitet
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d72ccfaa-b7fe-4e73-bb7e-5a435c5a216c"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2cf460fd-54b7-4995-9745-3b83da98bed4"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-device-message-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-versionKey']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Online
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Automatenmeldungen_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4ad2d11a-c832-48ee-9734-baa3cbbe9d66"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Schicht_Stoerbetrag_quittieren"
+	namespace="Cottbus_3000CR.Modules.STANDARD.Auswertung.Abrechnungen">
+	</codegen>
+	<variables>
+		<var
+		id="1db1969a-a774-469c-8865-584ffca524da"
+		name="Automatennummer">
+			999000
+		</var>
+		<var
+		id="4bf050c6-048b-4e76-8755-1ece989b23d7"
+		name="Abrechnungsnummer">
+			10018
+		</var>
+		<var
+		id="e5e14a32-5290-4227-b120-69137b12df61"
+		name="FehlendeAbrechnungsNr">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9d35c5cb-048a-43be-975e-991440e22666"
+		sx="605"
+		sy="262"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b5fcac94-1c56-4e32-8345-898f80e92cc9"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//button[@id='tab-missingSettlements']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Abrechnungslücken
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fill_textfilter"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f8a9ded2-f255-4869-abf4-d09ea0e74931">
+				<argument
+				argname="inputField"
+				id="525fe440-c355-4f46-99e7-9b381a4c77f0">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="116614e9-0faf-4234-af50-bce36ebcc7c6"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//input[#'number-filter-from-deviceNumber']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="input"
+				id="04c231c1-5b00-4730-a7d3-5634cc9d93b2"
+				variable="Automatennummer">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DPlusLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fill_textfilter"
+		namespace="Cottbus_3000CR.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f8a9ded2-f255-4869-abf4-d09ea0e74931">
+				<argument
+				argname="inputField"
+				id="525fe440-c355-4f46-99e7-9b381a4c77f0">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="fba85770-9ed4-479a-9840-db8ba4f215e0"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//input[#'number-filter-from-subsequentSettlement.settlementNumber']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="input"
+				id="04c231c1-5b00-4730-a7d3-5634cc9d93b2"
+				variable="Abrechnungsnummer">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Abrechnungslücken Abrechnungsnr holen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<getvaluerecorditem
+		attrname="InnerText"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3b304b4e-1ebc-487b-a8cc-7bf20925e3f1"
+		varname="FehlendeAbrechnungsNr">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c4d24c36-681c-48f9-b15e-af7e26b5d3ce"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlementNumber']/p
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ce3995d8-4b58-44d1-896a-5658ae690727"
+		sx="1718"
+		sy="444"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="90dbe25b-461d-48a6-8d52-da81698227e6"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlement-action']/button
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Pop-up
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="186f6f17-12f4-4b94-84a2-cf9407351283"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c3e3d30-6a3d-4574-8ef9-c72c28d3bbce"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//h4[@innertext&gt;'Abrechnung 10003 quittier']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Abrechnung
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="186f6f17-12f4-4b94-84a2-cf9407351283"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FehlendeAbrechnungsNr">
+				</binding>
+			</bindings>
+			<info
+			id="6c3e3d30-6a3d-4574-8ef9-c72c28d3bbce"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//h4[@innertext&gt;'Abrechnung 10003 quittier']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Abrechnung
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="186f6f17-12f4-4b94-84a2-cf9407351283"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c3e3d30-6a3d-4574-8ef9-c72c28d3bbce"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//h4[@innertext&gt;'Abrechnung 10003 quittier']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				quittieren
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="186f6f17-12f4-4b94-84a2-cf9407351283"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="13b2a7de-6fe4-4098-8f19-8a9bc3a51207"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//h4[@innertext&gt;'Abrechnung 10003 quittier']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Möchten Sie die fehlende Abrechnung quittieren?
+			</matchvalue>
+		</validationitem>
+		<keysequenceitem
+		KeySequence="Alles ist richtig so."
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="748b85bd-fd1b-4077-a2b7-fb47c3b42179">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bdabc837-dc49-4daf-a812-f05acbb8fe6d"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]/div/div/div[2]//textarea
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="08aca78f-0ef9-4484-bf5a-6f2fd63eaaae"
+		sx="1062"
+		sy="759"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7bc4d00f-eb69-49fc-ad96-27299942f129"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1002,735,105,37"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium confirm-dialog-button css-1emuir9
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Bestätigen
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						confirm-dialog-button css-1emuir9 MuiButtonBase-root MuiButton-root MuiButton-root MuiButton-sizeMedium MuiButton-sizeMedium MuiButton-text MuiButton-text MuiButton-textPrimary MuiButton-textPrimary MuiButton-textSizeMedium MuiButton-textSizeMedium
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]/div/div/div[3]//button[@innertext='Bestätigen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="a0101df2-4789-4fcc-8975-cb71994f91a7">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABZAXQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKAIrv/jzm/wCubfyrmRXTXf8Ax5zf9c2/lXMigB1F
+FFMDqaKKKQBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBHJPDE22SWNDjOGYCm/bLX/n5h/77
+FZ99Ek+uQRyruRo+RnH96rH9lWX/ADx/8fb/ABqLt7HQ4U4pczepY+2Wv/PzD/32KPtlr/z8w/8A
+fYqv/ZVl/wA8f/H2/wAaP7Ksv+eP/j7f40/eJ/c93+H+ZY+2Wv8Az8w/99ij7Za/8/MP/fYqv/ZV
+l/zx/wDH2/xo/sqy/wCeP/j7f40e8H7nu/w/zLH2y1/5+Yf++xR9stf+fmH/AL7FV/7Ksv8Anj/4
++3+NH9lWX/PH/wAfb/Gj3g/c93+H+ZY+2Wv/AD8w/wDfYo+2Wv8Az8w/99iq/wDZVl/zx/8AH2/x
+o/sqy/54/wDj7f40e8H7nu/w/wAyx9stf+fmH/vsUfbLX/n5h/77FV/7Ksv+eP8A4+3+NH9lWX/P
+H/x9v8aPeD9z3f4f5lj7Za/8/MP/AH2KPtlr/wA/MP8A32Kr/wBlWX/PH/x9v8aP7Ksv+eH/AI+3
++NHvB+57v8P8y5HJHKu6N1cZxlTmnVmeH/8Ajxf/AK6H+QrTpxd1cmrDkm4hRRRTMwooooAKKKKA
+CiiigAooooAKKKKAIrv/AI85v+ubfyrmRXTXf/HnN/1zb+VcyKAHUUUUwOpooopAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFAGZcf8jDbf8AXM/+zVpVm3H/ACMNt/1zP/s1XpZPKTdtLAdcdh61
+MeptW2j6f5klIGBzgg44PtUDTGU+XbkHI+Z+yj/GpY41iTao4/nVXML3HEgDJOAKRXR/uMrY9Dmo
+7v8A49Jv9w/yqhGTDKj7IgfKYgR9+O9UldA3Y1aKzo5LtoiyFjuQEF9o59sf1psjNIsYMkgZJlB3
+Bcj8uKfKK5o+Ym7bvXOcYz3pWYKMsQAO5qhLKyzZQuwWRVYkLjP86YdyR3jbycP90gEduelHKFzT
+oqh5lw9yUV3G2TBAUbQv1x1oimuJJdw3Fd5Vh8u0Afrmlyhcv0VQtpZi1uzylxKDkEAYx9Kv0mrD
+TuZugECwkJ4AkP8AIVpI6yIHQhlPQis3w/8A8eL/APXQ/wAhTJc+ZJ9m3/Zc/vdn67f61NNXib4l
+2qyNRJEkXKMGGcZFOpkPl+Snk48vHy4p5IUEnoOaZiIHUsVDAkdRnpQHVl3BgV65B4rLtnAmik2O
+rS7gxKkA55HPelgd0ghXzSyyRtlCBxgVfKTzGoCGAKkEHoRRWZHLLDCgWUsDblwCB8pA4p7y3CmF
+PMdi6liUVQe3HPFLlC5oUgZWztIODg4PQ1TSSeSVI5JDERHubaByc+9Rq0kTSSJIcfaNpTAwc4o5
+R3NGiqEU1xJNuG4rvKsPl2gD9c0ttLMWt2eUuJQcggDGPTFHKFy9RRRUjIrv/jzm/wCubfyrmRXT
+Xf8Ax5zf9c2/lXMigB1FFFMDqaKKKQBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBmXH/ACMN
+t/1zP/s1aVZtx/yMNt/1zP8A7NWlUx6m1baPp/mNRFQYRQozninUUVRiIQGBDAEHqDTEhijJMcSJ
+nrtUCpKKYEQtoACBDGN3X5RzS+RCI/L8pNh527RipKhuLqK3KiUsCwJAVC3A69B70XYjOjaJLsPd
+SRCN/NAEiooXa4AwcZ6VootvMPNQRSB+N4wc/jVJLb7ZbMyFGVluEUk5GWfg/pS/Yo7bUUmjQIZZ
+to28DZ5Z4x9Rmi4Er2JeUsXTl92dnzD2BzVnyIvM8zyk3/3tozUlFO7Cw0RoNuEUbfu8dPpTqKBS
+GZugAGwkB5BkP8hWkiLGgRAFUcACs3w//wAeL/8AXQ/yFadRD4Ub4j+LIakaRrhFCjOcCnEAgggE
+HqDRRVGAhRCACqkL0GOlMSCGMkpEik8HCgZqSii4EaW8KAhIkUMMHCjmleGORQrxqwHQEZxT6KLg
+RtBCwUNEhC9AVHFO8tMY2LgnPTv606ii4DPIi8zzPKTf/e2jNKI0G3CKNv3cDp9KdRRcAooooAiu
+/wDjzm/65t/KuZFdNd/8ec3/AFzb+VcyKAHUUUUwOpoqH7Xbf8/EP/fYo+123/PxD/32KQE1FQ/a
+7b/n4h/77FH2u2/5+If++xQBNRUP2u2/5+If++xR9rtv+fiH/vsUATUVD9rtv+fiH/vsUfa7b/n4
+h/77FAE1FQ/a7b/n4h/77FH2u2/5+If++xQBNRUP2u2/5+If++xR9rtv+fiH/vsUATUVD9rtv+fi
+H/vsUfa7b/n4h/77FAE1FQ/a7b/n4h/77FH2u2/5+If++xQBDeabDeSiSRpAQu35SP8AD3qD+wrX
+/npN+Y/wq79rtv8An4h/77FH2u2/5+If++xUuKZrGvUirJlL+wrX/npN+Y/wo/sK1/56TfmP8Ku/
+a7b/AJ+If++xR9rtv+fiH/vsUckexX1ir/MUv7Ctf+ek35j/AAo/sK1/56TfmP8ACrv2u2/5+If+
++xR9rtv+fiH/AL7FHJHsH1ir/MUv7Ctf+ek35j/Cj+yVtj59nJL56AlVYjDf7J6dau/a7b/n4h/7
+7FH2u2/5+If++xQopEyrVJKzYlnNFPAGhGzk7kxgq3cEeuaraisd5cwWWSSCZZNpGVUAgfqRSypp
+ssxmaaMSMMFknK5+uDzT7dtPtlIhkgXPU7wSfqScnrVGabTuiD+wrX/npN+Y/wAKP7Ctf+ek35j/
+AAq79rtv+fiH/vsUfa7b/n4h/wC+xU8kext9Yq/zFL+wrX/npN+Y/wAKP7Ctf+ek35j/AAq79rtv
++fiH/vsUfa7b/n4h/wC+xRyR7B9Yq/zCWdpHZxGOMsQW3fMf8+lT1D9rtv8An4h/77FH2u2/5+If
+++xVJWMZScndk1FQ/a7b/n4h/wC+xR9rtv8An4h/77FAiaioftdt/wA/EP8A32KPtdt/z8Q/99ig
+Caioftdt/wA/EP8A32KPtdt/z8Q/99igCaioftdt/wA/EP8A32KPtdt/z8Q/99igCaioftdt/wA/
+EP8A32KPtdt/z8Q/99igCaioftdt/wA/EX/fYo+123/PxF/32KAFu/8Ajzm/65t/KuZFb97eW4tJ
+AsqOzKVAU561gigBaKKKYEOKMUtFIBMUYpaKAExRilooATFGKWigBMUYpaKAExRilooATFGKWigB
+MUYpaKAExRilooATFGKWigBMUYpaKAExRilooATFGKWigBMUYpaKAExRilooATFGKWigBMUYpaKA
+ExRilooATFGKWigBMUYpaWgBuKMU6igBMUoFFKKAFFKKQU4UwCilooA//9k=
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8b042df2-11b3-4c88-b054-db59054f5c50"
+		sx="160"
+		sy="656"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99803588-25a6-4cf2-897e-e0d6a0c1057c"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//button[@id='tab-settlements']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Schicht_Stoerbetrag_quittieren.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

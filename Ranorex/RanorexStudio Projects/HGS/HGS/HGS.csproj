@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{909D1AB6-5D02-438A-8E77-1BFA5A4786C6}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Cottbus_3000CR</RootNamespace>
+    <AssemblyName>HGS</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>e6d82450-5a5b-4434-8c37-03e9b78e84c3</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <HintPath>..\RanorexAutomationHelpers\bin\Debug\Ranorex.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.PDFReport">
+      <HintPath>..\RanorexAutomationHelpers\bin\Debug\Ranorex.PDFReport.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.ReportToPDF">
+      <HintPath>..\packages\Ranorex.ReportToPDF.1.0.17\lib\net40\Ranorex.ReportToPDF.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Browser\OEffnen.cs">
+      <DependentUpon>OEffnen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4230957c-6459-4ff2-b28a-00b34d274cff</id>
+      <BoundTo>6d1084f2-1072-4aa0-a8ea-34a29bb87986</BoundTo>
+    </Compile>
+    <Compile Include="Browser\OEffnen.UserCode.cs">
+      <DependentUpon>OEffnen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f9bb6f3-714c-44bc-acf0-037cbbb05638</id>
+      <BoundTo>6d1084f2-1072-4aa0-a8ea-34a29bb87986</BoundTo>
+    </Compile>
+    <Compile Include="Browser\Zoom_100.cs">
+      <DependentUpon>Zoom_100.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df8da381-b039-4119-a394-2f5a3f00049c</id>
+      <BoundTo>31051323-9671-4fd6-b1c6-c5b106851fed</BoundTo>
+    </Compile>
+    <Compile Include="Browser\Zoom_100.UserCode.cs">
+      <DependentUpon>Zoom_100.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8176cd0f-5ab8-45ed-b734-c34d6b29e77e</id>
+      <BoundTo>31051323-9671-4fd6-b1c6-c5b106851fed</BoundTo>
+    </Compile>
+    <Compile Include="Browser\Zoom_80.cs">
+      <DependentUpon>Zoom_80.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c676e401-f0d6-400d-89dd-bbd1b6a70a6e</id>
+      <BoundTo>00ceb3de-e6f6-4a5b-9d9f-79620c26cdbb</BoundTo>
+    </Compile>
+    <Compile Include="Browser\Zoom_80.UserCode.cs">
+      <DependentUpon>Zoom_80.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8693259c-8ae7-4332-84a1-38e1bbee7b91</id>
+      <BoundTo>00ceb3de-e6f6-4a5b-9d9f-79620c26cdbb</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>eec09eca-0cfa-424f-8905-a66b370744ce</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Abrechnungen\Abrechnungsluecken_validieren.cs">
+      <BoundTo>ad2708bb-f3b4-4b72-9185-a80b53b5b313</BoundTo>
+      <DependentUpon>Abrechnungsluecken_validieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1782b21c-528f-4f4e-872e-067a031ee344</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Abrechnungen\Abrechnungsluecken_validieren.UserCode.cs">
+      <BoundTo>ad2708bb-f3b4-4b72-9185-a80b53b5b313</BoundTo>
+      <DependentUpon>Abrechnungsluecken_validieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c77d0276-4bda-47e6-bea2-e5ce52be1e10</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Abrechnungen\Abrechnung_validiern.cs">
+      <DependentUpon>Abrechnung_validiern.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c289e676-4892-43e8-a9b3-fdce9f04ecf1</id>
+      <BoundTo>2e3e5ed2-9bb7-4ade-9438-cf17534c9af5</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Abrechnungen\Abrechnung_validiern.UserCode.cs">
+      <DependentUpon>Abrechnung_validiern.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99469b5f-b23b-4787-b854-d51131ea59d3</id>
+      <BoundTo>2e3e5ed2-9bb7-4ade-9438-cf17534c9af5</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Abrechnungen\Schicht_Stoerbetrag_quittieren.cs">
+      <DependentUpon>Schicht_Stoerbetrag_quittieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92d4e265-3ec6-4447-bf8b-7d731309e9eb</id>
+      <BoundTo>ff80e626-c212-4c58-be8c-e0dd17b0182c</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Abrechnungen\Schicht_Stoerbetrag_quittieren.UserCode.cs">
+      <DependentUpon>Schicht_Stoerbetrag_quittieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dfe34a78-0a1c-4aa6-a5c8-6333c7dfa9f8</id>
+      <BoundTo>ff80e626-c212-4c58-be8c-e0dd17b0182c</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Verkaufsdaten\Quittungen_validieren.cs">
+      <DependentUpon>Quittungen_validieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f58a3707-3c2b-4404-9ae6-8eddd13192a0</id>
+      <BoundTo>8302a918-eb18-404b-b6b0-d9e26d1f345c</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Verkaufsdaten\Quittungen_validieren.UserCode.cs">
+      <DependentUpon>Quittungen_validieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ee4f88b-d095-4191-8df3-412688a1c140</id>
+      <BoundTo>8302a918-eb18-404b-b6b0-d9e26d1f345c</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Verkaufsdaten\Verkaufsdaten_validieren.cs">
+      <BoundTo>c6500d4b-49a0-43fe-ac54-1011b1b32ced</BoundTo>
+      <DependentUpon>Verkaufsdaten_validieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d750fbbd-db4a-4d5d-9ba3-81e1b10d23a7</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Auswertung\Verkaufsdaten\Verkaufsdaten_validieren.UserCode.cs">
+      <BoundTo>c6500d4b-49a0-43fe-ac54-1011b1b32ced</BoundTo>
+      <DependentUpon>Verkaufsdaten_validieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a865245-8002-4a28-a2da-a10ff9884683</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Automatensequenzen\AutomatenSequencen_pruefen.cs">
+      <BoundTo>7d6f7967-b57f-4597-a522-5a45e10f3fe6</BoundTo>
+      <DependentUpon>AutomatenSequencen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>06981dc5-385d-40f4-ae2d-9d7d53332d9e</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Automatensequenzen\AutomatenSequencen_pruefen.UserCode.cs">
+      <BoundTo>7d6f7967-b57f-4597-a522-5a45e10f3fe6</BoundTo>
+      <DependentUpon>AutomatenSequencen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b028a4f3-62ed-473a-a6ed-2c6460037b91</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Geraeteverwaltung\Baugruppen\Baugruppenuebersicht_pruefen.cs">
+      <BoundTo>910c7128-003c-4c11-a295-01db6f8d46d8</BoundTo>
+      <DependentUpon>Baugruppenuebersicht_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7a679e92-8534-47c9-9574-7009b84bb251</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Geraeteverwaltung\Baugruppen\Baugruppenuebersicht_pruefen.UserCode.cs">
+      <BoundTo>910c7128-003c-4c11-a295-01db6f8d46d8</BoundTo>
+      <DependentUpon>Baugruppenuebersicht_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e3499ad-f13a-4371-93ce-d196eed748eb</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\Abmelden.cs">
+      <DependentUpon>Abmelden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14bfb1f9-f3b8-439e-9789-7133b2374759</id>
+      <BoundTo>8c016f2b-9d7d-436d-857d-7d3af2e53e23</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\Abmelden.UserCode.cs">
+      <DependentUpon>Abmelden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0dbd801a-088d-442a-b709-31c48cca8f06</id>
+      <BoundTo>8c016f2b-9d7d-436d-857d-7d3af2e53e23</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\Anmelden.cs">
+      <DependentUpon>Anmelden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8faa0fea-31b0-4e82-b639-569a32707a20</id>
+      <BoundTo>09b569cd-545d-4d71-a9eb-d5e679da9b2b</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\Anmelden.UserCode.cs">
+      <DependentUpon>Anmelden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e34916ca-c573-4521-a030-4f3e1a495178</id>
+      <BoundTo>09b569cd-545d-4d71-a9eb-d5e679da9b2b</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\CodeLibrary\CollectRetryErrorMessagesModule.cs">
+      <id>5055017f-0af3-4ade-8f8b-ff0eb73c95f9</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\CodeLibrary\DynamicDataInput.cs">
+      <id>a4b5afb4-4ba5-4884-9b08-800ea6778ff3</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\CodeLibrary\EmailModule.cs">
+      <id>1c9cba2a-f6d4-4424-8ed6-5daf6a4e3106</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\CodeLibrary\ExecuteCommand.cs">
+      <id>ed1ebf7a-b512-4669-8580-5d089d167840</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\CodeLibrary\ReportToPDFModule.cs">
+      <id>50fdcbc4-21f1-48ae-a312-97877db4eca5</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\ExpandiertMenue.cs">
+      <DependentUpon>ExpandiertMenue.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>454f9b4e-db4a-4e41-916c-d38cfc63217f</id>
+      <BoundTo>f6003a01-e7e4-4ab7-96c6-908b1a3c5922</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs">
+      <DependentUpon>ExpandiertMenue.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>38ca53eb-55b3-42b8-9ef9-0daa871d6cbe</id>
+      <BoundTo>f6003a01-e7e4-4ab7-96c6-908b1a3c5922</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\Schliessen.cs">
+      <DependentUpon>Schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c7a033f-176e-4f5c-8fe7-9f66d786cf32</id>
+      <BoundTo>1e4fc948-16fb-4d6c-ba3a-6f57409111db</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\Schliessen.UserCode.cs">
+      <DependentUpon>Schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2835f9bb-e9be-4688-99e8-a2bdfdde4cf2</id>
+      <BoundTo>1e4fc948-16fb-4d6c-ba3a-6f57409111db</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Monitoring\Automatenmeldung\Automatenmeldungen_pruefen.cs">
+      <DependentUpon>Automatenmeldungen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bd7ef5f1-d5b0-4ac4-8d8f-0fcab68e6876</id>
+      <BoundTo>e18c0ff1-d6e5-46e2-8b3e-86ab03e3dcd3</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Monitoring\Automatenmeldung\Automatenmeldungen_pruefen.UserCode.cs">
+      <DependentUpon>Automatenmeldungen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>59ed11e9-32aa-4f06-a910-f581b60a19f4</id>
+      <BoundTo>e18c0ff1-d6e5-46e2-8b3e-86ab03e3dcd3</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.cs">
+      <BoundTo>0182ef8a-0deb-4f79-a0eb-ce946540a803</BoundTo>
+      <DependentUpon>Geldspeicherinhalt_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20f8749b-f9db-47fe-bd42-80c0c5d67261</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.UserCode.cs">
+      <BoundTo>0182ef8a-0deb-4f79-a0eb-ce946540a803</BoundTo>
+      <DependentUpon>Geldspeicherinhalt_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f943af8c-05be-4269-8643-827c629e6c07</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Monitoring\Monitoring\Monitoring_pruefen.cs">
+      <BoundTo>43b3b6f7-64e2-4544-a62e-2f1c6cd210fb</BoundTo>
+      <DependentUpon>Monitoring_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4706e845-00b0-4642-8a8c-34744469c49c</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Monitoring\Monitoring\Monitoring_pruefen.UserCode.cs">
+      <BoundTo>43b3b6f7-64e2-4544-a62e-2f1c6cd210fb</BoundTo>
+      <DependentUpon>Monitoring_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>966f7fac-9037-4e50-8679-f7a1f76928af</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Barcodeverfolgung\Barcodeverfolgung_validieren.cs">
+      <BoundTo>fb3e62cc-57a6-4568-9156-3893384f5e9a</BoundTo>
+      <DependentUpon>Barcodeverfolgung_validieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>467bdb48-7994-496a-b165-6ea9ead245f8</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Barcodeverfolgung\Barcodeverfolgung_validieren.UserCode.cs">
+      <BoundTo>fb3e62cc-57a6-4568-9156-3893384f5e9a</BoundTo>
+      <DependentUpon>Barcodeverfolgung_validieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1a16e83-f304-4da8-a475-84f42e4e4004</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Papierrollen\Papierrollen_validierung.cs">
+      <BoundTo>049d0df1-0663-400d-b89c-d4e0a0a757fc</BoundTo>
+      <DependentUpon>Papierrollen_validierung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19e86b82-bb27-4d42-a484-e8097e392dc0</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Papierrollen\Papierrollen_validierung.UserCode.cs">
+      <BoundTo>049d0df1-0663-400d-b89c-d4e0a0a757fc</BoundTo>
+      <DependentUpon>Papierrollen_validierung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>778e50f6-b883-479d-b4ac-3614973aa231</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Papierrollen\Papierrollen_vernichten.cs">
+      <BoundTo>58f2b518-d91c-48a7-89bf-097f6058409e</BoundTo>
+      <DependentUpon>Papierrollen_vernichten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9e759412-4310-4e9c-9432-882b577653fc</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Papierrollen\Papierrollen_vernichten.UserCode.cs">
+      <BoundTo>58f2b518-d91c-48a7-89bf-097f6058409e</BoundTo>
+      <DependentUpon>Papierrollen_vernichten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f750f09d-8333-4366-9fc6-0da51594650f</id>
+    </Compile>
+    <Compile Include="HGS.cs">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <DependentUpon>HGS.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>0dfe618d-2c62-4f3e-90ea-3e6aa6b847a7</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Ticketverfolgung\Ticketverfolgung_validieren.cs">
+      <BoundTo>21fbbb10-72b6-4ca6-900e-09e8f5feb750</BoundTo>
+      <DependentUpon>Ticketverfolgung_validieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e326127-fa17-47cf-8d70-d6420982949a</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Papierrollenverwaltung\Ticketverfolgung\Ticketverfolgung_validieren.UserCode.cs">
+      <BoundTo>21fbbb10-72b6-4ca6-900e-09e8f5feb750</BoundTo>
+      <DependentUpon>Ticketverfolgung_validieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8234eb88-84dc-4de2-8e16-f4f9889c956a</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>e0245047-9b96-460a-b5f2-d63a4237deb4</id>
+    </Compile>
+    <Compile Include="SETUP\ConfigurationProject.cs">
+      <id>01c230fa-e047-47c3-8b5b-faaa2a358a03</id>
+    </Compile>
+    <Compile Include="TEST\Recording1.cs">
+      <BoundTo>6a960f5d-c039-455d-b8cd-9a6b74739dbf</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6314739a-f12f-47f2-b5b1-4052ee5760a6</id>
+    </Compile>
+    <Compile Include="TEST\Recording1.UserCode.cs">
+      <BoundTo>6a960f5d-c039-455d-b8cd-9a6b74739dbf</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ecb7c57-197d-4233-b984-87afcef3d670</id>
+    </Compile>
+    <Compile Include="TEST\UserCodeModule1.cs">
+      <id>15bdc3d8-b1cb-4b9a-a409-811d0c83682e</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\DPlusLibrary.cs">
+      <id>1b3e8335-8b8d-4ecc-8a4b-cc90daa5c1f2</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\DragNDropLibrary.cs">
+      <id>db1b5282-6117-40fa-a575-9a99bdda670a</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\EmailLibrary.cs">
+      <id>702cd59a-23c8-487f-80f8-39db916c7f3a</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\ExceptionExtensions.cs">
+      <id>40d3b1cf-166b-431b-9b4b-752df4b73da6</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\FileLibrary.cs">
+      <id>a0cc9f1a-d9dd-4cc2-b964-ed1cb6ccf48f</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
+      <id>b05658a9-02a4-4593-b804-60bf5096a170</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\StringLibrary.cs">
+      <id>bec780f9-b91c-4e2b-988d-a35f5da34bb5</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\SystemLibrary.cs">
+      <id>7b5696d3-21bb-473c-b9d7-5e3cc1516ce7</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\Utils.cs">
+      <id>4c9f7cc2-7186-46cf-a800-0966c1a9665b</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\ValidationLibrary.cs">
+      <id>02ef8145-bb8c-44e9-a99f-53a7b773befd</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\WebLibrary.cs">
+      <id>59578b99-db7e-4d83-82e4-24e8a3e76e75</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MASTER.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1a1d5991-7c33-4d36-b074-b447a33c821b</id>
+    </Content>
+    <Content Include="HGS.cd">
+      <id>487fda24-bf00-4ed1-bb96-e3bae7c1cdca</id>
+    </Content>
+    <None Include="Browser\OEffnen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>6d1084f2-1072-4aa0-a8ea-34a29bb87986</id>
+      <recordtableid>34b522fc-9740-4354-a23d-085ca4b6cbef</recordtableid>
+    </None>
+    <None Include="Browser\Zoom_100.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>31051323-9671-4fd6-b1c6-c5b106851fed</id>
+      <recordtableid>ef6a60d6-1cbb-4566-96d1-74c697dd87fe</recordtableid>
+    </None>
+    <None Include="Browser\Zoom_80.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>00ceb3de-e6f6-4a5b-9d9f-79620c26cdbb</id>
+      <recordtableid>098c3fca-4956-478e-bdd6-b07abd69468d</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>86d3c068-4ef9-4bbc-b7b0-b7d60e0ad599</id>
+    </None>
+    <None Include="Modules\STANDARD\Auswertung\Abrechnungen\Abrechnungsluecken_validieren.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>ad2708bb-f3b4-4b72-9185-a80b53b5b313</id>
+      <recordtableid>af50d4fd-37bd-4c68-ae53-0457e12d4bce</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Auswertung\Abrechnungen\Abrechnung_validiern.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>2e3e5ed2-9bb7-4ade-9438-cf17534c9af5</id>
+      <recordtableid>37e41eef-faf3-4d93-a8e5-5adeefb7f5a4</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Auswertung\Abrechnungen\Schicht_Stoerbetrag_quittieren.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>ff80e626-c212-4c58-be8c-e0dd17b0182c</id>
+      <recordtableid>4ad2d11a-c832-48ee-9734-baa3cbbe9d66</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Auswertung\Verkaufsdaten\Quittungen_validieren.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>8302a918-eb18-404b-b6b0-d9e26d1f345c</id>
+      <recordtableid>59f3f847-b53e-401c-8c82-c30d3d7ef6eb</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Auswertung\Verkaufsdaten\Verkaufsdaten_validieren.rxrec">
+      <id>c6500d4b-49a0-43fe-ac54-1011b1b32ced</id>
+      <recordtableid>76fd654a-6b90-4d42-aa54-46b45966e418</recordtableid>
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+    </None>
+    <None Include="Modules\STANDARD\Automatensequenzen\AutomatenSequencen_pruefen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>7d6f7967-b57f-4597-a522-5a45e10f3fe6</id>
+      <recordtableid>c0c8a669-bfc6-40c1-bbf0-3ef385096c4e</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Geraeteverwaltung\Baugruppen\Baugruppenuebersicht_pruefen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>910c7128-003c-4c11-a295-01db6f8d46d8</id>
+      <recordtableid>692b7f33-bc40-4876-9138-7aa87586c0d3</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\HauptDisplay\Abmelden.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>8c016f2b-9d7d-436d-857d-7d3af2e53e23</id>
+      <recordtableid>6e6d19c2-b3bf-4c42-86af-1f040f46e678</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\HauptDisplay\Anmelden.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>09b569cd-545d-4d71-a9eb-d5e679da9b2b</id>
+      <recordtableid>2a6e74e3-6966-46c4-b32a-95d178d6ddd3</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\HauptDisplay\ExpandiertMenue.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>f6003a01-e7e4-4ab7-96c6-908b1a3c5922</id>
+      <recordtableid>216eb8bd-dfd6-4861-98fe-a5dfe6671bc1</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\HauptDisplay\Schliessen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>1e4fc948-16fb-4d6c-ba3a-6f57409111db</id>
+      <recordtableid>bc61f436-20b0-45d8-b183-c1641a77a31f</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Monitoring\Automatenmeldung\Automatenmeldungen_pruefen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>e18c0ff1-d6e5-46e2-8b3e-86ab03e3dcd3</id>
+      <recordtableid>afcd90ee-1eae-4a41-ae5d-5b2d158923c4</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>0182ef8a-0deb-4f79-a0eb-ce946540a803</id>
+      <recordtableid>d903627b-7656-48f3-9ea6-4a7356715e49</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Monitoring\Monitoring\Monitoring_pruefen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>43b3b6f7-64e2-4544-a62e-2f1c6cd210fb</id>
+      <recordtableid>1a0cb1af-598e-476c-95fe-06a403757bde</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Papierrollenverwaltung\Barcodeverfolgung\Barcodeverfolgung_validieren.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>fb3e62cc-57a6-4568-9156-3893384f5e9a</id>
+      <recordtableid>3336fa69-8039-4ae7-9968-ce750e311a87</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Papierrollenverwaltung\Papierrollen\Papierrollen_validierung.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>049d0df1-0663-400d-b89c-d4e0a0a757fc</id>
+      <recordtableid>a6f30e07-5750-493c-843c-436642d5cbe5</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Papierrollenverwaltung\Papierrollen\Papierrollen_vernichten.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>58f2b518-d91c-48a7-89bf-097f6058409e</id>
+      <recordtableid>2b4513f6-09e7-4710-9d97-2dbc317e135c</recordtableid>
+    </None>
+    <None Include="HGS.rximg">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <DependentUpon>HGS.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>79cf17a5-adcb-456e-b32f-c6da6d8755aa</id>
+    </None>
+    <None Include="HGS.rxrep">
+      <id>e6d82450-5a5b-4434-8c37-03e9b78e84c3</id>
+      <repoid>bd7f48bb-7fa9-408d-b8f5-45cf89ce546f</repoid>
+      <reporootid>57f66a2f-7dc9-4880-80a8-25acce5e8cdc</reporootid>
+    </None>
+    <None Include="Modules\STANDARD\Papierrollenverwaltung\Ticketverfolgung\Ticketverfolgung_validieren.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>21fbbb10-72b6-4ca6-900e-09e8f5feb750</id>
+      <recordtableid>6d3d61b1-2869-41a1-8677-ac686ad947ea</recordtableid>
+    </None>
+    <None Include="packages.config">
+      <id>3c556f9d-5ec4-4eda-bdca-597d82a63d8d</id>
+    </None>
+    <Content Include="HGS.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>cfde98fe-6826-4b24-a726-05b8c61229c2</id>
+    </Content>
+    <None Include="TEST\Recording1.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>6a960f5d-c039-455d-b8cd-9a6b74739dbf</id>
+      <recordtableid>73f6a595-c584-41bd-9aee-e97d765c8b14</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HGS.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>195e2453-0703-4fdc-af50-7cf7d5ae1b5c</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt">
+      <id>4003701f-e3a6-4158-a017-3c4bbc42a166</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Papierrollenverwaltung\Barcodeverfolgung">
+      <id>ff32e6d6-70ac-4179-9c26-e070603b72d0</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Papierrollenverwaltung\Ticketverfolgung">
+      <id>69d0f269-47c3-4a87-a93c-fd66d60e0bbb</id>
+    </Folder>
+    <Folder Include="Modules\UESTRA">
+      <id>193b9445-410b-4590-a539-1145ea0ea4dc</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Monitoring">
+      <id>c2d7d96c-ccf7-42e2-afa7-b0646a83edc7</id>
+    </Folder>
+    <Folder Include="Browser">
+      <id>7ed7cad9-2b84-4e83-ac15-cd3914ee7c24</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD">
+      <id>180fbaeb-2ba8-48e3-97b6-a29e6b34926e</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Auswertung">
+      <id>2b700f09-75f6-4698-ad0c-eef5cc96564d</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Auswertung\Abrechnungen">
+      <id>2c8c5314-eff2-4670-89f3-3e20b9d06f85</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Auswertung\Verkaufsdaten">
+      <id>cd8e60c5-c4fb-41b8-9738-77fcabc45044</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Automatensequenzen">
+      <id>eb008e0a-5553-41d4-a5bb-51a7d351124e</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Geraeteverwaltung">
+      <id>bd53efcb-5afd-4984-b47c-6dfb00fac9f9</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Geraeteverwaltung\Baugruppen">
+      <id>f9ec2cb7-e5fe-4e22-892f-723e266e01a7</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\HauptDisplay">
+      <id>8bc9ada4-b1e0-48cf-9c52-d147a8ffc7e3</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\HauptDisplay\CodeLibrary">
+      <id>6527f4b0-6a40-4940-8538-cb682f824294</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Monitoring\Automatenmeldung">
+      <id>c4e272b6-f6ae-4c47-a75c-82b4b39d35cf</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Monitoring\Monitoring">
+      <id>1f68d760-ec36-4641-816a-7b488708b68a</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Papierrollenverwaltung">
+      <id>19addb00-f90c-4b5a-b315-84fabc729ce8</id>
+    </Folder>
+    <Folder Include="Modules\STANDARD\Papierrollenverwaltung\Papierrollen">
+      <id>6f41aaab-db38-43c4-b08c-37641e688c27</id>
+    </Folder>
+    <Folder Include="Modules\UESTRA\AuditLog">
+      <id>589e641f-70b5-470a-8085-1a9aa7447472</id>
+    </Folder>
+    <Folder Include="SETUP">
+      <id>54755917-01fd-4894-8051-e6f219b1c4aa</id>
+    </Folder>
+    <Folder Include="TEST">
+      <id>9ccdee18-761e-4a17-ba0c-a4ad556b1566</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c0c8a669-bfc6-40c1-bbf0-3ef385096c4e"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AutomatenSequencen_pruefen"
+	namespace="Cottbus_3000CR.Modules.STANDARD.Automatensequenzen">
+	</codegen>
+	<variables>
+		<var
+		id="a27081c8-d078-4a49-bd5d-66868ab15501"
+		name="AutomantenNr">
+			999000
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="108;15"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c74dc5e9-8512-4acb-8020-413459909506"
+		sx="180"
+		sy="320"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b321d7a2-4fee-4605-bfc0-a0d18cdcd5cc"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="72,305,178,26"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiTypography-root MuiTypography-body1 css-g5goji
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Automatensequenzen
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-g5goji MuiTypography-body1 MuiTypography-root
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//a[#'side-nav-dplus-device-sequence']/p[@innertext='Automatensequenzen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="e65074a3-30cd-4ba6-a3b0-a67bfcb79d22">
+				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
+2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{NumPad9}{NumPad9}{NumPad9}{NumPad0}{NumPad0}{NumPad0}"
+		duration="20ms"
+		enabled="False"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="fddc9424-a7f2-43b4-a572-75ef11b6ea8d">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="AutomantenNr">
+				</binding>
+			</bindings>
+			<info
+			id="719d9832-3038-45e5-a054-aa84e3ddf723"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="372,322,95,29"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-2duac4
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						number-filter-from-deviceResource.device.deviceId
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						css-2duac4 MuiInputBase-input MuiInputBase-inputSizeSmall MuiInput-input
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Filtern...
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='uestra.dev.ti-ica.de']//input[#'number-filter-from-deviceResource.device.deviceId']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="a5ebdadc-8133-4de8-9d72-02ab7cc4b205">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA8AJgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCrRRRX
+Yc4UUVZhspJoxIrIAfUmonUjTV5Ow1Fy2K1FW/7Nm/vR/mf8KP7Nm/vR/mf8Ky+tUf5ivZz7FSir
+f9mzf3o/zP8AhR/Zs396P8z/AIUfWqP8wezn2KlFW/7Nm/vR/mf8KP7Nm/vR/mf8KPrVH+YPZz7F
+Sirf9mzf3o/zP+FH9mzf3o/zP+FH1qj/ADB7OfYqUVb/ALNm/vR/mf8ACj+zZv70f5n/AAo+tUf5
+g9nPsVKKt/2bN/ej/M/4Uf2bN/ej/M/4UfWqP8wezn2KlFFFdBAUUUUAFFFFABVyQE6XCAMkv/jV
+OtSzmjgtYHl4XcRnGcdea58RvD1/RmkOvoZrxvGQJEZCf7wxQ8UkYBeNlB6EjGa1lkjW0WWSc3Cp
+MCGKkY9ufzo3xy2905uDOgIYKVI289Oa152TymSYpAgcxsEPRiOKBFIULiNig/iA4rZSWK5lnK3J
+eNoz+6KkBePyppkkTUbWGNj5RjHyjoRijnYcqMhIpHUlI2YDqQM4p9yAsoAAHyIeP90VpXDvBLZx
+27FULdF6HmqeqjGoygf7P8hQpXYNWKlFFFWSFFFFABVvTP8Aj4b/AHD/ADFVKt6Z/wAfDf7h/mK5
+8V/BkXT+NFSiipZLeSOFJSPkfoQc/hXQQRUVLHbySQvKB8idSTj8KKALlp/af2ZPs3+q52/d9fep
+v+Jz/nZWRRUuJVwq95jQ6dC6EBg56jPrVGr3lPNpsSxrkhiev1rDENLkb7/oyqet7diCW9nlZCzj
+5DlQAAAfpRNezzJsdht64CgZpfsVx/zz/wDHhR9iuP8Ann/48Kv21H+Zfehcs+wsl/cSRmNnAU9c
+KBmhL+5SIRrJwBgHAyB9aT7Fcf8APP8A8eFH2K4/55/+PCj21H+Zfeg5Z9mEN9cQx7Ef5R0yAcU2
+8JacMxySiEn/AICKd9iuP+ef/jwo+xXH/PP/AMeFHtqN78y+9Byy7FeirH2K4/55/wDjwo+xXH/P
+P/x4U/b0v5l96FyS7FeirH2K4/55/wDjwo+xXH/PP/x4Ue3pfzL70HJLsV6t6Z/x8N/uH+Ypn2K4
+/wCef/jwqxYW8sMxaRMArjqPUVhia1OVKSUl95dOMlJaGfV/Td2yTzcfZMfvN3TPt71QqWS4kkhS
+InCJ0AGPxrravoZrQtalu2R+Vj7Jj93t6Z9/eiqsdxJHC8QPyP1BGfxooStoDdyKiiimIKessijC
+yOAOwY0yik0nuF7Ennzf89ZP++jR583/AD1k/wC+jUdFL2cOw7sk8+b/AJ6yf99Gjz5v+esn/fRq
+Oij2cOwXZJ583/PWT/vo0efN/wA9ZP8Avo1HRR7OHYLsk8+b/nrJ/wB9Gjz5v+esn/fRqOij2cOw
+XZJ583/PWT/vo0efN/z1k/76NR0Uezh2C7JPPm/56yf99Gjz5v8AnrJ/30ajoo9nDsF2FFFFUIKK
+KKAP/9k=
+			</helperscreenshot>
+		</keysequenceitem>
+		<userrecorditem
+		classname="AutomatenSequencen_pruefen"
+		enabled="False"
+		isexternaltestmethod="False"
+		methodname="ValidateSeveralAutomatenSequenze"
+		namespace="Cottbus_3000CR.Modules.Automatensequenzen"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cd9ac9bd-b901-41d6-9a16-5becb942f8c8">
+				<argument
+				argname="inputtagInfo"
+				id="aac22f23-769f-4722-b1cc-01be20d80c92">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="648e6a6d-31e1-4732-b18b-82a09434d0e9"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[#'mpDplus-device-sequence']/?/?/table//input[#'number-filter-from-sequenceNumber']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="ptagInfo"
+				id="eaae4757-5e30-454f-9026-b72186ea775f">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="882a82e4-7c60-4568-9cd1-0f34deb90eac"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[#'mpDplus-device-sequence']/?/?/table//tbody/tr[1]/td[@data-test-id='mat-table-cell-deviceResource.device.deviceId']/p
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="ptagInfo1"
+				id="62909d7e-608a-4a3e-be7d-ae0f83acf86c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="18744720-0042-4e9d-9520-f4a0b35b90cf"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[#'mpDplus-device-sequence']/?/?/table//tbody/tr[1]/td[@data-test-id='mat-table-cell-sequenceNumber']/p
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="ptagInfo2"
+				id="c920f20b-254a-4eca-96e0-c45d815f48d0">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f4ae5f96-1231-4d08-9d8f-81d26fdf11de"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[#'mpDplus-device-sequence']/?/?/table//tbody/tr[1]/td[@data-test-id='mat-table-cell-processCategory']/p
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="ptagInfo3"
+				id="d3ad85b4-8ae5-47b6-8d95-8162488f9843">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="6070ec88-4c78-4292-8bcb-83d0d271d5c3"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[#'mpDplus-device-sequence']/?/?/table//tbody/tr[1]/td[@data-test-id='mat-table-cell-description']/p
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="ptagInfo4"
+				id="8eefd5e2-9c65-45dc-ab74-10acab76c146">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="8aeb1cdc-dd12-467f-85de-3f9ccecd7b8e"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[#'mpDplus-device-sequence']/?/?/table//tbody/tr[1]/td[@data-test-id='mat-table-cell-serviceTechnician']/p
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+				<argument
+				argname="buttonInfo"
+				id="72246704-09eb-401f-9067-e04dd157e3aa">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="a61f2791-c191-49ec-92c1-b9f2b60a33d2"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[#'mpDplus-device-sequence']/?/?/table//th[@id='column-header-filter-sequenceNumber']/div/div/div/div/div/div[2]//button
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="AutomatenSequencen_pruefen"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidateAllSequences"
+		namespace="Cottbus_3000CR.Modules.STANDARD.Automatensequenzen"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="38b4a947-e3ff-4bb7-9e44-fda8d2406a65">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="bd7f48bb-7fa9-408d-b8f5-45cf89ce546f"
+	name="HGS"
+	relativepath="..\..\..\HGS.rxrep">
+		<codegen
+		classname="HGS"
+		namespace="Cottbus_3000CR">
+		</codegen>
+		<rootfolder
+		id="57f66a2f-7dc9-4880-80a8-25acce5e8cdc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AutomatenSequencen_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
