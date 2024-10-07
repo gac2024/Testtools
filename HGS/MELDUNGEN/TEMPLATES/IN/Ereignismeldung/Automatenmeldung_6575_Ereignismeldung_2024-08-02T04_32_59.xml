@@ -1,0 +1,10 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeEreignismeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaEreignismeldung xmlns="http://tms.ica.de/automatenService/3_10/" baugruppenkategorie="NICHT_RELEVANT" baugruppenstatus="UNBEKANNT" baugruppentypBezeichnung="" ereigniscode="10009" ereignisstatus="EINGETRETEN" ereignistext="Rebootanforderung" geraetestatus="IN_BETRIEB" herstellerBezeichnung="" kurs="*******************" linie="*******************" seriennummer="" servicetechniker="" sstVersion="3.10" tuerstatus="GESCHLOSSEN" zeitpunkt="2024-08-02T02:31:49+02:00" zusatzinformationen="ONA: Zykl.Reboot 8027,10,1C">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="6575" seriennummer="6575"/>
+                <metadaten guid="bd9c5651-2b63-474c-bf11-267b1f2cad6f" sequenznummer="119704"/>
+            </faaEreignismeldung>
+        </empfangeEreignismeldung>
+    </s:Body>
+</s:Envelope>

@@ -1,0 +1,77 @@
+################################################################################
+#####   Generator -> Ereignismeldung 
+################################################################################
+Started: 2024-09-27 14:49:08
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : Ereignismeldung_01
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Ereignismeldung
+ testfallname                  : Ereignismeldung_01
+ meldungsname                  : Ereignismeldung
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+------------------------------------------
+Ereignismeldung:baugruppenkategorie = NICHT_RELEVANT
+Ereignismeldung:baugruppenstatus = UNBEKANNT
+Ereignismeldung:baugruppentypBezeichnung = 
+Ereignismeldung:ereigniscode = 10019
+Ereignismeldung:ereignisstatus = EINGETRETEN
+Ereignismeldung:ereignistext = CEMAS-Kommando
+Ereignismeldung:geraetestatus = IN_BETRIEB
+Ereignismeldung:herstellerBezeichnung = 
+Ereignismeldung:kurs = *******************
+Ereignismeldung:linie = *******************
+Ereignismeldung:seriennummer = 
+Ereignismeldung:servicetechniker = 
+Ereignismeldung:sstVersion = 3.10
+Ereignismeldung:tuerstatus = GESCHLOSSEN
+Ereignismeldung:zeitpunkt = 2024-08-02T08:24:43+02:00
+Ereignismeldung:zusatzinformationen = Automat in Betrieb
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeEreignismeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaEreignismeldung xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-08-02T08:24:43.000+02:00" servicetechniker="" ereigniscode="10019" zusatzinformationen="Automat in Betrieb" ereignisstatus="EINGETRETEN" baugruppenkategorie="NICHT_RELEVANT" baugruppenstatus="UNBEKANNT" seriennummer="" geraetestatus="IN_BETRIEB" tuerstatus="GESCHLOSSEN" ereignistext="CEMAS-Kommando" baugruppentypBezeichnung="" herstellerBezeichnung="" kurs="*******************" linie="*******************" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="16823" guid="4d55eba7-7fcf-4dbc-8a34-d63b7d92b737"/>
+            </faaEreignismeldung>
+        </empfangeEreignismeldung>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-09-27 14:49:11
+

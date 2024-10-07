@@ -1,0 +1,10 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:empfangePositionsmeldung xmlns="http://tms.ica.de/automatenService/3_10/" xmlns:ns2="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaPositionsmeldung fahrzeugKennung="11" haltestellencodeIbis="25000091" positionImFahrzeug="12" sstVersion="3.10" zeitpunkt="2024-07-15T10:14:54.714+02:00">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="2400" seriennummer="2400"/>
+                <metadaten guid="509769f9-16cb-4500-b7ba-46dbbda1aef9" sequenznummer="6759"/>
+            </faaPositionsmeldung>
+        </ns2:empfangePositionsmeldung>
+    </soap:Body>
+</soap:Envelope>

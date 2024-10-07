@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeAktualisierungsmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaAktualisierungmeldung xmlns="http://tms.ica.de/automatenService/3_10/" aktualisierungstyp="AKTIVIERUNG" datei="00000121.CMS" installationszeitpunkt="2024-08-02T08:24:42+02:00" kategorie="SOFTWARE" sstVersion="3.10" status="0" version="" zeitpunkt="2024-08-02T08:24:42+02:00">
+                <verkaufspunkt betreiber="99" ipAdresse="" posNummer="2400" seriennummer="2400"/>
+                <metadaten guid="bd5ff9c7-3607-45c1-8d52-5a4b933f8d42" sequenznummer="1515"/>
+                <automatenStatus/>
+            </faaAktualisierungmeldung>
+        </empfangeAktualisierungsmeldung>
+    </s:Body>
+</s:Envelope>

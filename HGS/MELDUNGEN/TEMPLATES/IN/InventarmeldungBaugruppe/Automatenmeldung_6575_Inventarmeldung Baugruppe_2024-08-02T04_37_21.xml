@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeInventarmeldungBaugruppe xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaInventarmeldungBaugruppe xmlns="http://tms.ica.de/automatenService/3_10/" abrechnungsnummer="1974" betriebsstatus="IN_BETRIEB" einbauposition="0" gueltigkeit="1970-01-01T01:00:00+01:00" herstellerBezeichnung="Japan Cash Machine" seriennummer="2000" servicetechniker="0" sstVersion="3.10" version="V216K32" vorgangsnummer="0" vorgangstyp="INSTALLATION" zeitpunkt="2024-08-02T02:36:06+02:00">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="6575" seriennummer="6575"/>
+                <metadaten guid="b496771a-0868-42a5-a4c0-5f7abcbf8946" sequenznummer="119760"/>
+                <baugruppentyp baugruppenkategorie="BNV" beschreibung="BEK" bezeichnung="BEK" geldspeichertyp="BEK"/>
+            </faaInventarmeldungBaugruppe>
+        </empfangeInventarmeldungBaugruppe>
+    </s:Body>
+</s:Envelope>

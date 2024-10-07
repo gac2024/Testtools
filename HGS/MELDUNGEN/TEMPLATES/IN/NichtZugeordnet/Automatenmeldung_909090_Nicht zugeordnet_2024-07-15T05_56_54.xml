@@ -1,0 +1,10 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeEreignismeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaEreignismeldung xmlns="http://tms.ica.de/automatenService/3_10/" baugruppenkategorie="NICHT_RELEVANT" baugruppenstatus="UNBEKANNT" baugruppentypBezeichnung="" ereigniscode="10303" ereignisstatus="EINGETRETEN" ereignistext="Fehler Münzprüfer" geraetestatus="IN_BETRIEB" herstellerBezeichnung="" kurs="*******************" linie="*******************" seriennummer="" servicetechniker="" sstVersion="3.10" tuerstatus="UNBEKANNT" zeitpunkt="2024-05-27T11:22:28+02:00" zusatzinformationen="">
+                <verkaufspunkt betreiber="1" ipAdresse="" posNummer="909090" seriennummer="711"/>
+                <metadaten guid="a51bf8fa-0b16-4739-af2a-f9f32bf05b57" sequenznummer="4413"/>
+            </faaEreignismeldung>
+        </empfangeEreignismeldung>
+    </s:Body>
+</s:Envelope>

@@ -1,0 +1,10 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeEreignismeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaEreignismeldung xmlns="http://tms.ica.de/automatenService/3_10/" baugruppenkategorie="NICHT_RELEVANT" baugruppenstatus="UNBEKANNT" baugruppentypBezeichnung="" ereigniscode="11501" ereignisstatus="EINGETRETEN" ereignistext="Normalbetrieb EIN" geraetestatus="IN_BETRIEB" herstellerBezeichnung="" kurs="*******************" linie="*******************" seriennummer="" servicetechniker="" sstVersion="3.10" tuerstatus="UNBEKANNT" zeitpunkt="2024-08-02T02:35:35+02:00" zusatzinformationen="">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="6575" seriennummer="6575"/>
+                <metadaten guid="177d6410-b643-4046-ba30-7c2ed98e9461" sequenznummer="119735"/>
+            </faaEreignismeldung>
+        </empfangeEreignismeldung>
+    </s:Body>
+</s:Envelope>

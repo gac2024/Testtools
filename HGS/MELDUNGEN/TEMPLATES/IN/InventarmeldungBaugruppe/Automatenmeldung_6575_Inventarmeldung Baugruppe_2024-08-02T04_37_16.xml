@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeInventarmeldungBaugruppe xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaInventarmeldungBaugruppe xmlns="http://tms.ica.de/automatenService/3_10/" abrechnungsnummer="1974" betriebsstatus="IN_BETRIEB" einbauposition="0" gueltigkeit="1970-01-01T01:00:00+01:00" herstellerBezeichnung="China Tech" seriennummer="42204323" servicetechniker="0" sstVersion="3.10" version="" vorgangsnummer="0" vorgangstyp="INSTALLATION" zeitpunkt="2024-08-02T02:36:05+02:00">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="6575" seriennummer="6575"/>
+                <metadaten guid="1e840168-72bd-4c38-8665-ccc426996ac7" sequenznummer="119752"/>
+                <baugruppentyp baugruppenkategorie="MUV" beschreibung="WGR 0,5€" bezeichnung="WGR 0,5€" geldspeichertyp="WGR"/>
+            </faaInventarmeldungBaugruppe>
+        </empfangeInventarmeldungBaugruppe>
+    </s:Body>
+</s:Envelope>

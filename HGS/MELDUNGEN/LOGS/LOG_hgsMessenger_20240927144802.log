@@ -1,0 +1,65 @@
+################################################################################
+#####   Generator -> InventarmeldungGeraet 
+################################################################################
+Started: 2024-09-27 14:48:02
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : INSTALLATION_SERVICE
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : InventarmeldungGeraet
+ testfallname                  : INSTALLATION_SERVICE
+ meldungsname                  : InventarmeldungGeraet
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+InventarmeldungGeraet:geraetestatus = SERVICE
+InventarmeldungGeraet:servicetechniker = 0
+InventarmeldungGeraet:sstVersion = 3.10
+InventarmeldungGeraet:vorgangstyp = INSTALLATION
+InventarmeldungGeraet:zeitpunkt = 
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeInventarmeldungGeraet xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaInventarmeldungGeraet xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-09-27T14:48:02.271+02:00" vorgangstyp="INSTALLATION" servicetechniker="0" geraetestatus="SERVICE" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="16820" guid="c0bae41d-a858-4cc6-8443-6e21531d5253"/>
+            </faaInventarmeldungGeraet>
+        </empfangeInventarmeldungGeraet>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-09-27 14:48:05
+

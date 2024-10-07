@@ -1,0 +1,76 @@
+################################################################################
+#####   Generator -> NutzermedienLogistikmeldung 
+################################################################################
+Started: 2024-09-27 14:50:37
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : NLM_installationPapier
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : NutzermedienLogistikmeldung
+ testfallname                  : NLM_installationPapier
+ meldungsname                  : NutzermedienLogistikmeldung
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+Testdata:abrechnungsnummer = 
+------------------------------------------
+NutzermedienLogistikmeldung:abrechnungsnummer = 
+NutzermedienLogistikmeldung:fuellstand = 0
+NutzermedienLogistikmeldung:materialcode = 47121
+NutzermedienLogistikmeldung:medienNummer = 2
+NutzermedienLogistikmeldung:mediumSorte = 1
+NutzermedienLogistikmeldung:mediumTyp = PAPER
+NutzermedienLogistikmeldung:nutzermedienlogistiker = 2
+NutzermedienLogistikmeldung:seriennummerCharge = 33
+NutzermedienLogistikmeldung:seriennummerTerminal = 44
+NutzermedienLogistikmeldung:sstVersion = 3.10
+NutzermedienLogistikmeldung:terminalKennung = hier
+NutzermedienLogistikmeldung:vorgangstyp = INSTALLATION
+NutzermedienLogistikmeldung:zeitpunkt = 
+NutzermedienLogistikmeldung:zufuehrungKennung = 3
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeNutzermedienLogistikmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaNutzermedienLogistikmeldung xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-09-27T14:50:37.235+02:00" nutzermedienlogistiker="2" abrechnungsnummer="10176" vorgangstyp="INSTALLATION" mediumSorte="1" mediumTyp="PAPER" terminalKennung="hier" seriennummerTerminal="44" zufuehrungKennung="3" materialcode="47121" seriennummerCharge="33" medienNummer="2" fuellstand="0" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="16827" guid="c0b1a40e-1cb9-4eaf-af06-ff2e1afad750"/>
+            </faaNutzermedienLogistikmeldung>
+        </empfangeNutzermedienLogistikmeldung>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-09-27 14:50:40
+

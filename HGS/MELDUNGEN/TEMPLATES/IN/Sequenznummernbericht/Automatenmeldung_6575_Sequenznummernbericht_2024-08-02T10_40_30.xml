@@ -1,0 +1,15 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeSequenznummernbericht xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaVorgangsmeldungen xmlns="http://tms.ica.de/automatenService/3_10/" sstVersion="3.10">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="6575" seriennummer="6575"/>
+                <versionKey>-1</versionKey>
+                <ersteSequenz>119884</ersteSequenz>
+                <letzteSequenz>119884</letzteSequenz>
+                <vorgaenge beschreibung=" Status:Betriebsbereit Verkauf:- Bedienung:-" kategorie="TypHealthMeldung" servicetechniker="0" zeitpunkt="2024-08-02T12:40:16+02:00">
+                    <metadaten guid="c30ff3b7-fd74-43f1-a144-251084a4cf46" sequenznummer="119884"/>
+                </vorgaenge>
+            </faaVorgangsmeldungen>
+        </empfangeSequenznummernbericht>
+    </s:Body>
+</s:Envelope>

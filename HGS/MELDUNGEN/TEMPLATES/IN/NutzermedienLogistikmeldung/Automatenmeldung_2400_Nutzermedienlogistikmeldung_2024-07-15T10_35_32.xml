@@ -1,0 +1,10 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:empfangeNutzermedienLogistikmeldung xmlns="http://tms.ica.de/automatenService/3_10/" xmlns:ns2="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaNutzermedienLogistikmeldung abrechnungsnummer="47" fuellstand="0" materialcode="47121" medienNummer="2" mediumSorte="1" mediumTyp="PAPER" nutzermedienlogistiker="2" seriennummerCharge="33" seriennummerTerminal="44" sstVersion="3.10" terminalKennung="hier" vorgangstyp="INSTALLATION" zeitpunkt="2024-07-15T12:36:29.807+02:00" zufuehrungKennung="3">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="2400" seriennummer="2400"/>
+                <metadaten guid="0e3537ac-d32c-4e0c-b1bc-85ca40783de3" sequenznummer="11122"/>
+            </faaNutzermedienLogistikmeldung>
+        </ns2:empfangeNutzermedienLogistikmeldung>
+    </soap:Body>
+</soap:Envelope>

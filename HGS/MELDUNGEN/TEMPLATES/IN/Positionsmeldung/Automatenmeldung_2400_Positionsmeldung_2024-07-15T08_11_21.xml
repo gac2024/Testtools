@@ -1,0 +1,9 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:empfangePositionsmeldung xmlns="http://tms.ica.de/automatenService/3_10/" xmlns:ns2="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaPositionsmeldung>
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="2400" seriennummer="2400"/>
+            </faaPositionsmeldung>
+        </ns2:empfangePositionsmeldung>
+    </soap:Body>
+</soap:Envelope>

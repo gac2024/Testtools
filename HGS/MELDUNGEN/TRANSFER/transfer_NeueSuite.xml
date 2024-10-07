@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Transfervariablen>
+    <automatenNr>999091</automatenNr>
+    <auftragsNr>16006</auftragsNr>
+    <abrechnungsnr>16006</abrechnungsnr>
+    <sequenceNr>16226</sequenceNr>
+    <UmsatzKredit>0,00</UmsatzKredit>
+    <abrechnungsnummer />
+    <anzahlVerkauefe>1</anzahlVerkauefe>
+    <anzahlquittungen>1</anzahlquittungen>
+    <prodPreis>5,00</prodPreis>
+    <quittungen>
+        <anzahltransaktionen>1</anzahltransaktionen>
+        <einzahlungsbetrag>2500#EUR</einzahlungsbetrag>
+        <pfandTotal>0#EUR</pfandTotal>
+        <preisTotal>500#EUR</preisTotal>
+        <rueckerstattungsbetragIst>0#EUR</rueckerstattungsbetragIst>
+        <rueckerstattungsbetragSoll>2000#EUR</rueckerstattungsbetragSoll>
+        <stoerbetrag>2000#EUR</stoerbetrag>
+        <transaktionsnummer>7</transaktionsnummer>
+        <transaktionsnummerGiroCard>0</transaktionsnummerGiroCard>
+        <transaktionsnummerKreditkarte>0</transaktionsnummerKreditkarte>
+        <ueberzahlungsbetrag>0#EUR</ueberzahlungsbetrag>
+    </quittungen>
+    <stoerBetrag>20,00</stoerBetrag>
+    <summeVerkaeufe>5,00</summeVerkaeufe>
+    <umsatzBar>25,00</umsatzBar>
+    <umsatzGesamt>25,00</umsatzGesamt>
+    <umsatzGiro>0,00</umsatzGiro>
+    <verkaeufe>
+        <preis>500#EUR</preis>
+        <preisstufenText>ABC</preisstufenText>
+        <produktbezeichnung>Tageskarte Kind</produktbezeichnung>
+        <produktkennung>IDP_GVH_4</produktkennung>
+        <produktkennungExtern>ABC</produktkennungExtern>
+        <tarifBezeichnung>- - -|Tarif_3</tarifBezeichnung>
+        <transaktionsnummer>7</transaktionsnummer>
+    </verkaeufe>
+    <verkaufsZeitraum>Letzter Monat</verkaufsZeitraum>
+</Transfervariablen>

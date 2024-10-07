@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeInventarmeldungBaugruppe xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaInventarmeldungBaugruppe xmlns="http://tms.ica.de/automatenService/3_10/" abrechnungsnummer="1974" betriebsstatus="IN_BETRIEB" einbauposition="0" gueltigkeit="1970-01-01T01:00:00+01:00" herstellerBezeichnung="Hopper MK IV" seriennummer="93000415" servicetechniker="0" sstVersion="3.10" version="" vorgangsnummer="0" vorgangstyp="INSTALLATION" zeitpunkt="2024-08-02T02:36:05+02:00">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="6575" seriennummer="6575"/>
+                <metadaten guid="1266d4d2-2e41-412f-83e1-b2fca2e83515" sequenznummer="119754"/>
+                <baugruppentyp baugruppenkategorie="MUV" beschreibung="ZGS 0,1€" bezeichnung="ZGS 0,1€" geldspeichertyp="ZGS"/>
+            </faaInventarmeldungBaugruppe>
+        </empfangeInventarmeldungBaugruppe>
+    </s:Body>
+</s:Envelope>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Transfervariablen>
+    <automatenNr>999000</automatenNr>
+    <auftragsNr>10067</auftragsNr>
+    <abrechnungsnr>10067</abrechnungsnr>
+    <sequenceNr>12791</sequenceNr>
+    <verkaufsZeitraum>Dieser Monat</verkaufsZeitraum>
+    <verkaeufe_2.produktbezeichnung>Einzelkarte Kind</verkaeufe_2.produktbezeichnung>
+    <quittungen_2.stoerbetrag>0#EUR</quittungen_2.stoerbetrag>
+    <quittungen_1.einzahlungsbetrag>470#EUR</quittungen_1.einzahlungsbetrag>
+    <verkaeufe_2.produktkennung>IDP_GVH_2</verkaeufe_2.produktkennung>
+    <quittungen_2.anzahltransaktionen>1</quittungen_2.anzahltransaktionen>
+    <verkaeufe_2.preis>130#EUR</verkaeufe_2.preis>
+    <quittungen_1.stoerbetrag>0#EUR</quittungen_1.stoerbetrag>
+    <verkaeufe_2.artikelnummer>9297</verkaeufe_2.artikelnummer>
+    <quittungen_2.einzahlungsbetrag>180#EUR</quittungen_2.einzahlungsbetrag>
+    <quittungen_2.transaktionsnummerKreditkarte>0</quittungen_2.transaktionsnummerKreditkarte>
+    <quittungen_1.anzahltransaktionen>2</quittungen_1.anzahltransaktionen>
+    <verkaeufe_1.produktkennungExtern />
+    <quittungen_1.preisTotal>470#EUR</quittungen_1.preisTotal>
+    <quittungen_1.ueberzahlungsbetrag>0#EUR</quittungen_1.ueberzahlungsbetrag>
+    <quittungen_1.transaktionsnummer>18</quittungen_1.transaktionsnummer>
+    <quittungen_2.transaktionsnummer>19</quittungen_2.transaktionsnummer>
+    <abrechnungsnummer>#NEU#</abrechnungsnummer>
+    <quittungen_2.ueberzahlungsbetrag>0#EUR</quittungen_2.ueberzahlungsbetrag>
+    <verkaeufe_1.artikelnummer>9292</verkaeufe_1.artikelnummer>
+    <quittungen_1.pfandTotal>0#EUR</quittungen_1.pfandTotal>
+    <quittungen_2.preisTotal>180#EUR</quittungen_2.preisTotal>
+    <verkaeufe_1.preis>340#EUR</verkaeufe_1.preis>
+    <verkaeufe_3.preisstufenText>K</verkaeufe_3.preisstufenText>
+    <prodPreis>2,60</prodPreis>
+    <summeVerkaeufe>2,60</summeVerkaeufe>
+    <quittungen_2.pfandTotal>0#EUR</quittungen_2.pfandTotal>
+    <anzahlquittungen>2</anzahlquittungen>
+    <verkaeufe_2.produktkennungExtern>ABC</verkaeufe_2.produktkennungExtern>
+    <verkaeufe_3.produktbezeichnung>Kurzstreckenkarte</verkaeufe_3.produktbezeichnung>
+    <quittungen_2.rueckerstattungsbetragSoll>0#EUR</quittungen_2.rueckerstattungsbetragSoll>
+    <verkaeufe_1.produktbezeichnung>Einzelkarte</verkaeufe_1.produktbezeichnung>
+    <stoerBetrag>2,40</stoerBetrag>
+    <verkaeufe_2.preisstufenText>ABC</verkaeufe_2.preisstufenText>
+    <quittungen_1.transaktionsnummerGiroCard>3372</quittungen_1.transaktionsnummerGiroCard>
+    <verkaeufe_1.produktkennung>IDP_GVH_1</verkaeufe_1.produktkennung>
+    <verkaeufe_1.transaktionsnummer>18</verkaeufe_1.transaktionsnummer>
+    <verkaeufe_3.artikelnummer>11266</verkaeufe_3.artikelnummer>
+    <quittungen_2.transaktionsnummerGiroCard>3374</quittungen_2.transaktionsnummerGiroCard>
+    <verkaeufe_3.transaktionsnummer>19</verkaeufe_3.transaktionsnummer>
+    <verkaeufe_3.preis>180#EUR</verkaeufe_3.preis>
+    <quittungen_1.rueckerstattungsbetragIst>0#EUR</quittungen_1.rueckerstattungsbetragIst>
+    <verkaeufe_1.preisstufenText>C</verkaeufe_1.preisstufenText>
+    <verkaeufe_2.transaktionsnummer>18</verkaeufe_2.transaktionsnummer>
+    <quittungen_2.rueckerstattungsbetragIst>0#EUR</quittungen_2.rueckerstattungsbetragIst>
+    <umsatzGesamt>5,00</umsatzGesamt>
+    <quittungen_1.transaktionsnummerKreditkarte>0</quittungen_1.transaktionsnummerKreditkarte>
+    <quittungen_1.rueckerstattungsbetragSoll>0#EUR</quittungen_1.rueckerstattungsbetragSoll>
+    <verkaeufe_3.produktkennung>IDP_GVH_17</verkaeufe_3.produktkennung>
+</Transfervariablen>

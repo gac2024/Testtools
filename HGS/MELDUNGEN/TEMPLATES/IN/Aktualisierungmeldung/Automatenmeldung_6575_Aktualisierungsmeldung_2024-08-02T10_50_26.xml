@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeAktualisierungsmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaAktualisierungmeldung xmlns="http://tms.ica.de/automatenService/3_10/" aktualisierungstyp="STATUS" sstVersion="3.10" status="2" zeitpunkt="2024-08-02T12:50:13+02:00">
+                <verkaufspunkt betreiber="99" ipAdresse="0.0.0.0" posNummer="6575" seriennummer="6575"/>
+                <metadaten guid="892e61c2-f2b4-4136-bec5-343896e73764" sequenznummer="119886"/>
+                <automatenStatus betriebStatus="IN_BETRIEB"/>
+            </faaAktualisierungmeldung>
+        </empfangeAktualisierungsmeldung>
+    </s:Body>
+</s:Envelope>

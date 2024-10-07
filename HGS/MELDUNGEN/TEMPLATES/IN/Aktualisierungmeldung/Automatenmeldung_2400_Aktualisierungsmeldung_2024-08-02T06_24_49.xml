@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeAktualisierungsmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaAktualisierungmeldung xmlns="http://tms.ica.de/automatenService/3_10/" aktualisierungstyp="INSTALLATION" datei="H2400125.DLC" installationszeitpunkt="2024-08-02T08:24:41+02:00" kategorie="SOFTWARE" sstVersion="3.10" status="0" version="" zeitpunkt="2024-08-02T08:24:41+02:00">
+                <verkaufspunkt betreiber="99" ipAdresse="" posNummer="2400" seriennummer="2400"/>
+                <metadaten guid="00a9d5f2-f19e-4571-b891-41bf5beb66a7" sequenznummer="1514"/>
+                <automatenStatus/>
+            </faaAktualisierungmeldung>
+        </empfangeAktualisierungsmeldung>
+    </s:Body>
+</s:Envelope>

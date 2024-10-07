@@ -1,0 +1,72 @@
+################################################################################
+#####   Generator -> Aktualisierungmeldung 
+################################################################################
+Started: 2024-09-24 10:02:09
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : in_Betrieb
+ mainpath                      : c:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Aktualisierungmeldung
+ testfallname                  : in_Betrieb
+ meldungsname                  : Aktualisierungmeldung
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : c:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+TestData:filterBetrieb = In Betrieb
+------------------------------------------
+AktualisierungMeldung:sstVersion = 3.10
+AktualisierungMeldung:versionKey = -1
+AktualisierungMeldung:zeitpunkt = 
+AktualisierungMeldung:aktualisierungstyp = STATUS
+AktualisierungMeldung:status = 2
+------------------------------------------
+automatenStatus_1:betriebStatus = IN_BETRIEB
+automatenStatus_1:letzteInteraktion = 
+automatenStatus_1:letzterVerkauf = 
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = c:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = c:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeAktualisierungmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaAktualisierungmeldung xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-09-24T10:02:09.375+02:00" aktualisierungstyp="STATUS" status="2" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="16326" guid="83981d7c-f1fa-42cf-96fe-173b11ebfa65"/>
+                <automatenStatus betriebStatus="IN_BETRIEB" letzteInteraktion="2024-09-24T10:02:09.396+02:00" letzterVerkauf="2024-09-24T10:02:09.397+02:00"/>
+            </faaAktualisierungmeldung>
+        </empfangeAktualisierungmeldung>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-09-24 10:02:12
+

@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeAktualisierungsmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaAktualisierungmeldung xmlns="http://tms.ica.de/automatenService/3_10/" aktualisierungstyp="AKTIVIERUNG" datei="TMS_MSG.KEY" kategorie="KEY" sstVersion="3.10" status="0" version="-2" zeitpunkt="2024-05-27T11:22:26+02:00">
+                <verkaufspunkt betreiber="1" ipAdresse="" posNummer="909090" seriennummer="711"/>
+                <metadaten guid="e469ad8d-5335-4db7-bf96-cb22394cf11b" sequenznummer="4411"/>
+                <automatenStatus/>
+            </faaAktualisierungmeldung>
+        </empfangeAktualisierungsmeldung>
+    </s:Body>
+</s:Envelope>

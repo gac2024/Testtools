@@ -1,0 +1,15 @@
+#######################  	
+STARTE MASTER TEST       	
+Startzeitpunkt: 20240925__085711       
+#######################  	
+ 							
+call "HGS.exe /ts:MASTER.rxtst" 		
+ 							
+Ranorex-Log: 				
+							
+							
+#######################  	
+BEENDE MASTER TEST       	
+Endzeitpunkt: 20240925__085711         
+#######################  	
+							

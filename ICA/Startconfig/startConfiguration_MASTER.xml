@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Report>
+        <PdfDirectoryPath>D:\PDF_REPORTS\</PdfDirectoryPath>
+        <To>ranorex.traffic@ica.de</To>
+        <From>ranorex.traffic@ica.de</From>
+        <ServerHostname>svica107.ica.local</ServerHostname>
+        <ServerPort>25</ServerPort>
+        <SendEmailOnFailure>true</SendEmailOnFailure>
+        <SendEmailOnSuccess>true</SendEmailOnSuccess>
+        <SendZippedReportOnComplete>false</SendZippedReportOnComplete>
+        <SendPdfReportOnComplete>true</SendPdfReportOnComplete>
+    </Report>
+    <TestConfig>
+        <HGSmeldungsPfad>D:\Testtools\HGS\MELDUNGEN</HGSmeldungsPfad>
+        <ProjectName>MASTER</ProjectName>
+    </TestConfig>
+    <DPlus>
+        <Browser>Chrome</Browser>
+        <DPlusUrl>https://uestra.dev.ti-ica.de/mp/login</DPlusUrl>      
+        <DPlusUser>robert.kehnen@ica.de</DPlusUser>
+        <DPlusPasswort>Bogmcs046892</DPlusPasswort>
+    </DPlus>
+    <HGS>
+        <HGSUrl>https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl</HGSUrl>
+    </HGS>
+</Configuration>
+
