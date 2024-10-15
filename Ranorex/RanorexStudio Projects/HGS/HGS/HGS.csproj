@@ -344,17 +344,17 @@
       <id>59ed11e9-32aa-4f06-a910-f581b60a19f4</id>
       <BoundTo>e18c0ff1-d6e5-46e2-8b3e-86ab03e3dcd3</BoundTo>
     </Compile>
-    <Compile Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.cs">
-      <BoundTo>0182ef8a-0deb-4f79-a0eb-ce946540a803</BoundTo>
-      <DependentUpon>Geldspeicherinhalt_pruefen.rxrec</DependentUpon>
+    <Compile Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.cs">
+      <DependentUpon>Geldspeicherinhalt_validieren.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>20f8749b-f9db-47fe-bd42-80c0c5d67261</id>
+      <id>8f9872df-6c83-4760-ba99-502ce9cc7c6e</id>
+      <BoundTo>210692a5-c1fb-47f9-a069-5ae5ba1ff369</BoundTo>
     </Compile>
-    <Compile Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.UserCode.cs">
-      <BoundTo>0182ef8a-0deb-4f79-a0eb-ce946540a803</BoundTo>
-      <DependentUpon>Geldspeicherinhalt_pruefen.rxrec</DependentUpon>
+    <Compile Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.UserCode.cs">
+      <DependentUpon>Geldspeicherinhalt_validieren.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>f943af8c-05be-4269-8643-827c629e6c07</id>
+      <id>6c82e0a9-e09e-41a3-886b-a7f311ee8d5d</id>
+      <BoundTo>210692a5-c1fb-47f9-a069-5ae5ba1ff369</BoundTo>
     </Compile>
     <Compile Include="Modules\STANDARD\Monitoring\Monitoring\Monitoring_pruefen.cs">
       <BoundTo>43b3b6f7-64e2-4544-a62e-2f1c6cd210fb</BoundTo>
@@ -563,10 +563,10 @@
       <id>e18c0ff1-d6e5-46e2-8b3e-86ab03e3dcd3</id>
       <recordtableid>afcd90ee-1eae-4a41-ae5d-5b2d158923c4</recordtableid>
     </None>
-    <None Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec">
+    <None Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.rxrec">
       <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
-      <id>0182ef8a-0deb-4f79-a0eb-ce946540a803</id>
-      <recordtableid>d903627b-7656-48f3-9ea6-4a7356715e49</recordtableid>
+      <id>210692a5-c1fb-47f9-a069-5ae5ba1ff369</id>
+      <recordtableid>6d968888-3464-4514-a439-4022ec5c7756</recordtableid>
     </None>
     <None Include="Modules\STANDARD\Monitoring\Monitoring\Monitoring_pruefen.rxrec">
       <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
@@ -616,6 +616,10 @@
       <id>6a960f5d-c039-455d-b8cd-9a6b74739dbf</id>
       <recordtableid>73f6a595-c584-41bd-9aee-e97d765c8b14</recordtableid>
     </None>
+    <Content Include="UESTRA.rxtst">
+      <id>66d38b57-bf10-44bf-b7cb-785a43d11513</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="HGS.rxtmg">

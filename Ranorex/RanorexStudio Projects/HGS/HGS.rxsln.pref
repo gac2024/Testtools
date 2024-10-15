@@ -24,6 +24,7 @@
       <string>c2d7d96c-ccf7-42e2-afa7-b0646a83edc7</string>
       <string>c4e272b6-f6ae-4c47-a75c-82b4b39d35cf</string>
       <string>4003701f-e3a6-4158-a017-3c4bbc42a166</string>
+      <string>6d968888-3464-4514-a439-4022ec5c7756</string>
       <string>1f68d760-ec36-4641-816a-7b488708b68a</string>
       <string>19addb00-f90c-4b5a-b315-84fabc729ce8</string>
       <string>ff32e6d6-70ac-4179-9c26-e070603b72d0</string>
@@ -33,6 +34,6 @@
       <string>9ccdee18-761e-4a17-ba0c-a4ad556b1566</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution HGS[HGS[Browser[]Modules[STANDARD[Auswertung[Verkaufsdaten[Verkaufsdaten_validieren.rxrec[]]]Geraeteverwaltung[Baugruppen[]]Monitoring[Automatenmeldung[]Geldspeicherinhalt[Geldspeicherinhalt_pruefen.rxrec[]]Monitoring[]]Papierrollenverwaltung[Ticketverfolgung[]]]]SETUP[]UserCodeCollections[]]]]&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec" />
+  <ProjectBrowserState value="[Solution HGS[HGS[Browser[]Modules[STANDARD[Auswertung[]Monitoring[Automatenmeldung[]Geldspeicherinhalt[Geldspeicherinhalt_validieren.rxrec[]]Monitoring[]]Papierrollenverwaltung[Ticketverfolgung[]]]]SETUP[]]]]&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.rxrec\Geldspeicherinhalt_validieren.UserCode.cs&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.rxrec\Geldspeicherinhalt_validieren.UserCode.cs" />
   <StartupProject value="{909D1AB6-5D02-438A-8E77-1BFA5A4786C6}" />
 </Properties>

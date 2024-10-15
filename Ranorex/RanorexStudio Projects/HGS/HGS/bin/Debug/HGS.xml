@@ -749,42 +749,42 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen">
+        <member name="T:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren">
              <summary>
-            The Geldspeicherinhalt_pruefen recording.
+            The Geldspeicherinhalt_validieren recording.
              </summary>
         </member>
-        <member name="F:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.repo">
+        <member name="F:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.repo">
             <summary>
             Holds an instance of the global::Cottbus_3000CR.HGS repository.
             </summary>
         </member>
-        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.#ctor">
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.Instance">
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.AutomatenNr">
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.AutomatenNr">
             <summary>
             Gets or sets the value of variable AutomatenNr.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.AbrechnungsNr">
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.AbrechnungsNr">
             <summary>
             Gets or sets the value of variable AbrechnungsNr.
             </summary>
         </member>
-        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.Start">
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.Instance"/>.
+            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.Instance"/>.
             </summary>
         </member>
-        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -792,7 +792,7 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.Init">
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -3209,6 +3209,11 @@
             The overview folder.
             </summary>
         </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeldspeicherinhaltDetailsFolder.TypTabelle">
+            <summary>
+            The TypTabelle folder.
+            </summary>
+        </member>
         <member name="T:Cottbus_3000CR.HGSFolders.OverviewFolder1">
             <summary>
             The OverviewFolder1 folder.
@@ -3239,74 +3244,74 @@
             The lblTitel item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSerienNr">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblAbrechnungsnr">
             <summary>
-            The lblSerienNr item.
+            The lblAbrechnungsnr item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSerienNrInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblAbrechnungsnrInfo">
             <summary>
-            The lblSerienNr item info.
+            The lblAbrechnungsnr item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblBeschreibung">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeBNV">
             <summary>
-            The lblBeschreibung item.
+            The lblSummeBNV item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblBeschreibungInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeBNVInfo">
             <summary>
-            The lblBeschreibung item info.
+            The lblSummeBNV item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblAktiv">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeMEK">
             <summary>
-            The lblAktiv item.
+            The lblSummeMEK item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblAktivInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeMEKInfo">
             <summary>
-            The lblAktiv item info.
+            The lblSummeMEK item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblStatus">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeZGS">
             <summary>
-            The lblStatus item.
+            The lblSummeZGS item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblStatusInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeZGSInfo">
             <summary>
-            The lblStatus item info.
+            The lblSummeZGS item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblTrafficRed">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeWGR">
             <summary>
-            The lblTrafficRed item.
+            The lblSummeWGR item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblTrafficRedInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblSummeWGRInfo">
             <summary>
-            The lblTrafficRed item info.
+            The lblSummeWGR item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblTrafficYellow">
+        <member name="T:Cottbus_3000CR.HGSFolders.TypTabelleFolder">
             <summary>
-            The lblTrafficYellow item.
+            The TypTabelleFolder folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblTrafficYellowInfo">
+        <member name="M:Cottbus_3000CR.HGSFolders.TypTabelleFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
             <summary>
-            The lblTrafficYellow item info.
+            Creates a new TypTabelle  folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblTrafficGreen">
+        <member name="P:Cottbus_3000CR.HGSFolders.TypTabelleFolder.Self">
             <summary>
-            The lblTrafficGreen item.
+            The Self item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.OverviewFolder1.lblTrafficGreenInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.TypTabelleFolder.SelfInfo">
             <summary>
-            The lblTrafficGreen item info.
+            The Self item info.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.HGSFolders.GeraeteverwaltungFolder">
@@ -5358,6 +5363,13 @@
             </summary>
         </member>
         <member name="M:Cottbus_3000CR.UserCodeCollections.DPlusLibrary.PreisConverter(System.String)">
+            <summary>
+            This is a placeholder text. Please describe the purpose of the
+            user code method here. The method is published to the user code library
+            within a user code collection.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.UserCodeCollections.DPlusLibrary.PreisConverter(System.String,System.Boolean)">
             <summary>
             This is a placeholder text. Please describe the purpose of the
             user code method here. The method is published to the user code library

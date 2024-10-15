@@ -1,17 +1,15 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec" />
+    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.UserCode.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="HGS.rxrep" />
+    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.UserCode.cs" />
+    <Element value="HGS.cs" />
     <Element value="UserCodeCollections\DPlusLibrary.cs" />
-    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.UserCode.cs" />
-    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_pruefen.rxrec" />
-    <Element value="Modules\STANDARD\Papierrollenverwaltung\Ticketverfolgung\Ticketverfolgung_validieren.UserCode.cs" />
-    <Element value="Modules\STANDARD\Papierrollenverwaltung\Ticketverfolgung\Ticketverfolgung_validieren.rxrec" />
     <Element value="MASTER.rxtst" />
-    <Element value="SETUP\ConfigurationProject.cs" />
-    <Element value="Modules\STANDARD\Automatensequenzen\AutomatenSequencen_pruefen.UserCode.cs" />
+    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
@@ -19,12 +17,12 @@
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Auswertung.Verkaufsdaten.Verkaufsdaten_validieren.Validate_Verkaufsdatentable(RepoItemInfo ersteZeile)" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.validateGeldspeicherinhalt(RepoItemInfo tablerow)" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_pruefen.validateGeldspeicherinhalt()" />
-      <Element value="Cottbus_3000CR.UserCodeCollections.DPlusLibrary.Fill_textfilter(RepoItemInfo inputField, String input)" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Monitoring.Monitoring_pruefen.CheckTrafficOK()" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Papierrollenverwaltung.Barcodeverfolgung.Barcodeverfolgung_validieren.ValidationOverAllBarcodes()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.validateGeldspeicherOverview(RepoItemInfo tablerow)" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.validateGeldspeicherdetails(RepoItemInfo tablerow)" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.validateGeldspeicherdetails()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_Teilepruefen.validateTeilGeldspeicherdetails(RepoItemInfo tablerow)" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_Teilepruefen.validateTeilGeldspeicherdetails()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_Teilepruefen.validateGeldspeicherdetails()" />
     </Array>
     <Properties name="watchVars" />
   </Properties>

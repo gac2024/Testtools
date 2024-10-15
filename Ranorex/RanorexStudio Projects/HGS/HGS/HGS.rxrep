@@ -1419,61 +1419,56 @@ name="HGS">
 								<item
 								capname="ptag"
 								id="1375bf21-b69a-49f6-9e5d-38dc2cf002e1"
-								name="lblSerienNr"
-								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//h6[@innertext='Seriennr.']"
+								name="lblAbrechnungsnr"
+								robustPath=""
 								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext='Seriennr.']/../..//p
+									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext='Abrechnungsn.']/../..//p
 								</item>
 								<item
 								capname="ptag"
 								id="be745610-193c-4588-ae3e-a2c39364df9e"
-								name="lblBeschreibung"
+								name="lblSummeBNV"
 								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//h6[@innertext='Beschreibung']"
 								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext='Beschreibung']/../..//p
+									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext='Summe BNV']/../..//p
 								</item>
 								<item
 								capname="ptag"
 								id="7463eedb-e956-4bda-9f97-843db3638298"
-								name="lblAktiv"
+								name="lblSummeMEK"
 								robustPath=""
 								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext~'Aktiv']/../../div[2]/p
+									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext='Summe MEK']/../..//p
 								</item>
 								<item
-								capname="h5tag"
+								capname="ptag"
 								id="b9bcaba0-187b-4d8e-b598-d12b8ba88141"
-								name="lblStatus"
+								name="lblSummeZGS"
 								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div"
 								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div/div[2]/h5
+									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext='Summe ZGS']/../..//p
 								</item>
 								<item
-								capname="divtag"
+								capname="ptag"
 								id="6b1206fe-394c-47f8-a92d-eb73bc152aec"
-								name="lblTrafficRed"
+								name="lblSummeWGR"
 								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[1]"
 								searchtimeout="100ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[1]/div
-								</item>
-								<item
-								capname="divtag"
-								id="edd1f0ba-6a03-46e7-b4fc-5ed7266ea643"
-								name="lblTrafficYellow"
-								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[1]"
-								searchtimeout="100ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[2]/div
-								</item>
-								<item
-								capname="divtag"
-								id="f40bbd65-b16b-40f5-8fa3-daa30290c99c"
-								name="lblTrafficGreen"
-								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[1]"
-								searchtimeout="100ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[3]/div
+									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div//h6[@innertext='Summe WGR']/../..//p
 								</item>
 								<basepath>
 									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[2]/div
+								</basepath>
+							</folder>
+							<folder
+							capname="table"
+							id="2dbc8563-fd4e-4b82-8517-cf68c7f13bc5"
+							isrooted="True"
+							name="TypTabelle"
+							searchtimeout="2000ms"
+							usecache="False">
+								<basepath>
+									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article/div/div/div[3]/?/?/div[@id='mpDplus-DeviceCashBoxGroup-table']/div[3]/table
 								</basepath>
 							</folder>
 						</folder>

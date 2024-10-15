@@ -8,7 +8,6 @@
  */
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
@@ -99,7 +98,7 @@ namespace Cottbus_3000CR.UserCodeCollections
 	        }
         }
         
-        		/// <summary>
+        /// <summary>
 		/// This is a placeholder text. Please describe the purpose of the
 		/// user code method here. The method is published to the user code library
 		/// within a user code collection.
@@ -190,7 +189,7 @@ namespace Cottbus_3000CR.UserCodeCollections
 		/// </summary>
 		[UserCodeMethod]
 		public static string PreisConverter( string input){
-        
+
             string[] preis=input.Split('#');
             if (preis[0].Length<2) preis[0] = "0"+preis[0];
 			if (preis[0].Length<3) preis[0] = "0"+preis[0];		
@@ -198,6 +197,27 @@ namespace Cottbus_3000CR.UserCodeCollections
 			preis[0]= preis[0].Substring(0,preis[0].Length-2)+","+preis[0].Substring(preis[0].Length-2);				
 //			Report.Log(ReportLevel.Info, "Validation","preis:"+preis[0]);			
 			return preis[0];
+        }
+		/// <summary>
+		/// This is a placeholder text. Please describe the purpose of the
+		/// user code method here. The method is published to the user code library
+		/// within a user code collection.
+		/// </summary>
+		[UserCodeMethod]
+		public static  string PreisConverter( string input, bool invers){
+            
+			string[] preis=input.Split('#');
+			int preisIndex=0;
+			if (invers) {
+				preisIndex=1;
+			}
+			
+            if (preis[preisIndex].Length<2) preis[preisIndex] = "0"+preis[preisIndex];
+			if (preis[preisIndex].Length<3) preis[preisIndex] = "0"+preis[preisIndex];		
+
+			preis[preisIndex]= preis[preisIndex].Substring(0,preis[preisIndex].Length-2)+","+preis[preisIndex].Substring(preis[preisIndex].Length-2);				
+	
+			return preis[preisIndex];
         }
 		
     }

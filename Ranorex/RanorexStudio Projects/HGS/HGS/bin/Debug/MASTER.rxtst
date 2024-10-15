@@ -459,7 +459,6 @@
 				</parameters>
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="24c2c51a-3e5a-4fd5-b317-38a969d737be"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
@@ -738,26 +737,6 @@
 					variablename="TransferDatenNamen">
 					</var>
 				</missingdatabinding>
-			</testmodule>
-			<testmodule
-			id="3559553b-6a41-4257-9213-d0bad042d541"
-			name="Geldspeicherinhalt_pruefen"
-			ref="d903627b-7656-48f3-9ea6-4a7356715e49"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="automatenNr"
-					datasourceid="d895b738-3284-41da-968e-c71c8a50bef4"
-					variableid="e1a8687f-cc9b-4c99-96c7-ea75a0c85f30"
-					variablename="AutomatenNr">
-					</var>
-					<var
-					dataname="auftragsNr"
-					datasourceid="d895b738-3284-41da-968e-c71c8a50bef4"
-					variableid="0d25fc74-ed3e-49e0-93dc-fd856b49dc28"
-					variablename="AbrechnungsNr">
-					</var>
-				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="35e36f40-176f-46f9-b885-4b7cd78e252c"
@@ -1834,7 +1813,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="858334ef-70e5-4e60-9409-c16db58f0e02"
 			name="Abmelden"
 			ref="6e6d19c2-b3bf-4c42-86af-1f040f46e678"
@@ -2051,7 +2029,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="9fda4c01-6a95-45ea-ab66-9cf1f724aa46"
 			name="ExecuteCommand"
 			ref="0078e16c-07cb-4603-88d4-199dacb185cc"
@@ -2526,7 +2503,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="c2238fe3-ca3e-4b76-892f-f0bce2535c56"
 			name="Automatenmeldungen_pruefen"
 			ref="afcd90ee-1eae-4a41-ae5d-5b2d158923c4"
@@ -2978,7 +2954,6 @@
 			name="Meldungen">
 			</smartfoldernode>
 			<testmodule
-			enabled="False"
 			id="e4aef558-2d68-410c-b2d0-a1b6182963e8"
 			name="Schliessen"
 			ref="bc61f436-20b0-45d8-b183-c1641a77a31f"
@@ -3023,6 +2998,26 @@
 					variablename="Seriennummer">
 					</var>
 				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="e8e64192-a26d-4499-8d49-91db455fe893"
+			name="Geldspeicherinhalt_validieren"
+			ref="6d968888-3464-4514-a439-4022ec5c7756"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="automatenNr"
+					datasourceid="d895b738-3284-41da-968e-c71c8a50bef4"
+					variableid="bbb99c37-525a-44b0-b4d4-f89f4168845f"
+					variablename="AutomatenNr">
+					</var>
+					<var
+					dataname="auftragsNr"
+					datasourceid="d895b738-3284-41da-968e-c71c8a50bef4"
+					variableid="6eb5cdfb-6ff9-4957-ba70-5eb40dbbfb48"
+					variablename="AbrechnungsNr">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="eb446b6f-a62b-4f5e-9b90-3f20bd5a1e05"
@@ -3265,8 +3260,8 @@
 								name="Automatenmeldungen_pruefen">
 								</testmodule>
 								<testmodule
-								id="3559553b-6a41-4257-9213-d0bad042d541"
-								name="Geldspeicherinhalt_pruefen">
+								id="e8e64192-a26d-4499-8d49-91db455fe893"
+								name="Geldspeicherinhalt_validieren">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -3676,7 +3671,7 @@
 		filename="C:\Testtools\HGS\MELDUNGEN\CONFIG\MASTER\EXCEL_DATEN\DATA_Schichtreport.xlsx"
 		id="5914c9a9-b1cf-43d4-980d-ccb2b36521d0"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="11"
 		name="Schichtreport_Geldlogistik"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Geldlogistik"
@@ -3784,16 +3779,94 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="09ed8709-b81e-4ac6-8c2e-4a4219390dff">
+			</testcontainer>
+			<testcontainer
+			id="0ead760e-5db4-4ee9-87e3-2bb69a1529c7">
+			</testcontainer>
+			<testcontainer
+			id="239833a7-23b6-4083-93a9-37ca0430880c">
+			</testcontainer>
+			<testcontainer
+			id="35e36f40-176f-46f9-b885-4b7cd78e252c">
+			</testcontainer>
+			<testcontainer
+			id="3723502c-3cc1-4bfc-8a57-7b635326f602">
+			</testcontainer>
+			<testcontainer
 			id="5bcccea1-a0f3-4f59-8ac6-812c990ed38e">
+			</testcontainer>
+			<testcontainer
+			id="61c2f56b-bff3-4e8a-82b5-61a6c2364b44">
 			</testcontainer>
 			<testcontainer
 			id="62fa9dc0-bc1b-435d-9708-a10641ad6771">
 			</testcontainer>
 			<testcontainer
+			id="6aa3d31e-f0bb-4ff6-8b7b-f4b94430e083">
+			</testcontainer>
+			<testcontainer
+			id="6bd70b57-c30d-43bb-a6c3-8388173a4adb">
+			</testcontainer>
+			<testcontainer
+			id="6dfcf8e3-7a3c-4c80-aa63-1aedd911574c">
+			</testcontainer>
+			<testcontainer
+			id="6e5a4d5a-d41c-45b3-9c45-972ead0d18d3">
+			</testcontainer>
+			<testcontainer
+			id="8370fe10-5689-4da6-8fc4-44f0f5243dcc">
+			</testcontainer>
+			<testcontainer
+			id="86bc0be9-3872-4986-b059-00d76727f7c8">
+			</testcontainer>
+			<testcontainer
+			id="8dc07c5d-0341-4481-8b86-6da38f2fcc46">
+			</testcontainer>
+			<testcontainer
+			id="966f8039-fe32-45f5-8994-ffc3a3b555f2">
+			</testcontainer>
+			<testcontainer
+			id="9690357b-bdd4-4c97-b9ef-578ac698c7f6">
+			</testcontainer>
+			<testcontainer
+			id="9a5a318d-b857-4b23-a7d6-4d0ba4b70251">
+			</testcontainer>
+			<testcontainer
+			id="9df88dab-8102-438b-b928-7fe39281b971">
+			</testcontainer>
+			<testcontainer
+			id="a7fd48fc-04ae-42d1-ba11-985f6d7cdab5">
+			</testcontainer>
+			<testcontainer
+			id="b978484e-5754-40bb-911b-45d455002234">
+			</testcontainer>
+			<testcontainer
+			id="bebf00e6-77cf-41d7-aafd-7fe676410c4a">
+			</testcontainer>
+			<testcontainer
+			id="d0d26b02-1a44-4418-8d57-4a4e3bf7b76f">
+			</testcontainer>
+			<testcontainer
+			id="d1620434-751f-4c6e-aaa8-fb156fce5f26">
+			</testcontainer>
+			<testcontainer
+			id="d3781db0-0aca-4029-8e5b-361b669807cc">
+			</testcontainer>
+			<testcontainer
+			id="d3ab606a-9578-4813-ae9c-b546a4ea1fa6">
+			</testcontainer>
+			<testcontainer
 			id="d895b738-3284-41da-968e-c71c8a50bef4">
 			</testcontainer>
 			<testcontainer
+			id="d9dc60a6-492d-4d84-9b2d-e14eb42da0dd">
+			</testcontainer>
+			<testcontainer
 			id="e437ca7c-9986-4900-9afa-d41ca0ba9840">
+			</testcontainer>
+			<testcontainer
+			id="e545b3e6-6f00-4456-b6a0-ef92b8b8f84c">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

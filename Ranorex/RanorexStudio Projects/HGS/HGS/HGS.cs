@@ -4853,6 +4853,7 @@ namespace Cottbus_3000CR
         public partial class GeldspeicherinhaltDetailsFolder : RepoGenBaseFolder
         {
             HGSFolders.OverviewFolder1 _overview;
+            HGSFolders.TypTabelleFolder _typtabelle;
             RepoItemInfo _btnbackInfo;
             RepoItemInfo _lbltitleInfo;
 
@@ -4863,6 +4864,7 @@ namespace Cottbus_3000CR
                     base("GeldspeicherinhaltDetails", "", parentFolder, 0, null, false, "4cd3a6e3-9cb4-41d0-bddd-e0ae6d2f9b77", "")
             {
                 _overview = new HGSFolders.OverviewFolder1(this);
+                _typtabelle = new HGSFolders.TypTabelleFolder(this);
                 _btnbackInfo = new RepoItemInfo(this, "btnBack", "article/div/div/div[1]/button", "article/div/div/div[1]/button/svg/path", 60000, null, "b749f470-11d2-474f-81e2-e289eae94621");
                 _lbltitleInfo = new RepoItemInfo(this, "lblTitle", "article/div/div/div[1]/h5[@innertext~'Geldspeicherinhalt von Automat']", ".//h5[@innertext>'Geldspeicherinhalt von Automat']", 60000, null, "040fa0fd-3d55-42d2-ac41-05debb25b10b");
             }
@@ -4935,6 +4937,15 @@ namespace Cottbus_3000CR
             {
                 get { return _overview; }
             }
+
+            /// <summary>
+            /// The TypTabelle folder.
+            /// </summary>
+            [RepositoryFolder("2dbc8563-fd4e-4b82-8517-cf68c7f13bc5")]
+            public virtual HGSFolders.TypTabelleFolder TypTabelle
+            {
+                get { return _typtabelle; }
+            }
         }
 
         /// <summary>
@@ -4944,13 +4955,11 @@ namespace Cottbus_3000CR
         public partial class OverviewFolder1 : RepoGenBaseFolder
         {
             RepoItemInfo _lbltitelInfo;
-            RepoItemInfo _lblseriennrInfo;
-            RepoItemInfo _lblbeschreibungInfo;
-            RepoItemInfo _lblaktivInfo;
-            RepoItemInfo _lblstatusInfo;
-            RepoItemInfo _lbltrafficredInfo;
-            RepoItemInfo _lbltrafficyellowInfo;
-            RepoItemInfo _lbltrafficgreenInfo;
+            RepoItemInfo _lblabrechnungsnrInfo;
+            RepoItemInfo _lblsummebnvInfo;
+            RepoItemInfo _lblsummemekInfo;
+            RepoItemInfo _lblsummezgsInfo;
+            RepoItemInfo _lblsummewgrInfo;
 
             /// <summary>
             /// Creates a new overview  folder.
@@ -4959,13 +4968,11 @@ namespace Cottbus_3000CR
                     base("overview", "article/div/div/div[2]/div", parentFolder, 100, null, false, "410fe484-2463-4407-8fdf-b5aa8babc852", "")
             {
                 _lbltitelInfo = new RepoItemInfo(this, "lblTitel", ".//h4[@innertext~'Automat']", "", 60000, null, "c79e2920-fbce-4d96-a128-d43da67493bb");
-                _lblseriennrInfo = new RepoItemInfo(this, "lblSerienNr", ".//h6[@innertext='Seriennr.']/../..//p", "", 60000, null, "1375bf21-b69a-49f6-9e5d-38dc2cf002e1");
-                _lblbeschreibungInfo = new RepoItemInfo(this, "lblBeschreibung", ".//h6[@innertext='Beschreibung']/../..//p", "", 60000, null, "be745610-193c-4588-ae3e-a2c39364df9e");
-                _lblaktivInfo = new RepoItemInfo(this, "lblAktiv", ".//h6[@innertext~'Aktiv']/../../div[2]/p", "", 60000, null, "7463eedb-e956-4bda-9f97-843db3638298");
-                _lblstatusInfo = new RepoItemInfo(this, "lblStatus", "div/div[3]/div/div[2]/h5", "div/div[3]/div", 60000, null, "b9bcaba0-187b-4d8e-b598-d12b8ba88141");
-                _lbltrafficredInfo = new RepoItemInfo(this, "lblTrafficRed", "div/div[3]/div/div[1]/div/div/div[1]/div", "div/div[3]/div/div[1]/div/div/div[1]", 100, null, "6b1206fe-394c-47f8-a92d-eb73bc152aec");
-                _lbltrafficyellowInfo = new RepoItemInfo(this, "lblTrafficYellow", "div/div[3]/div/div[1]/div/div/div[2]/div", "div/div[3]/div/div[1]/div/div/div[1]", 100, null, "edd1f0ba-6a03-46e7-b4fc-5ed7266ea643");
-                _lbltrafficgreenInfo = new RepoItemInfo(this, "lblTrafficGreen", "div/div[3]/div/div[1]/div/div/div[3]/div", "div/div[3]/div/div[1]/div/div/div[1]", 100, null, "f40bbd65-b16b-40f5-8fa3-daa30290c99c");
+                _lblabrechnungsnrInfo = new RepoItemInfo(this, "lblAbrechnungsnr", ".//h6[@innertext='Abrechnungsn.']/../..//p", "", 60000, null, "1375bf21-b69a-49f6-9e5d-38dc2cf002e1");
+                _lblsummebnvInfo = new RepoItemInfo(this, "lblSummeBNV", ".//h6[@innertext='Summe BNV']/../..//p", "", 60000, null, "be745610-193c-4588-ae3e-a2c39364df9e");
+                _lblsummemekInfo = new RepoItemInfo(this, "lblSummeMEK", ".//h6[@innertext='Summe MEK']/../..//p", "", 60000, null, "7463eedb-e956-4bda-9f97-843db3638298");
+                _lblsummezgsInfo = new RepoItemInfo(this, "lblSummeZGS", ".//h6[@innertext='Summe ZGS']/../..//p", "div/div[3]/div", 60000, null, "b9bcaba0-187b-4d8e-b598-d12b8ba88141");
+                _lblsummewgrInfo = new RepoItemInfo(this, "lblSummeWGR", ".//h6[@innertext='Summe WGR']/../..//p", "div/div[3]/div/div[1]/div/div/div[1]", 100, null, "6b1206fe-394c-47f8-a92d-eb73bc152aec");
             }
 
             /// <summary>
@@ -5017,170 +5024,162 @@ namespace Cottbus_3000CR
             }
 
             /// <summary>
-            /// The lblSerienNr item.
+            /// The lblAbrechnungsnr item.
             /// </summary>
             [RepositoryItem("1375bf21-b69a-49f6-9e5d-38dc2cf002e1")]
-            public virtual Ranorex.PTag lblSerienNr
+            public virtual Ranorex.PTag lblAbrechnungsnr
             {
                 get
                 {
-                    return _lblseriennrInfo.CreateAdapter<Ranorex.PTag>(true);
+                    return _lblabrechnungsnrInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 
             /// <summary>
-            /// The lblSerienNr item info.
+            /// The lblAbrechnungsnr item info.
             /// </summary>
             [RepositoryItemInfo("1375bf21-b69a-49f6-9e5d-38dc2cf002e1")]
-            public virtual RepoItemInfo lblSerienNrInfo
+            public virtual RepoItemInfo lblAbrechnungsnrInfo
             {
                 get
                 {
-                    return _lblseriennrInfo;
+                    return _lblabrechnungsnrInfo;
                 }
             }
 
             /// <summary>
-            /// The lblBeschreibung item.
+            /// The lblSummeBNV item.
             /// </summary>
             [RepositoryItem("be745610-193c-4588-ae3e-a2c39364df9e")]
-            public virtual Ranorex.PTag lblBeschreibung
+            public virtual Ranorex.PTag lblSummeBNV
             {
                 get
                 {
-                    return _lblbeschreibungInfo.CreateAdapter<Ranorex.PTag>(true);
+                    return _lblsummebnvInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 
             /// <summary>
-            /// The lblBeschreibung item info.
+            /// The lblSummeBNV item info.
             /// </summary>
             [RepositoryItemInfo("be745610-193c-4588-ae3e-a2c39364df9e")]
-            public virtual RepoItemInfo lblBeschreibungInfo
+            public virtual RepoItemInfo lblSummeBNVInfo
             {
                 get
                 {
-                    return _lblbeschreibungInfo;
+                    return _lblsummebnvInfo;
                 }
             }
 
             /// <summary>
-            /// The lblAktiv item.
+            /// The lblSummeMEK item.
             /// </summary>
             [RepositoryItem("7463eedb-e956-4bda-9f97-843db3638298")]
-            public virtual Ranorex.PTag lblAktiv
+            public virtual Ranorex.PTag lblSummeMEK
             {
                 get
                 {
-                    return _lblaktivInfo.CreateAdapter<Ranorex.PTag>(true);
+                    return _lblsummemekInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 
             /// <summary>
-            /// The lblAktiv item info.
+            /// The lblSummeMEK item info.
             /// </summary>
             [RepositoryItemInfo("7463eedb-e956-4bda-9f97-843db3638298")]
-            public virtual RepoItemInfo lblAktivInfo
+            public virtual RepoItemInfo lblSummeMEKInfo
             {
                 get
                 {
-                    return _lblaktivInfo;
+                    return _lblsummemekInfo;
                 }
             }
 
             /// <summary>
-            /// The lblStatus item.
+            /// The lblSummeZGS item.
             /// </summary>
             [RepositoryItem("b9bcaba0-187b-4d8e-b598-d12b8ba88141")]
-            public virtual Ranorex.H5Tag lblStatus
+            public virtual Ranorex.PTag lblSummeZGS
             {
                 get
                 {
-                    return _lblstatusInfo.CreateAdapter<Ranorex.H5Tag>(true);
+                    return _lblsummezgsInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 
             /// <summary>
-            /// The lblStatus item info.
+            /// The lblSummeZGS item info.
             /// </summary>
             [RepositoryItemInfo("b9bcaba0-187b-4d8e-b598-d12b8ba88141")]
-            public virtual RepoItemInfo lblStatusInfo
+            public virtual RepoItemInfo lblSummeZGSInfo
             {
                 get
                 {
-                    return _lblstatusInfo;
+                    return _lblsummezgsInfo;
                 }
             }
 
             /// <summary>
-            /// The lblTrafficRed item.
+            /// The lblSummeWGR item.
             /// </summary>
             [RepositoryItem("6b1206fe-394c-47f8-a92d-eb73bc152aec")]
-            public virtual Ranorex.DivTag lblTrafficRed
+            public virtual Ranorex.PTag lblSummeWGR
             {
                 get
                 {
-                    return _lbltrafficredInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _lblsummewgrInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 
             /// <summary>
-            /// The lblTrafficRed item info.
+            /// The lblSummeWGR item info.
             /// </summary>
             [RepositoryItemInfo("6b1206fe-394c-47f8-a92d-eb73bc152aec")]
-            public virtual RepoItemInfo lblTrafficRedInfo
+            public virtual RepoItemInfo lblSummeWGRInfo
             {
                 get
                 {
-                    return _lbltrafficredInfo;
+                    return _lblsummewgrInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TypTabelleFolder folder.
+        /// </summary>
+        [RepositoryFolder("2dbc8563-fd4e-4b82-8517-cf68c7f13bc5")]
+        public partial class TypTabelleFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new TypTabelle  folder.
+            /// </summary>
+            public TypTabelleFolder(RepoGenBaseFolder parentFolder) :
+                    base("TypTabelle", "article/div/div/div[3]/?/?/div[@id='mpDplus-DeviceCashBoxGroup-table']/div[3]/table", parentFolder, 2000, null, false, "2dbc8563-fd4e-4b82-8517-cf68c7f13bc5", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2dbc8563-fd4e-4b82-8517-cf68c7f13bc5")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
                 }
             }
 
             /// <summary>
-            /// The lblTrafficYellow item.
+            /// The Self item info.
             /// </summary>
-            [RepositoryItem("edd1f0ba-6a03-46e7-b4fc-5ed7266ea643")]
-            public virtual Ranorex.DivTag lblTrafficYellow
+            [RepositoryItemInfo("2dbc8563-fd4e-4b82-8517-cf68c7f13bc5")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _lbltrafficyellowInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The lblTrafficYellow item info.
-            /// </summary>
-            [RepositoryItemInfo("edd1f0ba-6a03-46e7-b4fc-5ed7266ea643")]
-            public virtual RepoItemInfo lblTrafficYellowInfo
-            {
-                get
-                {
-                    return _lbltrafficyellowInfo;
-                }
-            }
-
-            /// <summary>
-            /// The lblTrafficGreen item.
-            /// </summary>
-            [RepositoryItem("f40bbd65-b16b-40f5-8fa3-daa30290c99c")]
-            public virtual Ranorex.DivTag lblTrafficGreen
-            {
-                get
-                {
-                    return _lbltrafficgreenInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The lblTrafficGreen item info.
-            /// </summary>
-            [RepositoryItemInfo("f40bbd65-b16b-40f5-8fa3-daa30290c99c")]
-            public virtual RepoItemInfo lblTrafficGreenInfo
-            {
-                get
-                {
-                    return _lbltrafficgreenInfo;
+                    return _selfInfo;
                 }
             }
         }
