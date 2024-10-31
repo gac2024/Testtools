@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="15.99s"
+		durationms="15989"
+		type="root"
+		rid="4b7a5a8e4c66a00"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="gac"
+		rxversion="11.5.1.0"
+		host="NBTR062"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="de-DE"
+		dtnlanguage="de-DE"
+		screenresolution="3840x1083"
+		timestamp="17.10.2024 12:04:08"
+		timestampiso="2024-10-17T10:04:08"
+		endtime="17.10.2024 12:04:24"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Geraet_Loeschen">
+		<detail>
+			Geraet_Loeschen
+		</detail>
+		<errormessage>
+			Attribute 'InnerText' of element for item 'HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.lblNachricht' does not contain the specified value (actual='Möchten·Sie·1111111·wirklich·löschen?', expected='Möchten·Sie·die·$AutomatenNrNeu·wirklich·löschen?').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.280"
+			timeRelativeToTestModuleStartTime="00:04.280"
+			timeWallClock="12:04:12"
+			time="00:04.280"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AutomatenNrNeu
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.301"
+			timeRelativeToTestModuleStartTime="00:04.301"
+			timeWallClock="12:04:12"
+			time="00:04.301"
+			level="Info"
+			category="Section">
+			<message>
+				Geräte Menü auswählen
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.302"
+			timeRelativeToTestModuleStartTime="00:04.302"
+			timeWallClock="12:04:12"
+			time="00:04.302"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.Menue.Geraete' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//div[#'root']/div/div/div/div//ul/div//ul/div//p[@innertext='Geräte']"
+				itempath="div//p[@innertext='Geräte']"
+				fullname="HGS.TicketingInside_DImasPlus.Menue.Geraete"
+				id="233ddf7d332a41f79081e9bbcb012812"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="98"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.352"
+			timeRelativeToTestModuleStartTime="00:07.352"
+			timeWallClock="12:04:15"
+			time="00:07.352"
+			level="Info"
+			category="Section">
+			<message>
+				Filter Gerät
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="103"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.357"
+			timeRelativeToTestModuleStartTime="00:07.357"
+			timeWallClock="12:04:15"
+			time="00:07.357"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from  '1111111' with focus on 'inputtagInfo'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//input[#'number-filter-from-deviceId']"
+				itempath=".//input[#'number-filter-from-deviceId']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenFilter.FilterGeraetenummer"
+				id="5d264740b82c4764b7b824d384bf1edc"
+				timeout="150100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\UserCodeCollections\DPlusLibrary.cs"
+				codeline="40"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.652"
+			timeRelativeToTestModuleStartTime="00:07.652"
+			timeWallClock="12:04:16"
+			time="00:07.652"
+			level="Info"
+			category="Fill_textfilter">
+			<message>
+				DoubleClick on 'inputtagInfo' for selection.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//input[#'number-filter-from-deviceId']"
+				itempath=".//input[#'number-filter-from-deviceId']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenFilter.FilterGeraetenummer"
+				id="5d264740b82c4764b7b824d384bf1edc"
+				timeout="150100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\UserCodeCollections\DPlusLibrary.cs"
+				codeline="45"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.501"
+			timeRelativeToTestModuleStartTime="00:09.501"
+			timeWallClock="12:04:18"
+			time="00:09.501"
+			level="Info"
+			category="Fill_textfilter">
+			<message>
+				Key sequence from  '1111111' with focus on 'inputtagInfo'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//input[#'number-filter-from-deviceId']"
+				itempath=".//input[#'number-filter-from-deviceId']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenFilter.FilterGeraetenummer"
+				id="5d264740b82c4764b7b824d384bf1edc"
+				timeout="150100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\UserCodeCollections\DPlusLibrary.cs"
+				codeline="50"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.887"
+			timeRelativeToTestModuleStartTime="00:10.887"
+			timeWallClock="12:04:19"
+			time="00:10.887"
+			level="Info"
+			category="Section">
+			<message>
+				Löschen
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="109"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.888"
+			timeRelativeToTestModuleStartTime="00:10.888"
+			timeWallClock="12:04:19"
+			time="00:10.888"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenInhalt.Zeile_1.BtnLoeschen' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//tbody/tr[1]//svg[@data-testid='DeleteIcon']"
+				itempath=".//svg[@data-testid='DeleteIcon']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenInhalt.Zeile_1.BtnLoeschen"
+				id="941570f1aa8341b2bb8e8132a3156b3a"
+				timeout="210100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="111"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.051"
+			timeRelativeToTestModuleStartTime="00:12.051"
+			timeWallClock="12:04:20"
+			time="00:12.051"
+			level="Info"
+			category="Section">
+			<message>
+				Pop-up
+			</message>
+			<metainfo
+				itemindex="6"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="116"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.051"
+			timeRelativeToTestModuleStartTime="00:12.051"
+			timeWallClock="12:04:20"
+			time="00:12.051"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 300ms.
+			</message>
+			<metainfo
+				itemindex="7"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="118"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.353"
+			timeRelativeToTestModuleStartTime="00:12.353"
+			timeWallClock="12:04:20"
+			time="00:12.353"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (InnerText&gt;'L&#246;schen') on item 'TicketingInside_DImasPlus.PopUps.LoeschenGeraet.tlblTitel'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//h4"
+				itempath=".//h4"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.tlblTitel"
+				id="d16667583fa4432790271760a9a8f2b3"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="121"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.646"
+			timeRelativeToTestModuleStartTime="00:12.646"
+			timeWallClock="12:04:21"
+			time="00:12.646"
+			level="Success"
+			category="Validation"
+			errimg="images_Geraet_L_8de800f1\Geraet_L_8de800f1_76aef7c3_trace.jpg"
+			errthumb="images_Geraet_L_8de800f1\Geraet_L_8de800f1_76aef7c3_trace_thumb.jpg">
+			<message>
+				Attribute 'InnerText' of element for item 'HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.tlblTitel' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//h4"
+				itempath=".//h4"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.tlblTitel"
+				id="d16667583fa4432790271760a9a8f2b3"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="122"
+				loglvl="Success"
+				itemindex="8">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.647"
+			timeRelativeToTestModuleStartTime="00:12.647"
+			timeWallClock="12:04:21"
+			time="00:12.647"
+			level="Info"
+			category="Validation"
+			errimg="images_Geraet_L_8de800f1\Geraet_L_8de800f1_76aef7c3_trace.jpg"
+			errthumb="images_Geraet_L_8de800f1\Geraet_L_8de800f1_76aef7c3_trace_thumb.jpg">
+			<message>
+				Validating AttributeContains (InnerText&gt;'M&#246;chten Sie die $AutomatenNrNeu wirklich l&#246;schen?') on item 'TicketingInside_DImasPlus.PopUps.LoeschenGeraet.lblNachricht'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]/div/div/div[1]/div/div[2]/p"
+				itempath="div/div/div[1]/div/div[2]/p"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.lblNachricht"
+				id="58145206a71046b2bebb7228064e55c3"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="125"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.906"
+			timeRelativeToTestModuleStartTime="00:15.906"
+			timeWallClock="12:04:24"
+			time="00:15.906"
+			level="Failure"
+			category="Validation"
+			errimg="images_Geraet_L_8de800f1\Geraet_L_8de800f1_841c4e9e_trace.jpg"
+			errthumb="images_Geraet_L_8de800f1\Geraet_L_8de800f1_841c4e9e_trace_thumb.jpg">
+			<message>
+				Attribute 'InnerText' of element for item 'HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.lblNachricht' does not contain the specified value (actual='Möchten·Sie·1111111·wirklich·löschen?', expected='Möchten·Sie·die·$AutomatenNrNeu·wirklich·löschen?').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]/div/div/div[1]/div/div[2]/p"
+				itempath="div/div/div[1]/div/div[2]/p"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.lblNachricht"
+				id="58145206a71046b2bebb7228064e55c3"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="126"
+				loglvl="Failure"
+				itemindex="9">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.912"
+			timeRelativeToTestModuleStartTime="00:15.912"
+			timeWallClock="12:04:24"
+			time="00:15.912"
+			level="Error"
+			category="Module"
+			errimg="images_Geraet_L_8de800f1\Geraet_L_8de800f1_841c4e9e_trace.jpg"
+			errthumb="images_Geraet_L_8de800f1\Geraet_L_8de800f1_841c4e9e_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'InnerText' of element for item 'HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.lblNachricht' does not contain the specified value (actual='Möchten·Sie·1111111·wirklich·löschen?', expected='Möchten·Sie·die·$AutomatenNrNeu·wirklich·löschen?').
+			</message>
+			<metainfo
+				stacktrace="   bei Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   bei Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   bei Ranorex.Validate.AttributeContainsInternal(IElement element, String name, String value, String message, Options options, RepoItemInfo itemInfo)
+   bei Ranorex.Validate.AttributeContainsInternal(RepoItemInfo itemInfo, String name, String value, String message, Options options)
+   bei Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value, String message, Options options)
+   bei Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value)
+   bei Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.Ranorex.Core.Testing.ITestModule.Run() in C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs:Zeile 126.
+   bei Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="126"
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]/div/div/div[1]/div/div[2]/p"
+				itempath="div/div/div[1]/div/div[2]/p"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.LoeschenGeraet.lblNachricht"
+				id="58145206a71046b2bebb7228064e55c3"
+				timeout="150000"
+				loglvl="Error"
+				itemindex="9">
+			</metainfo>
+		</item>
+	</activity>
+</report>

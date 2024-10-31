@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangePapierlogistikmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaPapierlogistikmeldung xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-10-14T09:44:45.364+02:00" vorgangstyp="INFORMATION" papierlogistiker="0" vorgangsnummer="0" charge="" seriennummerPapier="100043" abschnittsnummerPapier="3758" seriennummerDrucker="30057500E020340" einbauposition="0" papierkanalDrucker="-1" abrechnungsnummer="10223" ausgabemediumTyp="SORT_1" medienkennung="01000430003758" druckerKennung="DEV_PRN_2" papierkanalKennung="PRN_PB_1" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="17495" guid="151c0f7b-d370-43db-935f-2f0d1444560a"/>
+                <papiersorte materialcode="0" abschnitteGesamt="6750" nummernfolge="ABSTEIGEND"/>
+            </faaPapierlogistikmeldung>
+        </empfangePapierlogistikmeldung>
+    </s:Body>
+</s:Envelope>

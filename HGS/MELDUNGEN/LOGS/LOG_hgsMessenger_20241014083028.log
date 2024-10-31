@@ -1,0 +1,95 @@
+################################################################################
+#####   Generator -> Schichtreport 
+################################################################################
+Started: 2024-10-14 08:30:28
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : Schicht_GL_WGR1_start
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Schichtreport
+ testfallname                  : Schicht_GL_WGR1_start
+ meldungsname                  : Schichtreport
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+TestData:stoerBetrag = 
+TestData:prodPreis = 
+TestData:umsatzBar = 
+TestData:umsatzGesamt = 
+TestData:anzahlquittungen = 
+TestData:anzahlVerkauefe = 
+TestData:umsatzGiro = 
+TestData:summeVerkaeufe = 
+TestData:verkaufsZeitraum = 
+TestData:umsatzKredit = 
+TestData:abrechnungsnummer = 
+------------------------------------------
+Schichtreport:sstVersion = 3.10
+Schichtreport:versionKey = -1
+Schichtreport:abrechnungsnummer = #NEU#
+------------------------------------------
+geldlogistik_1:abrechnung = 0
+geldlogistik_1:geldlogistiker = 0
+geldlogistik_1:vorgangstyp = INFORMATION
+geldlogistik_1:zeitpunkt = 
+geldlogistik_1:einschubNr = 1
+geldlogistik_1:geldspeicherId = 47211168
+geldlogistik_1:geldspeichertyp = WGR
+geldlogistik_1:geldbetrag = 100#EUR
+------------------------------------------
+geldlogistik_1.bestandSorte_1:nennwert = EUR#20
+geldlogistik_1.bestandSorte_1:anzahl = 5
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeSchichtreport xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaSchichtreport xmlns="http://tms.ica.de/automatenService/3_10/" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <versionKey>-1</versionKey>
+                <abrechnungsnummer>10222</abrechnungsnummer>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-14T08:30:28.926+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="1" geldspeicherId="47211168" abrechnung="0">
+                    <geldbetrag betrag="100" waehrung="EUR"/>
+                    <bestandSorte anzahl="5">
+                        <nennwert waehrung="EUR" wertigkeit="20"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17406" guid="9fcf4102-08ae-4592-89f1-c3e49d379a4e"/>
+                </geldlogistik>
+            </faaSchichtreport>
+        </empfangeSchichtreport>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-10-14 08:30:31
+

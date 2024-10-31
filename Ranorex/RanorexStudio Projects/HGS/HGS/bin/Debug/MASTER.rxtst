@@ -399,6 +399,10 @@
 				</missingdatabinding>
 			</testmodule>
 			<testcase
+			id="22459133-6ed3-445e-9bff-f91872ffcce9"
+			name="Gerät_AnlageLöschen">
+			</testcase>
+			<testcase
 			datasource="Schichtreport_Stoerbetrag"
 			id="239833a7-23b6-4083-93a9-37ca0430880c"
 			name="Störbetrag">
@@ -635,6 +639,12 @@
 					variablename="Verarbeitungsstatus">
 					</var>
 				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="29b764ca-8f73-4b2a-9e4a-3037003ec44c"
+			name="Geraet_Loeschen"
+			ref="8f570902-0e30-4e1c-af59-04b5e6a9d809"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="2fd4ba73-1adf-492b-9392-0603c70f1cf3"
@@ -1383,6 +1393,10 @@
 					</param>
 				</parameters>
 			</smartfoldernode>
+			<smartfoldernode
+			id="61fdaf1c-4602-4765-939c-b069408b8e94"
+			name="DIMASPLUS">
+			</smartfoldernode>
 			<testmodule
 			id="62439349-8260-4c29-b852-418c81359ea0"
 			name="Automatenmeldungen_pruefen"
@@ -1830,6 +1844,12 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="8767ca4c-3a7a-4e78-81b7-1b869b44f16b"
+			name="Geraet_erstellen"
+			ref="6544e13e-7429-4b6f-8052-ba5241e3f62a"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datasource="Papierlogistikmeldung_statikTests"
 			id="8dc07c5d-0341-4481-8b86-6da38f2fcc46"
@@ -1849,6 +1869,13 @@
 					value="">
 					</param>
 				</parameters>
+			</testcase>
+			<testcase
+			datasource="DialogStruktur"
+			errorbehavior="ContinueNextIteration"
+			id="942a60cb-cff5-46e8-b045-82c4b11db8f3"
+			name="Dialog_Struktur"
+			warnunboundvariables="False">
 			</testcase>
 			<testmodule
 			id="953960e4-7f34-4b97-a1e9-e68cf8028947"
@@ -1956,6 +1983,70 @@
 				</parameters>
 			</smartfoldernode>
 			<testmodule
+			id="9ae3c8df-1bf3-48d2-a648-9ce87b943707"
+			name="DialogStrukturValidierung"
+			ref="082cbe7a-4483-4641-b0be-741815340527"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SubMenueName"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="5770d5a9-ba73-49ce-bd3f-3b7c2ee808c1"
+					variablename="SubMenueName">
+					</var>
+					<var
+					dataname="Titel"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="f26eddd8-06e8-4bf0-8335-9825df11d170"
+					variablename="DLGTitel">
+					</var>
+					<var
+					dataname="TabsAnzahl"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="1a78da4e-45f7-4444-adeb-b0ae6f6a3312"
+					variablename="DLGTabAnzahl">
+					</var>
+					<var
+					dataname="ButtonName"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="ceff555d-cb99-4ca3-a80c-34f8c0f02ef4"
+					variablename="DLGButtonName">
+					</var>
+					<var
+					dataname="TabsNamen"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="d0f95dd7-7085-4e94-aa70-fec2ff9632c6"
+					variablename="DLGTabNames">
+					</var>
+					<var
+					dataname="TabellenTyp"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="dffd5f29-8447-4f70-b009-d4fc8bad9381"
+					variablename="DLGTableTyp">
+					</var>
+					<var
+					dataname="TabellenButtons"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="c7f313a3-7332-47e3-87f4-7969ba4f3ff5"
+					variablename="DLGTableButtons">
+					</var>
+					<var
+					dataname="MainMenueName"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="44b3c6c5-2c59-4e30-9590-313f869171b4"
+					variablename="MainMenueName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="MenueName"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="44b3c6c5-2c59-4e30-9590-313f869171b4"
+					variablename="MainMenueName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="9c5cf549-6355-4429-9068-09a7a9522a1c"
 			name="Schicht_Stoerbetrag_quittieren"
@@ -1973,6 +2064,26 @@
 					datasourceid="d895b738-3284-41da-968e-c71c8a50bef4"
 					variableid="4bf050c6-048b-4e76-8755-1ece989b23d7"
 					variablename="Abrechnungsnummer">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9d083edb-2985-462f-834d-94b8171cd482"
+			name="MenuValidierung"
+			ref="e08c0edb-321b-4a73-ba43-273c179e7310"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="MenuItem"
+					datasourceid="a5c6ee70-96ec-4c2a-a419-29e2c6cf226e"
+					variableid="9bb68f6d-1ea1-42f3-afce-0c7ce81f9040"
+					variablename="MenueItemName">
+					</var>
+					<var
+					dataname="MenueTyp"
+					datasourceid="a5c6ee70-96ec-4c2a-a419-29e2c6cf226e"
+					variableid="c8ffcd08-032c-4476-9f8d-f05019d5cd34"
+					variablename="MenueLevel">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2216,6 +2327,10 @@
 			ref="6d3d61b1-2869-41a1-8677-ac686ad947ea"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="b3196b29-233b-4baa-89f1-2c88b5f25caf"
+			name="WORKFLOWS">
+			</smartfoldernode>
 			<testmodule
 			id="b3c839a8-5dfa-4514-9d57-5d3ba25d260c"
 			name="ExecuteCommand"
@@ -2617,6 +2732,11 @@
 				</missingdatabinding>
 			</testmodule>
 			<testcase
+			datasource="MenueItems"
+			id="cfd26a97-c944-4c01-800c-05509d35fa51"
+			name="MenuItemCheck">
+			</testcase>
+			<testcase
 			datasource="DatenInventarmeldungGeraet"
 			id="d0d26b02-1a44-4418-8d57-4a4e3bf7b76f"
 			name="Einfacher_Durchlauf">
@@ -2698,7 +2818,7 @@
 			name="MASTER"
 			overwritefilechecked="False"
 			reportcompress="False"
-			reportdescription=""
+			reportdescription="DimasPlus Regression Test"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
@@ -2709,7 +2829,8 @@
 			<testcase
 			id="d895b738-3284-41da-968e-c71c8a50bef4"
 			name="MASTER"
-			reportlevel="Info;20">
+			reportlevel="Info;20"
+			warnunboundvariables="False">
 				<parameters>
 					<param
 					mask="False"
@@ -3044,6 +3165,13 @@
 					variablename="Meldung">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="ec8e56b5-d166-4dcf-a43c-87da620e968a"
+			name="ExpandiertMenue"
+			ref="216eb8bd-dfd6-4861-98fe-a5dfe6671bc1"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="eca55e29-9af1-4dd3-b03e-4238c8ff1acc"
@@ -3486,6 +3614,46 @@
 							</testcase>
 						</smartfoldernode>
 					</smartfoldernode>
+					<smartfoldernode
+					id="b3196b29-233b-4baa-89f1-2c88b5f25caf"
+					name="WORKFLOWS">
+						<smartfoldernode
+						id="61fdaf1c-4602-4765-939c-b069408b8e94"
+						name="DIMASPLUS">
+							<testcase
+							id="22459133-6ed3-445e-9bff-f91872ffcce9"
+							name="Gerät_AnlageLöschen">
+								<testmodule
+								id="8767ca4c-3a7a-4e78-81b7-1b869b44f16b"
+								name="Geraet_erstellen">
+								</testmodule>
+								<testmodule
+								id="29b764ca-8f73-4b2a-9e4a-3037003ec44c"
+								name="Geraet_Loeschen">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="cfd26a97-c944-4c01-800c-05509d35fa51"
+							name="MenuItemCheck">
+								<testmodule
+								id="ec8e56b5-d166-4dcf-a43c-87da620e968a"
+								name="ExpandiertMenue">
+								</testmodule>
+								<testmodule
+								id="9d083edb-2985-462f-834d-94b8171cd482"
+								name="MenuValidierung">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="942a60cb-cff5-46e8-b045-82c4b11db8f3"
+							name="Dialog_Struktur">
+								<testmodule
+								id="9ae3c8df-1bf3-48d2-a648-9ce87b943707"
+								name="DialogStrukturValidierung">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+					</smartfoldernode>
 					<teardown
 					id="b7375b8e-840c-48b8-8b0b-1645dca9ac0f"
 					name="teardown">
@@ -3548,6 +3716,47 @@
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
+		filename="C:\Testtools\HGS\MELDUNGEN\CONFIG\MASTER\EXCEL_DATEN\DATA_DialogStruktur.xlsx"
+		id="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+		includefile="Unchecked"
+		lastknownrowcount="37"
+		name="DialogStruktur"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Dialoge"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					MainMenueName
+				</column>
+				<column>
+					SubMenueName
+				</column>
+				<column>
+					Titel
+				</column>
+				<column>
+					TabsAnzahl
+				</column>
+				<column>
+					TabsNamen
+				</column>
+				<column>
+					ButtonName
+				</column>
+				<column>
+					TabellenTyp
+				</column>
+				<column>
+					TabellenButtons
+				</column>
+				<column>
+					Zeitraumauswahl
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
 		filename="C:\Testtools\HGS\MELDUNGEN\CONFIG\MASTER\EXCEL_DATEN\DATA_Ereignismeldung.xlsx"
 		id="5e31412b-cc7c-467e-bbbc-40137a3cde83"
 		includefile="Unchecked"
@@ -3582,6 +3791,26 @@
 				</column>
 				<column>
 					Verarbeitungsstatus
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="C:\Testtools\HGS\MELDUNGEN\CONFIG\MASTER\EXCEL_DATEN\DATA_MenuPruefung.xlsx"
+		id="a5c6ee70-96ec-4c2a-a419-29e2c6cf226e"
+		includefile="Unchecked"
+		lastknownrowcount="49"
+		name="MenueItems"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="MenuItems"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					MenuItem
+				</column>
+				<column>
+					MenueTyp
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -3779,94 +4008,16 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="09ed8709-b81e-4ac6-8c2e-4a4219390dff">
+			id="61fdaf1c-4602-4765-939c-b069408b8e94">
 			</testcontainer>
 			<testcontainer
-			id="0ead760e-5db4-4ee9-87e3-2bb69a1529c7">
+			id="942a60cb-cff5-46e8-b045-82c4b11db8f3">
 			</testcontainer>
 			<testcontainer
-			id="239833a7-23b6-4083-93a9-37ca0430880c">
-			</testcontainer>
-			<testcontainer
-			id="35e36f40-176f-46f9-b885-4b7cd78e252c">
-			</testcontainer>
-			<testcontainer
-			id="3723502c-3cc1-4bfc-8a57-7b635326f602">
-			</testcontainer>
-			<testcontainer
-			id="5bcccea1-a0f3-4f59-8ac6-812c990ed38e">
-			</testcontainer>
-			<testcontainer
-			id="61c2f56b-bff3-4e8a-82b5-61a6c2364b44">
-			</testcontainer>
-			<testcontainer
-			id="62fa9dc0-bc1b-435d-9708-a10641ad6771">
-			</testcontainer>
-			<testcontainer
-			id="6aa3d31e-f0bb-4ff6-8b7b-f4b94430e083">
-			</testcontainer>
-			<testcontainer
-			id="6bd70b57-c30d-43bb-a6c3-8388173a4adb">
-			</testcontainer>
-			<testcontainer
-			id="6dfcf8e3-7a3c-4c80-aa63-1aedd911574c">
-			</testcontainer>
-			<testcontainer
-			id="6e5a4d5a-d41c-45b3-9c45-972ead0d18d3">
-			</testcontainer>
-			<testcontainer
-			id="8370fe10-5689-4da6-8fc4-44f0f5243dcc">
-			</testcontainer>
-			<testcontainer
-			id="86bc0be9-3872-4986-b059-00d76727f7c8">
-			</testcontainer>
-			<testcontainer
-			id="8dc07c5d-0341-4481-8b86-6da38f2fcc46">
-			</testcontainer>
-			<testcontainer
-			id="966f8039-fe32-45f5-8994-ffc3a3b555f2">
-			</testcontainer>
-			<testcontainer
-			id="9690357b-bdd4-4c97-b9ef-578ac698c7f6">
-			</testcontainer>
-			<testcontainer
-			id="9a5a318d-b857-4b23-a7d6-4d0ba4b70251">
-			</testcontainer>
-			<testcontainer
-			id="9df88dab-8102-438b-b928-7fe39281b971">
-			</testcontainer>
-			<testcontainer
-			id="a7fd48fc-04ae-42d1-ba11-985f6d7cdab5">
-			</testcontainer>
-			<testcontainer
-			id="b978484e-5754-40bb-911b-45d455002234">
-			</testcontainer>
-			<testcontainer
-			id="bebf00e6-77cf-41d7-aafd-7fe676410c4a">
-			</testcontainer>
-			<testcontainer
-			id="d0d26b02-1a44-4418-8d57-4a4e3bf7b76f">
-			</testcontainer>
-			<testcontainer
-			id="d1620434-751f-4c6e-aaa8-fb156fce5f26">
-			</testcontainer>
-			<testcontainer
-			id="d3781db0-0aca-4029-8e5b-361b669807cc">
-			</testcontainer>
-			<testcontainer
-			id="d3ab606a-9578-4813-ae9c-b546a4ea1fa6">
+			id="b3196b29-233b-4baa-89f1-2c88b5f25caf">
 			</testcontainer>
 			<testcontainer
 			id="d895b738-3284-41da-968e-c71c8a50bef4">
-			</testcontainer>
-			<testcontainer
-			id="d9dc60a6-492d-4d84-9b2d-e14eb42da0dd">
-			</testcontainer>
-			<testcontainer
-			id="e437ca7c-9986-4900-9afa-d41ca0ba9840">
-			</testcontainer>
-			<testcontainer
-			id="e545b3e6-6f00-4456-b6a0-ef92b8b8f84c">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

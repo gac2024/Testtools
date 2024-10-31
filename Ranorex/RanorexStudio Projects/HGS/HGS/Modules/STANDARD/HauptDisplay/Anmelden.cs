@@ -41,7 +41,7 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
         /// </summary>
         public Anmelden()
         {
-            strVersion = "";
+            strVersion = "0.0";
             DPlusUser = "robert.kehnen@ica.de";
             DPlusPasswort = "Bogmcs046892";
         }

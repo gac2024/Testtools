@@ -1,0 +1,32 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeSchichtreport xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaSchichtreport xmlns="http://tms.ica.de/automatenService/3_10/" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <versionKey>-1</versionKey>
+                <abrechnungsnummer>10193</abrechnungsnummer>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-10T14:10:50.996+02:00" geldlogistiker="0" geldspeichertyp="ZGS" einschubNr="1" geldspeicherId="33201609" abrechnung="0">
+                    <geldbetrag betrag="14000" waehrung="EUR"/>
+                    <bestandSorte anzahl="1400">
+                        <nennwert waehrung="EUR" wertigkeit="10"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17103" guid="b952bf3f-1037-4c08-98ce-e8966f18a72f"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-10T14:10:51.001+02:00" geldlogistiker="0" geldspeichertyp="ZGS" einschubNr="2" geldspeicherId="34204823" abrechnung="0">
+                    <geldbetrag betrag="20000" waehrung="EUR"/>
+                    <bestandSorte anzahl="100">
+                        <nennwert waehrung="EUR" wertigkeit="200"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17104" guid="b1eb1b76-93ad-4e1d-90c5-dfc3f5e1b63c"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-10T14:10:51.004+02:00" geldlogistiker="0" geldspeichertyp="ZGS" einschubNr="3" geldspeicherId="31210510" abrechnung="0">
+                    <geldbetrag betrag="10000" waehrung="EUR"/>
+                    <bestandSorte anzahl="100">
+                        <nennwert waehrung="EUR" wertigkeit="100"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17105" guid="15aa2b35-1e42-4db9-8fda-80a881a612e8"/>
+                </geldlogistik>
+            </faaSchichtreport>
+        </empfangeSchichtreport>
+    </s:Body>
+</s:Envelope>

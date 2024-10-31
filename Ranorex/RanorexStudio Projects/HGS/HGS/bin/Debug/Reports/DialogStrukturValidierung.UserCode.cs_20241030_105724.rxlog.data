@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="7.23s"
+		durationms="7231"
+		type="root"
+		rid="226d9c26b5f89ce0"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="gac"
+		rxversion="11.5.1.0"
+		host="NBTR062"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="de-DE"
+		dtnlanguage="de-DE"
+		screenresolution="3840x1083"
+		timestamp="30.10.2024 10:57:27"
+		timestampiso="2024-10-30T09:57:27"
+		endtime="30.10.2024 10:57:34"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DialogStrukturValidierung">
+		<detail>
+			DialogStrukturValidierung
+		</detail>
+		<errormessage>
+			No element found for path './/p[@innertext='']' at step 'descendant-or-self::p[@innertext='']' after 1 attempts.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.898"
+			timeRelativeToTestModuleStartTime="00:03.898"
+			timeWallClock="10:57:31"
+			time="00:03.898"
+			level="Warn"
+			category="Data"
+			errimg="images_DialogSt_ce8e4779\DialogSt_ce8e4779_c3af4fce_trace.jpg"
+			errthumb="images_DialogSt_ce8e4779\DialogSt_ce8e4779_c3af4fce_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>MenueItemName, DLGTitel, DLGTabAnzahl, DLGButtonName, DLGTableTyp, DLGTableButtons, DLGTabNames
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.914"
+			timeRelativeToTestModuleStartTime="00:03.914"
+			timeWallClock="10:57:31"
+			time="00:03.914"
+			level="Info"
+			category="Section"
+			errimg="images_DialogSt_ce8e4779\DialogSt_ce8e4779_c3af4fce_trace.jpg"
+			errthumb="images_DialogSt_ce8e4779\DialogSt_ce8e4779_c3af4fce_trace_thumb.jpg">
+			<message>
+				MenueItem auswählen
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.cs"
+				codeline="174"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.123"
+			timeRelativeToTestModuleStartTime="00:07.123"
+			timeWallClock="10:57:34"
+			time="00:07.123"
+			level="Error"
+			category="Module"
+			errimg="images_DialogSt_ce8e4779\DialogSt_ce8e4779_043a838e_trace.jpg"
+			errthumb="images_DialogSt_ce8e4779\DialogSt_ce8e4779_043a838e_trace_thumb.jpg">
+			<message>
+				No element found for path './/p[@innertext='']' at step 'descendant-or-self::p[@innertext='']' after 1 attempts.
+			</message>
+			<metainfo
+				stacktrace="   bei Ranorex.Core.Element.FindSingle(RxPath path)
+   bei Ranorex.Adapter.FindSingle(RxPath path)
+   bei Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.clickOnMenueItem(RepoItemInfo menue, String menueItemName) in C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs:Zeile 40.
+   bei Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Ranorex.Core.Testing.ITestModule.Run() in C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.cs:Zeile 176.
+   bei Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+				codeline="40"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

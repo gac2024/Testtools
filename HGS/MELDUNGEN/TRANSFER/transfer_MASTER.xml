@@ -1,72 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Transfervariablen>
-    <automatenNr>999000</automatenNr>
-    <auftragsNr>10227</auftragsNr>
-    <abrechnungsnr>10227</abrechnungsnr>
-    <sequenceNr>17644</sequenceNr>
-    <abrechnungsnummer />
-    <anzahlVerkauefe>3</anzahlVerkauefe>
-    <anzahlquittungen>2</anzahlquittungen>
-    <prodPreis />
-    <quittungen>
-        <anzahltransaktionen>2</anzahltransaktionen>
-        <einzahlungsbetrag>470#EUR</einzahlungsbetrag>
-        <pfandTotal>0#EUR</pfandTotal>
-        <preisTotal>470#EUR</preisTotal>
-        <rueckerstattungsbetragIst>0#EUR</rueckerstattungsbetragIst>
-        <rueckerstattungsbetragSoll>0#EUR</rueckerstattungsbetragSoll>
-        <stoerbetrag>0#EUR</stoerbetrag>
-        <transaktionsnummer>18</transaktionsnummer>
-        <transaktionsnummerGiroCard>3372</transaktionsnummerGiroCard>
-        <transaktionsnummerKreditkarte>0</transaktionsnummerKreditkarte>
-        <ueberzahlungsbetrag>0#EUR</ueberzahlungsbetrag>
-    </quittungen>
-    <quittungen>
-        <anzahltransaktionen>1</anzahltransaktionen>
-        <einzahlungsbetrag>180#EUR</einzahlungsbetrag>
-        <pfandTotal>0#EUR</pfandTotal>
-        <preisTotal>180#EUR</preisTotal>
-        <rueckerstattungsbetragIst>0#EUR</rueckerstattungsbetragIst>
-        <rueckerstattungsbetragSoll>0#EUR</rueckerstattungsbetragSoll>
-        <stoerbetrag>0#EUR</stoerbetrag>
-        <transaktionsnummer>19</transaktionsnummer>
-        <transaktionsnummerGiroCard>3374</transaktionsnummerGiroCard>
-        <transaktionsnummerKreditkarte>0</transaktionsnummerKreditkarte>
-        <ueberzahlungsbetrag>0#EUR</ueberzahlungsbetrag>
-    </quittungen>
-    <stoerBetrag>0,00</stoerBetrag>
-    <summeVerkaeufe />
-    <umsatzBar>0,00</umsatzBar>
-    <umsatzGesamt>6,50</umsatzGesamt>
-    <umsatzGiro>6,50</umsatzGiro>
-    <umsatzKredit>0,00</umsatzKredit>
-    <verkaeufe>
-        <artikelnummer>9292</artikelnummer>
-        <preis>340#EUR</preis>
-        <preisstufenText>C</preisstufenText>
-        <produktbezeichnung>Einzelkarte</produktbezeichnung>
-        <produktkennung>IDP_GVH_1</produktkennung>
-        <produktkennungExtern />
-        <tarifBezeichnung>- - -|Tarif_3</tarifBezeichnung>
-        <transaktionsnummer>18</transaktionsnummer>
-    </verkaeufe>
-    <verkaeufe>
-        <artikelnummer>9297</artikelnummer>
-        <preis>130#EUR</preis>
-        <preisstufenText>ABC</preisstufenText>
-        <produktbezeichnung>Einzelkarte Kind</produktbezeichnung>
-        <produktkennung>IDP_GVH_2</produktkennung>
-        <produktkennungExtern>ABC</produktkennungExtern>
-        <transaktionsnummer>18</transaktionsnummer>
-    </verkaeufe>
-    <verkaeufe>
-        <artikelnummer>11266</artikelnummer>
-        <preis>180#EUR</preis>
-        <preisstufenText>K</preisstufenText>
-        <produktbezeichnung>Kurzstreckenkarte</produktbezeichnung>
-        <produktkennung>IDP_GVH_17</produktkennung>
-        <tarifBezeichnung>- - -|Tarif_3</tarifBezeichnung>
-        <transaktionsnummer>19</transaktionsnummer>
-    </verkaeufe>
-    <verkaufsZeitraum>Dieses Jahr</verkaufsZeitraum>
+    <automatenNr>999900</automatenNr>
+    <auftragsNr>13</auftragsNr>
+    <abrechnungsnr>13</abrechnungsnr>
+    <sequenceNr>17112</sequenceNr>
+    <filterBetrieb>Außer Betrieb</filterBetrieb>
 </Transfervariablen>

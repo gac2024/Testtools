@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="27.52s"
+		durationms="27517"
+		type="root"
+		rid="6e60a6cb42fa49c"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="gac"
+		rxversion="11.5.1.0"
+		host="NBTR062"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="de-DE"
+		dtnlanguage="de-DE"
+		screenresolution="3840x1083"
+		timestamp="17.10.2024 12:02:23"
+		timestampiso="2024-10-17T10:02:23"
+		endtime="17.10.2024 12:02:51"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Geraet_Loeschen">
+		<detail>
+			Geraet_Loeschen
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.665"
+			timeRelativeToTestModuleStartTime="00:04.665"
+			timeWallClock="12:02:28"
+			time="00:04.665"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>AutomatenNrNeu
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.683"
+			timeRelativeToTestModuleStartTime="00:04.683"
+			timeWallClock="12:02:28"
+			time="00:04.683"
+			level="Info"
+			category="Section">
+			<message>
+				Geräte Menü auswählen
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.684"
+			timeRelativeToTestModuleStartTime="00:04.684"
+			timeWallClock="12:02:28"
+			time="00:04.684"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.Menue.Geraete' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//div[#'root']/div/div/div/div//ul/div//ul/div//p[@innertext='Geräte']"
+				itempath="div//p[@innertext='Geräte']"
+				fullname="HGS.TicketingInside_DImasPlus.Menue.Geraete"
+				id="233ddf7d332a41f79081e9bbcb012812"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="98"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.947"
+			timeRelativeToTestModuleStartTime="00:07.947"
+			timeWallClock="12:02:31"
+			time="00:07.947"
+			level="Info"
+			category="Section">
+			<message>
+				Filter Gerät
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="103"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.952"
+			timeRelativeToTestModuleStartTime="00:07.952"
+			timeWallClock="12:02:31"
+			time="00:07.952"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from  '1111111' with focus on 'inputtagInfo'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//input[#'number-filter-from-deviceId']"
+				itempath=".//input[#'number-filter-from-deviceId']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenFilter.FilterGeraetenummer"
+				id="5d264740b82c4764b7b824d384bf1edc"
+				timeout="150100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\UserCodeCollections\DPlusLibrary.cs"
+				codeline="40"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.260"
+			timeRelativeToTestModuleStartTime="00:08.260"
+			timeWallClock="12:02:31"
+			time="00:08.260"
+			level="Info"
+			category="Fill_textfilter">
+			<message>
+				DoubleClick on 'inputtagInfo' for selection.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//input[#'number-filter-from-deviceId']"
+				itempath=".//input[#'number-filter-from-deviceId']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenFilter.FilterGeraetenummer"
+				id="5d264740b82c4764b7b824d384bf1edc"
+				timeout="150100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\UserCodeCollections\DPlusLibrary.cs"
+				codeline="45"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.305"
+			timeRelativeToTestModuleStartTime="00:10.305"
+			timeWallClock="12:02:34"
+			time="00:10.305"
+			level="Info"
+			category="Fill_textfilter">
+			<message>
+				Key sequence from  '1111111' with focus on 'inputtagInfo'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//input[#'number-filter-from-deviceId']"
+				itempath=".//input[#'number-filter-from-deviceId']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenFilter.FilterGeraetenummer"
+				id="5d264740b82c4764b7b824d384bf1edc"
+				timeout="150100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\UserCodeCollections\DPlusLibrary.cs"
+				codeline="50"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.695"
+			timeRelativeToTestModuleStartTime="00:11.695"
+			timeWallClock="12:02:35"
+			time="00:11.695"
+			level="Info"
+			category="Section">
+			<message>
+				Löschen
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="109"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.695"
+			timeRelativeToTestModuleStartTime="00:11.695"
+			timeWallClock="12:02:35"
+			time="00:11.695"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenInhalt.Zeile_1.BtnLoeschen' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-devices-table']//tbody/tr[1]//svg[@data-testid='DeleteIcon']/p"
+				itempath=".//svg[@data-testid='DeleteIcon']/p"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.Tabelle.TabellenInhalt.Zeile_1.BtnLoeschen"
+				id="941570f1aa8341b2bb8e8132a3156b3a"
+				timeout="210100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs"
+				codeline="111"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.515"
+			timeRelativeToTestModuleStartTime="00:27.515"
+			timeWallClock="12:02:51"
+			time="00:27.515"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

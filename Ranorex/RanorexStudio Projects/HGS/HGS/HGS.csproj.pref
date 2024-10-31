@@ -1,15 +1,12 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.UserCode.cs" />
+    <Element value="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="HGS.rxrep" />
-    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.UserCode.cs" />
-    <Element value="HGS.cs" />
-    <Element value="UserCodeCollections\DPlusLibrary.cs" />
+    <Element value="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs" />
     <Element value="MASTER.rxtst" />
-    <Element value="Modules\STANDARD\Monitoring\Geldspeicherinhalt\Geldspeicherinhalt_validieren.rxrec" />
+    <Element value="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
@@ -17,12 +14,12 @@
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.validateGeldspeicherOverview(RepoItemInfo tablerow)" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.validateGeldspeicherdetails(RepoItemInfo tablerow)" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_validieren.validateGeldspeicherdetails()" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_Teilepruefen.validateTeilGeldspeicherdetails(RepoItemInfo tablerow)" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_Teilepruefen.validateTeilGeldspeicherdetails()" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.Monitoring.Geldspeicherinhalt.Geldspeicherinhalt_Teilepruefen.validateGeldspeicherdetails()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTableStruktur()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTableStruktur()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkButton()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTabulatoren()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTitel()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.clickOnMenueItem()" />
     </Array>
     <Properties name="watchVars" />
   </Properties>

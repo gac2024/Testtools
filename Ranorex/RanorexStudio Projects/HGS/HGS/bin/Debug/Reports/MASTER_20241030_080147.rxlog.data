@@ -1,0 +1,1644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="30.17s"
+		durationms="30165"
+		type="root"
+		rid="2c5e2047b320340"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="3"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="gac"
+		rxversion="11.5.1.0"
+		host="NBTR062"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="de-DE"
+		dtnlanguage="de-DE"
+		screenresolution="3840x1083"
+		timestamp="30.10.2024 08:01:47"
+		timestampiso="2024-10-30T07:01:47"
+		endtime="30.10.2024 08:02:18"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="24.27s"
+			durationms="24271"
+			type="test-suite"
+			rid="102d0b886973166"
+			totalerrorcount="1"
+			totalwarningcount="1"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="1"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="3"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="MASTER"
+			headertext="MASTER"
+			runconfigname="TestRun"
+			runlabel=""
+			reportdescription="">
+			<params>
+				<param
+					name="PdfName">
+					CV
+				</param>
+				<param
+					name="PdfDirectoryPath">
+					C:\TESTTOOLS\PDF_REPORTS\
+				</param>
+				<param
+					name="Xml">
+				</param>
+				<param
+					name="NewParameter">
+					all
+				</param>
+				<param
+					name="DeleteRanorexReport">
+					true
+				</param>
+				<param
+					name="Subject">
+					HGS Report
+				</param>
+				<param
+					name="Body">
+					RanorexReport
+				</param>
+				<param
+					name="To">
+					ranorex.traffic@ica.de
+				</param>
+				<param
+					name="From">
+					RanorexServer@ica.de
+				</param>
+				<param
+					name="ServerHostname">
+					svica107.ica.local
+				</param>
+				<param
+					name="ServerPort">
+					25
+				</param>
+				<param
+					name="UseSSL">
+					false
+				</param>
+				<param
+					name="Username">
+				</param>
+				<param
+					name="Password">
+				</param>
+				<param
+					name="SendEmailOnFailure">
+					true
+				</param>
+				<param
+					name="SendEmailOnSuccess">
+					true
+				</param>
+				<param
+					name="SendZippedReportOnComplete">
+					false
+				</param>
+				<param
+					name="SendPdfReportOnComplete">
+					true
+				</param>
+				<param
+					name="PdfReportCustomStylesheet">
+				</param>
+				<param
+					name="DplusUrl">
+					https://uestra.dev.ti-ica.de/mp/login
+				</param>
+				<param
+					name="DPlusUser">
+				</param>
+				<param
+					name="DPlusPasswort">
+				</param>
+				<param
+					name="HGSUrl">
+					https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+				</param>
+				<param
+					name="HGSmeldungsPfad">
+					C:\Testtools\HGS\MELDUNGEN
+				</param>
+				<param
+					name="ProjectName">
+					MASTER
+				</param>
+				<param
+					name="globalParameterExtraction">
+					automatenNr;auftragsNr;sequenceNr
+				</param>
+				<param
+					name="automatenNr">
+				</param>
+				<param
+					name="auftragsNr">
+				</param>
+				<param
+					name="sequenceNr">
+				</param>
+			</params>
+			<activity
+				result="Success"
+				duration="18.68s"
+				durationms="18677"
+				type="setup-container"
+				rid="b4207843f1ae2d3"
+				totalerrorcount="0"
+				totalwarningcount="1"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="0"
+				totalblockedtestcasecount="0"
+				childsuccesscount="4"
+				childfailedcount="0"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0">
+				<activity
+					result="Success"
+					duration="557ms"
+					durationms="557"
+					type="test-module"
+					rid="a970a972dd358ea"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="ConfigurationProject"
+					displayName="ConfigurationProject"
+					moduleid="a8292ac2-055b-4100-809a-4dc6a8791482"
+					moduletype="UserCode"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.091"
+						timeRelativeToTestModuleStartTime="00:00.030"
+						timeWallClock="08:01:53"
+						time="00:00.091"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'PdfDirectoryPath' set to 'C:\Testtools\PDF_REPORTS\'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.145"
+						timeRelativeToTestModuleStartTime="00:00.084"
+						timeWallClock="08:01:53"
+						time="00:00.145"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'To' set to 'ranorex.traffic@ica.de'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.185"
+						timeRelativeToTestModuleStartTime="00:00.124"
+						timeWallClock="08:01:53"
+						time="00:00.185"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'From' set to 'ranorex.traffic@ica.de'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.218"
+						timeRelativeToTestModuleStartTime="00:00.157"
+						timeWallClock="08:01:53"
+						time="00:00.218"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'ServerHostname' set to 'svica107.ica.local'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.252"
+						timeRelativeToTestModuleStartTime="00:00.192"
+						timeWallClock="08:01:54"
+						time="00:00.252"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'ServerPort' set to '25'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.285"
+						timeRelativeToTestModuleStartTime="00:00.225"
+						timeWallClock="08:01:54"
+						time="00:00.285"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'SendEmailOnFailure' set to 'true'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.318"
+						timeRelativeToTestModuleStartTime="00:00.257"
+						timeWallClock="08:01:54"
+						time="00:00.318"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'SendEmailOnSuccess' set to 'true'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.351"
+						timeRelativeToTestModuleStartTime="00:00.290"
+						timeWallClock="08:01:54"
+						time="00:00.351"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'SendZippedReportOnComplete' set to 'false'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.385"
+						timeRelativeToTestModuleStartTime="00:00.325"
+						timeWallClock="08:01:54"
+						time="00:00.385"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'SendPdfReportOnComplete' set to 'true'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.417"
+						timeRelativeToTestModuleStartTime="00:00.357"
+						timeWallClock="08:01:54"
+						time="00:00.417"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'HGSmeldungsPfad' set to 'C:\Testtools\HGS\MELDUNGEN'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.451"
+						timeRelativeToTestModuleStartTime="00:00.391"
+						timeWallClock="08:01:54"
+						time="00:00.451"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'ProjectName' set to 'MASTER'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.484"
+						timeRelativeToTestModuleStartTime="00:00.424"
+						timeWallClock="08:01:54"
+						time="00:00.484"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'DPlusUrl' set to 'https://uestra.dev.ti-ica.de/mp/login'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.517"
+						timeRelativeToTestModuleStartTime="00:00.456"
+						timeWallClock="08:01:54"
+						time="00:00.517"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'DPlusUser' set to 'robert.kehnen@ica.de'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.551"
+						timeRelativeToTestModuleStartTime="00:00.491"
+						timeWallClock="08:01:54"
+						time="00:00.551"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'DPlusPasswort' set to 'Bogmcs046892'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.585"
+						timeRelativeToTestModuleStartTime="00:00.524"
+						timeWallClock="08:01:54"
+						time="00:00.585"
+						level="Info"
+						category="configuration">
+						<message>
+							Property 'HGSUrl' set to 'https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl'
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\SETUP\ConfigurationProject.cs"
+							codeline="67"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="558ms"
+					durationms="558"
+					type="test-module"
+					rid="46e148614216540"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="OEffnen"
+					displayName="OEffnen"
+					moduleid="34b522fc-9740-4354-a23d-085ca4b6cbef"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+						<varbinding
+							name="DplusUrl"
+							value="https://uestra.dev.ti-ica.de/mp/login">
+						</varbinding>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.645"
+						timeRelativeToTestModuleStartTime="00:00.002"
+						timeWallClock="08:01:54"
+						time="00:00.645"
+						level="Info"
+						category="Data">
+						<message>
+							Current variable values:<br/>$DplusUrl = 'https://uestra.dev.ti-ica.de/mp/login'
+						</message>
+						<metainfo
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.683"
+						timeRelativeToTestModuleStartTime="00:00.041"
+						timeWallClock="08:01:54"
+						time="00:00.683"
+						level="Info"
+						category="Website">
+						<message>
+							Opening web site URL in variable $DplusUrl in maximized mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Browser\OEffnen.cs"
+							codeline="95"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="7.75s"
+					durationms="7746"
+					type="test-module"
+					rid="db225ea5b57f50"
+					totalerrorcount="0"
+					totalwarningcount="1"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="Anmelden"
+					displayName="Anmelden"
+					moduleid="2a6e74e3-6966-46c4-b32a-95d178d6ddd3"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+						<varbinding
+							name="DPlusUser"
+							value="robert.kehnen@ica.de">
+						</varbinding>
+						<varbinding
+							name="DPlusPasswort"
+							value="●●●●●●●●●●●●">
+						</varbinding>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.202"
+						timeRelativeToTestModuleStartTime="00:00.001"
+						timeWallClock="08:01:54"
+						time="00:01.202"
+						level="Info"
+						category="Data">
+						<message>
+							Current variable values:<br/>$DPlusUser = 'robert.kehnen@ica.de', $DPlusPasswort = '●●●●●●●●●●●●'
+						</message>
+						<metainfo
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.233"
+						timeRelativeToTestModuleStartTime="00:00.032"
+						timeWallClock="08:01:55"
+						time="00:01.233"
+						level="Warn"
+						category="Data">
+						<message>
+							The following module variables are not bound to a data column:<br/>strVersion
+						</message>
+						<metainfo
+							loglvl="Warn">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.275"
+						timeRelativeToTestModuleStartTime="00:00.073"
+						timeWallClock="08:01:55"
+						time="00:01.275"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'TicketingInside_DImasPlus.Anmeldemaske.Email' at 227;25.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/div/div/div[1]/div[2]/div[1]//input[@type='email']"
+							itempath="div[1]/div[2]/div[1]//input[@type='email']"
+							fullname="HGS.TicketingInside_DImasPlus.Anmeldemaske.Email"
+							id="07839d9596d448808b7b74119d07d40a"
+							timeout="90000"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="121"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:05.416"
+						timeRelativeToTestModuleStartTime="00:04.215"
+						timeWallClock="08:01:59"
+						time="00:05.416"
+						level="Info"
+						category="Keyboard">
+						<message>
+							Key sequence from variable '$DPlusUser' with focus on 'TicketingInside_DImasPlus.Anmeldemaske.Email'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/div/div/div[1]/div[2]/div[1]//input[@type='email']"
+							itempath="div[1]/div[2]/div[1]//input[@type='email']"
+							fullname="HGS.TicketingInside_DImasPlus.Anmeldemaske.Email"
+							id="07839d9596d448808b7b74119d07d40a"
+							timeout="90000"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="125"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:06.247"
+						timeRelativeToTestModuleStartTime="00:05.046"
+						timeWallClock="08:02:00"
+						time="00:06.247"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'TicketingInside_DImasPlus.Anmeldemaske.Password' at 216;18.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/div/div/div[1]/div[2]/div[2]//input[@type='password']"
+							itempath="div[1]/div[2]/div[2]//input[@type='password']"
+							fullname="HGS.TicketingInside_DImasPlus.Anmeldemaske.Password"
+							id="eaf7f9a3db7d43a185da60e753d80dbf"
+							timeout="90000"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="129"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:06.911"
+						timeRelativeToTestModuleStartTime="00:05.709"
+						timeWallClock="08:02:00"
+						time="00:06.911"
+						level="Info"
+						category="Keyboard">
+						<message>
+							Key sequence from variable '$DPlusPasswort' with focus on 'TicketingInside_DImasPlus.Anmeldemaske.Password'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/div/div/div[1]/div[2]/div[2]//input[@type='password']"
+							itempath="div[1]/div[2]/div[2]//input[@type='password']"
+							fullname="HGS.TicketingInside_DImasPlus.Anmeldemaske.Password"
+							id="eaf7f9a3db7d43a185da60e753d80dbf"
+							timeout="90000"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="133"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:07.505"
+						timeRelativeToTestModuleStartTime="00:06.304"
+						timeWallClock="08:02:01"
+						time="00:07.505"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'TicketingInside_DImasPlus.Anmeldemaske.Anmelden' at 284;21.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/div/div/div[2]/button[@innertext='Anmelden']"
+							itempath="div[2]/button[@innertext='Anmelden']"
+							fullname="HGS.TicketingInside_DImasPlus.Anmeldemaske.Anmelden"
+							id="b6820e4c1089437b8fbca4beccde4280"
+							timeout="90000"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="137"
+							itemindex="4"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.221"
+						timeRelativeToTestModuleStartTime="00:07.020"
+						timeWallClock="08:02:01"
+						time="00:08.221"
+						level="Info"
+						category="Section">
+						<message>
+							Auslesen der Versionsnummer
+						</message>
+						<metainfo
+							itemindex="5"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="142"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.252"
+						timeRelativeToTestModuleStartTime="00:07.050"
+						timeWallClock="08:02:02"
+						time="00:08.252"
+						level="Info"
+						category="Wait">
+						<message>
+							Waiting 5s to exist. Associated repository item: 'TicketingInside_DImasPlus.footer'
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/footer"
+							itempath=".//main[#'content-page']/footer"
+							fullname="HGS.TicketingInside_DImasPlus.footer.Self"
+							id="b3373498b8b84a44ad6607a362841465"
+							timeout="5000"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="144"
+							itemindex="6"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.719"
+						timeRelativeToTestModuleStartTime="00:07.518"
+						timeWallClock="08:02:02"
+						time="00:08.719"
+						level="Info"
+						category="Get Value">
+						<message>
+							Getting attribute 'innerText' from item 'TicketingInside_DImasPlus.footer.version' and assigning its value to variable 'strVersion'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/footer/div/div[1]//p"
+							itempath="div/div[1]//p"
+							fullname="HGS.TicketingInside_DImasPlus.footer.version"
+							id="5892d447b2674c9da29db44d25fa5d41"
+							timeout="150000"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="147"
+							itemindex="7"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:08.925"
+						timeRelativeToTestModuleStartTime="00:07.723"
+						timeWallClock="08:02:02"
+						time="00:08.925"
+						level="Info"
+						category="User">
+						<message>
+							Version: 1.0.40&#32;
+						</message>
+						<metainfo
+							itemindex="8"
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\Anmelden.cs"
+							codeline="151"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="9.78s"
+					durationms="9777"
+					type="test-module"
+					rid="4c9f667959b47cf"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="ExpandiertMenue"
+					displayName="ExpandiertMenue"
+					moduleid="216eb8bd-dfd6-4861-98fe-a5dfe6671bc1"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:09.251"
+						timeRelativeToTestModuleStartTime="00:00.300"
+						timeWallClock="08:02:03"
+						time="00:09.251"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[0] 'Benutzerverwaltung'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:09.371"
+						timeRelativeToTestModuleStartTime="00:00.420"
+						timeWallClock="08:02:03"
+						time="00:09.371"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Benutzerverwaltung' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:09.908"
+						timeRelativeToTestModuleStartTime="00:00.957"
+						timeWallClock="08:02:03"
+						time="00:09.908"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[1] 'Schlüsselverwaltung'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.011"
+						timeRelativeToTestModuleStartTime="00:01.060"
+						timeWallClock="08:02:03"
+						time="00:10.011"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Schlüsselverwaltung' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.559"
+						timeRelativeToTestModuleStartTime="00:01.608"
+						timeWallClock="08:02:04"
+						time="00:10.559"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[2] 'Haltestellen-Verwaltung'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.659"
+						timeRelativeToTestModuleStartTime="00:01.708"
+						timeWallClock="08:02:04"
+						time="00:10.659"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Haltestellen-Verwaltung' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.205"
+						timeRelativeToTestModuleStartTime="00:02.254"
+						timeWallClock="08:02:04"
+						time="00:11.205"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[3] 'Projektverwaltung'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.321"
+						timeRelativeToTestModuleStartTime="00:02.370"
+						timeWallClock="08:02:05"
+						time="00:11.321"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[4] 'Audit-Log'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.438"
+						timeRelativeToTestModuleStartTime="00:02.488"
+						timeWallClock="08:02:05"
+						time="00:11.438"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[5] 'Geräteverwaltung'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.550"
+						timeRelativeToTestModuleStartTime="00:02.599"
+						timeWallClock="08:02:05"
+						time="00:11.550"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Geräteverwaltung' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.079"
+						timeRelativeToTestModuleStartTime="00:03.129"
+						timeWallClock="08:02:05"
+						time="00:12.079"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[6] 'Software'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.227"
+						timeRelativeToTestModuleStartTime="00:03.276"
+						timeWallClock="08:02:05"
+						time="00:12.227"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Software' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.771"
+						timeRelativeToTestModuleStartTime="00:03.820"
+						timeWallClock="08:02:06"
+						time="00:12.771"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[7] 'Monitoring'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.864"
+						timeRelativeToTestModuleStartTime="00:03.914"
+						timeWallClock="08:02:06"
+						time="00:12.864"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Monitoring' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.368"
+						timeRelativeToTestModuleStartTime="00:04.418"
+						timeWallClock="08:02:07"
+						time="00:13.368"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[8] 'Papierrollenverwaltung'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.461"
+						timeRelativeToTestModuleStartTime="00:04.510"
+						timeWallClock="08:02:07"
+						time="00:13.461"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Papierrollenverwaltung' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.998"
+						timeRelativeToTestModuleStartTime="00:05.048"
+						timeWallClock="08:02:07"
+						time="00:13.998"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[9] 'Auswertung'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.211"
+						timeRelativeToTestModuleStartTime="00:05.260"
+						timeWallClock="08:02:07"
+						time="00:14.211"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Auswertung' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.007"
+						timeRelativeToTestModuleStartTime="00:06.056"
+						timeWallClock="08:02:08"
+						time="00:15.007"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[10] 'Cash-Management'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.258"
+						timeRelativeToTestModuleStartTime="00:06.307"
+						timeWallClock="08:02:09"
+						time="00:15.258"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Cash-Management' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:16.024"
+						timeRelativeToTestModuleStartTime="00:07.074"
+						timeWallClock="08:02:09"
+						time="00:16.024"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[11] 'Weiterleitungen'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:16.223"
+						timeRelativeToTestModuleStartTime="00:07.273"
+						timeWallClock="08:02:09"
+						time="00:16.223"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Weiterleitungen' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:16.867"
+						timeRelativeToTestModuleStartTime="00:07.916"
+						timeWallClock="08:02:10"
+						time="00:16.867"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[12] 'Export'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.060"
+						timeRelativeToTestModuleStartTime="00:08.109"
+						timeWallClock="08:02:10"
+						time="00:17.060"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Export' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.757"
+						timeRelativeToTestModuleStartTime="00:08.806"
+						timeWallClock="08:02:11"
+						time="00:17.757"
+						level="Info"
+						category="Check ">
+						<message>
+							Menue[13] 'Accounting'.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="50"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.990"
+						timeRelativeToTestModuleStartTime="00:09.039"
+						timeWallClock="08:02:11"
+						time="00:17.990"
+						level="Info"
+						category="Action ">
+						<message>
+							Menue 'Accounting' expanded.
+						</message>
+						<metainfo
+							codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\ExpandiertMenue.UserCode.cs"
+							codeline="59"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+			<activity
+				result="Failed"
+				duration="5.5s"
+				durationms="5500"
+				type="smart-folder"
+				rid="f587a49f24065a2"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="0"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="3"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="WORKFLOWS"
+				testcontainerid="b3196b29-233b-4baa-89f1-2c88b5f25caf"
+				headertext="WORKFLOWS"
+				displayName="WORKFLOWS"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Failed"
+					duration="5.49s"
+					durationms="5494"
+					type="smart-folder"
+					rid="27643314f9c01c86"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="1"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="1"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="2"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					testcontainername="DIMASPLUS"
+					testcontainerid="61fdaf1c-4602-4765-939c-b069408b8e94"
+					headertext="DIMASPLUS"
+					displayName="DIMASPLUS"
+					iteration="1"
+					activity-exectype="execute"
+					conditionstate="none">
+					<activity
+						result="Failed"
+						duration="3.65s"
+						durationms="3645"
+						type="iteration-container"
+						rid="24c648fa1016330"
+						totalerrorcount="1"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="1"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="1"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="1"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						displayName="Dialog_Struktur"
+						headertext="Dialog_Struktur"
+						testentry-activity-type="testcase"
+						iteration-exectype="dataiteration"
+						testcontainerid="942a60cb-cff5-46e8-b045-82c4b11db8f3"
+						datasource="DialogStruktur"
+						dataiterationcount="1">
+						<activity
+							result="Failed"
+							duration="3.64s"
+							durationms="3637"
+							type="test-case"
+							rid="da2c7b396ab601"
+							totalerrorcount="1"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="1"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="1"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="1"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							testcontainername="Dialog_Struktur"
+							testcontainerid="942a60cb-cff5-46e8-b045-82c4b11db8f3"
+							headertext="Dialog_Struktur"
+							displayName="Dialog_Struktur"
+							iteration="1"
+							activity-exectype="dataiteration"
+							conditionstate="none">
+							<datarow>
+								<field
+									name="MenueName">
+									Benutzer
+								</field>
+								<field
+									name="Titel">
+									Benutzerverwaltung
+								</field>
+								<field
+									name="TabsAnzahl">
+									0
+								</field>
+								<field
+									name="TabsNamen">
+								</field>
+								<field
+									name="ButtonName">
+									Benutzerdaten bereitstellen
+								</field>
+								<field
+									name="TabellenTyp">
+									1
+								</field>
+								<field
+									name="TabellenButtons">
+									4
+								</field>
+								<field
+									name="Zeitraumauswahl">
+									nein
+								</field>
+							</datarow>
+							<activity
+								result="Failed"
+								duration="3.63s"
+								durationms="3631"
+								type="test-module"
+								rid="cc8765ad5ec5858"
+								totalerrorcount="1"
+								totalwarningcount="0"
+								totalsuccesstestcasecount="0"
+								totalfailedtestcasecount="0"
+								totalblockedtestcasecount="0"
+								childsuccesscount="0"
+								childfailedcount="0"
+								childblockedcount="0"
+								totalsuccesscount="0"
+								totalfailedcount="0"
+								totalblockedcount="0"
+								totalmaintenancemodecount="0"
+								modulename="DialogStrukturValidierung"
+								displayName="DialogStrukturValidierung"
+								moduleid="082cbe7a-4483-4641-b0be-741815340527"
+								moduletype="Recording"
+								iteration="1"
+								activity-exectype="execute"
+								testentry-activity-type="testmodule">
+								<errormessage>
+									Die Anzahl der Tabellen Kontrols ist inkorrekt. Soll:4 Ist:0
+								</errormessage>
+								<varbindings>
+									<varbinding
+										name="MenueItemName"
+										value="Benutzer">
+									</varbinding>
+									<varbinding
+										name="DLGTitel"
+										value="Benutzerverwaltung">
+									</varbinding>
+									<varbinding
+										name="DLGTabAnzahl"
+										value="0">
+									</varbinding>
+									<varbinding
+										name="DLGButtonName"
+										value="Benutzerdaten bereitstellen">
+									</varbinding>
+									<varbinding
+										name="DLGTabNames"
+										value="">
+									</varbinding>
+									<varbinding
+										name="DLGTableTyp"
+										value="1">
+									</varbinding>
+									<varbinding
+										name="DLGTableButtons"
+										value="4">
+									</varbinding>
+								</varbindings>
+								<item
+									timeRelativeToTestSuiteStartTime="00:20.619"
+									timeRelativeToTestModuleStartTime="00:00.004"
+									timeWallClock="08:02:14"
+									time="00:20.619"
+									level="Info"
+									category="Data">
+									<message>
+										Current variable values:<br/>$MenueItemName = 'Benutzer', $DLGTitel = 'Benutzerverwaltung', $DLGTabAnzahl = '0', $DLGButtonName = 'Benutzerdaten bereitstellen', $DLGTabNames = '', $DLGTableTyp = '1', $DLGTableButtons = '4'
+									</message>
+									<metainfo
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:20.666"
+									timeRelativeToTestModuleStartTime="00:00.052"
+									timeWallClock="08:02:14"
+									time="00:20.666"
+									level="Info"
+									category="Section">
+									<message>
+										MenueItem auswählen
+									</message>
+									<metainfo
+										itemindex="0"
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.cs"
+										codeline="174"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:21.904"
+									timeRelativeToTestModuleStartTime="00:01.289"
+									timeWallClock="08:02:15"
+									time="00:21.904"
+									level="Info"
+									category="Section">
+									<message>
+										Struktur prüfung
+									</message>
+									<metainfo
+										itemindex="2"
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.cs"
+										codeline="180"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:22.356"
+									timeRelativeToTestModuleStartTime="00:01.741"
+									timeWallClock="08:02:16"
+									time="00:22.356"
+									level="Success"
+									category="Validation">
+									<message>
+										Titel: Benutzerverwaltung ist vorhanden.
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="60"
+										loglvl="Success">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:22.391"
+									timeRelativeToTestModuleStartTime="00:01.777"
+									timeWallClock="08:02:16"
+									time="00:22.391"
+									level="Info"
+									category="checkTabulatoren">
+									<message>
+										Es gibt keine Tabs.
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="136"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:22.698"
+									timeRelativeToTestModuleStartTime="00:02.083"
+									timeWallClock="08:02:16"
+									time="00:22.698"
+									level="Success"
+									category="Validation">
+									<message>
+										Button: Benutzerdaten bereitstellen ist vorhanden.
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="83"
+										loglvl="Success">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:23.289"
+									timeRelativeToTestModuleStartTime="00:02.675"
+									timeWallClock="08:02:17"
+									time="00:23.289"
+									level="Info"
+									category="checkTableStruktur">
+									<message>
+										DIVTAG = /dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-users-table']/div[3]
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="171"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:23.537"
+									timeRelativeToTestModuleStartTime="00:02.922"
+									timeWallClock="08:02:17"
+									time="00:23.537"
+									level="Info"
+									category="checkTableStruktur">
+									<message>
+										DIVTAG = /dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-users-table']
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="173"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:23.785"
+									timeRelativeToTestModuleStartTime="00:03.170"
+									timeWallClock="08:02:17"
+									time="00:23.785"
+									level="Info"
+									category="checkTableStruktur">
+									<message>
+										DIVTAG = /dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-users-table']/div[2]
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="174"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:24.034"
+									timeRelativeToTestModuleStartTime="00:03.420"
+									timeWallClock="08:02:17"
+									time="00:24.034"
+									level="Info"
+									category="checkTableStruktur">
+									<message>
+										DIVTAG = /dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-users-table']/div[2]/div
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="176"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:24.069"
+									timeRelativeToTestModuleStartTime="00:03.455"
+									timeWallClock="08:02:17"
+									time="00:24.069"
+									level="Info"
+									category="checkTableStruktur"
+									errimg="images_MASTER_2_7fc12586\MASTER_2_7fc12586_f1e4d0a9_trace.jpg"
+									errthumb="images_MASTER_2_7fc12586\MASTER_2_7fc12586_f1e4d0a9_trace_thumb.jpg">
+									<message>
+										ctrlItemList = 1
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="180"
+										loglvl="Info">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:24.107"
+									timeRelativeToTestModuleStartTime="00:03.492"
+									timeWallClock="08:02:17"
+									time="00:24.107"
+									level="Failure"
+									category="Validation"
+									errimg="images_MASTER_2_7fc12586\MASTER_2_7fc12586_f8a6c5fa_trace.jpg"
+									errthumb="images_MASTER_2_7fc12586\MASTER_2_7fc12586_f8a6c5fa_trace_thumb.jpg">
+									<message>
+										Die Anzahl der Tabellen Kontrols ist inkorrekt. Soll:4 Ist:0
+									</message>
+									<metainfo
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="194"
+										loglvl="Failure">
+									</metainfo>
+								</item>
+								<item
+									timeRelativeToTestSuiteStartTime="00:24.142"
+									timeRelativeToTestModuleStartTime="00:03.527"
+									timeWallClock="08:02:17"
+									time="00:24.142"
+									level="Error"
+									category="Module"
+									errimg="images_MASTER_2_7fc12586\MASTER_2_7fc12586_240e15d2_trace.jpg"
+									errthumb="images_MASTER_2_7fc12586\MASTER_2_7fc12586_240e15d2_trace_thumb.jpg">
+									<message>
+										Module execution was aborted because a validation step has failed. Die Anzahl der Tabellen Kontrols ist inkorrekt. Soll:4 Ist:0
+									</message>
+									<metainfo
+										stacktrace="   bei Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   bei Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   bei Ranorex.Validate.IsFalse(Boolean condition, String message, Options options)
+   bei Ranorex.Validate.IsFalse(Boolean condition, String message)
+   bei Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTableStruktur(String tableTyp, String tableCmdItems) in C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs:Zeile 194.
+   bei Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Ranorex.Core.Testing.ITestModule.Run() in C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.cs:Zeile 191.
+   bei Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+										codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs"
+										codeline="194"
+										loglvl="Error">
+									</metainfo>
+								</item>
+							</activity>
+						</activity>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

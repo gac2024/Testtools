@@ -158,30 +158,6 @@
       <id>7f9bb6f3-714c-44bc-acf0-037cbbb05638</id>
       <BoundTo>6d1084f2-1072-4aa0-a8ea-34a29bb87986</BoundTo>
     </Compile>
-    <Compile Include="Browser\Zoom_100.cs">
-      <DependentUpon>Zoom_100.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>df8da381-b039-4119-a394-2f5a3f00049c</id>
-      <BoundTo>31051323-9671-4fd6-b1c6-c5b106851fed</BoundTo>
-    </Compile>
-    <Compile Include="Browser\Zoom_100.UserCode.cs">
-      <DependentUpon>Zoom_100.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>8176cd0f-5ab8-45ed-b734-c34d6b29e77e</id>
-      <BoundTo>31051323-9671-4fd6-b1c6-c5b106851fed</BoundTo>
-    </Compile>
-    <Compile Include="Browser\Zoom_80.cs">
-      <DependentUpon>Zoom_80.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>c676e401-f0d6-400d-89dd-bbd1b6a70a6e</id>
-      <BoundTo>00ceb3de-e6f6-4a5b-9d9f-79620c26cdbb</BoundTo>
-    </Compile>
-    <Compile Include="Browser\Zoom_80.UserCode.cs">
-      <DependentUpon>Zoom_80.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>8693259c-8ae7-4332-84a1-38e1bbee7b91</id>
-      <BoundTo>00ceb3de-e6f6-4a5b-9d9f-79620c26cdbb</BoundTo>
-    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>eec09eca-0cfa-424f-8905-a66b370744ce</id>
     </Compile>
@@ -269,6 +245,30 @@
       <UserCode>true</UserCode>
       <id>5e3499ad-f13a-4371-93ce-d196eed748eb</id>
     </Compile>
+    <Compile Include="Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_erstellen.cs">
+      <DependentUpon>Geraet_erstellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db921bb8-d43b-4329-bf43-67bd5d222e3c</id>
+      <BoundTo>fc611842-afde-4929-9981-8c4768eb6287</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_erstellen.UserCode.cs">
+      <DependentUpon>Geraet_erstellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b7810bd-0740-4fc8-bfcd-b9ebd2d45710</id>
+      <BoundTo>fc611842-afde-4929-9981-8c4768eb6287</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.cs">
+      <BoundTo>e6add008-f443-4521-9d15-c4bbce3acf47</BoundTo>
+      <DependentUpon>Geraet_Loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fe83098e-f31b-46cd-8183-fb15554284b1</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.UserCode.cs">
+      <BoundTo>e6add008-f443-4521-9d15-c4bbce3acf47</BoundTo>
+      <DependentUpon>Geraet_Loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>71bcdc7a-07f5-4717-baff-445a03f1d7a7</id>
+    </Compile>
     <Compile Include="Modules\STANDARD\HauptDisplay\Abmelden.cs">
       <DependentUpon>Abmelden.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -308,6 +308,18 @@
     <Compile Include="Modules\STANDARD\HauptDisplay\CodeLibrary\ReportToPDFModule.cs">
       <id>50fdcbc4-21f1-48ae-a312-97877db4eca5</id>
     </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.cs">
+      <BoundTo>8382affe-13dd-4cf5-90e9-b69fa24bb44c</BoundTo>
+      <DependentUpon>DialogStrukturValidierung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a8c97e1-bdb3-431d-8d7f-256b20cfe1e3</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs">
+      <BoundTo>8382affe-13dd-4cf5-90e9-b69fa24bb44c</BoundTo>
+      <DependentUpon>DialogStrukturValidierung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9b459ab9-7a4e-45dc-93ba-2a883de620e1</id>
+    </Compile>
     <Compile Include="Modules\STANDARD\HauptDisplay\ExpandiertMenue.cs">
       <DependentUpon>ExpandiertMenue.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -319,6 +331,18 @@
       <UserCode>true</UserCode>
       <id>38ca53eb-55b3-42b8-9ef9-0daa871d6cbe</id>
       <BoundTo>f6003a01-e7e4-4ab7-96c6-908b1a3c5922</BoundTo>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\MenuValidierung.cs">
+      <BoundTo>540f3325-65dd-47a2-9be6-e9595014ce12</BoundTo>
+      <DependentUpon>MenuValidierung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03e17817-ee91-4420-8aeb-ed7e0b37eb9b</id>
+    </Compile>
+    <Compile Include="Modules\STANDARD\HauptDisplay\MenuValidierung.UserCode.cs">
+      <BoundTo>540f3325-65dd-47a2-9be6-e9595014ce12</BoundTo>
+      <DependentUpon>MenuValidierung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>56f4eff9-5557-448b-9b95-eda035d89987</id>
     </Compile>
     <Compile Include="Modules\STANDARD\HauptDisplay\Schliessen.cs">
       <DependentUpon>Schliessen.rxrec</DependentUpon>
@@ -490,16 +514,6 @@
       <id>6d1084f2-1072-4aa0-a8ea-34a29bb87986</id>
       <recordtableid>34b522fc-9740-4354-a23d-085ca4b6cbef</recordtableid>
     </None>
-    <None Include="Browser\Zoom_100.rxrec">
-      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
-      <id>31051323-9671-4fd6-b1c6-c5b106851fed</id>
-      <recordtableid>ef6a60d6-1cbb-4566-96d1-74c697dd87fe</recordtableid>
-    </None>
-    <None Include="Browser\Zoom_80.rxrec">
-      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
-      <id>00ceb3de-e6f6-4a5b-9d9f-79620c26cdbb</id>
-      <recordtableid>098c3fca-4956-478e-bdd6-b07abd69468d</recordtableid>
-    </None>
     <None Include="app.config">
       <id>86d3c068-4ef9-4bbc-b7b0-b7d60e0ad599</id>
     </None>
@@ -538,6 +552,16 @@
       <id>910c7128-003c-4c11-a295-01db6f8d46d8</id>
       <recordtableid>692b7f33-bc40-4876-9138-7aa87586c0d3</recordtableid>
     </None>
+    <None Include="Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_erstellen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>fc611842-afde-4929-9981-8c4768eb6287</id>
+      <recordtableid>6544e13e-7429-4b6f-8052-ba5241e3f62a</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\Geraeteverwaltung\Geraete\Geraet_Loeschen.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>e6add008-f443-4521-9d15-c4bbce3acf47</id>
+      <recordtableid>8f570902-0e30-4e1c-af59-04b5e6a9d809</recordtableid>
+    </None>
     <None Include="Modules\STANDARD\HauptDisplay\Abmelden.rxrec">
       <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
       <id>8c016f2b-9d7d-436d-857d-7d3af2e53e23</id>
@@ -548,10 +572,20 @@
       <id>09b569cd-545d-4d71-a9eb-d5e679da9b2b</id>
       <recordtableid>2a6e74e3-6966-46c4-b32a-95d178d6ddd3</recordtableid>
     </None>
+    <None Include="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>8382affe-13dd-4cf5-90e9-b69fa24bb44c</id>
+      <recordtableid>082cbe7a-4483-4641-b0be-741815340527</recordtableid>
+    </None>
     <None Include="Modules\STANDARD\HauptDisplay\ExpandiertMenue.rxrec">
       <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
       <id>f6003a01-e7e4-4ab7-96c6-908b1a3c5922</id>
       <recordtableid>216eb8bd-dfd6-4861-98fe-a5dfe6671bc1</recordtableid>
+    </None>
+    <None Include="Modules\STANDARD\HauptDisplay\MenuValidierung.rxrec">
+      <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
+      <id>540f3325-65dd-47a2-9be6-e9595014ce12</id>
+      <recordtableid>e08c0edb-321b-4a73-ba43-273c179e7310</recordtableid>
     </None>
     <None Include="Modules\STANDARD\HauptDisplay\Schliessen.rxrec">
       <BoundTo>e6d82450-5a5b-4434-8c37-03e9b78e84c3</BoundTo>
@@ -628,6 +662,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Modules\STANDARD\Geraeteverwaltung\Geraete">
+      <id>07719661-dbd6-4011-b810-1b9369e9f9bb</id>
+    </Folder>
     <Folder Include="Modules\STANDARD\Monitoring\Geldspeicherinhalt">
       <id>4003701f-e3a6-4158-a017-3c4bbc42a166</id>
     </Folder>

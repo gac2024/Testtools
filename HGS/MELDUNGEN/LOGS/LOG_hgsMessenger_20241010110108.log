@@ -1,0 +1,114 @@
+################################################################################
+#####   Generator -> Schichtreport 
+################################################################################
+Started: 2024-10-10 11:01:08
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : Schicht_GL_WGR1_start
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Schichtreport
+ testfallname                  : Schicht_GL_WGR1_start
+ meldungsname                  : Schichtreport
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+TestData:stoerBetrag = 
+TestData:prodPreis = 
+TestData:umsatzBar = 
+TestData:umsatzGesamt = 
+TestData:anzahlquittungen = 
+TestData:anzahlVerkauefe = 
+TestData:umsatzGiro = 
+TestData:summeVerkaeufe = 
+TestData:verkaufsZeitraum = 
+TestData:umsatzKredit = 
+TestData:abrechnungsnummer = 
+------------------------------------------
+Schichtreport:sstVersion = 3.10
+Schichtreport:versionKey = -1
+Schichtreport:abrechnungsnummer = #NEU#
+------------------------------------------
+geldlogistik_1:abrechnung = 0
+geldlogistik_1:geldlogistiker = 0
+geldlogistik_1:vorgangstyp = INFORMATION
+geldlogistik_1:zeitpunkt = 
+geldlogistik_1:einschubNr = 1
+geldlogistik_1:geldspeicherId = 47211168
+geldlogistik_1:geldspeichertyp = WGR
+geldlogistik_1:geldbetrag = 100#EUR
+------------------------------------------
+geldlogistik_1.bestandSorte_1:nennwert = EUR#20
+geldlogistik_1.bestandSorte_1:anzahl = 5
+------------------------------------------
+geldlogistik_2:abrechnung = 0
+geldlogistik_2:geldlogistiker = 0
+geldlogistik_2:vorgangstyp = INFORMATION
+geldlogistik_2:zeitpunkt = 
+geldlogistik_2:einschubNr = 3
+geldlogistik_2:geldspeicherId = 47211169
+geldlogistik_2:geldspeichertyp = WGR
+geldlogistik_2:geldbetrag = 250#EUR
+------------------------------------------
+geldlogistik_2.bestandSorte_1:nennwert = EUR#50
+geldlogistik_2.bestandSorte_1:anzahl = 5
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeSchichtreport xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaSchichtreport xmlns="http://tms.ica.de/automatenService/3_10/" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <versionKey>-1</versionKey>
+                <abrechnungsnummer>10190</abrechnungsnummer>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-10T11:01:09.012+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="1" geldspeicherId="47211168" abrechnung="0">
+                    <geldbetrag betrag="100" waehrung="EUR"/>
+                    <bestandSorte anzahl="5">
+                        <nennwert waehrung="EUR" wertigkeit="20"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17098" guid="27682e5b-9b7d-418c-83e1-da9d30a82e5a"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-10T11:01:09.023+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="3" geldspeicherId="47211169" abrechnung="0">
+                    <geldbetrag betrag="250" waehrung="EUR"/>
+                    <bestandSorte anzahl="5">
+                        <nennwert waehrung="EUR" wertigkeit="50"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17099" guid="e2b91e72-8192-47d8-8fd7-1d5f3ffa0f11"/>
+                </geldlogistik>
+            </faaSchichtreport>
+        </empfangeSchichtreport>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-10-10 11:01:12
+

@@ -1,0 +1,354 @@
+################################################################################
+#####   Generator -> Schichtreport 
+################################################################################
+Started: 2024-10-11 10:55:45
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : Schicht_GL_komplett
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Schichtreport
+ testfallname                  : Schicht_GL_komplett
+ meldungsname                  : Schichtreport
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+TestData:stoerBetrag = 
+TestData:prodPreis = 
+TestData:umsatzBar = 
+TestData:umsatzGesamt = 
+TestData:anzahlquittungen = 
+TestData:anzahlVerkauefe = 
+TestData:umsatzGiro = 
+TestData:summeVerkaeufe = 
+TestData:verkaufsZeitraum = 
+TestData:umsatzKredit = 
+TestData:abrechnungsnummer = 
+------------------------------------------
+Schichtreport:sstVersion = 3.10
+Schichtreport:versionKey = -1
+Schichtreport:abrechnungsnummer = #NEU#
+------------------------------------------
+geldlogistik_1:abrechnung = 0
+geldlogistik_1:geldlogistiker = 0
+geldlogistik_1:vorgangstyp = INFORMATION
+geldlogistik_1:zeitpunkt = 
+geldlogistik_1:einschubNr = 1
+geldlogistik_1:geldspeicherId = 33201609
+geldlogistik_1:geldspeichertyp = ZGS
+geldlogistik_1:geldbetrag = 14000#EUR
+------------------------------------------
+geldlogistik_1.bestandSorte_1:nennwert = EUR#10
+geldlogistik_1.bestandSorte_1:anzahl = 1400
+------------------------------------------
+geldlogistik_2:abrechnung = 0
+geldlogistik_2:geldlogistiker = 0
+geldlogistik_2:vorgangstyp = INFORMATION
+geldlogistik_2:zeitpunkt = 
+geldlogistik_2:einschubNr = 2
+geldlogistik_2:geldspeicherId = 34204823
+geldlogistik_2:geldspeichertyp = ZGS
+geldlogistik_2:geldbetrag = 20000#EUR
+------------------------------------------
+geldlogistik_2.bestandSorte_1:nennwert = EUR#200
+geldlogistik_2.bestandSorte_1:anzahl = 100
+------------------------------------------
+geldlogistik_3:abrechnung = 0
+geldlogistik_3:geldlogistiker = 0
+geldlogistik_3:vorgangstyp = INFORMATION
+geldlogistik_3:zeitpunkt = 
+geldlogistik_3:einschubNr = 3
+geldlogistik_3:geldspeicherId = 31210510
+geldlogistik_3:geldspeichertyp = ZGS
+geldlogistik_3:geldbetrag = 10000#EUR
+------------------------------------------
+geldlogistik_3.bestandSorte_1:nennwert = EUR#100
+geldlogistik_3.bestandSorte_1:anzahl = 100
+------------------------------------------
+geldlogistik_4:abrechnung = 0
+geldlogistik_4:geldlogistiker = 0
+geldlogistik_4:vorgangstyp = INFORMATION
+geldlogistik_4:zeitpunkt = 
+geldlogistik_4:einschubNr = 0
+geldlogistik_4:geldspeicherId = 99
+geldlogistik_4:geldspeichertyp = BEK
+geldlogistik_4:geldbetrag = 0#EUR
+------------------------------------------
+geldlogistik_5:abrechnung = 0
+geldlogistik_5:geldlogistiker = 0
+geldlogistik_5:vorgangstyp = INFORMATION
+geldlogistik_5:zeitpunkt = 
+geldlogistik_5:einschubNr = 1
+geldlogistik_5:geldspeicherId = 676000331
+geldlogistik_5:geldspeichertyp = BEK
+geldlogistik_5:geldbetrag = 8500#EUR
+------------------------------------------
+geldlogistik_5.bestandSorte_1:nennwert = EUR#500
+geldlogistik_5.bestandSorte_1:anzahl = 1
+------------------------------------------
+geldlogistik_5.bestandSorte_2:nennwert = EUR#1000
+geldlogistik_5.bestandSorte_2:anzahl = 4
+------------------------------------------
+geldlogistik_5.bestandSorte_3:nennwert = EUR#2000
+geldlogistik_5.bestandSorte_3:anzahl = 2
+------------------------------------------
+geldlogistik_6:abrechnung = 0
+geldlogistik_6:geldlogistiker = 0
+geldlogistik_6:vorgangstyp = INFORMATION
+geldlogistik_6:zeitpunkt = 
+geldlogistik_6:einschubNr = 1
+geldlogistik_6:geldspeicherId = 47211168
+geldlogistik_6:geldspeichertyp = WGR
+geldlogistik_6:geldbetrag = 100#EUR
+------------------------------------------
+geldlogistik_6.bestandSorte_1:nennwert = EUR#20
+geldlogistik_6.bestandSorte_1:anzahl = 5
+------------------------------------------
+geldlogistik_7:abrechnung = 0
+geldlogistik_7:geldlogistiker = 0
+geldlogistik_7:vorgangstyp = INFORMATION
+geldlogistik_7:zeitpunkt = 
+geldlogistik_7:einschubNr = 2
+geldlogistik_7:geldspeicherId = 44211138
+geldlogistik_7:geldspeichertyp = WGR
+geldlogistik_7:geldbetrag = 0#EUR
+------------------------------------------
+geldlogistik_7.bestandSorte_1:nennwert = EUR#5
+geldlogistik_7.bestandSorte_1:anzahl = 0
+------------------------------------------
+geldlogistik_8:abrechnung = 0
+geldlogistik_8:geldlogistiker = 0
+geldlogistik_8:vorgangstyp = INFORMATION
+geldlogistik_8:zeitpunkt = 
+geldlogistik_8:einschubNr = 3
+geldlogistik_8:geldspeicherId = 42211167
+geldlogistik_8:geldspeichertyp = WGR
+geldlogistik_8:geldbetrag = 250#EUR
+------------------------------------------
+geldlogistik_8.bestandSorte_1:nennwert = EUR#50
+geldlogistik_8.bestandSorte_1:anzahl = 5
+------------------------------------------
+geldlogistik_9:abrechnung = 0
+geldlogistik_9:geldlogistiker = 0
+geldlogistik_9:vorgangstyp = INFORMATION
+geldlogistik_9:zeitpunkt = 
+geldlogistik_9:einschubNr = 4
+geldlogistik_9:geldspeicherId = 43211148
+geldlogistik_9:geldspeichertyp = WGR
+geldlogistik_9:geldbetrag = 50#EUR
+------------------------------------------
+geldlogistik_9.bestandSorte_1:nennwert = EUR#10
+geldlogistik_9.bestandSorte_1:anzahl = 5
+------------------------------------------
+geldlogistik_10:abrechnung = 0
+geldlogistik_10:geldlogistiker = 0
+geldlogistik_10:vorgangstyp = INFORMATION
+geldlogistik_10:zeitpunkt = 
+geldlogistik_10:einschubNr = 5
+geldlogistik_10:geldspeicherId = 40211179
+geldlogistik_10:geldspeichertyp = WGR
+geldlogistik_10:geldbetrag = 1600#EUR
+------------------------------------------
+geldlogistik_10.bestandSorte_1:nennwert = EUR#200
+geldlogistik_10.bestandSorte_1:anzahl = 8
+------------------------------------------
+geldlogistik_11:abrechnung = 0
+geldlogistik_11:geldlogistiker = 1
+geldlogistik_11:vorgangstyp = INFORMATION
+geldlogistik_11:zeitpunkt = 
+geldlogistik_11:einschubNr = 5
+geldlogistik_11:geldspeicherId = 80211507
+geldlogistik_11:geldspeichertyp = MEK
+geldlogistik_11:geldbetrag = 0#EUR
+------------------------------------------
+geldlogistik_11.bestandSorte_1:nennwert = EUR#0
+geldlogistik_11.bestandSorte_1:anzahl = 0
+------------------------------------------
+geldlogistik_12:abrechnung = 0
+geldlogistik_12:geldlogistiker = 1
+geldlogistik_12:vorgangstyp = INFORMATION
+geldlogistik_12:zeitpunkt = 
+geldlogistik_12:einschubNr = 1
+geldlogistik_12:geldspeicherId = 82000135
+geldlogistik_12:geldspeichertyp = BNW
+geldlogistik_12:geldbetrag = 1500#EUR
+------------------------------------------
+geldlogistik_12.bestandSorte_1:nennwert = EUR#500
+geldlogistik_12.bestandSorte_1:anzahl = 1
+------------------------------------------
+geldlogistik_12.bestandSorte_2:nennwert = EUR#1000
+geldlogistik_12.bestandSorte_2:anzahl = 1
+------------------------------------------
+geldlogistik_13:abrechnung = 0
+geldlogistik_13:geldlogistiker = 1
+geldlogistik_13:vorgangstyp = INFORMATION
+geldlogistik_13:zeitpunkt = 
+geldlogistik_13:einschubNr = 1
+geldlogistik_13:geldspeicherId = 99000135
+geldlogistik_13:geldspeichertyp = BWZ
+geldlogistik_13:geldbetrag = 0#EUR
+------------------------------------------
+geldlogistik_13.bestandSorte_1:nennwert = EUR#500
+geldlogistik_13.bestandSorte_1:anzahl = 0
+------------------------------------------
+geldlogistik_14:abrechnung = 0
+geldlogistik_14:geldlogistiker = 1
+geldlogistik_14:vorgangstyp = INFORMATION
+geldlogistik_14:zeitpunkt = 
+geldlogistik_14:einschubNr = 2
+geldlogistik_14:geldspeicherId = 99000135
+geldlogistik_14:geldspeichertyp = BWZ
+geldlogistik_14:geldbetrag = 0#EUR
+------------------------------------------
+geldlogistik_14.bestandSorte_1:nennwert = EUR#1000
+geldlogistik_14.bestandSorte_1:anzahl = 0
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeSchichtreport xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaSchichtreport xmlns="http://tms.ica.de/automatenService/3_10/" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <versionKey>-1</versionKey>
+                <abrechnungsnummer>10219</abrechnungsnummer>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.502+02:00" geldlogistiker="0" geldspeichertyp="ZGS" einschubNr="1" geldspeicherId="33201609" abrechnung="0">
+                    <geldbetrag betrag="14000" waehrung="EUR"/>
+                    <bestandSorte anzahl="1400">
+                        <nennwert waehrung="EUR" wertigkeit="10"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17368" guid="e7db2712-bdde-424d-9fbb-a8ccb8189991"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.553+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="5" geldspeicherId="40211179" abrechnung="0">
+                    <geldbetrag betrag="1600" waehrung="EUR"/>
+                    <bestandSorte anzahl="8">
+                        <nennwert waehrung="EUR" wertigkeit="200"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17377" guid="116b7977-c1f9-4f98-98b2-5c5b1e37cbad"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.557+02:00" geldlogistiker="1" geldspeichertyp="MEK" einschubNr="5" geldspeicherId="80211507" abrechnung="0">
+                    <geldbetrag betrag="0" waehrung="EUR"/>
+                    <bestandSorte anzahl="0">
+                        <nennwert waehrung="EUR" wertigkeit="0"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17378" guid="47efdae1-1d41-406b-961d-ffa205194c82"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.561+02:00" geldlogistiker="1" geldspeichertyp="BNW" einschubNr="1" geldspeicherId="82000135" abrechnung="0">
+                    <geldbetrag betrag="1500" waehrung="EUR"/>
+                    <bestandSorte anzahl="1">
+                        <nennwert waehrung="EUR" wertigkeit="500"/>
+                    </bestandSorte>
+                    <bestandSorte anzahl="1">
+                        <nennwert waehrung="EUR" wertigkeit="1000"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17379" guid="5e396450-1f2a-4d7f-a505-ab04bfa4654c"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.564+02:00" geldlogistiker="1" geldspeichertyp="BWZ" einschubNr="1" geldspeicherId="99000135" abrechnung="0">
+                    <geldbetrag betrag="0" waehrung="EUR"/>
+                    <bestandSorte anzahl="0">
+                        <nennwert waehrung="EUR" wertigkeit="500"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17380" guid="ba6055c5-2ede-4df5-9f38-c68a5b5c2067"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.567+02:00" geldlogistiker="1" geldspeichertyp="BWZ" einschubNr="2" geldspeicherId="99000135" abrechnung="0">
+                    <geldbetrag betrag="0" waehrung="EUR"/>
+                    <bestandSorte anzahl="0">
+                        <nennwert waehrung="EUR" wertigkeit="1000"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17381" guid="3f54dc8c-a1c8-4b49-8760-5bd39ea02d17"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.519+02:00" geldlogistiker="0" geldspeichertyp="ZGS" einschubNr="2" geldspeicherId="34204823" abrechnung="0">
+                    <geldbetrag betrag="20000" waehrung="EUR"/>
+                    <bestandSorte anzahl="100">
+                        <nennwert waehrung="EUR" wertigkeit="200"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17369" guid="c6ac62ce-3106-49fa-bdb8-3bdaf1753de7"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.523+02:00" geldlogistiker="0" geldspeichertyp="ZGS" einschubNr="3" geldspeicherId="31210510" abrechnung="0">
+                    <geldbetrag betrag="10000" waehrung="EUR"/>
+                    <bestandSorte anzahl="100">
+                        <nennwert waehrung="EUR" wertigkeit="100"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17370" guid="596fbcf6-d675-4fa7-ba0e-b217cca9e9c2"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.528+02:00" geldlogistiker="0" geldspeichertyp="BEK" einschubNr="0" geldspeicherId="99" abrechnung="0">
+                    <geldbetrag betrag="0" waehrung="EUR"/>
+                    <metadaten sequenznummer="17371" guid="04ea754e-1b0a-45e8-8126-42f470ce9cfd"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.532+02:00" geldlogistiker="0" geldspeichertyp="BEK" einschubNr="1" geldspeicherId="676000331" abrechnung="0">
+                    <geldbetrag betrag="8500" waehrung="EUR"/>
+                    <bestandSorte anzahl="1">
+                        <nennwert waehrung="EUR" wertigkeit="500"/>
+                    </bestandSorte>
+                    <bestandSorte anzahl="4">
+                        <nennwert waehrung="EUR" wertigkeit="1000"/>
+                    </bestandSorte>
+                    <bestandSorte anzahl="2">
+                        <nennwert waehrung="EUR" wertigkeit="2000"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17372" guid="b1879c1b-1537-49f2-ba6b-b2b221c64e50"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.537+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="1" geldspeicherId="47211168" abrechnung="0">
+                    <geldbetrag betrag="100" waehrung="EUR"/>
+                    <bestandSorte anzahl="5">
+                        <nennwert waehrung="EUR" wertigkeit="20"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17373" guid="1276dbdd-03d4-4f78-a53f-bfdedd7fc46e"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.542+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="2" geldspeicherId="44211138" abrechnung="0">
+                    <geldbetrag betrag="0" waehrung="EUR"/>
+                    <bestandSorte anzahl="0">
+                        <nennwert waehrung="EUR" wertigkeit="5"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17374" guid="d3cf0a97-6d6b-48d2-ac33-902fbc111bbb"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.546+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="3" geldspeicherId="42211167" abrechnung="0">
+                    <geldbetrag betrag="250" waehrung="EUR"/>
+                    <bestandSorte anzahl="5">
+                        <nennwert waehrung="EUR" wertigkeit="50"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17375" guid="b092f2d5-fe94-4271-8d2c-2e93259adda6"/>
+                </geldlogistik>
+                <geldlogistik vorgangstyp="INFORMATION" zeitpunkt="2024-10-11T10:55:45.550+02:00" geldlogistiker="0" geldspeichertyp="WGR" einschubNr="4" geldspeicherId="43211148" abrechnung="0">
+                    <geldbetrag betrag="50" waehrung="EUR"/>
+                    <bestandSorte anzahl="5">
+                        <nennwert waehrung="EUR" wertigkeit="10"/>
+                    </bestandSorte>
+                    <metadaten sequenznummer="17376" guid="e60a048e-eac7-498a-a828-03cd4902ad7b"/>
+                </geldlogistik>
+            </faaSchichtreport>
+        </empfangeSchichtreport>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-10-11 10:55:48
+

@@ -1,0 +1,89 @@
+################################################################################
+#####   Generator -> Papierlogistikmeldung 
+################################################################################
+Started: 2024-09-24 10:09:40
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : PLM_verbraucht_letzteSerienNr
+ mainpath                      : c:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Papierlogistikmeldung
+ testfallname                  : PLM_verbraucht_letzteSerienNr
+ meldungsname                  : Papierlogistikmeldung
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : c:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+Testdaten:papierbahn = PRN_PB_2
+Testdaten:status = Verbraucht
+Testdaten:papiersorte = 0
+Testdaten:barcode = 
+Testdaten:seriennummerPapier = 
+Testdaten:verbleibendeabschnitte = 5
+Testdaten:aktuellerabschnitt = 6746
+------------------------------------------
+Papierlogistikmeldung:abschnittsnummerPapier = 0006746
+Papierlogistikmeldung:ausgabemediumTyp = SORT_1
+Papierlogistikmeldung:charge = 
+Papierlogistikmeldung:druckerKennung = DEV_PRN_2
+Papierlogistikmeldung:einbauposition = 0
+Papierlogistikmeldung:medienkennung = 
+Papierlogistikmeldung:papierkanalDrucker = -1
+Papierlogistikmeldung:papierkanalKennung = PRN_PB_2
+Papierlogistikmeldung:papierlogistiker = 0
+Papierlogistikmeldung:seriennummerDrucker = 30057500E020340
+Papierlogistikmeldung:seriennummerPapier = 
+Papierlogistikmeldung:sstVersion = 3.10
+Papierlogistikmeldung:vorgangsnummer = 0
+Papierlogistikmeldung:vorgangstyp = VERBRAUCHT
+Papierlogistikmeldung:zeitpunkt = 
+Papierlogistikmeldung:abrechnungsnummer = 
+------------------------------------------
+papiersorte_1:abschnitteGesamt = 6750
+papiersorte_1:materialcode = 0
+papiersorte_1:nummernfolge = AUFSTEIGEND
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = c:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = c:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangePapierlogistikmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaPapierlogistikmeldung xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-09-24T10:09:40.675+02:00" vorgangstyp="VERBRAUCHT" papierlogistiker="0" vorgangsnummer="0" charge="" seriennummerPapier="100024" abschnittsnummerPapier="6746" seriennummerDrucker="30057500E020340" einbauposition="0" papierkanalDrucker="-1" abrechnungsnummer="10164" ausgabemediumTyp="SORT_1" medienkennung="01000240006746" druckerKennung="DEV_PRN_2" papierkanalKennung="PRN_PB_2" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="16330" guid="b864dad1-3e48-4365-ad8c-e01da8b51513"/>
+                <papiersorte materialcode="0" abschnitteGesamt="6750" nummernfolge="AUFSTEIGEND"/>
+            </faaPapierlogistikmeldung>
+        </empfangePapierlogistikmeldung>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-09-24 10:09:43
+

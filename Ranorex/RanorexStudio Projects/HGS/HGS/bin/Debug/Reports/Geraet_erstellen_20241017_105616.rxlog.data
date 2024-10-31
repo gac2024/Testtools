@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="33.71s"
+		durationms="33706"
+		type="root"
+		rid="10f39191f3a95724"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="gac"
+		rxversion="11.5.1.0"
+		host="NBTR062"
+		osversion="Windows 11 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="de-DE"
+		dtnlanguage="de-DE"
+		screenresolution="3840x1083"
+		timestamp="17.10.2024 10:56:19"
+		timestampiso="2024-10-17T08:56:19"
+		endtime="17.10.2024 10:56:53"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Geraet_erstellen">
+		<detail>
+			Geraet_erstellen
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.381"
+			timeRelativeToTestModuleStartTime="00:05.381"
+			timeWallClock="10:56:25"
+			time="00:05.381"
+			level="Info"
+			category="Section">
+			<message>
+				Geräte Menü auswählen
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="83"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.400"
+			timeRelativeToTestModuleStartTime="00:05.400"
+			timeWallClock="10:56:25"
+			time="00:05.400"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.Menue.Geraete' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//div[#'root']/div/div/div/div//ul/div//ul/div//p[@innertext='Geräte']"
+				itempath="div//p[@innertext='Geräte']"
+				fullname="HGS.TicketingInside_DImasPlus.Menue.Geraete"
+				id="233ddf7d332a41f79081e9bbcb012812"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.431"
+			timeRelativeToTestModuleStartTime="00:10.431"
+			timeWallClock="10:56:30"
+			time="00:10.431"
+			level="Info"
+			category="Section">
+			<message>
+				Neues Gerät anlegen
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="90"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.433"
+			timeRelativeToTestModuleStartTime="00:10.433"
+			timeWallClock="10:56:30"
+			time="00:10.433"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.BtnNeuesGeraet' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']/article//div[@id='mpDplus-devices-table']//button[@title='Hinzufügen']"
+				itempath="article//div[@id='mpDplus-devices-table']//button[@title='Hinzufügen']"
+				fullname="HGS.TicketingInside_DImasPlus.ContentPage.Geraeteverwaltung.Geraete.BtnNeuesGeraet"
+				id="979b2924639345888b9503bb165168a0"
+				timeout="90100"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="92"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.685"
+			timeRelativeToTestModuleStartTime="00:11.685"
+			timeWallClock="10:56:31"
+			time="00:11.685"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 300ms.
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.993"
+			timeRelativeToTestModuleStartTime="00:11.993"
+			timeWallClock="10:56:31"
+			time="00:11.993"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '1111111' with focus on 'TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.txtGeraetenummer'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//div[@class='edit-form']//input[@id='edit-form-field-text-deviceId']"
+				itempath=".//input[@id='edit-form-field-text-deviceId']"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.txtGeraetenummer"
+				id="124657b6fa2641829a4ecddf722286f6"
+				timeout="210000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="99"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.626"
+			timeRelativeToTestModuleStartTime="00:12.626"
+			timeWallClock="10:56:32"
+			time="00:12.626"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'Virtueller testautomat ' with focus on 'TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.txtBeschreibung'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//div[@class='edit-form']//input[@id='edit-form-field-text-description']"
+				itempath=".//input[@id='edit-form-field-text-description']"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.txtBeschreibung"
+				id="66e79ed131024a9aa56223b1982bbf07"
+				timeout="210000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="103"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.725"
+			timeRelativeToTestModuleStartTime="00:13.725"
+			timeWallClock="10:56:33"
+			time="00:13.725"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '1111111' with focus on 'TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.txtSeriennummer'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//div[@class='edit-form']//input[@id='edit-form-field-text-serialNumber']"
+				itempath=".//input[@id='edit-form-field-text-serialNumber']"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.txtSeriennummer"
+				id="c5e2a1e5688d430ea7763e1b306e712f"
+				timeout="210000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="107"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.561"
+			timeRelativeToTestModuleStartTime="00:14.561"
+			timeWallClock="10:56:34"
+			time="00:14.561"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.selTyp' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]//div[@class='edit-form']//div[@id='edit-form-field-select-deviceType']"
+				itempath=".//div[@id='edit-form-field-select-deviceType']"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.NeuesGeraet.Main.selTyp"
+				id="a7c5e4bbdcfb445bb759936ba378ba97"
+				timeout="210000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="111"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.311"
+			timeRelativeToTestModuleStartTime="00:15.311"
+			timeWallClock="10:56:35"
+			time="00:15.311"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'TicketingInside_DImasPlus.PopUps.TravellerST' at 19;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='uestra.dev.ti-ica.de']/body/div[2]/div[3]/?/?/ul//span[@innertext='Traveller ST']"
+				itempath="?/?/ul//span[@innertext='Traveller ST']"
+				fullname="HGS.TicketingInside_DImasPlus.PopUps.TravellerST"
+				id="2efc899043d64af197f8a485d236c98e"
+				timeout="150000"
+				codefile="C:\Testtools\Ranorex\RanorexStudio Projects\HGS\HGS\Modules\STANDARD\DIMAS\Geraet_erstellen.cs"
+				codeline="115"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:33.703"
+			timeRelativeToTestModuleStartTime="00:33.703"
+			timeWallClock="10:56:53"
+			time="00:33.703"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

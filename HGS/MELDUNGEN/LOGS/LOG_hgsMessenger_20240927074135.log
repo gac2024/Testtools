@@ -1,0 +1,66 @@
+################################################################################
+#####   Generator -> Positionsmeldung 
+################################################################################
+Started: 2024-09-27 07:41:35
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : Positionsmeldung
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Positionsmeldung
+ testfallname                  : Positionsmeldung
+ meldungsname                  : Positionsmeldung
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+------------------------------------------
+Positionsmeldung:fahrzeugKennung = 11
+Positionsmeldung:haltestellencodeIbis = 25000091
+Positionsmeldung:positionImFahrzeug = 12
+Positionsmeldung:sstVersion = 3.10
+Positionsmeldung:zeitpunkt = 
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangePositionsmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaPositionsmeldung xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-09-27T07:41:35.940+02:00" haltestellencodeIbis="25000091" fahrzeugKennung="11" positionImFahrzeug="12" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="16708" guid="8e43c377-dbfb-4cc2-a6ac-8a200feeb758"/>
+            </faaPositionsmeldung>
+        </empfangePositionsmeldung>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-09-27 07:41:38
+

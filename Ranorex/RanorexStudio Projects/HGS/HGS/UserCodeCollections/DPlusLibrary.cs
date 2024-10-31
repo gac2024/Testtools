@@ -182,6 +182,41 @@ namespace Cottbus_3000CR.UserCodeCollections
         	 }
         }
 		
+		
+		
+		/// <summary>
+		/// This is a placeholder text. Please describe the purpose of the
+		/// user code method here. The method is published to the user code library
+		/// within a user code collection.
+		/// </summary>
+		[UserCodeMethod]
+		public static void SetSingleSelectBox(RepoItemInfo FilterObjekt, string FilterName, RepoItemInfo Liste)
+		{
+		 	FilterObjekt.FindAdapter<DivTag>().Click();	
+		 	
+		 	 Report.Log(ReportLevel.Info, "info", "Liste geöffnet");
+			
+		 	 SpanTag selElement=null;
+		 	 if (!(Liste.FindAdapter<UlTag>().TryFindSingle(".//span[@innertext='"+FilterName+"']",out selElement) ) ){
+		 	 	
+		 	 	Report.Log(ReportLevel.Error, "ERROR", "Element "+FilterName+" konnte nicht gefunden werden.");
+		 	 	// abbruch  !!!
+		 	 	return;
+		 	 }
+		 	 
+		 	 selElement.Click();
+		 	 Report.Log(ReportLevel.Info, "info", FilterName+ "ausgewähelt");
+		 	 Validate.IsTrue(true);
+		 	 
+		
+		 	                                          
+			
+		}
+		
+		
+		
+		
+		
 		/// <summary>
 		/// This is a placeholder text. Please describe the purpose of the
 		/// user code method here. The method is published to the user code library

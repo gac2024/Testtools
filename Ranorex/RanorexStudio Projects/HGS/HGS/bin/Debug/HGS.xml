@@ -48,84 +48,6 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:Cottbus_3000CR.Browser.Zoom_100">
-             <summary>
-            The Zoom_100 recording.
-             </summary>
-        </member>
-        <member name="F:Cottbus_3000CR.Browser.Zoom_100.repo">
-            <summary>
-            Holds an instance of the global::Cottbus_3000CR.HGS repository.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_100.#ctor">
-            <summary>
-            Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.Browser.Zoom_100.Instance">
-            <summary>
-            Gets a static instance of this recording.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_100.Start">
-            <summary>
-            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Browser.Zoom_100.Instance"/>.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_100.Ranorex#Core#Testing#ITestModule#Run">
-            <summary>
-            Performs the playback of actions in this recording.
-            </summary>
-            <remarks>You should not call this method directly, instead pass the module
-            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
-            that will in turn invoke this method.</remarks>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_100.Init">
-            <summary>
-            This method gets called right after the recording has been started.
-            It can be used to execute recording specific initialization code.
-            </summary>
-        </member>
-        <member name="T:Cottbus_3000CR.Browser.Zoom_80">
-             <summary>
-            The Zoom_80 recording.
-             </summary>
-        </member>
-        <member name="F:Cottbus_3000CR.Browser.Zoom_80.repo">
-            <summary>
-            Holds an instance of the global::Cottbus_3000CR.HGS repository.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_80.#ctor">
-            <summary>
-            Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.Browser.Zoom_80.Instance">
-            <summary>
-            Gets a static instance of this recording.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_80.Start">
-            <summary>
-            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Browser.Zoom_80.Instance"/>.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_80.Ranorex#Core#Testing#ITestModule#Run">
-            <summary>
-            Performs the playback of actions in this recording.
-            </summary>
-            <remarks>You should not call this method directly, instead pass the module
-            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
-            that will in turn invoke this method.</remarks>
-        </member>
-        <member name="M:Cottbus_3000CR.Browser.Zoom_80.Init">
-            <summary>
-            This method gets called right after the recording has been started.
-            It can be used to execute recording specific initialization code.
-            </summary>
-        </member>
         <member name="T:Cottbus_3000CR.Modules.STANDARD.Auswertung.Abrechnungen.Abrechnungsluecken_validieren">
              <summary>
             The Abrechnungsluecken_validieren recording.
@@ -524,6 +446,104 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen">
+             <summary>
+            The Geraet_erstellen recording.
+             </summary>
+        </member>
+        <member name="F:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.repo">
+            <summary>
+            Holds an instance of the global::Cottbus_3000CR.HGS repository.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.AutomentenNrNeu">
+            <summary>
+            Gets or sets the value of variable AutomentenNrNeu.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.AutomantenTyp">
+            <summary>
+            Gets or sets the value of variable AutomantenTyp.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.Projekt">
+            <summary>
+            Gets or sets the value of variable Projekt.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_erstellen.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen">
+             <summary>
+            The Geraet_Loeschen recording.
+             </summary>
+        </member>
+        <member name="F:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.repo">
+            <summary>
+            Holds an instance of the global::Cottbus_3000CR.HGS repository.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.AutomatenNrNeu">
+            <summary>
+            Gets or sets the value of variable AutomatenNrNeu.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.Geraeteverwaltung.Geraete.Geraet_Loeschen.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.Abmelden">
              <summary>
             The Abmelden recording.
@@ -617,6 +637,85 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung">
+             <summary>
+            The DialogStrukturValidierung recording.
+             </summary>
+        </member>
+        <member name="F:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.repo">
+            <summary>
+            Holds an instance of the global::Cottbus_3000CR.HGS repository.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.MainMenueName">
+            <summary>
+            Gets or sets the value of variable MainMenueName.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTitel">
+            <summary>
+            Gets or sets the value of variable DLGTitel.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTabAnzahl">
+            <summary>
+            Gets or sets the value of variable DLGTabAnzahl.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGButtonName">
+            <summary>
+            Gets or sets the value of variable DLGButtonName.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTableTyp">
+            <summary>
+            Gets or sets the value of variable DLGTableTyp.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTableButtons">
+            <summary>
+            Gets or sets the value of variable DLGTableButtons.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTabNames">
+            <summary>
+            Gets or sets the value of variable DLGTabNames.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.SubMenueName">
+            <summary>
+            Gets or sets the value of variable SubMenueName.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.ExpandiertMenue">
              <summary>
             The ExpandiertMenue recording.
@@ -651,6 +750,55 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.ExpandiertMenue.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung">
+             <summary>
+            The MenuValidierung recording.
+             </summary>
+        </member>
+        <member name="F:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.repo">
+            <summary>
+            Holds an instance of the global::Cottbus_3000CR.HGS repository.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.MenueItemName">
+            <summary>
+            Gets or sets the value of variable MenueItemName.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.MenueLevel">
+            <summary>
+            Gets or sets the value of variable MenueLevel.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.MenuValidierung.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -1162,6 +1310,11 @@
         <member name="P:Cottbus_3000CR.HGSFolders.TicketingInside_DImasPlusAppFolder.footer">
             <summary>
             The footer folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TicketingInside_DImasPlusAppFolder.Listen">
+            <summary>
+            The Listen folder.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.HGSFolders.AnmeldemaskeFolder">
@@ -3334,6 +3487,11 @@
             The Baugruppen folder.
             </summary>
         </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeraeteverwaltungFolder.Geraete">
+            <summary>
+            The Geraete folder.
+            </summary>
+        </member>
         <member name="T:Cottbus_3000CR.HGSFolders.BaugruppenFolder">
             <summary>
             The BaugruppenFolder folder.
@@ -3659,6 +3817,281 @@
             The CellBaugruppenquelle item info.
             </summary>
         </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.GeraeteFolder">
+            <summary>
+            The GeraeteFolder folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.GeraeteFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Geraete  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeraeteFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeraeteFolder.BtnInitialisiserungsdatentraeger">
+            <summary>
+            The BtnInitialisiserungsdatentraeger item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeraeteFolder.BtnInitialisiserungsdatentraegerInfo">
+            <summary>
+            The BtnInitialisiserungsdatentraeger item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeraeteFolder.BtnNeuesGeraet">
+            <summary>
+            The BtnNeuesGeraet item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeraeteFolder.BtnNeuesGeraetInfo">
+            <summary>
+            The BtnNeuesGeraet item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.GeraeteFolder.Tabelle">
+            <summary>
+            The Tabelle folder.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder6">
+            <summary>
+            The TabelleFolder6 folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder6.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Tabelle  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.TabellenFilter">
+            <summary>
+            The TabellenFilter folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.TabellenInhalt">
+            <summary>
+            The TabellenInhalt folder.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.TabellenFilterFolder1">
+            <summary>
+            The TabellenFilterFolder1 folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.TabellenFilterFolder1.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new TabellenFilter  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabellenFilterFolder1.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabellenFilterFolder1.FilterTyp">
+            <summary>
+            The FilterTyp item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabellenFilterFolder1.FilterTypInfo">
+            <summary>
+            The FilterTyp item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabellenFilterFolder1.FilterGeraetenummer">
+            <summary>
+            The FilterGeraetenummer item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabellenFilterFolder1.FilterGeraetenummerInfo">
+            <summary>
+            The FilterGeraetenummer item info.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.TabellenInhaltFolder1">
+            <summary>
+            The TabellenInhaltFolder1 folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.TabellenInhaltFolder1.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new TabellenInhalt  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabellenInhaltFolder1.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.TabellenInhaltFolder1.Zeile_1">
+            <summary>
+            The Zeile_1 folder.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.Zeile_1Folder1">
+            <summary>
+            The Zeile_1Folder1 folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Zeile_1  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellGeraetenummer">
+            <summary>
+            The CellGeraetenummer item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellGeraetenummerInfo">
+            <summary>
+            The CellGeraetenummer item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellHaltestelle">
+            <summary>
+            The CellHaltestelle item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellHaltestelleInfo">
+            <summary>
+            The CellHaltestelle item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellPosition">
+            <summary>
+            The CellPosition item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellPositionInfo">
+            <summary>
+            The CellPosition item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellBeschreibung">
+            <summary>
+            The CellBeschreibung item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellBeschreibungInfo">
+            <summary>
+            The CellBeschreibung item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellTyp">
+            <summary>
+            The CellTyp item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellTypInfo">
+            <summary>
+            The CellTyp item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellAktiv">
+            <summary>
+            The CellAktiv item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellAktivInfo">
+            <summary>
+            The CellAktiv item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellATestgeraet">
+            <summary>
+            The CellATestgeraet item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellATestgeraetInfo">
+            <summary>
+            The CellATestgeraet item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellSeriennummer">
+            <summary>
+            The CellSeriennummer item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellSeriennummerInfo">
+            <summary>
+            The CellSeriennummer item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellNetzwerkconfig">
+            <summary>
+            The CellNetzwerkconfig item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellNetzwerkconfigInfo">
+            <summary>
+            The CellNetzwerkconfig item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellProjekt">
+            <summary>
+            The CellProjekt item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellProjektInfo">
+            <summary>
+            The CellProjekt item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellStilllegung">
+            <summary>
+            The CellStilllegung item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.CellStilllegungInfo">
+            <summary>
+            The CellStilllegung item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.BtnEdit">
+            <summary>
+            The BtnEdit item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.BtnEditInfo">
+            <summary>
+            The BtnEdit item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.BtnLoeschen">
+            <summary>
+            The BtnLoeschen item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Zeile_1Folder1.BtnLoeschenInfo">
+            <summary>
+            The BtnLoeschen item info.
+            </summary>
+        </member>
         <member name="T:Cottbus_3000CR.HGSFolders.PapierrollenverwaltungFolder">
             <summary>
             The PapierrollenverwaltungFolder folder.
@@ -3709,32 +4142,32 @@
             The Tabelle folder.
             </summary>
         </member>
-        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder6">
+        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder7">
             <summary>
-            The TabelleFolder6 folder.
+            The TabelleFolder7 folder.
             </summary>
         </member>
-        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder6.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder7.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
             <summary>
             Creates a new Tabelle  folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.Self">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.Self">
             <summary>
             The Self item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.SelfInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.SelfInfo">
             <summary>
             The Self item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.Filter">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.Filter">
             <summary>
             The Filter folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder6.Zeile1">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.Zeile1">
             <summary>
             The Zeile1 folder.
             </summary>
@@ -3914,32 +4347,32 @@
             The TicketverfolgungDetails folder.
             </summary>
         </member>
-        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder7">
+        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder8">
             <summary>
-            The TabelleFolder7 folder.
+            The TabelleFolder8 folder.
             </summary>
         </member>
-        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder7.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder8.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
             <summary>
             Creates a new Tabelle  folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.Self">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.Self">
             <summary>
             The Self item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.SelfInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.SelfInfo">
             <summary>
             The Self item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.Filter">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.Filter">
             <summary>
             The Filter folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder7.Zeile1">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.Zeile1">
             <summary>
             The Zeile1 folder.
             </summary>
@@ -4119,32 +4552,32 @@
             The Details folder.
             </summary>
         </member>
-        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder8">
+        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder9">
             <summary>
-            The TabelleFolder8 folder.
+            The TabelleFolder9 folder.
             </summary>
         </member>
-        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder8.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder9.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
             <summary>
             Creates a new Tabelle  folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.Self">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.Self">
             <summary>
             The Self item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.SelfInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.SelfInfo">
             <summary>
             The Self item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.Filter">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.Filter">
             <summary>
             The Filter folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder8.Zeile1">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.Zeile1">
             <summary>
             The Zeile1 folder.
             </summary>
@@ -4384,32 +4817,32 @@
             The Tabelle folder.
             </summary>
         </member>
-        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder9">
+        <member name="T:Cottbus_3000CR.HGSFolders.TabelleFolder10">
             <summary>
-            The TabelleFolder9 folder.
+            The TabelleFolder10 folder.
             </summary>
         </member>
-        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder9.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+        <member name="M:Cottbus_3000CR.HGSFolders.TabelleFolder10.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
             <summary>
             Creates a new Tabelle  folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.Self">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder10.Self">
             <summary>
             The Self item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.SelfInfo">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder10.SelfInfo">
             <summary>
             The Self item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.Filter">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder10.Filter">
             <summary>
             The Filter folder.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder9.Zeile1">
+        <member name="P:Cottbus_3000CR.HGSFolders.TabelleFolder10.Zeile1">
             <summary>
             The Zeile1 folder.
             </summary>
@@ -4592,6 +5025,16 @@
         <member name="P:Cottbus_3000CR.HGSFolders.PopUpsFolder.Datumsauswahl">
             <summary>
             The Datumsauswahl folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.PopUpsFolder.NeuesGeraet">
+            <summary>
+            The NeuesGeraet folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.PopUpsFolder.LoeschenGeraet">
+            <summary>
+            The LoeschenGeraet folder.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.HGSFolders.QuittierenFolder">
@@ -4812,6 +5255,171 @@
         <member name="P:Cottbus_3000CR.HGSFolders.DatumsauswahlFolder.btn_JahrInfo">
             <summary>
             The btn_Jahr item info.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.NeuesGeraetFolder">
+            <summary>
+            The NeuesGeraetFolder folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.NeuesGeraetFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NeuesGeraet  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.NeuesGeraetFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.NeuesGeraetFolder.Main">
+            <summary>
+            The Main folder.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.MainFolder">
+            <summary>
+            The MainFolder folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.MainFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Main  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.txtGeraetenummer">
+            <summary>
+            The txtGeraetenummer item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.txtGeraetenummerInfo">
+            <summary>
+            The txtGeraetenummer item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.txtBeschreibung">
+            <summary>
+            The txtBeschreibung item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.txtBeschreibungInfo">
+            <summary>
+            The txtBeschreibung item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.txtSeriennummer">
+            <summary>
+            The txtSeriennummer item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.txtSeriennummerInfo">
+            <summary>
+            The txtSeriennummer item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.selTyp">
+            <summary>
+            The selTyp item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.selTypInfo">
+            <summary>
+            The selTyp item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.chkTestgeraet">
+            <summary>
+            The chkTestgeraet item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.chkTestgeraetInfo">
+            <summary>
+            The chkTestgeraet item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.selProjekt">
+            <summary>
+            The selProjekt item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.selProjektInfo">
+            <summary>
+            The selProjekt item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.btnUebernehmen">
+            <summary>
+            The btnUebernehmen item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.btnUebernehmenInfo">
+            <summary>
+            The btnUebernehmen item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.btnAbbrechen">
+            <summary>
+            The btnAbbrechen item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.MainFolder.btnAbbrechenInfo">
+            <summary>
+            The btnAbbrechen item info.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder">
+            <summary>
+            The LoeschenGeraetFolder folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new LoeschenGeraet  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.tlblTitel">
+            <summary>
+            The tlblTitel item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.tlblTitelInfo">
+            <summary>
+            The tlblTitel item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.lblNachricht">
+            <summary>
+            The lblNachricht item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.lblNachrichtInfo">
+            <summary>
+            The lblNachricht item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.btnBestaetigen">
+            <summary>
+            The btnBestaetigen item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.LoeschenGeraetFolder.btnBestaetigenInfo">
+            <summary>
+            The btnBestaetigen item info.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.HGSFolders.MenueFolder">
@@ -5194,14 +5802,14 @@
             The Manuelle_Buchung item info.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.MenueFolder.Copy_of_Copy_of_Reports1">
+        <member name="P:Cottbus_3000CR.HGSFolders.MenueFolder.Export">
             <summary>
-            The Copy_of_Copy_of_Reports1 item.
+            The Export item.
             </summary>
         </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.MenueFolder.Copy_of_Copy_of_Reports1Info">
+        <member name="P:Cottbus_3000CR.HGSFolders.MenueFolder.ExportInfo">
             <summary>
-            The Copy_of_Copy_of_Reports1 item info.
+            The Export item info.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.HGSFolders.FooterFolder">
@@ -5232,6 +5840,56 @@
         <member name="P:Cottbus_3000CR.HGSFolders.FooterFolder.versionInfo">
             <summary>
             The version item info.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.ListenFolder">
+            <summary>
+            The ListenFolder folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.ListenFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Listen  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.ListGeraeteTyp">
+            <summary>
+            The ListGeraeteTyp item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.ListGeraeteTypInfo">
+            <summary>
+            The ListGeraeteTyp item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.ListNetztwerkkonfiguration">
+            <summary>
+            The ListNetztwerkkonfiguration item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.ListNetztwerkkonfigurationInfo">
+            <summary>
+            The ListNetztwerkkonfiguration item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.ListProjekt">
+            <summary>
+            The ListProjekt item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.ListenFolder.ListProjektInfo">
+            <summary>
+            The ListProjekt item info.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.HGSFolders.TicketingInsideGoogleChromeAppFolder">
@@ -5356,6 +6014,13 @@
             </summary>
         </member>
         <member name="M:Cottbus_3000CR.UserCodeCollections.DPlusLibrary.SetSelectFilter(Ranorex.Core.Repository.RepoItemInfo,System.String,Ranorex.Core.Repository.RepoItemInfo)">
+            <summary>
+            This is a placeholder text. Please describe the purpose of the
+            user code method here. The method is published to the user code library
+            within a user code collection.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.UserCodeCollections.DPlusLibrary.SetSingleSelectBox(Ranorex.Core.Repository.RepoItemInfo,System.String,Ranorex.Core.Repository.RepoItemInfo)">
             <summary>
             This is a placeholder text. Please describe the purpose of the
             user code method here. The method is published to the user code library

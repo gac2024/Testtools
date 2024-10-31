@@ -114,6 +114,7 @@ namespace Cottbus_3000CR
             HGSFolders.PopUpsFolder _popups;
             HGSFolders.MenueFolder _menue;
             HGSFolders.FooterFolder _footer;
+            HGSFolders.ListenFolder _listen;
             RepoItemInfo _tenanticonInfo;
 
             /// <summary>
@@ -128,6 +129,7 @@ namespace Cottbus_3000CR
                 _popups = new HGSFolders.PopUpsFolder(this);
                 _menue = new HGSFolders.MenueFolder(this);
                 _footer = new HGSFolders.FooterFolder(this);
+                _listen = new HGSFolders.ListenFolder(this);
                 _tenanticonInfo = new RepoItemInfo(this, "TenantIcon", ".//img[#'tenant-icon']", ".//img[#'tenant-icon']", 60000, null, "af8b4ad0-7ee7-4046-af25-20c8e7069589");
             }
 
@@ -231,6 +233,15 @@ namespace Cottbus_3000CR
             public virtual HGSFolders.FooterFolder footer
             {
                 get { return _footer; }
+            }
+
+            /// <summary>
+            /// The Listen folder.
+            /// </summary>
+            [RepositoryFolder("c80d5af3-2fd2-4476-aa84-376b7470cea5")]
+            public virtual HGSFolders.ListenFolder Listen
+            {
+                get { return _listen; }
             }
         }
 
@@ -5191,6 +5202,7 @@ namespace Cottbus_3000CR
         public partial class GeraeteverwaltungFolder : RepoGenBaseFolder
         {
             HGSFolders.BaugruppenFolder _baugruppen;
+            HGSFolders.GeraeteFolder _geraete;
 
             /// <summary>
             /// Creates a new Geraeteverwaltung  folder.
@@ -5199,6 +5211,7 @@ namespace Cottbus_3000CR
                     base("Geraeteverwaltung", "", parentFolder, 0, null, false, "98affc1f-9350-43bc-a8ec-f4ff5b61dd18", "")
             {
                 _baugruppen = new HGSFolders.BaugruppenFolder(this);
+                _geraete = new HGSFolders.GeraeteFolder(this);
             }
 
             /// <summary>
@@ -5220,6 +5233,15 @@ namespace Cottbus_3000CR
             public virtual HGSFolders.BaugruppenFolder Baugruppen
             {
                 get { return _baugruppen; }
+            }
+
+            /// <summary>
+            /// The Geraete folder.
+            /// </summary>
+            [RepositoryFolder("129c753d-1485-436d-8f90-ec1370208609")]
+            public virtual HGSFolders.GeraeteFolder Geraete
+            {
+                get { return _geraete; }
             }
         }
 
@@ -5976,6 +5998,656 @@ namespace Cottbus_3000CR
         }
 
         /// <summary>
+        /// The GeraeteFolder folder.
+        /// </summary>
+        [RepositoryFolder("129c753d-1485-436d-8f90-ec1370208609")]
+        public partial class GeraeteFolder : RepoGenBaseFolder
+        {
+            HGSFolders.TabelleFolder6 _tabelle;
+            RepoItemInfo _btninitialisiserungsdatentraegerInfo;
+            RepoItemInfo _btnneuesgeraetInfo;
+
+            /// <summary>
+            /// Creates a new Geraete  folder.
+            /// </summary>
+            public GeraeteFolder(RepoGenBaseFolder parentFolder) :
+                    base("Geraete", "", parentFolder, 0, null, false, "129c753d-1485-436d-8f90-ec1370208609", "")
+            {
+                _tabelle = new HGSFolders.TabelleFolder6(this);
+                _btninitialisiserungsdatentraegerInfo = new RepoItemInfo(this, "BtnInitialisiserungsdatentraeger", ".//button[@title>'Neuen Initialisierungsdatenträger']", ".//button[@title>'Neuen Initialisierungsdatenträger']/span[2]", 60000, null, "85f3489d-b70b-4bd6-a3d8-c0477955d744");
+                _btnneuesgeraetInfo = new RepoItemInfo(this, "BtnNeuesGeraet", "article//div[@id='mpDplus-devices-table']//button[@title='Hinzufügen']", ".//button[@title='Hinzufügen']/svg/path", 60000, null, "979b2924-6393-4588-8b95-03bb165168a0");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("129c753d-1485-436d-8f90-ec1370208609")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnInitialisiserungsdatentraeger item.
+            /// </summary>
+            [RepositoryItem("85f3489d-b70b-4bd6-a3d8-c0477955d744")]
+            public virtual Ranorex.Button BtnInitialisiserungsdatentraeger
+            {
+                get
+                {
+                    return _btninitialisiserungsdatentraegerInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnInitialisiserungsdatentraeger item info.
+            /// </summary>
+            [RepositoryItemInfo("85f3489d-b70b-4bd6-a3d8-c0477955d744")]
+            public virtual RepoItemInfo BtnInitialisiserungsdatentraegerInfo
+            {
+                get
+                {
+                    return _btninitialisiserungsdatentraegerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnNeuesGeraet item.
+            /// </summary>
+            [RepositoryItem("979b2924-6393-4588-8b95-03bb165168a0")]
+            public virtual Ranorex.Button BtnNeuesGeraet
+            {
+                get
+                {
+                    return _btnneuesgeraetInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnNeuesGeraet item info.
+            /// </summary>
+            [RepositoryItemInfo("979b2924-6393-4588-8b95-03bb165168a0")]
+            public virtual RepoItemInfo BtnNeuesGeraetInfo
+            {
+                get
+                {
+                    return _btnneuesgeraetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tabelle folder.
+            /// </summary>
+            [RepositoryFolder("d0089387-a590-43b9-b327-bf927aad6541")]
+            public virtual HGSFolders.TabelleFolder6 Tabelle
+            {
+                get { return _tabelle; }
+            }
+        }
+
+        /// <summary>
+        /// The TabelleFolder6 folder.
+        /// </summary>
+        [RepositoryFolder("d0089387-a590-43b9-b327-bf927aad6541")]
+        public partial class TabelleFolder6 : RepoGenBaseFolder
+        {
+            HGSFolders.TabellenFilterFolder1 _tabellenfilter;
+            HGSFolders.TabellenInhaltFolder1 _tabelleninhalt;
+
+            /// <summary>
+            /// Creates a new Tabelle  folder.
+            /// </summary>
+            public TabelleFolder6(RepoGenBaseFolder parentFolder) :
+                    base("Tabelle", ".//div[@id='mpDplus-devices-table']", parentFolder, 60000, null, false, "d0089387-a590-43b9-b327-bf927aad6541", "")
+            {
+                _tabellenfilter = new HGSFolders.TabellenFilterFolder1(this);
+                _tabelleninhalt = new HGSFolders.TabellenInhaltFolder1(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d0089387-a590-43b9-b327-bf927aad6541")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d0089387-a590-43b9-b327-bf927aad6541")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabellenFilter folder.
+            /// </summary>
+            [RepositoryFolder("10f44fd0-a957-4b4d-8ad5-94065cc2125c")]
+            public virtual HGSFolders.TabellenFilterFolder1 TabellenFilter
+            {
+                get { return _tabellenfilter; }
+            }
+
+            /// <summary>
+            /// The TabellenInhalt folder.
+            /// </summary>
+            [RepositoryFolder("61a4bb32-9347-4be6-b9c0-8f1da2b143cc")]
+            public virtual HGSFolders.TabellenInhaltFolder1 TabellenInhalt
+            {
+                get { return _tabelleninhalt; }
+            }
+        }
+
+        /// <summary>
+        /// The TabellenFilterFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("10f44fd0-a957-4b4d-8ad5-94065cc2125c")]
+        public partial class TabellenFilterFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _filtertypInfo;
+            RepoItemInfo _filtergeraetenummerInfo;
+
+            /// <summary>
+            /// Creates a new TabellenFilter  folder.
+            /// </summary>
+            public TabellenFilterFolder1(RepoGenBaseFolder parentFolder) :
+                    base("TabellenFilter", "", parentFolder, 0, null, false, "10f44fd0-a957-4b4d-8ad5-94065cc2125c", "")
+            {
+                _filtertypInfo = new RepoItemInfo(this, "FilterTyp", ".//input[#'text-filter-from-deviceType.name']", "", 60000, null, "71fcf14f-2be7-4761-a6ba-d17c919c93df");
+                _filtergeraetenummerInfo = new RepoItemInfo(this, "FilterGeraetenummer", ".//input[#'number-filter-from-deviceId']", "", 60000, null, "5d264740-b82c-4764-b7b8-24d384bf1edc");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("10f44fd0-a957-4b4d-8ad5-94065cc2125c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FilterTyp item.
+            /// </summary>
+            [RepositoryItem("71fcf14f-2be7-4761-a6ba-d17c919c93df")]
+            public virtual Ranorex.InputTag FilterTyp
+            {
+                get
+                {
+                    return _filtertypInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FilterTyp item info.
+            /// </summary>
+            [RepositoryItemInfo("71fcf14f-2be7-4761-a6ba-d17c919c93df")]
+            public virtual RepoItemInfo FilterTypInfo
+            {
+                get
+                {
+                    return _filtertypInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FilterGeraetenummer item.
+            /// </summary>
+            [RepositoryItem("5d264740-b82c-4764-b7b8-24d384bf1edc")]
+            public virtual Ranorex.InputTag FilterGeraetenummer
+            {
+                get
+                {
+                    return _filtergeraetenummerInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FilterGeraetenummer item info.
+            /// </summary>
+            [RepositoryItemInfo("5d264740-b82c-4764-b7b8-24d384bf1edc")]
+            public virtual RepoItemInfo FilterGeraetenummerInfo
+            {
+                get
+                {
+                    return _filtergeraetenummerInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TabellenInhaltFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("61a4bb32-9347-4be6-b9c0-8f1da2b143cc")]
+        public partial class TabellenInhaltFolder1 : RepoGenBaseFolder
+        {
+            HGSFolders.Zeile_1Folder1 _zeile_1;
+
+            /// <summary>
+            /// Creates a new TabellenInhalt  folder.
+            /// </summary>
+            public TabellenInhaltFolder1(RepoGenBaseFolder parentFolder) :
+                    base("TabellenInhalt", "", parentFolder, 0, null, false, "61a4bb32-9347-4be6-b9c0-8f1da2b143cc", "")
+            {
+                _zeile_1 = new HGSFolders.Zeile_1Folder1(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("61a4bb32-9347-4be6-b9c0-8f1da2b143cc")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Zeile_1 folder.
+            /// </summary>
+            [RepositoryFolder("ca465126-fccb-4070-bffd-072e310bc146")]
+            public virtual HGSFolders.Zeile_1Folder1 Zeile_1
+            {
+                get { return _zeile_1; }
+            }
+        }
+
+        /// <summary>
+        /// The Zeile_1Folder1 folder.
+        /// </summary>
+        [RepositoryFolder("ca465126-fccb-4070-bffd-072e310bc146")]
+        public partial class Zeile_1Folder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _cellgeraetenummerInfo;
+            RepoItemInfo _cellhaltestelleInfo;
+            RepoItemInfo _cellpositionInfo;
+            RepoItemInfo _cellbeschreibungInfo;
+            RepoItemInfo _celltypInfo;
+            RepoItemInfo _cellaktivInfo;
+            RepoItemInfo _cellatestgeraetInfo;
+            RepoItemInfo _cellseriennummerInfo;
+            RepoItemInfo _cellnetzwerkconfigInfo;
+            RepoItemInfo _cellprojektInfo;
+            RepoItemInfo _cellstilllegungInfo;
+            RepoItemInfo _btneditInfo;
+            RepoItemInfo _btnloeschenInfo;
+
+            /// <summary>
+            /// Creates a new Zeile_1  folder.
+            /// </summary>
+            public Zeile_1Folder1(RepoGenBaseFolder parentFolder) :
+                    base("Zeile_1", ".//tbody/tr[1]", parentFolder, 60000, null, false, "ca465126-fccb-4070-bffd-072e310bc146", "")
+            {
+                _cellgeraetenummerInfo = new RepoItemInfo(this, "CellGeraetenummer", ".//td[@data-test-id='mat-table-cell-deviceId']/p", "", 60000, null, "0cf4b908-b7f8-4bc4-a8de-58e2a5f0dddf");
+                _cellhaltestelleInfo = new RepoItemInfo(this, "CellHaltestelle", ".//td[@data-test-id='mat-table-cell-location.station.name']/p", "", 60000, null, "9a65ec79-c967-4a63-b83b-3b289735ca90");
+                _cellpositionInfo = new RepoItemInfo(this, "CellPosition", ".//td[@data-test-id='mat-table-cell-location.position']/p", "", 60000, null, "bb80c045-e77c-4e55-a0d0-2f3214a3b2e5");
+                _cellbeschreibungInfo = new RepoItemInfo(this, "CellBeschreibung", ".//td[@data-test-id='mat-table-cell-description']/p", "", 60000, null, "d16e4466-c9ca-420f-bacc-2549445df47f");
+                _celltypInfo = new RepoItemInfo(this, "CellTyp", ".//td[@data-test-id='mat-table-cell-deviceType.name']/p", "", 60000, null, "f0a91d24-2ed1-4cbd-870b-ca0ddd5245dd");
+                _cellaktivInfo = new RepoItemInfo(this, "CellAktiv", ".//td[@data-test-id='mat-table-cell-enabled']/p", "", 60000, null, "de566a7b-6b6e-4cae-bef6-8e0e750a65fd");
+                _cellatestgeraetInfo = new RepoItemInfo(this, "CellATestgeraet", ".//td[@data-test-id=@mat-table-cell-testdevice]//input", "", 60000, null, "116e4aac-9760-4cce-8593-ed9e8fd4d112");
+                _cellseriennummerInfo = new RepoItemInfo(this, "CellSeriennummer", ".//td[@data-test-id='mat-table-cell-serialNumber']/p", "", 60000, null, "18a71504-262d-4d66-a3d8-05f084b53c2d");
+                _cellnetzwerkconfigInfo = new RepoItemInfo(this, "CellNetzwerkconfig", ".//td[@data-test-id='mat-table-cell-networkConfig']/p", "", 60000, null, "5aca4839-7755-49f8-bc13-1ac02395e958");
+                _cellprojektInfo = new RepoItemInfo(this, "CellProjekt", ".//td[@data-test-id='mat-table-cell-project.name']/p", "", 60000, null, "2e051e54-b1d4-4d57-ab64-9499f5858aac");
+                _cellstilllegungInfo = new RepoItemInfo(this, "CellStilllegung", ".//td[@data-test-id='mat-table-cell-outOfUse']/p", "", 60000, null, "3b2960f1-aaea-4a57-a5d3-f67aa6f1eae3");
+                _btneditInfo = new RepoItemInfo(this, "BtnEdit", ".//svg[@data-testid='EditIcon']", "", 60000, null, "3d189e1e-6045-40b6-8dff-9d645f185bdb");
+                _btnloeschenInfo = new RepoItemInfo(this, "BtnLoeschen", ".//svg[@data-testid='DeleteIcon']", "", 60000, null, "941570f1-aa83-41b2-bb8e-8132a3156b3a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ca465126-fccb-4070-bffd-072e310bc146")]
+            public virtual Ranorex.TrTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TrTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ca465126-fccb-4070-bffd-072e310bc146")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellGeraetenummer item.
+            /// </summary>
+            [RepositoryItem("0cf4b908-b7f8-4bc4-a8de-58e2a5f0dddf")]
+            public virtual Ranorex.PTag CellGeraetenummer
+            {
+                get
+                {
+                    return _cellgeraetenummerInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellGeraetenummer item info.
+            /// </summary>
+            [RepositoryItemInfo("0cf4b908-b7f8-4bc4-a8de-58e2a5f0dddf")]
+            public virtual RepoItemInfo CellGeraetenummerInfo
+            {
+                get
+                {
+                    return _cellgeraetenummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellHaltestelle item.
+            /// </summary>
+            [RepositoryItem("9a65ec79-c967-4a63-b83b-3b289735ca90")]
+            public virtual Ranorex.PTag CellHaltestelle
+            {
+                get
+                {
+                    return _cellhaltestelleInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellHaltestelle item info.
+            /// </summary>
+            [RepositoryItemInfo("9a65ec79-c967-4a63-b83b-3b289735ca90")]
+            public virtual RepoItemInfo CellHaltestelleInfo
+            {
+                get
+                {
+                    return _cellhaltestelleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellPosition item.
+            /// </summary>
+            [RepositoryItem("bb80c045-e77c-4e55-a0d0-2f3214a3b2e5")]
+            public virtual Ranorex.PTag CellPosition
+            {
+                get
+                {
+                    return _cellpositionInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellPosition item info.
+            /// </summary>
+            [RepositoryItemInfo("bb80c045-e77c-4e55-a0d0-2f3214a3b2e5")]
+            public virtual RepoItemInfo CellPositionInfo
+            {
+                get
+                {
+                    return _cellpositionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellBeschreibung item.
+            /// </summary>
+            [RepositoryItem("d16e4466-c9ca-420f-bacc-2549445df47f")]
+            public virtual Ranorex.PTag CellBeschreibung
+            {
+                get
+                {
+                    return _cellbeschreibungInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellBeschreibung item info.
+            /// </summary>
+            [RepositoryItemInfo("d16e4466-c9ca-420f-bacc-2549445df47f")]
+            public virtual RepoItemInfo CellBeschreibungInfo
+            {
+                get
+                {
+                    return _cellbeschreibungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellTyp item.
+            /// </summary>
+            [RepositoryItem("f0a91d24-2ed1-4cbd-870b-ca0ddd5245dd")]
+            public virtual Ranorex.PTag CellTyp
+            {
+                get
+                {
+                    return _celltypInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTyp item info.
+            /// </summary>
+            [RepositoryItemInfo("f0a91d24-2ed1-4cbd-870b-ca0ddd5245dd")]
+            public virtual RepoItemInfo CellTypInfo
+            {
+                get
+                {
+                    return _celltypInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellAktiv item.
+            /// </summary>
+            [RepositoryItem("de566a7b-6b6e-4cae-bef6-8e0e750a65fd")]
+            public virtual Ranorex.PTag CellAktiv
+            {
+                get
+                {
+                    return _cellaktivInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellAktiv item info.
+            /// </summary>
+            [RepositoryItemInfo("de566a7b-6b6e-4cae-bef6-8e0e750a65fd")]
+            public virtual RepoItemInfo CellAktivInfo
+            {
+                get
+                {
+                    return _cellaktivInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellATestgeraet item.
+            /// </summary>
+            [RepositoryItem("116e4aac-9760-4cce-8593-ed9e8fd4d112")]
+            public virtual Ranorex.InputTag CellATestgeraet
+            {
+                get
+                {
+                    return _cellatestgeraetInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellATestgeraet item info.
+            /// </summary>
+            [RepositoryItemInfo("116e4aac-9760-4cce-8593-ed9e8fd4d112")]
+            public virtual RepoItemInfo CellATestgeraetInfo
+            {
+                get
+                {
+                    return _cellatestgeraetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellSeriennummer item.
+            /// </summary>
+            [RepositoryItem("18a71504-262d-4d66-a3d8-05f084b53c2d")]
+            public virtual Ranorex.PTag CellSeriennummer
+            {
+                get
+                {
+                    return _cellseriennummerInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellSeriennummer item info.
+            /// </summary>
+            [RepositoryItemInfo("18a71504-262d-4d66-a3d8-05f084b53c2d")]
+            public virtual RepoItemInfo CellSeriennummerInfo
+            {
+                get
+                {
+                    return _cellseriennummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellNetzwerkconfig item.
+            /// </summary>
+            [RepositoryItem("5aca4839-7755-49f8-bc13-1ac02395e958")]
+            public virtual Ranorex.PTag CellNetzwerkconfig
+            {
+                get
+                {
+                    return _cellnetzwerkconfigInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellNetzwerkconfig item info.
+            /// </summary>
+            [RepositoryItemInfo("5aca4839-7755-49f8-bc13-1ac02395e958")]
+            public virtual RepoItemInfo CellNetzwerkconfigInfo
+            {
+                get
+                {
+                    return _cellnetzwerkconfigInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellProjekt item.
+            /// </summary>
+            [RepositoryItem("2e051e54-b1d4-4d57-ab64-9499f5858aac")]
+            public virtual Ranorex.PTag CellProjekt
+            {
+                get
+                {
+                    return _cellprojektInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellProjekt item info.
+            /// </summary>
+            [RepositoryItemInfo("2e051e54-b1d4-4d57-ab64-9499f5858aac")]
+            public virtual RepoItemInfo CellProjektInfo
+            {
+                get
+                {
+                    return _cellprojektInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellStilllegung item.
+            /// </summary>
+            [RepositoryItem("3b2960f1-aaea-4a57-a5d3-f67aa6f1eae3")]
+            public virtual Ranorex.PTag CellStilllegung
+            {
+                get
+                {
+                    return _cellstilllegungInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellStilllegung item info.
+            /// </summary>
+            [RepositoryItemInfo("3b2960f1-aaea-4a57-a5d3-f67aa6f1eae3")]
+            public virtual RepoItemInfo CellStilllegungInfo
+            {
+                get
+                {
+                    return _cellstilllegungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnEdit item.
+            /// </summary>
+            [RepositoryItem("3d189e1e-6045-40b6-8dff-9d645f185bdb")]
+            public virtual Ranorex.SvgTag BtnEdit
+            {
+                get
+                {
+                    return _btneditInfo.CreateAdapter<Ranorex.SvgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnEdit item info.
+            /// </summary>
+            [RepositoryItemInfo("3d189e1e-6045-40b6-8dff-9d645f185bdb")]
+            public virtual RepoItemInfo BtnEditInfo
+            {
+                get
+                {
+                    return _btneditInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnLoeschen item.
+            /// </summary>
+            [RepositoryItem("941570f1-aa83-41b2-bb8e-8132a3156b3a")]
+            public virtual Ranorex.SvgTag BtnLoeschen
+            {
+                get
+                {
+                    return _btnloeschenInfo.CreateAdapter<Ranorex.SvgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnLoeschen item info.
+            /// </summary>
+            [RepositoryItemInfo("941570f1-aa83-41b2-bb8e-8132a3156b3a")]
+            public virtual RepoItemInfo BtnLoeschenInfo
+            {
+                get
+                {
+                    return _btnloeschenInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The PapierrollenverwaltungFolder folder.
         /// </summary>
         [RepositoryFolder("ea19f323-0ad6-4d39-8ad2-8d09da66bc71")]
@@ -6042,7 +6714,7 @@ namespace Cottbus_3000CR
         [RepositoryFolder("8a0b2d8e-19cf-46df-83f9-b0c257a31230")]
         public partial class PapierrollenFolder : RepoGenBaseFolder
         {
-            HGSFolders.TabelleFolder6 _tabelle;
+            HGSFolders.TabelleFolder7 _tabelle;
 
             /// <summary>
             /// Creates a new Papierrollen  folder.
@@ -6050,7 +6722,7 @@ namespace Cottbus_3000CR
             public PapierrollenFolder(RepoGenBaseFolder parentFolder) :
                     base("Papierrollen", "", parentFolder, 0, null, false, "8a0b2d8e-19cf-46df-83f9-b0c257a31230", "")
             {
-                _tabelle = new HGSFolders.TabelleFolder6(this);
+                _tabelle = new HGSFolders.TabelleFolder7(this);
             }
 
             /// <summary>
@@ -6069,17 +6741,17 @@ namespace Cottbus_3000CR
             /// The Tabelle folder.
             /// </summary>
             [RepositoryFolder("39d29926-5ab8-47d0-8246-1463c1552e62")]
-            public virtual HGSFolders.TabelleFolder6 Tabelle
+            public virtual HGSFolders.TabelleFolder7 Tabelle
             {
                 get { return _tabelle; }
             }
         }
 
         /// <summary>
-        /// The TabelleFolder6 folder.
+        /// The TabelleFolder7 folder.
         /// </summary>
         [RepositoryFolder("39d29926-5ab8-47d0-8246-1463c1552e62")]
-        public partial class TabelleFolder6 : RepoGenBaseFolder
+        public partial class TabelleFolder7 : RepoGenBaseFolder
         {
             HGSFolders.FilterFolder6 _filter;
             HGSFolders.Zeile1Folder5 _zeile1;
@@ -6087,7 +6759,7 @@ namespace Cottbus_3000CR
             /// <summary>
             /// Creates a new Tabelle  folder.
             /// </summary>
-            public TabelleFolder6(RepoGenBaseFolder parentFolder) :
+            public TabelleFolder7(RepoGenBaseFolder parentFolder) :
                     base("Tabelle", "article/div/?/?/div[@id='mpDplus-paper-rolls-table']", parentFolder, 60000, null, false, "39d29926-5ab8-47d0-8246-1463c1552e62", "")
             {
                 _filter = new HGSFolders.FilterFolder6(this);
@@ -6509,7 +7181,7 @@ namespace Cottbus_3000CR
         [RepositoryFolder("0e047124-0aed-403d-a0c0-b1b4a869aa6b")]
         public partial class TicketverfolgungFolder : RepoGenBaseFolder
         {
-            HGSFolders.TabelleFolder7 _tabelle;
+            HGSFolders.TabelleFolder8 _tabelle;
             HGSFolders.TicketverfolgungDetailsFolder _ticketverfolgungdetails;
 
             /// <summary>
@@ -6518,7 +7190,7 @@ namespace Cottbus_3000CR
             public TicketverfolgungFolder(RepoGenBaseFolder parentFolder) :
                     base("Ticketverfolgung", "", parentFolder, 0, null, false, "0e047124-0aed-403d-a0c0-b1b4a869aa6b", "")
             {
-                _tabelle = new HGSFolders.TabelleFolder7(this);
+                _tabelle = new HGSFolders.TabelleFolder8(this);
                 _ticketverfolgungdetails = new HGSFolders.TicketverfolgungDetailsFolder(this);
             }
 
@@ -6538,7 +7210,7 @@ namespace Cottbus_3000CR
             /// The Tabelle folder.
             /// </summary>
             [RepositoryFolder("1a6ccbb2-e5bf-46a4-a44b-3330175283af")]
-            public virtual HGSFolders.TabelleFolder7 Tabelle
+            public virtual HGSFolders.TabelleFolder8 Tabelle
             {
                 get { return _tabelle; }
             }
@@ -6554,10 +7226,10 @@ namespace Cottbus_3000CR
         }
 
         /// <summary>
-        /// The TabelleFolder7 folder.
+        /// The TabelleFolder8 folder.
         /// </summary>
         [RepositoryFolder("1a6ccbb2-e5bf-46a4-a44b-3330175283af")]
-        public partial class TabelleFolder7 : RepoGenBaseFolder
+        public partial class TabelleFolder8 : RepoGenBaseFolder
         {
             HGSFolders.FilterFolder7 _filter;
             HGSFolders.Zeile1Folder6 _zeile1;
@@ -6565,7 +7237,7 @@ namespace Cottbus_3000CR
             /// <summary>
             /// Creates a new Tabelle  folder.
             /// </summary>
-            public TabelleFolder7(RepoGenBaseFolder parentFolder) :
+            public TabelleFolder8(RepoGenBaseFolder parentFolder) :
                     base("Tabelle", "article/div/?/?/div[@id='mpDplus-ticket-tracking-table']", parentFolder, 60000, null, false, "1a6ccbb2-e5bf-46a4-a44b-3330175283af", "")
             {
                 _filter = new HGSFolders.FilterFolder7(this);
@@ -6961,7 +7633,7 @@ namespace Cottbus_3000CR
         [RepositoryFolder("ade6f842-6358-44c2-b222-5dae53006c2d")]
         public partial class TicketverfolgungDetailsFolder : RepoGenBaseFolder
         {
-            HGSFolders.TabelleFolder8 _tabelle;
+            HGSFolders.TabelleFolder9 _tabelle;
             HGSFolders.DetailsFolder1 _details;
             RepoItemInfo _btnbackInfo;
 
@@ -6971,7 +7643,7 @@ namespace Cottbus_3000CR
             public TicketverfolgungDetailsFolder(RepoGenBaseFolder parentFolder) :
                     base("TicketverfolgungDetails", "", parentFolder, 0, null, false, "ade6f842-6358-44c2-b222-5dae53006c2d", "")
             {
-                _tabelle = new HGSFolders.TabelleFolder8(this);
+                _tabelle = new HGSFolders.TabelleFolder9(this);
                 _details = new HGSFolders.DetailsFolder1(this);
                 _btnbackInfo = new RepoItemInfo(this, "btnBack", "article/div/div/div[1]/button", "article/div/div/div[1]/button/svg", 60000, null, "16fdd36c-cfcc-4633-a068-d864f986b9f5");
             }
@@ -7016,7 +7688,7 @@ namespace Cottbus_3000CR
             /// The Tabelle folder.
             /// </summary>
             [RepositoryFolder("02c465f0-204d-46ca-b0bf-a0bf85b1abee")]
-            public virtual HGSFolders.TabelleFolder8 Tabelle
+            public virtual HGSFolders.TabelleFolder9 Tabelle
             {
                 get { return _tabelle; }
             }
@@ -7032,10 +7704,10 @@ namespace Cottbus_3000CR
         }
 
         /// <summary>
-        /// The TabelleFolder8 folder.
+        /// The TabelleFolder9 folder.
         /// </summary>
         [RepositoryFolder("02c465f0-204d-46ca-b0bf-a0bf85b1abee")]
-        public partial class TabelleFolder8 : RepoGenBaseFolder
+        public partial class TabelleFolder9 : RepoGenBaseFolder
         {
             HGSFolders.FilterFolder8 _filter;
             HGSFolders.Zeile1Folder7 _zeile1;
@@ -7043,7 +7715,7 @@ namespace Cottbus_3000CR
             /// <summary>
             /// Creates a new Tabelle  folder.
             /// </summary>
-            public TabelleFolder8(RepoGenBaseFolder parentFolder) :
+            public TabelleFolder9(RepoGenBaseFolder parentFolder) :
                     base("Tabelle", "article/div/?/?/div[@id='mpDplus-tracking-details-table']", parentFolder, 60000, null, false, "02c465f0-204d-46ca-b0bf-a0bf85b1abee", "")
             {
                 _filter = new HGSFolders.FilterFolder8(this);
@@ -7623,7 +8295,7 @@ namespace Cottbus_3000CR
         [RepositoryFolder("b9534ffd-4d11-45fa-82f7-e7d03a614040")]
         public partial class BarcodeverfolgungFolder : RepoGenBaseFolder
         {
-            HGSFolders.TabelleFolder9 _tabelle;
+            HGSFolders.TabelleFolder10 _tabelle;
 
             /// <summary>
             /// Creates a new Barcodeverfolgung  folder.
@@ -7631,7 +8303,7 @@ namespace Cottbus_3000CR
             public BarcodeverfolgungFolder(RepoGenBaseFolder parentFolder) :
                     base("Barcodeverfolgung", "", parentFolder, 0, null, false, "b9534ffd-4d11-45fa-82f7-e7d03a614040", "")
             {
-                _tabelle = new HGSFolders.TabelleFolder9(this);
+                _tabelle = new HGSFolders.TabelleFolder10(this);
             }
 
             /// <summary>
@@ -7650,17 +8322,17 @@ namespace Cottbus_3000CR
             /// The Tabelle folder.
             /// </summary>
             [RepositoryFolder("8947ed84-416c-4630-9d48-b8f13f01757d")]
-            public virtual HGSFolders.TabelleFolder9 Tabelle
+            public virtual HGSFolders.TabelleFolder10 Tabelle
             {
                 get { return _tabelle; }
             }
         }
 
         /// <summary>
-        /// The TabelleFolder9 folder.
+        /// The TabelleFolder10 folder.
         /// </summary>
         [RepositoryFolder("8947ed84-416c-4630-9d48-b8f13f01757d")]
-        public partial class TabelleFolder9 : RepoGenBaseFolder
+        public partial class TabelleFolder10 : RepoGenBaseFolder
         {
             HGSFolders.FilterFolder9 _filter;
             HGSFolders.Zeile1Folder8 _zeile1;
@@ -7668,7 +8340,7 @@ namespace Cottbus_3000CR
             /// <summary>
             /// Creates a new Tabelle  folder.
             /// </summary>
-            public TabelleFolder9(RepoGenBaseFolder parentFolder) :
+            public TabelleFolder10(RepoGenBaseFolder parentFolder) :
                     base("Tabelle", "article/div/?/?/div[@id='mpDplus-barcode-tracking-table']", parentFolder, 60000, null, false, "8947ed84-416c-4630-9d48-b8f13f01757d", "")
             {
                 _filter = new HGSFolders.FilterFolder9(this);
@@ -8042,6 +8714,8 @@ namespace Cottbus_3000CR
             HGSFolders.AuswahlboxenFolder _auswahlboxen;
             HGSFolders.AchtungFolder _achtung;
             HGSFolders.DatumsauswahlFolder _datumsauswahl;
+            HGSFolders.NeuesGeraetFolder _neuesgeraet;
+            HGSFolders.LoeschenGeraetFolder _loeschengeraet;
             RepoItemInfo _filtermonitoringbetriebInfo;
 
             /// <summary>
@@ -8054,6 +8728,8 @@ namespace Cottbus_3000CR
                 _auswahlboxen = new HGSFolders.AuswahlboxenFolder(this);
                 _achtung = new HGSFolders.AchtungFolder(this);
                 _datumsauswahl = new HGSFolders.DatumsauswahlFolder(this);
+                _neuesgeraet = new HGSFolders.NeuesGeraetFolder(this);
+                _loeschengeraet = new HGSFolders.LoeschenGeraetFolder(this);
                 _filtermonitoringbetriebInfo = new RepoItemInfo(this, "filterMonitoringBetrieb", "div", "element", 60000, null, "9774edef-0636-42d9-a027-1f434d06f2de");
             }
 
@@ -8139,6 +8815,24 @@ namespace Cottbus_3000CR
             public virtual HGSFolders.DatumsauswahlFolder Datumsauswahl
             {
                 get { return _datumsauswahl; }
+            }
+
+            /// <summary>
+            /// The NeuesGeraet folder.
+            /// </summary>
+            [RepositoryFolder("82371d55-6e39-4cd3-b2ca-6332584ad87e")]
+            public virtual HGSFolders.NeuesGeraetFolder NeuesGeraet
+            {
+                get { return _neuesgeraet; }
+            }
+
+            /// <summary>
+            /// The LoeschenGeraet folder.
+            /// </summary>
+            [RepositoryFolder("43b7bb09-e881-4a8a-b1d8-cc3ff065000b")]
+            public virtual HGSFolders.LoeschenGeraetFolder LoeschenGeraet
+            {
+                get { return _loeschengeraet; }
             }
         }
 
@@ -8658,6 +9352,399 @@ namespace Cottbus_3000CR
         }
 
         /// <summary>
+        /// The NeuesGeraetFolder folder.
+        /// </summary>
+        [RepositoryFolder("82371d55-6e39-4cd3-b2ca-6332584ad87e")]
+        public partial class NeuesGeraetFolder : RepoGenBaseFolder
+        {
+            HGSFolders.MainFolder _main;
+
+            /// <summary>
+            /// Creates a new NeuesGeraet  folder.
+            /// </summary>
+            public NeuesGeraetFolder(RepoGenBaseFolder parentFolder) :
+                    base("NeuesGeraet", "", parentFolder, 0, null, false, "82371d55-6e39-4cd3-b2ca-6332584ad87e", "")
+            {
+                _main = new HGSFolders.MainFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("82371d55-6e39-4cd3-b2ca-6332584ad87e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Main folder.
+            /// </summary>
+            [RepositoryFolder("7b309c01-8e78-4adc-b8c6-12d37ed275c9")]
+            public virtual HGSFolders.MainFolder Main
+            {
+                get { return _main; }
+            }
+        }
+
+        /// <summary>
+        /// The MainFolder folder.
+        /// </summary>
+        [RepositoryFolder("7b309c01-8e78-4adc-b8c6-12d37ed275c9")]
+        public partial class MainFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _txtgeraetenummerInfo;
+            RepoItemInfo _txtbeschreibungInfo;
+            RepoItemInfo _txtseriennummerInfo;
+            RepoItemInfo _seltypInfo;
+            RepoItemInfo _chktestgeraetInfo;
+            RepoItemInfo _selprojektInfo;
+            RepoItemInfo _btnuebernehmenInfo;
+            RepoItemInfo _btnabbrechenInfo;
+
+            /// <summary>
+            /// Creates a new Main  folder.
+            /// </summary>
+            public MainFolder(RepoGenBaseFolder parentFolder) :
+                    base("Main", ".//div[@class='edit-form']", parentFolder, 60000, null, false, "7b309c01-8e78-4adc-b8c6-12d37ed275c9", "")
+            {
+                _txtgeraetenummerInfo = new RepoItemInfo(this, "txtGeraetenummer", ".//input[@id='edit-form-field-text-deviceId']", "element", 60000, null, "124657b6-fa26-4182-9a4e-cddf722286f6");
+                _txtbeschreibungInfo = new RepoItemInfo(this, "txtBeschreibung", ".//input[@id='edit-form-field-text-description']", "element", 60000, null, "66e79ed1-3102-4a9a-a562-23b1982bbf07");
+                _txtseriennummerInfo = new RepoItemInfo(this, "txtSeriennummer", ".//input[@id='edit-form-field-text-serialNumber']", "element", 60000, null, "c5e2a1e5-688d-430e-a776-3e1b306e712f");
+                _seltypInfo = new RepoItemInfo(this, "selTyp", ".//div[@id='edit-form-field-select-deviceType']", "element", 60000, null, "a7c5e4bb-dcfb-445b-b759-936ba378ba97");
+                _chktestgeraetInfo = new RepoItemInfo(this, "chkTestgeraet", ".//input[@id='edit-form-field-boolean-switch-testDevice']", "element", 60000, null, "9513d1d4-02ee-4bea-82ec-f3de43fca582");
+                _selprojektInfo = new RepoItemInfo(this, "selProjekt", ".//div[@id='edit-form-field-container-project']", "element", 60000, null, "47a429aa-d186-48fe-b2a8-fae58ba009d1");
+                _btnuebernehmenInfo = new RepoItemInfo(this, "btnUebernehmen", ".//button[@id='addItemButton']", "element", 60000, null, "e6a68aa8-68f0-4dd5-8f6b-3b275e47be26");
+                _btnabbrechenInfo = new RepoItemInfo(this, "btnAbbrechen", ".//button[@innertext='Abbrechen']", "", 60000, null, "f658eb9c-2b51-4613-94ee-0d3b6def0437");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7b309c01-8e78-4adc-b8c6-12d37ed275c9")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7b309c01-8e78-4adc-b8c6-12d37ed275c9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtGeraetenummer item.
+            /// </summary>
+            [RepositoryItem("124657b6-fa26-4182-9a4e-cddf722286f6")]
+            public virtual Ranorex.InputTag txtGeraetenummer
+            {
+                get
+                {
+                    return _txtgeraetenummerInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtGeraetenummer item info.
+            /// </summary>
+            [RepositoryItemInfo("124657b6-fa26-4182-9a4e-cddf722286f6")]
+            public virtual RepoItemInfo txtGeraetenummerInfo
+            {
+                get
+                {
+                    return _txtgeraetenummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtBeschreibung item.
+            /// </summary>
+            [RepositoryItem("66e79ed1-3102-4a9a-a562-23b1982bbf07")]
+            public virtual Ranorex.InputTag txtBeschreibung
+            {
+                get
+                {
+                    return _txtbeschreibungInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtBeschreibung item info.
+            /// </summary>
+            [RepositoryItemInfo("66e79ed1-3102-4a9a-a562-23b1982bbf07")]
+            public virtual RepoItemInfo txtBeschreibungInfo
+            {
+                get
+                {
+                    return _txtbeschreibungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtSeriennummer item.
+            /// </summary>
+            [RepositoryItem("c5e2a1e5-688d-430e-a776-3e1b306e712f")]
+            public virtual Ranorex.InputTag txtSeriennummer
+            {
+                get
+                {
+                    return _txtseriennummerInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtSeriennummer item info.
+            /// </summary>
+            [RepositoryItemInfo("c5e2a1e5-688d-430e-a776-3e1b306e712f")]
+            public virtual RepoItemInfo txtSeriennummerInfo
+            {
+                get
+                {
+                    return _txtseriennummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The selTyp item.
+            /// </summary>
+            [RepositoryItem("a7c5e4bb-dcfb-445b-b759-936ba378ba97")]
+            public virtual Ranorex.DivTag selTyp
+            {
+                get
+                {
+                    return _seltypInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The selTyp item info.
+            /// </summary>
+            [RepositoryItemInfo("a7c5e4bb-dcfb-445b-b759-936ba378ba97")]
+            public virtual RepoItemInfo selTypInfo
+            {
+                get
+                {
+                    return _seltypInfo;
+                }
+            }
+
+            /// <summary>
+            /// The chkTestgeraet item.
+            /// </summary>
+            [RepositoryItem("9513d1d4-02ee-4bea-82ec-f3de43fca582")]
+            public virtual Ranorex.InputTag chkTestgeraet
+            {
+                get
+                {
+                    return _chktestgeraetInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The chkTestgeraet item info.
+            /// </summary>
+            [RepositoryItemInfo("9513d1d4-02ee-4bea-82ec-f3de43fca582")]
+            public virtual RepoItemInfo chkTestgeraetInfo
+            {
+                get
+                {
+                    return _chktestgeraetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The selProjekt item.
+            /// </summary>
+            [RepositoryItem("47a429aa-d186-48fe-b2a8-fae58ba009d1")]
+            public virtual Ranorex.DivTag selProjekt
+            {
+                get
+                {
+                    return _selprojektInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The selProjekt item info.
+            /// </summary>
+            [RepositoryItemInfo("47a429aa-d186-48fe-b2a8-fae58ba009d1")]
+            public virtual RepoItemInfo selProjektInfo
+            {
+                get
+                {
+                    return _selprojektInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnUebernehmen item.
+            /// </summary>
+            [RepositoryItem("e6a68aa8-68f0-4dd5-8f6b-3b275e47be26")]
+            public virtual Ranorex.Button btnUebernehmen
+            {
+                get
+                {
+                    return _btnuebernehmenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnUebernehmen item info.
+            /// </summary>
+            [RepositoryItemInfo("e6a68aa8-68f0-4dd5-8f6b-3b275e47be26")]
+            public virtual RepoItemInfo btnUebernehmenInfo
+            {
+                get
+                {
+                    return _btnuebernehmenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnAbbrechen item.
+            /// </summary>
+            [RepositoryItem("f658eb9c-2b51-4613-94ee-0d3b6def0437")]
+            public virtual Ranorex.Button btnAbbrechen
+            {
+                get
+                {
+                    return _btnabbrechenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnAbbrechen item info.
+            /// </summary>
+            [RepositoryItemInfo("f658eb9c-2b51-4613-94ee-0d3b6def0437")]
+            public virtual RepoItemInfo btnAbbrechenInfo
+            {
+                get
+                {
+                    return _btnabbrechenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The LoeschenGeraetFolder folder.
+        /// </summary>
+        [RepositoryFolder("43b7bb09-e881-4a8a-b1d8-cc3ff065000b")]
+        public partial class LoeschenGeraetFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tlbltitelInfo;
+            RepoItemInfo _lblnachrichtInfo;
+            RepoItemInfo _btnbestaetigenInfo;
+
+            /// <summary>
+            /// Creates a new LoeschenGeraet  folder.
+            /// </summary>
+            public LoeschenGeraetFolder(RepoGenBaseFolder parentFolder) :
+                    base("LoeschenGeraet", "", parentFolder, 0, null, false, "43b7bb09-e881-4a8a-b1d8-cc3ff065000b", "")
+            {
+                _tlbltitelInfo = new RepoItemInfo(this, "tlblTitel", ".//h4", "", 60000, null, "d1666758-3fa4-4327-9027-1760a9a8f2b3");
+                _lblnachrichtInfo = new RepoItemInfo(this, "lblNachricht", "div/div/div[1]/div/div[2]/p", "", 60000, null, "58145206-a710-46b2-bebb-7228064e55c3");
+                _btnbestaetigenInfo = new RepoItemInfo(this, "btnBestaetigen", "div/div//button[@innertext='Bestätigen']", "", 60000, null, "58551cec-24ad-4bbb-908a-3589b3bf1181");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("43b7bb09-e881-4a8a-b1d8-cc3ff065000b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tlblTitel item.
+            /// </summary>
+            [RepositoryItem("d1666758-3fa4-4327-9027-1760a9a8f2b3")]
+            public virtual Ranorex.H4Tag tlblTitel
+            {
+                get
+                {
+                    return _tlbltitelInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tlblTitel item info.
+            /// </summary>
+            [RepositoryItemInfo("d1666758-3fa4-4327-9027-1760a9a8f2b3")]
+            public virtual RepoItemInfo tlblTitelInfo
+            {
+                get
+                {
+                    return _tlbltitelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lblNachricht item.
+            /// </summary>
+            [RepositoryItem("58145206-a710-46b2-bebb-7228064e55c3")]
+            public virtual Ranorex.PTag lblNachricht
+            {
+                get
+                {
+                    return _lblnachrichtInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lblNachricht item info.
+            /// </summary>
+            [RepositoryItemInfo("58145206-a710-46b2-bebb-7228064e55c3")]
+            public virtual RepoItemInfo lblNachrichtInfo
+            {
+                get
+                {
+                    return _lblnachrichtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnBestaetigen item.
+            /// </summary>
+            [RepositoryItem("58551cec-24ad-4bbb-908a-3589b3bf1181")]
+            public virtual Ranorex.ButtonTag btnBestaetigen
+            {
+                get
+                {
+                    return _btnbestaetigenInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnBestaetigen item info.
+            /// </summary>
+            [RepositoryItemInfo("58551cec-24ad-4bbb-908a-3589b3bf1181")]
+            public virtual RepoItemInfo btnBestaetigenInfo
+            {
+                get
+                {
+                    return _btnbestaetigenInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The MenueFolder folder.
         /// </summary>
         [RepositoryFolder("c56ab5e6-66e4-4455-89fe-3dc20c2a9282")]
@@ -8699,7 +9786,7 @@ namespace Cottbus_3000CR
             RepoItemInfo _buchungsschluesselInfo;
             RepoItemInfo _konfigurationInfo;
             RepoItemInfo _manuelle_buchungInfo;
-            RepoItemInfo _copy_of_copy_of_reports1Info;
+            RepoItemInfo _exportInfo;
 
             /// <summary>
             /// Creates a new Menue  folder.
@@ -8743,7 +9830,7 @@ namespace Cottbus_3000CR
                 _buchungsschluesselInfo = new RepoItemInfo(this, "Buchungsschluessel", "div//p[@innertext='Buchungsschlüssel']", "", 60000, null, "69b0398c-8001-4624-83d1-2965f22eb2fc");
                 _konfigurationInfo = new RepoItemInfo(this, "Konfiguration", "div//p[@innertext='Konfiguration']", "", 60000, null, "8ed0e156-76fc-4e6a-ac78-620a248500cb");
                 _manuelle_buchungInfo = new RepoItemInfo(this, "Manuelle_Buchung", "div//p[@innertext='Manuelle Buchung']", "", 60000, null, "baf65429-9dd0-4b15-b3fa-cef7529f57b0");
-                _copy_of_copy_of_reports1Info = new RepoItemInfo(this, "Copy_of_Copy_of_Reports1", "div//p[@innertext='Export']", "", 60000, null, "92cd96f4-9e46-424b-931c-6fb0d92bcdaa");
+                _exportInfo = new RepoItemInfo(this, "Export", "div//p[@innertext='Export']", "", 60000, null, "92cd96f4-9e46-424b-931c-6fb0d92bcdaa");
             }
 
             /// <summary>
@@ -9635,26 +10722,26 @@ namespace Cottbus_3000CR
             }
 
             /// <summary>
-            /// The Copy_of_Copy_of_Reports1 item.
+            /// The Export item.
             /// </summary>
             [RepositoryItem("92cd96f4-9e46-424b-931c-6fb0d92bcdaa")]
-            public virtual Ranorex.PTag Copy_of_Copy_of_Reports1
+            public virtual Ranorex.PTag Export
             {
                 get
                 {
-                    return _copy_of_copy_of_reports1Info.CreateAdapter<Ranorex.PTag>(true);
+                    return _exportInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_Copy_of_Reports1 item info.
+            /// The Export item info.
             /// </summary>
             [RepositoryItemInfo("92cd96f4-9e46-424b-931c-6fb0d92bcdaa")]
-            public virtual RepoItemInfo Copy_of_Copy_of_Reports1Info
+            public virtual RepoItemInfo ExportInfo
             {
                 get
                 {
-                    return _copy_of_copy_of_reports1Info;
+                    return _exportInfo;
                 }
             }
         }
@@ -9721,6 +10808,124 @@ namespace Cottbus_3000CR
                 get
                 {
                     return _versionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ListenFolder folder.
+        /// </summary>
+        [RepositoryFolder("c80d5af3-2fd2-4476-aa84-376b7470cea5")]
+        public partial class ListenFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _listgeraetetypInfo;
+            RepoItemInfo _listnetztwerkkonfigurationInfo;
+            RepoItemInfo _listprojektInfo;
+
+            /// <summary>
+            /// Creates a new Listen  folder.
+            /// </summary>
+            public ListenFolder(RepoGenBaseFolder parentFolder) :
+                    base("Listen", ".//div[#'menu-']", parentFolder, 60000, null, false, "c80d5af3-2fd2-4476-aa84-376b7470cea5", "")
+            {
+                _listgeraetetypInfo = new RepoItemInfo(this, "ListGeraeteTyp", ".//ul[@aria-labelledby='edit-form-field-select-label-deviceType']", "?/?/ul", 60000, null, "14e994af-6212-4e7e-b031-effeebd44fe2");
+                _listnetztwerkkonfigurationInfo = new RepoItemInfo(this, "ListNetztwerkkonfiguration", ".//ul[@aria-labelledby='edit-form-field-select-label-networkConfig']", "?/?/ul", 60000, null, "4d3d083b-1eee-4c83-94c3-fa1982cbbaab");
+                _listprojektInfo = new RepoItemInfo(this, "ListProjekt", ".//ul[@aria-labelledby='edit-form-field-select-label-project']", "?/?/ul", 60000, null, "74e397a8-9e4d-4e91-8101-a8d142ab2088");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c80d5af3-2fd2-4476-aa84-376b7470cea5")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c80d5af3-2fd2-4476-aa84-376b7470cea5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListGeraeteTyp item.
+            /// </summary>
+            [RepositoryItem("14e994af-6212-4e7e-b031-effeebd44fe2")]
+            public virtual Ranorex.UlTag ListGeraeteTyp
+            {
+                get
+                {
+                    return _listgeraetetypInfo.CreateAdapter<Ranorex.UlTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListGeraeteTyp item info.
+            /// </summary>
+            [RepositoryItemInfo("14e994af-6212-4e7e-b031-effeebd44fe2")]
+            public virtual RepoItemInfo ListGeraeteTypInfo
+            {
+                get
+                {
+                    return _listgeraetetypInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListNetztwerkkonfiguration item.
+            /// </summary>
+            [RepositoryItem("4d3d083b-1eee-4c83-94c3-fa1982cbbaab")]
+            public virtual Ranorex.UlTag ListNetztwerkkonfiguration
+            {
+                get
+                {
+                    return _listnetztwerkkonfigurationInfo.CreateAdapter<Ranorex.UlTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListNetztwerkkonfiguration item info.
+            /// </summary>
+            [RepositoryItemInfo("4d3d083b-1eee-4c83-94c3-fa1982cbbaab")]
+            public virtual RepoItemInfo ListNetztwerkkonfigurationInfo
+            {
+                get
+                {
+                    return _listnetztwerkkonfigurationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListProjekt item.
+            /// </summary>
+            [RepositoryItem("74e397a8-9e4d-4e91-8101-a8d142ab2088")]
+            public virtual Ranorex.UlTag ListProjekt
+            {
+                get
+                {
+                    return _listprojektInfo.CreateAdapter<Ranorex.UlTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListProjekt item info.
+            /// </summary>
+            [RepositoryItemInfo("74e397a8-9e4d-4e91-8101-a8d142ab2088")]
+            public virtual RepoItemInfo ListProjektInfo
+            {
+                get
+                {
+                    return _listprojektInfo;
                 }
             }
         }

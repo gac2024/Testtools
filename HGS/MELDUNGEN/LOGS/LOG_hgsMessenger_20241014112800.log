@@ -1,0 +1,89 @@
+################################################################################
+#####   Generator -> Papierlogistikmeldung 
+################################################################################
+Started: 2024-10-14 11:28:00
+
+###############################################
+Arguments:
+###############################################
+ projektname                   : MASTER
+ TESTFALLNAME                  : UESTRA\\UESTRA-1853_AUFSTEIGEND_information3
+ mainpath                      : C:\Testtools\HGS\MELDUNGEN
+ MELDUNGSNAME                  : Papierlogistikmeldung
+ testfallname                  : UESTRA\\UESTRA-1853_AUFSTEIGEND_information3
+ meldungsname                  : Papierlogistikmeldung
+ PROJEKTNAME                   : MASTER
+ MAINPATH                      : C:\Testtools\HGS\MELDUNGEN
+###############################################
+
+
+###############################################
+Eingangsdaten:
+###############################################
+
+Testdaten:papierbahn = PRN_PB_1
+Testdaten:status = Installation
+Testdaten:papiersorte = 0
+Testdaten:barcode = 
+Testdaten:seriennummerPapier = 
+Testdaten:verbleibendeabschnitte = 1195
+Testdaten:aktuellerabschnitt = 5555
+------------------------------------------
+Papierlogistikmeldung:abschnittsnummerPapier = 0005555
+Papierlogistikmeldung:ausgabemediumTyp = SORT_1
+Papierlogistikmeldung:charge = 
+Papierlogistikmeldung:druckerKennung = DEV_PRN_2
+Papierlogistikmeldung:einbauposition = 0
+Papierlogistikmeldung:medienkennung = 
+Papierlogistikmeldung:papierkanalDrucker = -1
+Papierlogistikmeldung:papierkanalKennung = PRN_PB_1
+Papierlogistikmeldung:papierlogistiker = 0
+Papierlogistikmeldung:seriennummerDrucker = 30057500E020340
+Papierlogistikmeldung:sstVersion = 3.10
+Papierlogistikmeldung:vorgangsnummer = 0
+Papierlogistikmeldung:vorgangstyp = INSTALLATION
+Papierlogistikmeldung:zeitpunkt = ${__datetime(,,"-1h)}
+Papierlogistikmeldung:seriennummerPapier = 
+Papierlogistikmeldung:abrechnungsnummer = 
+------------------------------------------
+papiersorte_1:abschnitteGesamt = 6750
+papiersorte_1:materialcode = 0
+papiersorte_1:nummernfolge = AUFSTEIGEND
+------------------------------------------
+GLOBAL:PROJEKTNAME = MASTER
+GLOBAL:DATABASE = C:\Testtools\HGS\MELDUNGEN/CONFIG\MASTER\database.ini
+GLOBAL:AUTOMAT = 999000
+GLOBAL:URLHGS = https://uestra.dev.ti-ica.de/dplus/services/automatenService/3_10/?wsdl
+GLOBAL:VERSION = 3.10
+GLOBAL:TRANSFERFILE = C:\Testtools\HGS\MELDUNGEN/CONFIG/TRANSFER/transfer_MASTER.ini
+------------------------------------------
+
+###############################################
+
+###############################################
+Message:
+###############################################
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangePapierlogistikmeldung xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaPapierlogistikmeldung xmlns="http://tms.ica.de/automatenService/3_10/" zeitpunkt="2024-10-14T10:28:00.324+02:00" vorgangstyp="INSTALLATION" papierlogistiker="0" vorgangsnummer="0" charge="" seriennummerPapier="100042" abschnittsnummerPapier="5555" seriennummerDrucker="30057500E020340" einbauposition="0" papierkanalDrucker="-1" abrechnungsnummer="10223" ausgabemediumTyp="SORT_1" medienkennung="01000420005555" druckerKennung="DEV_PRN_2" papierkanalKennung="PRN_PB_1" sstVersion="3.10">
+                <verkaufspunkt posNummer="999000" betreiber="99" seriennummer="999000" ipAdresse="0.0.0.0"/>
+                <metadaten sequenznummer="17490" guid="0b859f76-ee07-4bbf-b25d-27e8cf44c648"/>
+                <papiersorte materialcode="0" abschnitteGesamt="6750" nummernfolge="AUFSTEIGEND"/>
+            </faaPapierlogistikmeldung>
+        </empfangePapierlogistikmeldung>
+    </s:Body>
+</s:Envelope>
+
+
+###############################################
+###############################################
+Result:
+###############################################
+OK
+
+###############################################
+################################################################################
+
+Finished: 2024-10-14 11:28:02
+
