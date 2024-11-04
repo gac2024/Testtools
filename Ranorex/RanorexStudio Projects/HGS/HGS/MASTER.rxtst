@@ -137,6 +137,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0b23cf96-ab25-4482-8aec-81db0cc8cafc"
 			name="OEffnen"
 			ref="34b522fc-9740-4354-a23d-085ca4b6cbef"
@@ -463,6 +464,7 @@
 				</parameters>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="24c2c51a-3e5a-4fd5-b317-38a969d737be"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
@@ -1093,6 +1095,7 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="54f2d0a1-acfc-49f9-b64e-c3f5500b8e6a"
 			name="ConfigurationProject"
 			ref="a8292ac2-055b-4100-809a-4dc6a8791482"
@@ -1552,6 +1555,7 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="68c3e6a5-3c18-464a-942d-6b5b10e3e6da"
 			name="ExpandiertMenue"
 			ref="216eb8bd-dfd6-4861-98fe-a5dfe6671bc1"
@@ -1655,6 +1659,7 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="75a9ec13-c24e-4325-87b7-b9bc3cd5a63f"
 			name="Anmelden"
 			ref="2a6e74e3-6966-46c4-b32a-95d178d6ddd3"
@@ -1827,6 +1832,7 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="858334ef-70e5-4e60-9409-c16db58f0e02"
 			name="Abmelden"
 			ref="6e6d19c2-b3bf-4c42-86af-1f040f46e678"
@@ -2035,6 +2041,24 @@
 					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
 					variableid="44b3c6c5-2c59-4e30-9590-313f869171b4"
 					variablename="MainMenueName">
+					</var>
+					<var
+					dataname="Zeitraumauswahl"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="c9c9e66f-de61-49d7-bb1c-44d652339b56"
+					variablename="DLGZeitraumauswahl">
+					</var>
+					<var
+					dataname="TabellenSpaltenAuswahl"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="833c55a1-9eb2-4508-9c85-fbd66a53de31"
+					variablename="DLGTableColAuswahl">
+					</var>
+					<var
+					dataname="MenueTabSeite"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="8fa81508-70b2-497e-9ee1-bc99a355c439"
+					variablename="TabulatorName">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -3075,6 +3099,7 @@
 			name="Meldungen">
 			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="e4aef558-2d68-410c-b2d0-a1b6182963e8"
 			name="Schliessen"
 			ref="bc61f436-20b0-45d8-b183-c1641a77a31f"
@@ -3719,7 +3744,7 @@
 		filename="C:\Testtools\HGS\MELDUNGEN\CONFIG\MASTER\EXCEL_DATEN\DATA_DialogStruktur.xlsx"
 		id="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
 		includefile="Unchecked"
-		lastknownrowcount="37"
+		lastknownrowcount="38"
 		name="DialogStruktur"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Dialoge"
@@ -3730,6 +3755,9 @@
 				</column>
 				<column>
 					SubMenueName
+				</column>
+				<column>
+					MenueTabSeite
 				</column>
 				<column>
 					Titel
@@ -3748,6 +3776,9 @@
 				</column>
 				<column>
 					TabellenButtons
+				</column>
+				<column>
+					TabellenSpaltenAuswahl
 				</column>
 				<column>
 					Zeitraumauswahl

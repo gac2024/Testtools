@@ -130,20 +130,20 @@ namespace Cottbus_3000CR.Modules.STANDARD.Auswertung.Abrechnungen
             // Abrechnungslücken prüfen
             Report.Log(ReportLevel.Info, "Section", "Abrechnungslücken prüfen", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Automatennummer) on item 'TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellGeraetenummer'.", repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellGeraetenummerInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellGeraetenummerInfo, "InnerText", Automatennummer);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Automatennummer) on item 'Abrechnungsluecken.Table_Luecke.cellGeraetenummer'.", repo.Abrechnungsluecken.Table_Luecke.cellGeraetenummerInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.Abrechnungsluecken.Table_Luecke.cellGeraetenummerInfo, "InnerText", Automatennummer);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Abrechnungsnummer) on item 'TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellNachfAbrechn_ungsnr'.", repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellNachfAbrechn_ungsnrInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellNachfAbrechn_ungsnrInfo, "InnerText", Abrechnungsnummer);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Abrechnungsnummer) on item 'Abrechnungsluecken.Table_Luecke.cellNachfAbrechn_ungsnr'.", repo.Abrechnungsluecken.Table_Luecke.cellNachfAbrechn_ungsnrInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.Abrechnungsluecken.Table_Luecke.cellNachfAbrechn_ungsnrInfo, "InnerText", Abrechnungsnummer);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Offen') on item 'TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellStatus'.", repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellStatusInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellStatusInfo, "InnerText", "Offen");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Offen') on item 'Abrechnungsluecken.Table_Luecke.cellStatus'.", repo.Abrechnungsluecken.Table_Luecke.cellStatusInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.Abrechnungsluecken.Table_Luecke.cellStatusInfo, "InnerText", "Offen");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Quittieren') on item 'TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellAktionen'.", repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellAktionenInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellAktionenInfo, "InnerText", "Quittieren");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Quittieren') on item 'Abrechnungsluecken.Table_Luecke.cellAktionen'.", repo.Abrechnungsluecken.Table_Luecke.cellAktionenInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.Abrechnungsluecken.Table_Luecke.cellAktionenInfo, "InnerText", "Quittieren");
             Delay.Milliseconds(100);
             
             // zurück

@@ -697,6 +697,21 @@
             Gets or sets the value of variable SubMenueName.
             </summary>
         </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGZeitraumauswahl">
+            <summary>
+            Gets or sets the value of variable DLGZeitraumauswahl.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTableColAuswahl">
+            <summary>
+            Gets or sets the value of variable DLGTableColAuswahl.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.TabulatorName">
+            <summary>
+            Gets or sets the value of variable TabulatorName.
+            </summary>
+        </member>
         <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Start">
             <summary>
             Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Instance"/>.
@@ -1247,6 +1262,11 @@
             The TicketingInsideGoogleChrome folder.
             </summary>
         </member>
+        <member name="P:Cottbus_3000CR.HGS.Abrechnungsluecken">
+            <summary>
+            The Abrechnungsluecken folder.
+            </summary>
+        </member>
         <member name="T:Cottbus_3000CR.HGSFolders">
             <summary>
             Inner folder classes.
@@ -1510,11 +1530,6 @@
         <member name="P:Cottbus_3000CR.HGSFolders.AbrechnungenFolder1.Verkaufsstatistik">
             <summary>
             The Verkaufsstatistik folder.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.AbrechnungenFolder1.Abrechnungsluecken">
-            <summary>
-            The Abrechnungsluecken folder.
             </summary>
         </member>
         <member name="P:Cottbus_3000CR.HGSFolders.AbrechnungenFolder1.Abrechnungen">
@@ -1800,96 +1815,6 @@
         <member name="P:Cottbus_3000CR.HGSFolders.Table_VKSFolder.cellSummeVerkaeufeInfo">
             <summary>
             The cellSummeVerkaeufe item info.
-            </summary>
-        </member>
-        <member name="T:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder">
-            <summary>
-            The AbrechnungslueckenFolder folder.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new Abrechnungsluecken  folder.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder.SelfInfo">
-            <summary>
-            The Self item info.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder.Table_Luecke">
-            <summary>
-            The Table_Luecke folder.
-            </summary>
-        </member>
-        <member name="T:Cottbus_3000CR.HGSFolders.Table_LueckeFolder">
-            <summary>
-            The Table_LueckeFolder folder.
-            </summary>
-        </member>
-        <member name="M:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new Table_Luecke  folder.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.Self">
-            <summary>
-            The Self item.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.SelfInfo">
-            <summary>
-            The Self item info.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellGeraetenummer">
-            <summary>
-            The cellGeraetenummer item.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellGeraetenummerInfo">
-            <summary>
-            The cellGeraetenummer item info.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellFehlendeAbrechnung">
-            <summary>
-            The cellFehlendeAbrechnung item.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellFehlendeAbrechnungInfo">
-            <summary>
-            The cellFehlendeAbrechnung item info.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellNachfAbrechn_ungsnr">
-            <summary>
-            The cellNachfAbrechn_ungsnr item.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellNachfAbrechn_ungsnrInfo">
-            <summary>
-            The cellNachfAbrechn_ungsnr item info.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellStatus">
-            <summary>
-            The cellStatus item.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellStatusInfo">
-            <summary>
-            The cellStatus item info.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellAktionen">
-            <summary>
-            The cellAktionen item.
-            </summary>
-        </member>
-        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellAktionenInfo">
-            <summary>
-            The cellAktionen item info.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.HGSFolders.AbrechnungenFolder">
@@ -5910,6 +5835,96 @@
         <member name="P:Cottbus_3000CR.HGSFolders.TicketingInsideGoogleChromeAppFolder.SelfInfo">
             <summary>
             The Self item info.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder">
+            <summary>
+            The AbrechnungslueckenFolder folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Abrechnungsluecken  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.AbrechnungslueckenFolder.Table_Luecke">
+            <summary>
+            The Table_Luecke folder.
+            </summary>
+        </member>
+        <member name="T:Cottbus_3000CR.HGSFolders.Table_LueckeFolder">
+            <summary>
+            The Table_LueckeFolder folder.
+            </summary>
+        </member>
+        <member name="M:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Table_Luecke  folder.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellGeraetenummer">
+            <summary>
+            The cellGeraetenummer item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellGeraetenummerInfo">
+            <summary>
+            The cellGeraetenummer item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellFehlendeAbrechnung">
+            <summary>
+            The cellFehlendeAbrechnung item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellFehlendeAbrechnungInfo">
+            <summary>
+            The cellFehlendeAbrechnung item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellNachfAbrechn_ungsnr">
+            <summary>
+            The cellNachfAbrechn_ungsnr item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellNachfAbrechn_ungsnrInfo">
+            <summary>
+            The cellNachfAbrechn_ungsnr item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellStatus">
+            <summary>
+            The cellStatus item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellStatusInfo">
+            <summary>
+            The cellStatus item info.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellAktionen">
+            <summary>
+            The cellAktionen item.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.HGSFolders.Table_LueckeFolder.cellAktionenInfo">
+            <summary>
+            The cellAktionen item info.
             </summary>
         </member>
         <member name="T:Cottbus_3000CR.SETUP.ConfigurationProject">

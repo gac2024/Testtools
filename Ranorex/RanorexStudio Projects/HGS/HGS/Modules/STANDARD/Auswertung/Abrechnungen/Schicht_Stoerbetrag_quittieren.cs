@@ -134,12 +134,12 @@ namespace Cottbus_3000CR.Modules.STANDARD.Auswertung.Abrechnungen
             // Abrechnungslücken Abrechnungsnr holen
             Report.Log(ReportLevel.Info, "Section", "Abrechnungslücken Abrechnungsnr holen", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellFehlendeAbrechnung' and assigning its value to variable 'FehlendeAbrechnungsNr'.", repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellFehlendeAbrechnungInfo, new RecordItemIndex(5));
-            FehlendeAbrechnungsNr = repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellFehlendeAbrechnung.Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'Abrechnungsluecken.Table_Luecke.cellFehlendeAbrechnung' and assigning its value to variable 'FehlendeAbrechnungsNr'.", repo.Abrechnungsluecken.Table_Luecke.cellFehlendeAbrechnungInfo, new RecordItemIndex(5));
+            FehlendeAbrechnungsNr = repo.Abrechnungsluecken.Table_Luecke.cellFehlendeAbrechnung.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellAktionen' at Center.", repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellAktionenInfo, new RecordItemIndex(6));
-            repo.TicketingInside_DImasPlus.ContentPage.Auswertung.Abrechnungen.Abrechnungsluecken.Table_Luecke.cellAktionen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Abrechnungsluecken.Table_Luecke.cellAktionen' at Center.", repo.Abrechnungsluecken.Table_Luecke.cellAktionenInfo, new RecordItemIndex(6));
+            repo.Abrechnungsluecken.Table_Luecke.cellAktionen.Click();
             Delay.Milliseconds(0);
             
             // Pop-up

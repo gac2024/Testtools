@@ -373,74 +373,6 @@ name="HGS">
 						</folder>
 						<folder
 						capname="unknown"
-						id="4803b61d-df34-44c6-ac4b-2fc89a2e6818"
-						isrooted="False"
-						name="Abrechnungsluecken"
-						searchtimeout="0ms">
-							<folder
-							capname="divtag"
-							id="13b338d5-0582-4008-be8d-487d48312a3f"
-							isrooted="True"
-							name="Table_Luecke"
-							searchtimeout="60000ms"
-							usecache="False">
-								<item
-								addcaps="unknown,webelement,ptag"
-								capname="ptag"
-								id="5debec67-6303-4404-a681-b09c53680df8"
-								name="cellGeraetenummer"
-								refimgid="568a0776-9f98-47af-b872-b3b95ba61cc5"
-								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='- - -|Tarif_3']"
-								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-deviceNumber']/p
-								</item>
-								<item
-								addcaps="unknown,webelement,ptag"
-								capname="ptag"
-								id="c4d24c36-681c-48f9-b15e-af7e26b5d3ce"
-								name="cellFehlendeAbrechnung"
-								refimgid="eb74a2b5-2e06-41e2-819a-3188362d050b"
-								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='IDP_GVH_4']"
-								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlementNumber']/p
-								</item>
-								<item
-								addcaps="unknown,webelement,ptag"
-								capname="ptag"
-								id="5451c8b5-452c-47ee-9390-6ff318c0f3b1"
-								name="cellNachfAbrechn_ungsnr"
-								refimgid="3c9a4b61-6588-48f4-ab75-4a840da69903"
-								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='9298']"
-								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-subsequentSettlement.settlementNumber']/p
-								</item>
-								<item
-								addcaps="unknown,webelement,ptag"
-								capname="ptag"
-								id="e2536d2e-643b-4357-9739-1d16a05fd0e2"
-								name="cellStatus"
-								refimgid="ecbfc732-d4ba-4ac1-aac5-316e5f4de2f1"
-								robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='Bar']"
-								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-status']//p
-								</item>
-								<item
-								addcaps="unknown,webelement,ptag"
-								capname="button"
-								id="90dbe25b-461d-48a6-8d52-da81698227e6"
-								name="cellAktionen"
-								refimgid="e8685567-8685-4a54-a7d5-250b75a676d8"
-								robustPath=""
-								searchtimeout="60000ms">
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlement-action']/button
-								</item>
-								<basepath>
-									/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']
-								</basepath>
-							</folder>
-						</folder>
-						<folder
-						capname="unknown"
 						id="20e75d62-3418-4e71-bbd7-3fe75dced75b"
 						isrooted="False"
 						name="Abrechnungen"
@@ -3351,6 +3283,74 @@ mcgKlKnjUIYPkFSoI6m0INUjHHFXSDnuU8h5eBp/0/HsEga+jPGvrC2bDH5C6+saGtwLlShDezh4
 Njn9vo296k/D73fbfL8GElzKQIKkt+klCH8ARJYkm8QxdZEAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<folder
+		capname="unknown"
+		id="4803b61d-df34-44c6-ac4b-2fc89a2e6818"
+		isrooted="False"
+		name="Abrechnungsluecken"
+		searchtimeout="0ms">
+			<folder
+			capname="divtag"
+			id="13b338d5-0582-4008-be8d-487d48312a3f"
+			isrooted="True"
+			name="Table_Luecke"
+			searchtimeout="60000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="5debec67-6303-4404-a681-b09c53680df8"
+				name="cellGeraetenummer"
+				refimgid="568a0776-9f98-47af-b872-b3b95ba61cc5"
+				robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='- - -|Tarif_3']"
+				searchtimeout="60000ms">
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-deviceNumber']/p
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="c4d24c36-681c-48f9-b15e-af7e26b5d3ce"
+				name="cellFehlendeAbrechnung"
+				refimgid="eb74a2b5-2e06-41e2-819a-3188362d050b"
+				robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='IDP_GVH_4']"
+				searchtimeout="60000ms">
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlementNumber']/p
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="5451c8b5-452c-47ee-9390-6ff318c0f3b1"
+				name="cellNachfAbrechn_ungsnr"
+				refimgid="3c9a4b61-6588-48f4-ab75-4a840da69903"
+				robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='9298']"
+				searchtimeout="60000ms">
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-subsequentSettlement.settlementNumber']/p
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="e2536d2e-643b-4357-9739-1d16a05fd0e2"
+				name="cellStatus"
+				refimgid="ecbfc732-d4ba-4ac1-aac5-316e5f4de2f1"
+				robustPath="/dom[@domain='uestra.dev.ti-ica.de']//div[#'mpDplus-settlement-details-table']//p[@innertext='Bar']"
+				searchtimeout="60000ms">
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-status']//p
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="button"
+				id="90dbe25b-461d-48a6-8d52-da81698227e6"
+				name="cellAktionen"
+				refimgid="e8685567-8685-4a54-a7d5-250b75a676d8"
+				robustPath=""
+				searchtimeout="60000ms">
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlement-action']/button
+				</item>
+				<basepath>
+					/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']
+				</basepath>
+			</folder>
+		</folder>
 		<basepath>
 		</basepath>
 	</rootfolder>

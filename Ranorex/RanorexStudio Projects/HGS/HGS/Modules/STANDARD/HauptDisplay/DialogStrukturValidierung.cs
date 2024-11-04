@@ -49,6 +49,9 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             DLGTableButtons = "";
             DLGTabNames = "";
             SubMenueName = "";
+            DLGZeitraumauswahl = "";
+            DLGTableColAuswahl = "";
+            TabulatorName = "";
         }
 
         /// <summary>
@@ -157,6 +160,42 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             set { _SubMenueName = value; }
         }
 
+        string _DLGZeitraumauswahl;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGZeitraumauswahl.
+        /// </summary>
+        [TestVariable("c9c9e66f-de61-49d7-bb1c-44d652339b56")]
+        public string DLGZeitraumauswahl
+        {
+            get { return _DLGZeitraumauswahl; }
+            set { _DLGZeitraumauswahl = value; }
+        }
+
+        string _DLGTableColAuswahl;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGTableColAuswahl.
+        /// </summary>
+        [TestVariable("833c55a1-9eb2-4508-9c85-fbd66a53de31")]
+        public string DLGTableColAuswahl
+        {
+            get { return _DLGTableColAuswahl; }
+            set { _DLGTableColAuswahl = value; }
+        }
+
+        string _TabulatorName;
+
+        /// <summary>
+        /// Gets or sets the value of variable TabulatorName.
+        /// </summary>
+        [TestVariable("8fa81508-70b2-497e-9ee1-bc99a355c439")]
+        public string TabulatorName
+        {
+            get { return _TabulatorName; }
+            set { _TabulatorName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -191,28 +230,37 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(2));
+            Delay.Duration(800, false);
+            
+            clickOnTab(TabulatorName);
+            Delay.Milliseconds(0);
+            
             // Struktur prüfung
-            Report.Log(ReportLevel.Info, "Section", "Struktur prüfung", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Section", "Struktur prüfung", new RecordItemIndex(4));
             
             try {
                 checkTitel(DLGTitel);
                 Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
                 checkTabulatoren(DLGTabAnzahl, DLGTabNames);
                 Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             try {
                 checkButton(DLGButtonName);
                 Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
             try {
-                checkTableStruktur(DLGTableTyp, DLGTableButtons);
+                checkTableStruktur(DLGTableTyp, DLGTableButtons, DLGTableColAuswahl);
                 Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
+            
+            checkZeitrtaum(DLGZeitraumauswahl);
+            Delay.Milliseconds(0);
             
         }
 

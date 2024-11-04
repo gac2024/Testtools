@@ -151,7 +151,7 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
 
 
 
-        public void checkTableStruktur(string tableTyp, string tableCmdItems)
+        public void checkTableStruktur(string tableTyp, string tableCmdItems, string tableSelColCnt)
         {
             ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
             // check if table exists
@@ -195,6 +195,53 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             	            	
             // Typen prüfung  ???	
             	
+            
+            
+	            // amnzahl der Tabellen Columns Auswahl  prüfen
+	            if (tableSelColCnt.Length>0){
+	            	
+	            	int selCol=Int32.Parse(tableSelColCnt);
+	            	
+	                TableTag Tabelle2;
+	           		if (dialog.TryFindSingle(".//Table", out Tabelle2) ) {
+	            	
+	            		DivTag controlpanel2 = Tabelle2.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+	            	    DivTag tablename = Tabelle2.Parent.Parent.FindChildren<DivTag>()[0];           
+	            		
+	            		SpanTag auswahl= controlpanel2.FindChild<SpanTag>();
+	            		
+	            		// oeffne filter
+	            		auswahl.Click();
+	            		
+	            		Delay.Milliseconds(500);
+	            		
+	            		//get list
+	            		
+	            			
+	            		DivTag multi=repo.TicketingInside_DImasPlus.PopUps.SelfInfo.FindAdapter<DivTag>();
+	            		
+	            		
+	            		var eintraege=multi.FindChild<UlTag>().FindChildren<DivTag>();
+	            		
+	            		int anzahl=eintraege.Count; 
+	            		tablename.Click(10,10);
+	            		
+	            		
+	            		//1.check die anzahl
+	            		if ( anzahl==selCol){
+	            			//alles ok
+	            			Validate.IsTrue(true,"Anzahl der möglichen Spalten ist ok.");
+			        	}else{
+			        		Validate.IsTrue(false,"Die Anzahl der möglichen Spalten ist inkorrekt, Ist:"+eintraege.Count+" Soll:"+selCol);
+			        	}    	
+	            	            		
+	            		
+	            		
+	            		
+	            	 }
+	            }
+
+            
             	
             }else{
             	if (typ>0)
@@ -204,6 +251,87 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             	
             	
             
+        }
+
+        public void checkZeitrtaum(string Zeitraumauswahl)
+        {
+           
+     
+        	
+        	if (Zeitraumauswahl.Trim().Length >0 ){
+        	
+        	
+        	
+	        	ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
+
+	            // check 1 der Name
+	            
+	            if ( ! Zeitraumauswahl.Equals("XXX")){
+	            	Validate.Exists(dialog.GetPath()+"//h6[@innertext='"+Zeitraumauswahl+"']");
+	            }
+	            
+	            LabelTag Label;
+	            if (dialog.TryFindSingle(".//label[@innertext='Von ...']",out Label)){
+	                	
+	                	Element multiBox=Label.Parent.Parent.Parent.Parent;
+	                	
+	                	
+	                	// check 2 auswahlbox von
+	                	
+	                	Validate.Exists(multiBox.GetRobustPath().ToString()+"//label[@innertext='Von ...']");
+	              
+	                	Element div =multiBox.FindSingle(".//label[@innertext='Von ...']").Parent;
+	               
+	                	
+	                	Validate.Exists(div.GetRobustPath().ToString()+"//input[@type='tel']");
+	                
+	               
+	                
+	                	// check 3 auswahlbox bis
+	                	
+	                	Validate.Exists(multiBox.GetRobustPath().ToString()+"//label[@innertext='Bis ...']");
+	                	
+	                	div=multiBox.FindSingle(".//label[@innertext='Bis ...']").Parent;
+	               
+	                	
+	                	Validate.Exists(div.GetRobustPath().ToString()+"//input[@type='tel']");
+	                	
+	                	
+						// check 4  DatumsIcon    
+	                	
+						
+						Validate.Exists(multiBox.GetRobustPath().ToString()+"//button[#'datePickerButton']");
+	                	
+						
+	                	
+	                }
+
+        		
+
+        		
+        
+	            
+        	}
+        	
+        }
+
+        public void clickOnTab(string tabName)
+        {
+          
+        	
+        	
+        	if (tabName.Trim().Length>0){
+        		
+        	    ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
+
+        		
+        		
+        		DivTag tab=dialog.FindSingle(".//div[@innertext='"+tabName+"']");
+        		tab.Click();
+        		
+        	}
+        	
+        	
         }
 
 

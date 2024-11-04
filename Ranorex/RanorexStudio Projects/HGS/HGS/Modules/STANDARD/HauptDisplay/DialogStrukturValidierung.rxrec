@@ -55,6 +55,18 @@ mode="Global">
 		id="5770d5a9-ba73-49ce-bd3f-3b7c2ee808c1"
 		name="SubMenueName">
 		</var>
+		<var
+		id="c9c9e66f-de61-49d7-bb1c-44d652339b56"
+		name="DLGZeitraumauswahl">
+		</var>
+		<var
+		id="833c55a1-9eb2-4508-9c85-fbd66a53de31"
+		name="DLGTableColAuswahl">
+		</var>
+		<var
+		id="8fa81508-70b2-497e-9ee1-bc99a355c439"
+		name="TabulatorName">
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -111,6 +123,40 @@ mode="Global">
 				argname="subMenueName"
 				id="5a06c354-9ab4-45be-a077-3f1fbd14fadf"
 				variable="SubMenueName">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="800ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="DialogStrukturValidierung"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="clickOnTab"
+		namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="54646eaf-a4a0-410e-95e6-05e1b3371fed">
+				<argument
+				argname="tabName"
+				id="996a90e2-6bc1-4b09-8268-c4f831b91461"
+				variable="TabulatorName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -241,6 +287,41 @@ mode="Global">
 				argname="tableCmdItems"
 				id="7f53ff91-25d2-4027-a9bb-a082038dfb48"
 				variable="DLGTableButtons">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="tableSelColCnt"
+				id="11da8f15-5274-4208-b575-0d0f147342ce"
+				variable="DLGTableColAuswahl">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DialogStrukturValidierung"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="checkZeitrtaum"
+		namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="459cffd2-9f53-4b5f-8da8-5a047a7373fa">
+				<argument
+				argname="Zeitraumauswahl"
+				id="21670d17-ed89-4662-83da-2172bab5a5d6"
+				variable="DLGZeitraumauswahl">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

@@ -29,6 +29,7 @@ namespace Cottbus_3000CR
         static HGS instance = new HGS();
         HGSFolders.TicketingInside_DImasPlusAppFolder _ticketinginside_dimasplus;
         HGSFolders.TicketingInsideGoogleChromeAppFolder _ticketinginsidegooglechrome;
+        HGSFolders.AbrechnungslueckenFolder _abrechnungsluecken;
 
         /// <summary>
         /// Gets the singleton class instance representing the HGS element repository.
@@ -47,6 +48,7 @@ namespace Cottbus_3000CR
         {
             _ticketinginside_dimasplus = new HGSFolders.TicketingInside_DImasPlusAppFolder(this);
             _ticketinginsidegooglechrome = new HGSFolders.TicketingInsideGoogleChromeAppFolder(this);
+            _abrechnungsluecken = new HGSFolders.AbrechnungslueckenFolder(this);
         }
 
 #region Variables
@@ -93,6 +95,15 @@ namespace Cottbus_3000CR
         public virtual HGSFolders.TicketingInsideGoogleChromeAppFolder TicketingInsideGoogleChrome
         {
             get { return _ticketinginsidegooglechrome; }
+        }
+
+        /// <summary>
+        /// The Abrechnungsluecken folder.
+        /// </summary>
+        [RepositoryFolder("4803b61d-df34-44c6-ac4b-2fc89a2e6818")]
+        public virtual HGSFolders.AbrechnungslueckenFolder Abrechnungsluecken
+        {
+            get { return _abrechnungsluecken; }
         }
     }
 
@@ -585,7 +596,6 @@ namespace Cottbus_3000CR
         {
             HGSFolders.TableFilterFolder _tablefilter;
             HGSFolders.VerkaufsstatistikFolder _verkaufsstatistik;
-            HGSFolders.AbrechnungslueckenFolder _abrechnungsluecken;
             HGSFolders.AbrechnungenFolder _abrechnungen;
             RepoItemInfo _btnabrabrechnungInfo;
             RepoItemInfo _btnaberabrlueckenInfo;
@@ -598,7 +608,6 @@ namespace Cottbus_3000CR
             {
                 _tablefilter = new HGSFolders.TableFilterFolder(this);
                 _verkaufsstatistik = new HGSFolders.VerkaufsstatistikFolder(this);
-                _abrechnungsluecken = new HGSFolders.AbrechnungslueckenFolder(this);
                 _abrechnungen = new HGSFolders.AbrechnungenFolder(this);
                 _btnabrabrechnungInfo = new RepoItemInfo(this, "btnAbrAbrechnung", ".//button[@id='tab-settlements']", "span", 60000, null, "99803588-25a6-4cf2-897e-e0d6a0c1057c");
                 _btnaberabrlueckenInfo = new RepoItemInfo(this, "btnAberAbrluecken", ".//button[@id='tab-missingSettlements']", "element", 60000, null, "b5fcac94-1c56-4e32-8345-898f80e92cc9");
@@ -680,15 +689,6 @@ namespace Cottbus_3000CR
             public virtual HGSFolders.VerkaufsstatistikFolder Verkaufsstatistik
             {
                 get { return _verkaufsstatistik; }
-            }
-
-            /// <summary>
-            /// The Abrechnungsluecken folder.
-            /// </summary>
-            [RepositoryFolder("4803b61d-df34-44c6-ac4b-2fc89a2e6818")]
-            public virtual HGSFolders.AbrechnungslueckenFolder Abrechnungsluecken
-            {
-                get { return _abrechnungsluecken; }
             }
 
             /// <summary>
@@ -1375,215 +1375,6 @@ namespace Cottbus_3000CR
                 get
                 {
                     return _cellsummeverkaeufeInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The AbrechnungslueckenFolder folder.
-        /// </summary>
-        [RepositoryFolder("4803b61d-df34-44c6-ac4b-2fc89a2e6818")]
-        public partial class AbrechnungslueckenFolder : RepoGenBaseFolder
-        {
-            HGSFolders.Table_LueckeFolder _table_luecke;
-
-            /// <summary>
-            /// Creates a new Abrechnungsluecken  folder.
-            /// </summary>
-            public AbrechnungslueckenFolder(RepoGenBaseFolder parentFolder) :
-                    base("Abrechnungsluecken", "", parentFolder, 0, null, false, "4803b61d-df34-44c6-ac4b-2fc89a2e6818", "")
-            {
-                _table_luecke = new HGSFolders.Table_LueckeFolder(this);
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("4803b61d-df34-44c6-ac4b-2fc89a2e6818")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Table_Luecke folder.
-            /// </summary>
-            [RepositoryFolder("13b338d5-0582-4008-be8d-487d48312a3f")]
-            public virtual HGSFolders.Table_LueckeFolder Table_Luecke
-            {
-                get { return _table_luecke; }
-            }
-        }
-
-        /// <summary>
-        /// The Table_LueckeFolder folder.
-        /// </summary>
-        [RepositoryFolder("13b338d5-0582-4008-be8d-487d48312a3f")]
-        public partial class Table_LueckeFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _cellgeraetenummerInfo;
-            RepoItemInfo _cellfehlendeabrechnungInfo;
-            RepoItemInfo _cellnachfabrechn_ungsnrInfo;
-            RepoItemInfo _cellstatusInfo;
-            RepoItemInfo _cellaktionenInfo;
-
-            /// <summary>
-            /// Creates a new Table_Luecke  folder.
-            /// </summary>
-            public Table_LueckeFolder(RepoGenBaseFolder parentFolder) :
-                    base("Table_Luecke", ".//div[@id='mpDplus-missing-settlement-table']", parentFolder, 60000, null, false, "13b338d5-0582-4008-be8d-487d48312a3f", "")
-            {
-                _cellgeraetenummerInfo = new RepoItemInfo(this, "cellGeraetenummer", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-deviceNumber']/p", "", 60000, null, "5debec67-6303-4404-a681-b09c53680df8");
-                _cellfehlendeabrechnungInfo = new RepoItemInfo(this, "cellFehlendeAbrechnung", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlementNumber']/p", "", 60000, null, "c4d24c36-681c-48f9-b15e-af7e26b5d3ce");
-                _cellnachfabrechn_ungsnrInfo = new RepoItemInfo(this, "cellNachfAbrechn_ungsnr", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-subsequentSettlement.settlementNumber']/p", "", 60000, null, "5451c8b5-452c-47ee-9390-6ff318c0f3b1");
-                _cellstatusInfo = new RepoItemInfo(this, "cellStatus", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-status']//p", "", 60000, null, "e2536d2e-643b-4357-9739-1d16a05fd0e2");
-                _cellaktionenInfo = new RepoItemInfo(this, "cellAktionen", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlement-action']/button", "", 60000, null, "90dbe25b-461d-48a6-8d52-da81698227e6");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("13b338d5-0582-4008-be8d-487d48312a3f")]
-            public virtual Ranorex.DivTag Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("13b338d5-0582-4008-be8d-487d48312a3f")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The cellGeraetenummer item.
-            /// </summary>
-            [RepositoryItem("5debec67-6303-4404-a681-b09c53680df8")]
-            public virtual Ranorex.PTag cellGeraetenummer
-            {
-                get
-                {
-                    return _cellgeraetenummerInfo.CreateAdapter<Ranorex.PTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The cellGeraetenummer item info.
-            /// </summary>
-            [RepositoryItemInfo("5debec67-6303-4404-a681-b09c53680df8")]
-            public virtual RepoItemInfo cellGeraetenummerInfo
-            {
-                get
-                {
-                    return _cellgeraetenummerInfo;
-                }
-            }
-
-            /// <summary>
-            /// The cellFehlendeAbrechnung item.
-            /// </summary>
-            [RepositoryItem("c4d24c36-681c-48f9-b15e-af7e26b5d3ce")]
-            public virtual Ranorex.PTag cellFehlendeAbrechnung
-            {
-                get
-                {
-                    return _cellfehlendeabrechnungInfo.CreateAdapter<Ranorex.PTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The cellFehlendeAbrechnung item info.
-            /// </summary>
-            [RepositoryItemInfo("c4d24c36-681c-48f9-b15e-af7e26b5d3ce")]
-            public virtual RepoItemInfo cellFehlendeAbrechnungInfo
-            {
-                get
-                {
-                    return _cellfehlendeabrechnungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The cellNachfAbrechn_ungsnr item.
-            /// </summary>
-            [RepositoryItem("5451c8b5-452c-47ee-9390-6ff318c0f3b1")]
-            public virtual Ranorex.PTag cellNachfAbrechn_ungsnr
-            {
-                get
-                {
-                    return _cellnachfabrechn_ungsnrInfo.CreateAdapter<Ranorex.PTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The cellNachfAbrechn_ungsnr item info.
-            /// </summary>
-            [RepositoryItemInfo("5451c8b5-452c-47ee-9390-6ff318c0f3b1")]
-            public virtual RepoItemInfo cellNachfAbrechn_ungsnrInfo
-            {
-                get
-                {
-                    return _cellnachfabrechn_ungsnrInfo;
-                }
-            }
-
-            /// <summary>
-            /// The cellStatus item.
-            /// </summary>
-            [RepositoryItem("e2536d2e-643b-4357-9739-1d16a05fd0e2")]
-            public virtual Ranorex.PTag cellStatus
-            {
-                get
-                {
-                    return _cellstatusInfo.CreateAdapter<Ranorex.PTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The cellStatus item info.
-            /// </summary>
-            [RepositoryItemInfo("e2536d2e-643b-4357-9739-1d16a05fd0e2")]
-            public virtual RepoItemInfo cellStatusInfo
-            {
-                get
-                {
-                    return _cellstatusInfo;
-                }
-            }
-
-            /// <summary>
-            /// The cellAktionen item.
-            /// </summary>
-            [RepositoryItem("90dbe25b-461d-48a6-8d52-da81698227e6")]
-            public virtual Ranorex.Button cellAktionen
-            {
-                get
-                {
-                    return _cellaktionenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The cellAktionen item info.
-            /// </summary>
-            [RepositoryItemInfo("90dbe25b-461d-48a6-8d52-da81698227e6")]
-            public virtual RepoItemInfo cellAktionenInfo
-            {
-                get
-                {
-                    return _cellaktionenInfo;
                 }
             }
         }
@@ -10966,6 +10757,215 @@ namespace Cottbus_3000CR
                 get
                 {
                     return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AbrechnungslueckenFolder folder.
+        /// </summary>
+        [RepositoryFolder("4803b61d-df34-44c6-ac4b-2fc89a2e6818")]
+        public partial class AbrechnungslueckenFolder : RepoGenBaseFolder
+        {
+            HGSFolders.Table_LueckeFolder _table_luecke;
+
+            /// <summary>
+            /// Creates a new Abrechnungsluecken  folder.
+            /// </summary>
+            public AbrechnungslueckenFolder(RepoGenBaseFolder parentFolder) :
+                    base("Abrechnungsluecken", "", parentFolder, 0, null, false, "4803b61d-df34-44c6-ac4b-2fc89a2e6818", "")
+            {
+                _table_luecke = new HGSFolders.Table_LueckeFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4803b61d-df34-44c6-ac4b-2fc89a2e6818")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Table_Luecke folder.
+            /// </summary>
+            [RepositoryFolder("13b338d5-0582-4008-be8d-487d48312a3f")]
+            public virtual HGSFolders.Table_LueckeFolder Table_Luecke
+            {
+                get { return _table_luecke; }
+            }
+        }
+
+        /// <summary>
+        /// The Table_LueckeFolder folder.
+        /// </summary>
+        [RepositoryFolder("13b338d5-0582-4008-be8d-487d48312a3f")]
+        public partial class Table_LueckeFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cellgeraetenummerInfo;
+            RepoItemInfo _cellfehlendeabrechnungInfo;
+            RepoItemInfo _cellnachfabrechn_ungsnrInfo;
+            RepoItemInfo _cellstatusInfo;
+            RepoItemInfo _cellaktionenInfo;
+
+            /// <summary>
+            /// Creates a new Table_Luecke  folder.
+            /// </summary>
+            public Table_LueckeFolder(RepoGenBaseFolder parentFolder) :
+                    base("Table_Luecke", "/dom[@domain='uestra.dev.ti-ica.de']//main[#'content-page']//div[@id='mpDplus-missing-settlement-table']", parentFolder, 60000, null, false, "13b338d5-0582-4008-be8d-487d48312a3f", "")
+            {
+                _cellgeraetenummerInfo = new RepoItemInfo(this, "cellGeraetenummer", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-deviceNumber']/p", "", 60000, null, "5debec67-6303-4404-a681-b09c53680df8");
+                _cellfehlendeabrechnungInfo = new RepoItemInfo(this, "cellFehlendeAbrechnung", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlementNumber']/p", "", 60000, null, "c4d24c36-681c-48f9-b15e-af7e26b5d3ce");
+                _cellnachfabrechn_ungsnrInfo = new RepoItemInfo(this, "cellNachfAbrechn_ungsnr", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-subsequentSettlement.settlementNumber']/p", "", 60000, null, "5451c8b5-452c-47ee-9390-6ff318c0f3b1");
+                _cellstatusInfo = new RepoItemInfo(this, "cellStatus", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-status']//p", "", 60000, null, "e2536d2e-643b-4357-9739-1d16a05fd0e2");
+                _cellaktionenInfo = new RepoItemInfo(this, "cellAktionen", ".//tbody/tr[1]/td[@data-test-id='mat-table-cell-settlement-action']/button", "", 60000, null, "90dbe25b-461d-48a6-8d52-da81698227e6");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("13b338d5-0582-4008-be8d-487d48312a3f")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("13b338d5-0582-4008-be8d-487d48312a3f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cellGeraetenummer item.
+            /// </summary>
+            [RepositoryItem("5debec67-6303-4404-a681-b09c53680df8")]
+            public virtual Ranorex.PTag cellGeraetenummer
+            {
+                get
+                {
+                    return _cellgeraetenummerInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cellGeraetenummer item info.
+            /// </summary>
+            [RepositoryItemInfo("5debec67-6303-4404-a681-b09c53680df8")]
+            public virtual RepoItemInfo cellGeraetenummerInfo
+            {
+                get
+                {
+                    return _cellgeraetenummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cellFehlendeAbrechnung item.
+            /// </summary>
+            [RepositoryItem("c4d24c36-681c-48f9-b15e-af7e26b5d3ce")]
+            public virtual Ranorex.PTag cellFehlendeAbrechnung
+            {
+                get
+                {
+                    return _cellfehlendeabrechnungInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cellFehlendeAbrechnung item info.
+            /// </summary>
+            [RepositoryItemInfo("c4d24c36-681c-48f9-b15e-af7e26b5d3ce")]
+            public virtual RepoItemInfo cellFehlendeAbrechnungInfo
+            {
+                get
+                {
+                    return _cellfehlendeabrechnungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cellNachfAbrechn_ungsnr item.
+            /// </summary>
+            [RepositoryItem("5451c8b5-452c-47ee-9390-6ff318c0f3b1")]
+            public virtual Ranorex.PTag cellNachfAbrechn_ungsnr
+            {
+                get
+                {
+                    return _cellnachfabrechn_ungsnrInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cellNachfAbrechn_ungsnr item info.
+            /// </summary>
+            [RepositoryItemInfo("5451c8b5-452c-47ee-9390-6ff318c0f3b1")]
+            public virtual RepoItemInfo cellNachfAbrechn_ungsnrInfo
+            {
+                get
+                {
+                    return _cellnachfabrechn_ungsnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cellStatus item.
+            /// </summary>
+            [RepositoryItem("e2536d2e-643b-4357-9739-1d16a05fd0e2")]
+            public virtual Ranorex.PTag cellStatus
+            {
+                get
+                {
+                    return _cellstatusInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cellStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("e2536d2e-643b-4357-9739-1d16a05fd0e2")]
+            public virtual RepoItemInfo cellStatusInfo
+            {
+                get
+                {
+                    return _cellstatusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cellAktionen item.
+            /// </summary>
+            [RepositoryItem("90dbe25b-461d-48a6-8d52-da81698227e6")]
+            public virtual Ranorex.Button cellAktionen
+            {
+                get
+                {
+                    return _cellaktionenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cellAktionen item info.
+            /// </summary>
+            [RepositoryItemInfo("90dbe25b-461d-48a6-8d52-da81698227e6")]
+            public virtual RepoItemInfo cellAktionenInfo
+            {
+                get
+                {
+                    return _cellaktionenInfo;
                 }
             }
         }
