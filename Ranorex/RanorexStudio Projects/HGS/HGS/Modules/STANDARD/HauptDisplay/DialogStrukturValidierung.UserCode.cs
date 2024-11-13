@@ -53,12 +53,12 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
         	        	
         }
 
-        public void checkTitel(string titel)
+        public void checkTitel(string titel, string labels)
         {
-
+			ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
         	// 1. gibt es einen Titel ?
         	if (titel.Trim().Length>0){ 
-				ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
+				
         		
         		// 2. wenn ja dann prüfen 
         	  H5Tag pTitel;
@@ -72,6 +72,24 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
         	}else{
         			Report.Info("checkTitel","Es gibt keinen Titel.");
         			
+        	}
+        	
+        	// labels
+        	if (labels.Trim().Length>0){
+        		
+        		var labelsList=labels.Split(';');
+        		
+        		foreach ( string label in  labelsList ){
+        			H6Tag pLabel;
+	        	    bool success =  dialog.TryFindSingle(".//h6[@innertext='"+label+"']",out pLabel );
+	        	   
+		        	if (success){
+		        		Validate.IsTrue(true,"Label: '"+label+"' ist vorhanden.");
+		        	}else{
+		        		Validate.IsTrue(false,"Label: '"+label+"' ist nicht vorhanden.",false);
+		        	} 
+        			
+        		}	
         	}
 
         }
@@ -140,8 +158,7 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
         		}else{
         			Validate.IsTrue(false,"Tabs müssen vorhanden sein, es wurden aber keine gefunden.",false);
         		}
-        		
-        		        	
+     	
         	}else{
         			Report.Info("checkTabulatoren","Es gibt keine Tabs .");
         			
@@ -151,14 +168,13 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
 
 
 
-        public void checkTableStruktur(string tableTyp, string tableCmdItems, string tableSelColCnt)
+        public void checkTableStruktur(string tableTyp, string tableCmdItems, string tableSelColCnt, string table2CmdItems, string table2SelColCnt)
         {
             ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
             // check if table exists
             
             int cntTableCtrls = 0;
             if (tableCmdItems.Trim().Length>0){ 
-        	
         		cntTableCtrls = Int32.Parse(tableCmdItems);
             }
             
@@ -175,15 +191,10 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             	
             	DivTag controlpanel = Tabelle.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
             	
-            	
-            	
-            	var ctrlItemList = controlpanel.Children;         
-            	
+            	var ctrlItemList = controlpanel.Children;                     	
             	int cntCtrl=0;
-            	          	
+           	          	
             	foreach ( Element item in ctrlItemList ){
-            	
-
             		if (item.Visible) cntCtrl++;
            		}
             	
@@ -193,74 +204,128 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             		Validate.IsTrue(false,"Die Anzahl der Tabellen Kontrols ist inkorrekt. Soll:"+cntTableCtrls+" Ist:"+cntCtrl,false);
             	}
             	            	
-            // Typen prüfung  ???	
+      
             	
-            
-            
 	            // amnzahl der Tabellen Columns Auswahl  prüfen
 	            if (tableSelColCnt.Length>0){
 	            	
 	            	int selCol=Int32.Parse(tableSelColCnt);
+	            	   	
+            		DivTag controlpanel2 = Tabelle.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+            	    DivTag tablename = Tabelle.Parent.Parent.FindChildren<DivTag>()[0];           
+            		
+            		SpanTag auswahl= controlpanel2.FindChild<SpanTag>();
+            		
+            		// oeffne filter
+            		auswahl.Click();
+            		
+            		Delay.Milliseconds(500);
+            		
+            		//get list			
+            		DivTag multi=repo.TicketingInside_DImasPlus.PopUps.SelfInfo.FindAdapter<DivTag>();
+	
+            		var eintraege=multi.FindChild<UlTag>().FindChildren<DivTag>();
+           		
+            		int anzahl=eintraege.Count; 
+            		tablename.Click(10,10);
+
+            		//1.check die anzahl
+            		if ( anzahl==selCol){
+            			//alles ok
+            			Validate.IsTrue(true,"Anzahl der möglichen Spalten ist ok.");
+		        	}else{
+		        		Validate.IsTrue(false,"Die Anzahl der möglichen Spalten ist inkorrekt, Ist:"+eintraege.Count+" Soll:"+selCol);
+		        	}    	
+
+	            }//tableSelColCnt
+
+	            //Tabellentyp	            
+	            if  ( typ == 2) {
+	            	// pruefe detail sub tabellen
 	            	
-	                TableTag Tabelle2;
-	           		if (dialog.TryFindSingle(".//Table", out Tabelle2) ) {
+			        int cntTable2Ctrls = 0;
+		            if (table2CmdItems.Trim().Length>0){ 		        	
+		        		cntTable2Ctrls = Int32.Parse(table2CmdItems);
+		            }
+
+	            	// click auf zeile 1 wenn sie existiert
 	            	
-	            		DivTag controlpanel2 = Tabelle2.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
-	            	    DivTag tablename = Tabelle2.Parent.Parent.FindChildren<DivTag>()[0];           
+	            	TBodyTag tbt = Tabelle.FindChild<TBodyTag>();
+	            	TrTag zeile1 = tbt.FindChildren<TrTag>()[0];
+	            	
+	            	if ( zeile1.GetAttributeValue<string>("Class").Contains("master")){
+	            	    	Validate.IsTrue(true,"master-rows found.");	            	    		            			 
+	            	    }else{
+	            	    	Validate.IsTrue(false,"master-rows not found.");	            	    	
+	            	    }
+	                // oeffne die zeile
+	            	zeile1.Click();   
+	            	
+	            	
+	            	// suche nach //table 	            	
+	            	TrTag zeile2 = tbt.FindChildren<TrTag>()[1];
+	            	TableTag subtab = zeile2.FindSingle(".//Table");
+	            	
+	            	DivTag subpanel = subtab.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+
+            		var SubctrlItemList = subpanel.Children;
+	            	int subcntCtrl=0;
+            	          	
+	            	foreach ( Element item in SubctrlItemList ){
+	            		if (item.Visible) subcntCtrl++;
+	           		}
+	            	
+	            	if (cntTable2Ctrls == subcntCtrl) {
+	            		Validate.IsTrue(true,"Die Anzahl der Sub-Tabellen Kontrols ist korrekt.");
+	            	}else{
+	            		Validate.IsTrue(false,"Die Anzahl der Sub-Tabellen Kontrols ist inkorrekt. Soll:"+cntTable2Ctrls+" Ist:"+subcntCtrl,false);
+	            	}
+	            	
+	            	
+		            // amnzahl der Tabellen Columns Auswahl  prüfen
+		            if (table2SelColCnt.Length>0){
+		            	
+		            	int sel2Col=Int32.Parse(table2SelColCnt);
+		            	   	
+	            		DivTag subpanel2 = subtab.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+	            	    DivTag table2name = subtab.Parent.Parent.FindChildren<DivTag>()[0];           
 	            		
-	            		SpanTag auswahl= controlpanel2.FindChild<SpanTag>();
+	            		SpanTag auswahl2= subpanel2.FindChild<SpanTag>();
 	            		
 	            		// oeffne filter
-	            		auswahl.Click();
+	            		auswahl2.Click();
 	            		
 	            		Delay.Milliseconds(500);
 	            		
-	            		//get list
-	            		
-	            			
-	            		DivTag multi=repo.TicketingInside_DImasPlus.PopUps.SelfInfo.FindAdapter<DivTag>();
-	            		
-	            		
-	            		var eintraege=multi.FindChild<UlTag>().FindChildren<DivTag>();
-	            		
-	            		int anzahl=eintraege.Count; 
-	            		tablename.Click(10,10);
-	            		
-	            		
+	            		//get list			
+	            		DivTag multi2=repo.TicketingInside_DImasPlus.PopUps.SelfInfo.FindAdapter<DivTag>();
+		
+	            		var eintraege2=multi2.FindChild<UlTag>().FindChildren<DivTag>();
+	           		
+	            		int anzahl2=eintraege2.Count; 
+	            		table2name.Click(10,10);
+	
 	            		//1.check die anzahl
-	            		if ( anzahl==selCol){
+	            		if ( anzahl2==sel2Col){
 	            			//alles ok
 	            			Validate.IsTrue(true,"Anzahl der möglichen Spalten ist ok.");
 			        	}else{
-			        		Validate.IsTrue(false,"Die Anzahl der möglichen Spalten ist inkorrekt, Ist:"+eintraege.Count+" Soll:"+selCol);
+			        		Validate.IsTrue(false,"Die Anzahl der möglichen Spalten ist inkorrekt, Ist:"+eintraege2.Count+" Soll:"+sel2Col);
 			        	}    	
-	            	            		
-	            		
-	            		
-	            		
-	            	 }
-	            }
+		            }//table2SelColCnt
+	            }// ende subtabelle
 
-            
-            	
-            }else{
+            }else{    //Table
             	if (typ>0)
             		Validate.IsTrue(false,"Es ist keine Tabelle vorhanden.",false);
                        	
-            }
-            	
-            	
-            
+            }//Table
         }
 
         public void checkZeitrtaum(string Zeitraumauswahl)
         {
-           
-     
-        	
+
         	if (Zeitraumauswahl.Trim().Length >0 ){
-        	
-        	
         	
 	        	ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
 
@@ -276,64 +341,326 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
 	                	Element multiBox=Label.Parent.Parent.Parent.Parent;
 	                	
 	                	
-	                	// check 2 auswahlbox von
-	                	
-	                	Validate.Exists(multiBox.GetRobustPath().ToString()+"//label[@innertext='Von ...']");
-	              
-	                	Element div =multiBox.FindSingle(".//label[@innertext='Von ...']").Parent;
-	               
-	                	
+	                	// check 2 auswahlbox von	                	
+	                	Validate.Exists(multiBox.GetRobustPath().ToString()+"//label[@innertext='Von ...']");	             
+	                	Element div =multiBox.FindSingle(".//label[@innertext='Von ...']").Parent;	               
 	                	Validate.Exists(div.GetRobustPath().ToString()+"//input[@type='tel']");
 	                
-	               
-	                
-	                	// check 3 auswahlbox bis
-	                	
-	                	Validate.Exists(multiBox.GetRobustPath().ToString()+"//label[@innertext='Bis ...']");
-	                	
-	                	div=multiBox.FindSingle(".//label[@innertext='Bis ...']").Parent;
-	               
-	                	
+	                	// check 3 auswahlbox bis	                	
+	                	Validate.Exists(multiBox.GetRobustPath().ToString()+"//label[@innertext='Bis ...']");	                	
+	                	div=multiBox.FindSingle(".//label[@innertext='Bis ...']").Parent;	               	              	
 	                	Validate.Exists(div.GetRobustPath().ToString()+"//input[@type='tel']");
+	                		                	
+						// check 4  DatumsIcon    	                						
+						Validate.Exists(multiBox.GetRobustPath().ToString()+"//button[#'datePickerButton']");	                	
+						var datepicker=multiBox.FindSingle(".//button[#'datePickerButton']");
 	                	
-	                	
-						// check 4  DatumsIcon    
-	                	
+						// und auswählen   auf dieses Jahr damit daten vorhanden sind			
+						selectThisYear(datepicker);
 						
-						Validate.Exists(multiBox.GetRobustPath().ToString()+"//button[#'datePickerButton']");
-	                	
 						
-	                	
 	                }
-
-        		
-
-        		
-        
-	            
         	}
         	
         }
+        
+        public void selectThisYear(ButtonTag Datepicker){
+        	
+			
+        	//1.  drücken auf datepicker
+			
+			Datepicker.Click();
+			//2. auswählen dieses Jahr 
+			
+			string Auswahl="Dieses Jahr";
+                    	
+        	//get list			
+	        DivTag popup=repo.TicketingInside_DImasPlus.PopUps.SelfInfo.FindAdapter<DivTag>();
+				
+			try{
+				
+				PTag selectbutn	=popup.FindSingle(".//p[@innertext='"+Auswahl+"']");
+				selectbutn.Click();
+				
+				Button confirmbtn	=popup.FindSingle(".//button[#'confirmButton']");
+				confirmbtn.Click();
+				
+			}catch(Exception ex){
+				Report.Failure("NotFound","In der Datumsauswahl gibt es den Link '"+Auswahl+"' nicht, bitte prüfen.");
+				Report.Failure("Exception",ex.Message);
+				Button abbruch	=popup.FindSingle(".//button[#'cancelButton']");
+				abbruch.Click();
+				
+				Validate.Fail("In der Datumsauswahl gibt es den Link '"+Auswahl+"' nicht, bitte prüfen.");
+			}
+
+        }
+        
+        
 
         public void clickOnTab(string tabName)
         {
-          
-        	
-        	
         	if (tabName.Trim().Length>0){
-        		
         	    ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
-
-        		
-        		
         		DivTag tab=dialog.FindSingle(".//div[@innertext='"+tabName+"']");
-        		tab.Click();
-        		
+        		tab.Click();     		
         	}
+
+        }
+       
+      //  SubDialog
+      
+      
+      
+      
+      
+      
+        public void checkforSubDialog(string existsSubDkg, string subDlgTitel, string subDlgLabels, string subDlgTType, string subDlgTButtons, string subDlgTselcount, string subDlgT2Buttons, string subDlgT2selcount)
+        {
+
+        	if (existsSubDkg.Trim().ToUpper().Equals("JA") || existsSubDkg.Trim().ToUpper().Equals("TRUE") ){
+        		navigate2SubDlg();  // zelle1 wird gedrückt        		
+        		checkSubHeader(subDlgTitel,subDlgLabels);
+        		checkSubTables(subDlgTType,subDlgTButtons,subDlgTselcount,subDlgT2Buttons,subDlgT2selcount);
+        	}else{
+        		Report.Info("INFO","Hier wird kein Subdialog geprüft.");
+        	}
+
+        }
+
+        //navi
+        public void navigate2SubDlg(){
+        	ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
+        	TableTag Tabelle;
+            if (dialog.TryFindSingle(".//Table", out Tabelle) ) {
+        		TBodyTag tbt = Tabelle.FindChild<TBodyTag>();
+	            TrTag zeile1 = tbt.FindChildren<TrTag>()[0];
+	            zeile1.Click();
+        	}else{
+        		Validate.IsTrue(false,"Es ist keine Tabelle vorhanden.",false);
+        	}
+        }
+        
+        // header check
+        public void checkSubHeader(string subDlgTitel, string subDlgLabels){
+        	ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
+        	//titel
+        	if (subDlgTitel.Trim().Length>0){
+				
+        		
+        		// 2. wenn ja dann prüfen 
+        	    H5Tag pTitel;
+        	    bool success =  dialog.TryFindSingle(".//h5[@innertext~'"+subDlgTitel+"']",out pTitel );
+        	   
+	        	if (success){
+	        		Validate.IsTrue(true,"SubDlgTitel: '"+subDlgTitel+"' ist vorhanden.");
+	        	}else{
+	        		Validate.IsTrue(false,"SubDlgTitel: '"+subDlgTitel+"' ist nicht vorhanden.",false);
+	        	}    	
+        	}else{
+        			Report.Info("checkTitel","Es gibt keinen Sub Dialog Titel.");			
+        	}
+        	// labels
+        	if (subDlgLabels.Trim().Length>0){
+        		
+        		var labelsList=subDlgLabels.Split(';');
+        		
+        		foreach ( string label in  labelsList ){
+        			H6Tag pLabel;
+	        	    bool success =  dialog.TryFindSingle(".//h6[@innertext='"+label+"']",out pLabel );
+	        	   
+		        	if (success){
+		        		Validate.IsTrue(true,"SubDlgLabel: '"+label+"' ist vorhanden.");
+		        	}else{
+		        		Validate.IsTrue(false,"SubDlgLabel: '"+label+"' ist nicht vorhanden.",false);
+		        	} 
+        			
+        		}	
+        	}
+
+        }
+        public void checkSubTables(string subDlgTType, string subDlgTButtons, string subDlgTselcount, string subDlgT2Buttons, string subDlgT2selcount){
+        	
+			int subDlgTButtonsCnt=0;
+           	if (subDlgTButtons.Trim().Length>0){
+        		subDlgTButtonsCnt = Int32.Parse(subDlgTButtons);
+        	    }
+        	     	
+        	
+				
+        	int subTtype=0;
+        	if (subDlgTType.Trim().Length>0){
+        		subTtype = Int32.Parse(subDlgTType);
+        	    }
+        	
+			if (subTtype>0){
+				  ArticleTag dialog = repo.TicketingInside_DImasPlus.ContentPage.Self.FindSingle(".//article");
+				
+				
+				// es liegt eine tabelle vor
+		    TableTag Tabelle;
+            if (dialog.TryFindSingle(".//Table", out Tabelle) ) {
+            	
+            	DivTag controlpanel = Tabelle.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+            	
+            	var ctrlItemList = controlpanel.Children;                     	
+            	int cntCtrl=0;
+           	          	
+            	foreach ( Element item in ctrlItemList ){
+            		if (item.Visible) cntCtrl++;
+           		}
+            	
+            	if (subDlgTButtonsCnt == cntCtrl) {
+            		Validate.IsTrue(true,"Die Anzahl der SubDialog Tabellen Kontrols ist korrekt.");
+            	}else{
+            		Validate.IsTrue(false,"Die Anzahl der SubDialog  Tabellen Kontrols ist inkorrekt. Soll:"+subDlgTButtonsCnt+" Ist:"+cntCtrl,false);
+            	}
+            	            	
+      
+            	
+	            // amnzahl der Tabellen Columns Auswahl  prüfen
+	            if (subDlgTselcount.Length>0){
+	            	
+	            	int selCol=Int32.Parse(subDlgTselcount);
+	            	   	
+            		DivTag controlpanel2 = Tabelle.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+            	    DivTag tablename = Tabelle.Parent.Parent.FindChildren<DivTag>()[0];           
+            		
+            		SpanTag auswahl= controlpanel2.FindChild<SpanTag>();
+            		
+            		// oeffne filter
+            		auswahl.Click();
+            		
+            		Delay.Milliseconds(500);
+            		
+            		//get list			
+            		DivTag multi=repo.TicketingInside_DImasPlus.PopUps.SelfInfo.FindAdapter<DivTag>();
+	
+            		var eintraege=multi.FindChild<UlTag>().FindChildren<DivTag>();
+           		
+            		int anzahl=eintraege.Count; 
+            		tablename.Click(10,10);
+
+            		//1.check die anzahl
+            		if ( anzahl==selCol){
+            			//alles ok
+            			Validate.IsTrue(true,"Anzahl der möglichen Spalten ist ok.");
+		        	}else{
+		        		Validate.IsTrue(false,"Die Anzahl der möglichen Spalten ist inkorrekt, Ist:"+eintraege.Count+" Soll:"+selCol);
+		        	}    	
+
+	            }//tableSelColCnt
+	            
+	            
+
+	            //Tabellentyp	            
+	            if  ( subTtype == 2) {
+	            	// pruefe detail sub tabellen
+	            	
+			        int cntTable2Ctrls = 0;
+		            if (subDlgT2Buttons.Trim().Length>0){ 		        	
+		        		cntTable2Ctrls = Int32.Parse(subDlgT2Buttons);
+		            }
+
+	            	// click auf zeile 1 wenn sie existiert
+	            	
+	            	TBodyTag tbt = Tabelle.FindChild<TBodyTag>();
+	            	TrTag zeile1 = tbt.FindChildren<TrTag>()[0];
+	            	
+	            	if ( zeile1.GetAttributeValue<string>("Class").Contains("master")){
+	            	    	Validate.IsTrue(true,"master-rows found.");	            	    		            			 
+	            	    }else{
+	            	    	Validate.IsTrue(false,"master-rows not found.");	            	    	
+	            	    }
+	                // oeffne die zeile
+	            	zeile1.Click();   
+	            	
+	            	
+	            	// suche nach //table 	            	
+	            	TrTag zeile2 = tbt.FindChildren<TrTag>()[1];
+	            	TableTag subtab = zeile2.FindSingle(".//Table");
+	            	
+	            	DivTag subpanel = subtab.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+
+            		var SubctrlItemList = subpanel.Children;
+	            	int subcntCtrl=0;
+            	          	
+	            	foreach ( Element item in SubctrlItemList ){
+	            		if (item.Visible) subcntCtrl++;
+	           		}
+	            	
+	            	if (cntTable2Ctrls == subcntCtrl) {
+	            		Validate.IsTrue(true,"Die Anzahl der  Sub-Tabellen Kontrols ist korrekt.");
+	            	}else{
+	            		Validate.IsTrue(false,"Die Anzahl der Sub-Tabellen Kontrols ist inkorrekt. Soll:"+cntTable2Ctrls+" Ist:"+subcntCtrl,false);
+	            	}
+	            	
+	            	
+		            // amnzahl der Tabellen Columns Auswahl  prüfen
+		            if (subDlgT2selcount.Length>0){
+		            	
+		            	int sel2Col=Int32.Parse(subDlgT2selcount);
+		            	   	
+	            		DivTag subpanel2 = subtab.Parent.Parent.FindChildren<DivTag>()[0].FindChild<DivTag>();
+	            	    DivTag table2name = subtab.Parent.Parent.FindChildren<DivTag>()[0];           
+	            		
+	            		SpanTag auswahl2= subpanel2.FindChild<SpanTag>();
+	            		
+	            		// oeffne filter
+	            		auswahl2.Click();
+	            		
+	            		Delay.Milliseconds(500);
+	            		
+	            		//get list			
+	            		DivTag multi2=repo.TicketingInside_DImasPlus.PopUps.SelfInfo.FindAdapter<DivTag>();
+		
+	            		var eintraege2=multi2.FindChild<UlTag>().FindChildren<DivTag>();
+	           		
+	            		int anzahl2=eintraege2.Count; 
+	            		table2name.Click(10,10);
+	
+	            		//1.check die anzahl
+	            		if ( anzahl2==sel2Col){
+	            			//alles ok
+	            			Validate.IsTrue(true,"Anzahl der möglichen Spalten ist ok.");
+			        	}else{
+			        		Validate.IsTrue(false,"Die Anzahl der möglichen Spalten ist inkorrekt, Ist:"+eintraege2.Count+" Soll:"+sel2Col);
+			        	}    	
+		            }//table2SelColCnt
+	            }// ende subtabelle
+
+            }else{    //Table
+            	if (subTtype>0)
+            		Validate.IsTrue(false,"Es ist keine Tabelle vorhanden.",false);
+                       	
+            }//Table
+				
+				
+				
+				
+				
+			}
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
         	
         	
         }
-
-
+        
+        
+        
+        
+        
+        
+        
+        
     }
+    
 }

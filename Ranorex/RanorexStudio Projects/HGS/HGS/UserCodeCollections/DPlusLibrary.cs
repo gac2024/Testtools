@@ -71,27 +71,19 @@ namespace Cottbus_3000CR.UserCodeCollections
 	        {
 	        	 // Laden der XML-Datei
 				 XmlDocument xmlDoc = new XmlDocument();	           
-
-	        	 xmlDoc.Load(xmlFilePath);
-	            
-	             XmlNode validNode = xmlDoc.SelectSingleNode("//"+xmlTagName);
-		        	
-		        	if (validNode != null)
-		        		
-		            {
-		        		string suchErgebnis = validNode.InnerText;
-			        	
-		        		Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText="+suchErgebnis+") on item 'UIobject'.", UIobject);
-			            Validate.AttributeEqual(UIobject, "InnerText", suchErgebnis);
-		        	}
-            
-	        }catch(XmlException ex){
-	        	
+	        	 xmlDoc.Load(xmlFilePath);	            
+	             XmlNode validNode = xmlDoc.SelectSingleNode("//"+xmlTagName);		        	
+	        	if (validNode != null)		        		
+	            {
+	        		string suchErgebnis = validNode.InnerText;			        	
+	        		Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText="+suchErgebnis+") on item 'UIobject'.", UIobject);
+		            Validate.AttributeEqual(UIobject, "InnerText", suchErgebnis);
+	        	}            
+	        }catch(XmlException ex){	        	
 		        Report.Error("Fehler beim Verarbeiten der XML-Datei: " + ex.Message);
 	            Validate.Fail("Es gab einen Fehler bei der Verarbeitung der XML-Datei: " + ex.Message);        		
 	            
 	        }catch(Exception ex){	     
-
 		        Report.Error("Fehler beim Verarbeiten: " + ex.Message);
 	            Validate.Fail("Es gab einen Fehler bei der Verarbeitung: " + ex.Message);        		        	
 	            
@@ -109,30 +101,21 @@ namespace Cottbus_3000CR.UserCodeCollections
 			if  (!Auswahl.IsEmpty()) {
 				
 				// 1. Datepciker ausloesen
-				DatePicker.FindAdapter<Button>().Click();
+				DatePicker.FindAdapter<Button>().Click();							
+				// popup offen							
+				DivTag popup = Popup.FindAdapter<DivTag>();				
 				
-				
-				// popup offen			
-				
-				DivTag popup = Popup.FindAdapter<DivTag>();
-				
-				
-				try{
-					
+				try{					
 					PTag selectbutn	=popup.FindSingle(".//p[@innertext='"+Auswahl+"']");
-					selectbutn.Click();
-					
+					selectbutn.Click();					
 					Button confirmbtn	=popup.FindSingle(".//button[#'confirmButton']");
-					confirmbtn.Click();
-					
-				}catch(Exception ex){
-					
+					confirmbtn.Click();					
+				}catch(Exception ex){					
 					Report.Failure("NotFound","In der Datumsauswahl gibt es den Link '"+Auswahl+"' nicht, bitte prüfen.");
 					Report.Failure("Exception",ex.Message);
 					Button abbruch	=popup.FindSingle(".//button[#'cancelButton']");
-					abbruch.Click();
-					
-					 Validate.Fail("In der Datumsauswahl gibt es den Link '"+Auswahl+"' nicht, bitte prüfen.");
+					abbruch.Click();					
+					Validate.Fail("In der Datumsauswahl gibt es den Link '"+Auswahl+"' nicht, bitte prüfen.");
 				}
 				
 				

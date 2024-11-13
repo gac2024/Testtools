@@ -2060,6 +2060,72 @@
 					variableid="8fa81508-70b2-497e-9ee1-bc99a355c439"
 					variablename="TabulatorName">
 					</var>
+					<var
+					dataname="T2Buttons"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="5958c630-38d7-4fd6-8f70-07cebff8e75b"
+					variablename="DLGTable2Buttons">
+					</var>
+					<var
+					dataname="T2SpaltenAuswahl"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="318df43f-3dd1-4bc9-9df8-14d9a4cf592a"
+					variablename="DLGTable2ColAuswahl">
+					</var>
+					<var
+					dataname="SubDlg"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="4787ed24-1efb-4bf2-ad67-aeb02ddfe672"
+					variablename="DLGSubDlg">
+					</var>
+					<var
+					dataname="SubDlgTitel"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="4d5b4c8c-43f4-4398-aee1-234989a8ca36"
+					variablename="DLGSubDlgTitel">
+					</var>
+					<var
+					dataname="SubDlgLabels"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="2147b89e-9010-48d7-8b0a-d6ba7895ce4a"
+					variablename="DLGSubDlgLabels">
+					</var>
+					<var
+					dataname="SubDlgTabellenTyp"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="4bdfddc3-c768-472b-998c-d714e2829099"
+					variablename="DLGSubDlgTabellenTyp">
+					</var>
+					<var
+					dataname="SubDlgTButtons"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="4e59e9f1-badd-4ef3-a057-023e10a7d5ee"
+					variablename="DLGSubDlgTButtons">
+					</var>
+					<var
+					dataname="SubDlgTSpaltenAuswahl"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="1da6f06f-2847-4467-9d4a-af8c691a8f3d"
+					variablename="DLGSubDlgTSpaltenAuswahl">
+					</var>
+					<var
+					dataname="SubDlgT2Buttons"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="f4302b04-0bab-4269-acf5-c686e08096c6"
+					variablename="DLGSubDlgT2Buttons">
+					</var>
+					<var
+					dataname="SubDlgT2SpaltenAuswahl"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="01c94d72-9daf-4a44-bd11-2bf32837df3d"
+					variablename="DLGSubDlgT2SpaltenAuswahl">
+					</var>
+					<var
+					dataname="Labels"
+					datasourceid="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
+					variableid="ac473010-f75b-4acd-9301-a16d19f8cc7b"
+					variablename="DLGLabels">
+					</var>
 				</databinding>
 				<missingdatabinding>
 					<var
@@ -3744,7 +3810,7 @@
 		filename="C:\Testtools\HGS\MELDUNGEN\CONFIG\MASTER\EXCEL_DATEN\DATA_DialogStruktur.xlsx"
 		id="6b991b0b-93cb-42bd-9669-3ca6207c5ba6"
 		includefile="Unchecked"
-		lastknownrowcount="38"
+		lastknownrowcount="45"
 		name="DialogStruktur"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Dialoge"
@@ -3761,6 +3827,9 @@
 				</column>
 				<column>
 					Titel
+				</column>
+				<column>
+					Labels
 				</column>
 				<column>
 					TabsAnzahl
@@ -3781,7 +3850,37 @@
 					TabellenSpaltenAuswahl
 				</column>
 				<column>
+					T2Buttons
+				</column>
+				<column>
+					T2SpaltenAuswahl
+				</column>
+				<column>
 					Zeitraumauswahl
+				</column>
+				<column>
+					SubDlg
+				</column>
+				<column>
+					SubDlgTitel
+				</column>
+				<column>
+					SubDlgLabels
+				</column>
+				<column>
+					SubDlgTabellenTyp
+				</column>
+				<column>
+					SubDlgTButtons
+				</column>
+				<column>
+					SubDlgTSpaltenAuswahl
+				</column>
+				<column>
+					SubDlgT2Buttons
+				</column>
+				<column>
+					SubDlgT2SpaltenAuswahl
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

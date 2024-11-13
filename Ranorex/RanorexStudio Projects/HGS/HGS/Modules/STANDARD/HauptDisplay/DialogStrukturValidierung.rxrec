@@ -67,6 +67,50 @@ mode="Global">
 		id="8fa81508-70b2-497e-9ee1-bc99a355c439"
 		name="TabulatorName">
 		</var>
+		<var
+		id="5958c630-38d7-4fd6-8f70-07cebff8e75b"
+		name="DLGTable2Buttons">
+		</var>
+		<var
+		id="318df43f-3dd1-4bc9-9df8-14d9a4cf592a"
+		name="DLGTable2ColAuswahl">
+		</var>
+		<var
+		id="4787ed24-1efb-4bf2-ad67-aeb02ddfe672"
+		name="DLGSubDlg">
+		</var>
+		<var
+		id="4d5b4c8c-43f4-4398-aee1-234989a8ca36"
+		name="DLGSubDlgTitel">
+		</var>
+		<var
+		id="2147b89e-9010-48d7-8b0a-d6ba7895ce4a"
+		name="DLGSubDlgLabels">
+		</var>
+		<var
+		id="4bdfddc3-c768-472b-998c-d714e2829099"
+		name="DLGSubDlgTabellenTyp">
+		</var>
+		<var
+		id="4e59e9f1-badd-4ef3-a057-023e10a7d5ee"
+		name="DLGSubDlgTButtons">
+		</var>
+		<var
+		id="1da6f06f-2847-4467-9d4a-af8c691a8f3d"
+		name="DLGSubDlgTSpaltenAuswahl">
+		</var>
+		<var
+		id="f4302b04-0bab-4269-acf5-c686e08096c6"
+		name="DLGSubDlgT2Buttons">
+		</var>
+		<var
+		id="01c94d72-9daf-4a44-bd11-2bf32837df3d"
+		name="DLGSubDlgT2SpaltenAuswahl">
+		</var>
+		<var
+		id="ac473010-f75b-4acd-9301-a16d19f8cc7b"
+		name="DLGLabels">
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -197,6 +241,16 @@ mode="Global">
 					<argvalue>
 					</argvalue>
 				</argument>
+				<argument
+				argname="labels"
+				id="6f60f2b7-9957-4c5c-a4d8-c65525c3082b"
+				variable="DLGLabels">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -264,6 +318,31 @@ mode="Global">
 		classname="DialogStrukturValidierung"
 		enabled="True"
 		isexternaltestmethod="False"
+		methodname="checkZeitrtaum"
+		namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="459cffd2-9f53-4b5f-8da8-5a047a7373fa">
+				<argument
+				argname="Zeitraumauswahl"
+				id="21670d17-ed89-4662-83da-2172bab5a5d6"
+				variable="DLGZeitraumauswahl">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DialogStrukturValidierung"
+		enabled="True"
+		isexternaltestmethod="False"
 		methodname="checkTableStruktur"
 		namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay"
 		optional="True">
@@ -303,25 +382,115 @@ mode="Global">
 					<argvalue>
 					</argvalue>
 				</argument>
+				<argument
+				argname="table2CmdItems"
+				id="9a686688-a7e8-4826-b3f1-6aab25ab8bf2"
+				variable="DLGTable2Buttons">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="table2SelColCnt"
+				id="33d1ecf4-495f-445f-9ff4-a45829934075"
+				variable="DLGTable2ColAuswahl">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="DialogStrukturValidierung"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="checkZeitrtaum"
+		methodname="checkforSubDialog"
 		namespace="Cottbus_3000CR.Modules.STANDARD.HauptDisplay"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<arguments
-			id="459cffd2-9f53-4b5f-8da8-5a047a7373fa">
+			id="6e1a7b7a-9fc5-4904-9e4e-11e22cc3aaee">
 				<argument
-				argname="Zeitraumauswahl"
-				id="21670d17-ed89-4662-83da-2172bab5a5d6"
-				variable="DLGZeitraumauswahl">
+				argname="existsSubDkg"
+				id="f6c8a492-8d1e-4127-85e9-b2689f8c011f"
+				variable="DLGSubDlg">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="subDlgTitel"
+				id="2d6e3c8a-32f6-4ac0-9fb8-b49e4f4cb5d1"
+				variable="DLGSubDlgTitel">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="subDlgLabels"
+				id="6df4298c-1d78-4c33-8d15-537ba6240bfe"
+				variable="DLGSubDlgLabels">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="subDlgTType"
+				id="61e35cb5-c935-4b19-ae22-547db32ff2a3"
+				variable="DLGSubDlgTabellenTyp">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="subDlgTButtons"
+				id="5d3879c2-4e4e-422c-b825-772ab335f303"
+				variable="DLGSubDlgTButtons">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="subDlgTselcount"
+				id="11332466-3f53-4c2a-bc1f-55ccfbe81a23"
+				variable="DLGSubDlgTSpaltenAuswahl">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="subDlgT2Buttons"
+				id="afc4d7e4-163a-43fb-82a9-eaf60f837167"
+				variable="DLGSubDlgT2Buttons">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="subDlgT2selcount"
+				id="ba01b9b6-e388-48a4-9fa3-4e38445a94cc"
+				variable="DLGSubDlgT2SpaltenAuswahl">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

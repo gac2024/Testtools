@@ -1,0 +1,8 @@
+Nachrichtentyp;NachrichtenKonfiguration;Kommentar;Pruefung
+Schichtreport;Lauf01\Step01_Geldlogistik_Vorbedingung;Gelspeicherwechsel aller Geldspeicher;Geldspeicher pruefen
+Schichtreport;Lauf01\Step02a_Einkauf_BAR;Einkaufen eines Tickets in BAR fuer 3,40 EURO;Abrechnung/Statistiken in DIMAS19 koennen kontrolliert werden. 
+Schichtreport;Lauf01\Step02b_Einkauf_GIRO;Einkaufen eines Tickets via Girocard fuer 7,30 EURO;Abrechnung/Statistiken in DIMAS19 koennen kontrolliert werden.
+Schichtreport;Lauf01\Step02c_Einkauf_BAR_mRueck;Einkaufen eines Tickets in BAR fuer 3,40 EURO mit 3,50 Rueckgeld 10ct;Abrechnung/Statistiken in DIMAS19 koennen kontrolliert werden.
+Schichtreport;Lauf01\Step02d_Einkauf_KRED;Einkaufen eines Tickets via Kreditkarte fuer 10,40 EURO;Abrechnung/Statistiken in DIMAS19 koennen kontrolliert werden. 
+Schichtreport;Lauf01\Step04a_Geldlogistik_Kassieren; Simulation (rein virtuell) WGR Geldeinzug  , die Muenzen fallen in den BEK ( auch hier rein virtuell);Abrechnung/Statistiken in DIMAS19 koennen kontrolliert werden.
+Schichtreport;Lauf01\Step09_Geldlogistik_Geldspeichertausch;Gelspeicherwechsel aller Geldspeicher   ( Zuruecksetzen fuer Schritt 1);Geldspeicher pruefen  

@@ -52,6 +52,17 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             DLGZeitraumauswahl = "";
             DLGTableColAuswahl = "";
             TabulatorName = "";
+            DLGTable2Buttons = "";
+            DLGTable2ColAuswahl = "";
+            DLGSubDlg = "";
+            DLGSubDlgTitel = "";
+            DLGSubDlgLabels = "";
+            DLGSubDlgTabellenTyp = "";
+            DLGSubDlgTButtons = "";
+            DLGSubDlgTSpaltenAuswahl = "";
+            DLGSubDlgT2Buttons = "";
+            DLGSubDlgT2SpaltenAuswahl = "";
+            DLGLabels = "";
         }
 
         /// <summary>
@@ -196,6 +207,138 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             set { _TabulatorName = value; }
         }
 
+        string _DLGTable2Buttons;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGTable2Buttons.
+        /// </summary>
+        [TestVariable("5958c630-38d7-4fd6-8f70-07cebff8e75b")]
+        public string DLGTable2Buttons
+        {
+            get { return _DLGTable2Buttons; }
+            set { _DLGTable2Buttons = value; }
+        }
+
+        string _DLGTable2ColAuswahl;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGTable2ColAuswahl.
+        /// </summary>
+        [TestVariable("318df43f-3dd1-4bc9-9df8-14d9a4cf592a")]
+        public string DLGTable2ColAuswahl
+        {
+            get { return _DLGTable2ColAuswahl; }
+            set { _DLGTable2ColAuswahl = value; }
+        }
+
+        string _DLGSubDlg;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlg.
+        /// </summary>
+        [TestVariable("4787ed24-1efb-4bf2-ad67-aeb02ddfe672")]
+        public string DLGSubDlg
+        {
+            get { return _DLGSubDlg; }
+            set { _DLGSubDlg = value; }
+        }
+
+        string _DLGSubDlgTitel;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlgTitel.
+        /// </summary>
+        [TestVariable("4d5b4c8c-43f4-4398-aee1-234989a8ca36")]
+        public string DLGSubDlgTitel
+        {
+            get { return _DLGSubDlgTitel; }
+            set { _DLGSubDlgTitel = value; }
+        }
+
+        string _DLGSubDlgLabels;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlgLabels.
+        /// </summary>
+        [TestVariable("2147b89e-9010-48d7-8b0a-d6ba7895ce4a")]
+        public string DLGSubDlgLabels
+        {
+            get { return _DLGSubDlgLabels; }
+            set { _DLGSubDlgLabels = value; }
+        }
+
+        string _DLGSubDlgTabellenTyp;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlgTabellenTyp.
+        /// </summary>
+        [TestVariable("4bdfddc3-c768-472b-998c-d714e2829099")]
+        public string DLGSubDlgTabellenTyp
+        {
+            get { return _DLGSubDlgTabellenTyp; }
+            set { _DLGSubDlgTabellenTyp = value; }
+        }
+
+        string _DLGSubDlgTButtons;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlgTButtons.
+        /// </summary>
+        [TestVariable("4e59e9f1-badd-4ef3-a057-023e10a7d5ee")]
+        public string DLGSubDlgTButtons
+        {
+            get { return _DLGSubDlgTButtons; }
+            set { _DLGSubDlgTButtons = value; }
+        }
+
+        string _DLGSubDlgTSpaltenAuswahl;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlgTSpaltenAuswahl.
+        /// </summary>
+        [TestVariable("1da6f06f-2847-4467-9d4a-af8c691a8f3d")]
+        public string DLGSubDlgTSpaltenAuswahl
+        {
+            get { return _DLGSubDlgTSpaltenAuswahl; }
+            set { _DLGSubDlgTSpaltenAuswahl = value; }
+        }
+
+        string _DLGSubDlgT2Buttons;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlgT2Buttons.
+        /// </summary>
+        [TestVariable("f4302b04-0bab-4269-acf5-c686e08096c6")]
+        public string DLGSubDlgT2Buttons
+        {
+            get { return _DLGSubDlgT2Buttons; }
+            set { _DLGSubDlgT2Buttons = value; }
+        }
+
+        string _DLGSubDlgT2SpaltenAuswahl;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGSubDlgT2SpaltenAuswahl.
+        /// </summary>
+        [TestVariable("01c94d72-9daf-4a44-bd11-2bf32837df3d")]
+        public string DLGSubDlgT2SpaltenAuswahl
+        {
+            get { return _DLGSubDlgT2SpaltenAuswahl; }
+            set { _DLGSubDlgT2SpaltenAuswahl = value; }
+        }
+
+        string _DLGLabels;
+
+        /// <summary>
+        /// Gets or sets the value of variable DLGLabels.
+        /// </summary>
+        [TestVariable("ac473010-f75b-4acd-9301-a16d19f8cc7b")]
+        public string DLGLabels
+        {
+            get { return _DLGLabels; }
+            set { _DLGLabels = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -240,7 +383,7 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             Report.Log(ReportLevel.Info, "Section", "Struktur prüfung", new RecordItemIndex(4));
             
             try {
-                checkTitel(DLGTitel);
+                checkTitel(DLGTitel, DLGLabels);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
@@ -255,12 +398,19 @@ namespace Cottbus_3000CR.Modules.STANDARD.HauptDisplay
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
             try {
-                checkTableStruktur(DLGTableTyp, DLGTableButtons, DLGTableColAuswahl);
+                checkZeitrtaum(DLGZeitraumauswahl);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
-            checkZeitrtaum(DLGZeitraumauswahl);
-            Delay.Milliseconds(0);
+            try {
+                checkTableStruktur(DLGTableTyp, DLGTableButtons, DLGTableColAuswahl, DLGTable2Buttons, DLGTable2ColAuswahl);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
+            
+            try {
+                checkforSubDialog(DLGSubDlg, DLGSubDlgTitel, DLGSubDlgLabels, DLGSubDlgTabellenTyp, DLGSubDlgTButtons, DLGSubDlgTSpaltenAuswahl, DLGSubDlgT2Buttons, DLGSubDlgT2SpaltenAuswahl);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
         }
 

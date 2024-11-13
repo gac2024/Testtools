@@ -1,0 +1,120 @@
+
+
+###################
+# START DES TESTS #
+###################
+
+
+
+####################################
+#              STEP1               #
+####################################
+
+####################################
+# TEST MODUS
+####################################
+# PROJEKTNAME=DIMAS19
+# MELDUNGSNAME=Aktualisierungmeldung
+# TESTFALLNAME=TS01\S01_in_Betrieb 
+####################################
+# Kommentar:
+#  Der Automat wird auf in Betrieb gestellt.
+####################################
+
+C:\Testtools\jdk-17.0.11\bin\java -jar sendMessage.jar -PROJEKTNAME DIMAS19  -MELDUNGSNAME Aktualisierungmeldung -TESTFALLNAME TS01\S01_in_Betrieb -MAINPATH C:\Testtools\HGS\MELDUNGEN
+
+Kein Fehler: Meldung wurde erfolgreich versendet.
+
+####################################
+# Pruefungen:
+#  DIMAS PRUEFEN
+####################################
+
+Dr…ken Sie eine beliebige Taste . . . 
+
+####################################
+#              STEP2               #
+####################################
+
+####################################
+# TEST MODUS
+####################################
+# PROJEKTNAME=DIMAS19
+# MELDUNGSNAME=Aktualisierungmeldung
+# TESTFALLNAME=TS01\S02_in_Betrieb 
+####################################
+# Kommentar:
+#  Der Automat wird auf in Betrieb gestellt wieder.
+####################################
+
+C:\Testtools\jdk-17.0.11\bin\java -jar sendMessage.jar -PROJEKTNAME DIMAS19  -MELDUNGSNAME Aktualisierungmeldung -TESTFALLNAME TS01\S02_in_Betrieb -MAINPATH C:\Testtools\HGS\MELDUNGEN
+
+Kein Fehler: Meldung wurde erfolgreich versendet.
+
+####################################
+# Pruefungen:
+#  DIMAS PRUEFEN
+####################################
+
+Dr…ken Sie eine beliebige Taste . . . 
+
+####################################
+#              STEP3               #
+####################################
+
+####################################
+# TEST MODUS
+####################################
+# PROJEKTNAME=DIMAS19
+# MELDUNGSNAME=Aktualisierungmeldung
+# TESTFALLNAME=TS01\S03_in_Betrieb 
+####################################
+# Kommentar:
+#  Der Automat wird auf in Betrieb gestellt und wieder.
+####################################
+
+C:\Testtools\jdk-17.0.11\bin\java -jar sendMessage.jar -PROJEKTNAME DIMAS19  -MELDUNGSNAME Aktualisierungmeldung -TESTFALLNAME TS01\S03_in_Betrieb -MAINPATH C:\Testtools\HGS\MELDUNGEN
+
+Kein Fehler: Meldung wurde erfolgreich versendet.
+
+####################################
+# Pruefungen:
+#  DIMAS PRUEFEN
+####################################
+
+Dr…ken Sie eine beliebige Taste . . . 
+
+####################################
+#              STEP4               #
+####################################
+
+####################################
+# TEST MODUS
+####################################
+# PROJEKTNAME=DIMAS19
+# MELDUNGSNAME=Aktualisierungmeldung
+# TESTFALLNAME=TS01\S04_in_Betrieb 
+####################################
+# Kommentar:
+#  Der Automat wird auf in Betrieb gestellt und nochmal.
+####################################
+
+C:\Testtools\jdk-17.0.11\bin\java -jar sendMessage.jar -PROJEKTNAME DIMAS19  -MELDUNGSNAME Aktualisierungmeldung -TESTFALLNAME TS01\S04_in_Betrieb -MAINPATH C:\Testtools\HGS\MELDUNGEN
+
+Kein Fehler: Meldung wurde erfolgreich versendet.
+
+####################################
+# Pruefungen:
+#  DIMAS PRUEFEN
+####################################
+
+Dr…ken Sie eine beliebige Taste . . . 
+
+
+#################
+#     ENDE      #
+#################
+
+
+
+

@@ -1,6 +1,6 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec" />
+    <Element value="Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.UserCode.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
@@ -14,12 +14,12 @@
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTableStruktur()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkforSubDialog()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.clickOnTab()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkZeitrtaum()" />
+      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTableStruktur(String tableTyp, String tableCmdItems)" />
       <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTableStruktur()" />
       <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkButton()" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTabulatoren()" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.checkTitel()" />
-      <Element value="Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.clickOnMenueItem()" />
     </Array>
     <Properties name="watchVars" />
   </Properties>

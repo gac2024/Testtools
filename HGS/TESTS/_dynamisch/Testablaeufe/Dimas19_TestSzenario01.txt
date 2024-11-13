@@ -1,0 +1,5 @@
+Nachrichtentyp;NachrichtenKonfiguration;Kommentar;Pruefung
+Aktualisierungmeldung;TS01\S01_in_Betrieb;Der Automat wird auf in Betrieb gestellt.;DIMAS PRUEFEN
+Aktualisierungmeldung;TS01\S02_in_Betrieb;Der Automat wird auf in Betrieb gestellt wieder.;DIMAS PRUEFEN
+Aktualisierungmeldung;TS01\S03_in_Betrieb;Der Automat wird auf in Betrieb gestellt und wieder.;DIMAS PRUEFEN
+Aktualisierungmeldung;TS01\S04_in_Betrieb;Der Automat wird auf in Betrieb gestellt und nochmal.;DIMAS PRUEFEN

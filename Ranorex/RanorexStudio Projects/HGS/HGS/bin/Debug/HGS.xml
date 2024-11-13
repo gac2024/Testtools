@@ -712,6 +712,61 @@
             Gets or sets the value of variable TabulatorName.
             </summary>
         </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTable2Buttons">
+            <summary>
+            Gets or sets the value of variable DLGTable2Buttons.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGTable2ColAuswahl">
+            <summary>
+            Gets or sets the value of variable DLGTable2ColAuswahl.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlg">
+            <summary>
+            Gets or sets the value of variable DLGSubDlg.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlgTitel">
+            <summary>
+            Gets or sets the value of variable DLGSubDlgTitel.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlgLabels">
+            <summary>
+            Gets or sets the value of variable DLGSubDlgLabels.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlgTabellenTyp">
+            <summary>
+            Gets or sets the value of variable DLGSubDlgTabellenTyp.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlgTButtons">
+            <summary>
+            Gets or sets the value of variable DLGSubDlgTButtons.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlgTSpaltenAuswahl">
+            <summary>
+            Gets or sets the value of variable DLGSubDlgTSpaltenAuswahl.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlgT2Buttons">
+            <summary>
+            Gets or sets the value of variable DLGSubDlgT2Buttons.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGSubDlgT2SpaltenAuswahl">
+            <summary>
+            Gets or sets the value of variable DLGSubDlgT2SpaltenAuswahl.
+            </summary>
+        </member>
+        <member name="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.DLGLabels">
+            <summary>
+            Gets or sets the value of variable DLGLabels.
+            </summary>
+        </member>
         <member name="M:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Start">
             <summary>
             Starts the replay of the static recording <see cref="P:Cottbus_3000CR.Modules.STANDARD.HauptDisplay.DialogStrukturValidierung.Instance"/>.

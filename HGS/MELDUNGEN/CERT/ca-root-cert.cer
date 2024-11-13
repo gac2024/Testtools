@@ -1,0 +1,88 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            c9:d1:56:0a:e4:ce:1e:26:8e:57:01:76:43:01:d0:bb
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=DE, ST=NRW, L=Dortmund, O=ICA Traffic GmbH, OU=HGS, CN=ICA-Root-CA
+        Validity
+            Not Before: Sep 29 11:55:25 2023 GMT
+            Not After : Sep 29 11:55:25 2043 GMT
+        Subject: C=DE, ST=NRW, L=Dortmund, O=ICA Traffic GmbH, OU=HGS, CN=ICA-Root-CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:bd:7d:fd:9d:62:ef:24:71:1d:ef:2c:18:a7:ed:
+                    0d:57:db:20:2e:57:82:d5:9b:42:95:0e:6e:14:f6:
+                    a1:98:2b:6b:c7:2f:3c:02:fd:a3:98:1d:61:d8:a4:
+                    cd:22:75:7f:7e:27:40:e7:64:44:d9:02:0b:a5:d3:
+                    25:9a:18:6b:b1:f3:9d:75:e5:15:83:73:9b:e3:f7:
+                    ea:50:d2:dc:aa:80:55:2e:2a:89:02:9a:b6:1d:de:
+                    01:27:b6:9a:6b:08:36:dd:c9:f7:01:b4:0c:be:8d:
+                    a5:fd:0a:66:d4:0c:bc:df:96:34:9c:07:41:6a:31:
+                    db:8e:59:68:ab:de:c7:aa:15:4d:6f:2b:56:cb:bd:
+                    bf:3a:41:93:55:8f:03:e1:50:19:97:6f:65:59:2a:
+                    0e:1a:48:58:cc:5a:ef:48:08:79:66:5e:6b:55:50:
+                    fc:8b:58:72:7f:7e:c6:5d:03:02:91:08:44:37:b0:
+                    75:27:11:d6:8a:a0:39:bf:f9:5d:a2:bd:63:64:bf:
+                    87:c7:3c:23:a2:88:58:44:0f:cc:eb:10:9e:19:bf:
+                    22:3d:5d:41:ca:07:62:16:74:f1:f0:db:6f:a9:9a:
+                    9c:c5:5b:21:9d:ee:d0:a8:f1:01:c3:6c:7c:f5:34:
+                    e4:59:6c:8f:ed:11:f0:26:24:99:b8:8a:f1:05:df:
+                    54:49
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                74:4B:11:33:08:3B:96:5F:3B:F6:C1:C8:48:CD:C4:59:31:9C:8C:75
+            X509v3 Authority Key Identifier: 
+                keyid:74:4B:11:33:08:3B:96:5F:3B:F6:C1:C8:48:CD:C4:59:31:9C:8C:75
+                DirName:/C=DE/ST=NRW/L=Dortmund/O=ICA Traffic GmbH/OU=HGS/CN=ICA-Root-CA
+                serial:C9:D1:56:0A:E4:CE:1E:26:8E:57:01:76:43:01:D0:BB
+
+            X509v3 Key Usage: 
+                Digital Signature, Certificate Sign, CRL Sign
+    Signature Algorithm: sha256WithRSAEncryption
+         61:19:25:5c:70:41:4e:fc:bd:af:9a:77:b9:12:35:98:3e:7c:
+         99:f6:77:74:83:61:83:97:ca:94:10:9d:6b:33:b1:14:4b:5e:
+         d7:2f:9f:ce:97:8e:09:4e:c5:76:42:44:d5:fa:0e:f8:5a:44:
+         3d:9c:7d:4f:86:25:66:0b:64:64:39:39:38:10:8f:3a:f5:0d:
+         1f:ff:45:11:69:bb:20:d2:3e:5a:32:4f:0d:64:ec:be:46:d1:
+         1b:f9:34:ab:2b:b6:79:dc:54:c5:8b:72:d2:9f:64:c4:e5:a8:
+         52:bf:ba:3d:53:25:94:78:1a:9d:99:59:79:76:d2:24:4b:c4:
+         53:f0:73:d3:66:97:ff:b3:b1:54:1d:28:f4:a4:06:cd:97:c3:
+         4c:37:49:0f:46:71:94:c7:39:1d:8b:38:d9:67:83:53:f7:31:
+         ee:69:e4:69:b1:0a:ad:96:cc:b0:97:d2:bf:79:1d:e0:f0:53:
+         f0:06:42:9d:b1:c4:0d:d1:15:cf:35:32:16:6e:f0:b3:13:5d:
+         a0:21:bc:39:8e:a9:07:69:e4:af:a4:2b:00:a0:4c:e9:9c:b3:
+         30:3b:52:25:ac:95:af:e2:a6:be:72:78:a7:3f:2c:cb:38:e8:
+         7a:f2:4f:30:7c:a4:1f:59:61:21:e6:4d:05:af:72:87:de:1f:
+         6d:d2:72:0f
+-----BEGIN CERTIFICATE-----
+MIIETTCCAzWgAwIBAgIRAMnRVgrkzh4mjlcBdkMB0LswDQYJKoZIhvcNAQELBQAw
+bTELMAkGA1UEBhMCREUxDDAKBgNVBAgMA05SVzERMA8GA1UEBwwIRG9ydG11bmQx
+GTAXBgNVBAoMEElDQSBUcmFmZmljIEdtYkgxDDAKBgNVBAsMA0hHUzEUMBIGA1UE
+AwwLSUNBLVJvb3QtQ0EwHhcNMjMwOTI5MTE1NTI1WhcNNDMwOTI5MTE1NTI1WjBt
+MQswCQYDVQQGEwJERTEMMAoGA1UECAwDTlJXMREwDwYDVQQHDAhEb3J0bXVuZDEZ
+MBcGA1UECgwQSUNBIFRyYWZmaWMgR21iSDEMMAoGA1UECwwDSEdTMRQwEgYDVQQD
+DAtJQ0EtUm9vdC1DQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL19
+/Z1i7yRxHe8sGKftDVfbIC5XgtWbQpUObhT2oZgra8cvPAL9o5gdYdikzSJ1f34n
+QOdkRNkCC6XTJZoYa7HznXXlFYNzm+P36lDS3KqAVS4qiQKath3eASe2mmsINt3J
+9wG0DL6Npf0KZtQMvN+WNJwHQWox245ZaKvex6oVTW8rVsu9vzpBk1WPA+FQGZdv
+ZVkqDhpIWMxa70gIeWZea1VQ/ItYcn9+xl0DApEIRDewdScR1oqgOb/5XaK9Y2S/
+h8c8I6KIWEQPzOsQnhm/Ij1dQcoHYhZ08fDbb6manMVbIZ3u0KjxAcNsfPU05Fls
+j+0R8CYkmbiK8QXfVEkCAwEAAaOB5zCB5DAMBgNVHRMEBTADAQH/MB0GA1UdDgQW
+BBR0SxEzCDuWXzv2wchIzcRZMZyMdTCBpwYDVR0jBIGfMIGcgBR0SxEzCDuWXzv2
+wchIzcRZMZyMdaFxpG8wbTELMAkGA1UEBhMCREUxDDAKBgNVBAgMA05SVzERMA8G
+A1UEBwwIRG9ydG11bmQxGTAXBgNVBAoMEElDQSBUcmFmZmljIEdtYkgxDDAKBgNV
+BAsMA0hHUzEUMBIGA1UEAwwLSUNBLVJvb3QtQ0GCEQDJ0VYK5M4eJo5XAXZDAdC7
+MAsGA1UdDwQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAQEAYRklXHBBTvy9r5p3uRI1
+mD58mfZ3dINhg5fKlBCdazOxFEte1y+fzpeOCU7FdkJE1foO+FpEPZx9T4YlZgtk
+ZDk5OBCPOvUNH/9FEWm7INI+WjJPDWTsvkbRG/k0qyu2edxUxYty0p9kxOWoUr+6
+PVMllHganZlZeXbSJEvEU/Bz02aX/7OxVB0o9KQGzZfDTDdJD0ZxlMc5HYs42WeD
+U/cx7mnkabEKrZbMsJfSv3kd4PBT8AZCnbHEDdEVzzUyFm7wsxNdoCG8OY6pB2nk
+r6QrAKBM6ZyzMDtSJayVr+KmvnJ4pz8syzjoevJPMHykH1lhIeZNBa9yh94fbdJy
+Dw==
+-----END CERTIFICATE-----

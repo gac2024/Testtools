@@ -14,10 +14,7 @@
       <string>180fbaeb-2ba8-48e3-97b6-a29e6b34926e</string>
       <string>2b700f09-75f6-4698-ad0c-eef5cc96564d</string>
       <string>2c8c5314-eff2-4670-89f3-3e20b9d06f85</string>
-      <string>37e41eef-faf3-4d93-a8e5-5adeefb7f5a4</string>
-      <string>4ad2d11a-c832-48ee-9734-baa3cbbe9d66</string>
       <string>cd8e60c5-c4fb-41b8-9738-77fcabc45044</string>
-      <string>76fd654a-6b90-4d42-aa54-46b45966e418</string>
       <string>bd53efcb-5afd-4984-b47c-6dfb00fac9f9</string>
       <string>f9ec2cb7-e5fe-4e22-892f-723e266e01a7</string>
       <string>07719661-dbd6-4011-b810-1b9369e9f9bb</string>
@@ -36,6 +33,6 @@
       <string>9ccdee18-761e-4a17-ba0c-a4ad556b1566</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution HGS[HGS[Browser[]Modules[STANDARD[HauptDisplay[]Papierrollenverwaltung[Papierrollen[Papierrollen_validierung.rxrec[]Papierrollen_vernichten.rxrec[]]Ticketverfolgung[Ticketverfolgung_validieren.rxrec[]]]]]SETUP[]UserCodeCollections[]]]]&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec" />
+  <ProjectBrowserState value="[Solution HGS[HGS[Browser[]Modules[STANDARD[Auswertung[Abrechnungen[]Verkaufsdaten[Quittungen_validieren.rxrec[]]]HauptDisplay[]Papierrollenverwaltung[]]]SETUP[]UserCodeCollections[]]]]&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec&#xD;&#xA;Solution HGS\HGS\Modules\STANDARD\HauptDisplay\DialogStrukturValidierung.rxrec" />
   <StartupProject value="{909D1AB6-5D02-438A-8E77-1BFA5A4786C6}" />
 </Properties>

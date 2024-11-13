@@ -1,0 +1,3 @@
+Nachrichtentyp;NachrichtenKonfiguration;Kommentar;Pruefung
+Aktualisierungmeldung;3Sequenzen_TypHealthMeldung;Es werden 3 Heathmeldungen versendet;DIMAS PRUEFEN
+Aktualisierungmeldung;TS01\S02_in_Betrieb;Der Automat wird auf in Betrieb gestellt wieder.;DIMAS PRUEFEN

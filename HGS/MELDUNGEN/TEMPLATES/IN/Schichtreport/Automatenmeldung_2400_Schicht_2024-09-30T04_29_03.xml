@@ -1,0 +1,18 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <empfangeSchichtreport xmlns="http://tms.ica.de/automatenService/wsdl/3_10/">
+            <faaSchichtreport xmlns="http://tms.ica.de/automatenService/3_10/" sstVersion="3.10">
+                <verkaufspunkt betreiber="99" ipAdresse="" posNummer="2400" seriennummer="2400"/>
+                <versionKey>-1</versionKey>
+                <abrechnungsnummer>93</abrechnungsnummer>
+                <geldlogistik abrechnung="0" einschubNr="2" geldlogistiker="0" geldspeicherId="44211138" geldspeichertyp="WGR" vorgangstyp="INFORMATION" zeitpunkt="2024-09-28T00:01:47+02:00">
+                    <geldbetrag betrag="0" waehrung="EUR"/>
+                    <bestandSorte anzahl="0">
+                        <nennwert waehrung="EUR" wertigkeit="5"/>
+                    </bestandSorte>
+                    <metadaten guid="c92a0827-fa30-496e-bdb1-1e9cb47cc99f" sequenznummer="11185"/>
+                </geldlogistik>
+            </faaSchichtreport>
+        </empfangeSchichtreport>
+    </s:Body>
+</s:Envelope>
