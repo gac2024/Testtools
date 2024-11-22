@@ -6,14 +6,21 @@ cls
 
 SET PROJEKT=%1%
 SET TESTFILE=%2%
-SET TRY=%3%
+SET CTRL=%3%
 
 
 rem definitions:
-set LAUFWERK=%~d0
-set WhereIam=%~dp0 
+set RanorexHost=PCTR007
+set MYLAUFWERK=%~d0
+set MYPATH=%~dp0 
 
-set MainPath=%LAUFWERK%\Testtools\HGS\MELDUNGEN
+set LAUFWERK=%MYLAUFWERK%
+if "%RanorexHost%"=="%ComputerName%" set LAUFWERK=D:
+
+
+
+
+set MAINPATH=%LAUFWERK%\Testtools\HGS\MELDUNGEN
 Set JAVA=%LAUFWERK%\Testtools\jdk-17.0.11\bin\java
 Set KONFIG=%LAUFWERK%\Testtools\HGS\TESTS\_dynamisch\Testablaeufe\
 
@@ -26,13 +33,8 @@ set TESTFILE=%KONFIG%%TESTFILE%
 if exist "%TESTFILE%" (
 	goto START
 )
-
-
    echo Die Ablaufdatei "%TESTFILE%" existiert nicht. 
    goto ENDE
-
-
-
 
 :START
 echo.
@@ -41,14 +43,19 @@ echo ###################
 echo # START DES TESTS #
 echo ###################
 echo.
+echo # %DATE% %TIME%
+echo.
 echo.
 
-cd %MainPath%
+cd %MAINPATH%
 
 
 SET /A COUNT=1
 
 for /F " tokens=1-4 delims=;" %%a in ('more %TESTFILE%') do (
+    
+	SET NL=^^^&echo:^&
+	rem Zeilenumbruch in NL speichern
 
 	set Meldung=%%a
 	set Testfall=%%b
@@ -63,16 +70,16 @@ for /F " tokens=1-4 delims=;" %%a in ('more %TESTFILE%') do (
 	echo ####################################
 	echo.
 	SET /A COUNT+=1
-	IF "%TRY%"=="TEST" (
+	IF "%CTRL%"=="TEST" (
 	  echo ####################################
 	  echo # TEST MODUS
 	)
-	IF "%TRY%"=="STEP" (
+	IF "%CTRL%"=="STEP" (
 	  echo ####################################
 	  echo # STEP MODUS
 	)	
 	echo ####################################
-	echo # PROJEKTNAME=!Projekt!
+	echo # PROJEKTNAME=!PROJEKT!
 	echo # MELDUNGSNAME=!Meldung!
 	echo # TESTFALLNAME=!Testfall! 
 	echo ####################################
@@ -81,14 +88,14 @@ for /F " tokens=1-4 delims=;" %%a in ('more %TESTFILE%') do (
 	echo ####################################
 	echo.
 
-	if "%TRY%"=="STEP" (
+	if "%CTRL%"=="STEP" (
 		pause
 	)
-	IF "%TRY%"=="TEST" (
-	 echo !JAVA! -jar sendMessage.jar -PROJEKTNAME !Projekt!  -MELDUNGSNAME !Meldung! -TESTFALLNAME !Testfall! -MAINPATH !MainPath!
+	IF "%CTRL%"=="TEST" (
+	 echo !JAVA! -jar sendMessage.jar -PROJEKTNAME !PROJEKT!  -MELDUNGSNAME !Meldung! -TESTFALLNAME !Testfall! -MAINPATH !MAINPATH!
 	 echo.
 	) else (
-	 start "sendMessage"  /WAIT  !JAVA! -jar sendMessage.jar -PROJEKTNAME !Projekt!  -MELDUNGSNAME !Meldung! -TESTFALLNAME !Testfall! -MAINPATH !MainPath!
+	 start "sendMessage"  /WAIT  !JAVA! -jar sendMessage.jar -PROJEKTNAME !PROJEKT!  -MELDUNGSNAME !Meldung! -TESTFALLNAME !Testfall! -MAINPATH !MAINPATH!
 	)
 
 	if "!ERRORLEVEL!"=="0" (
@@ -101,7 +108,7 @@ for /F " tokens=1-4 delims=;" %%a in ('more %TESTFILE%') do (
 	
 	echo.
 	
-	if "%TRY%"=="TEST" (	
+	if "%CTRL%"=="TEST" (	
 		echo ####################################
 		echo # Pruefungen:
 		echo #  !Checkroutine!
@@ -110,7 +117,7 @@ for /F " tokens=1-4 delims=;" %%a in ('more %TESTFILE%') do (
 
 		pause
 	)
-	if "%TRY%"=="STEP" (	
+	if "%CTRL%"=="STEP" (	
 		echo ####################################
 		echo # Pruefungen:
 		echo #  !Checkroutine!
@@ -146,5 +153,6 @@ echo.
 echo.
 echo.
 
-cd %WhereIam%
+%MYLAUFWERK%
+cd %MYPATH%
 

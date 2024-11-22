@@ -1,0 +1,7 @@
+Nachrichtentyp;NachrichtenKonfiguration;Kommentar;Pruefung
+Schichtreport;TestSzenario02\Einkauf01_BAR;Einkauf Bar hier kommt viel Text ;Geldspeicher pruefen und zwar genau!!!!
+Schichtreport;TestSzenario02\Einkauf02_GIRO;Einkauf Bar hier kommt viel Text ;Geldspeicher pruefen und zwar genau!!!!
+Schichtreport;TestSzenario02\Einkauf03_BAR_mRueck;Einkauf Bar hier kommt viel Text ;Geldspeicher pruefen und zwar genau!!!!
+Schichtreport;TestSzenario02\Einkauf04_KRED;Einkauf Bar hier kommt viel Text ;Geldspeicher pruefen und zwar genau!!!!
+Schichtreport;TestSzenario02\Bar_einkassieren;Einkauf Bar hier kommt viel Text ;Geldspeicher pruefen und zwar genau!!!!
+Schichtreport;TestSzenario02\Geldkassenwechsel_MEK_BEK;Gelspeicherwechsel aller Geldspeicher;Geldspeicher pruefen

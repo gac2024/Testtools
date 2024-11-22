@@ -3,26 +3,37 @@ cls
 echo Versenden von Meldungen an das HGS
 echo.
 
-Set JAVA=C:\Testtools\jdk-17.0.11\bin\java
-
-Set Projekt=%1
-Set Meldung=%2
-Set Testfall=%3
-
-set path_self=%~dp0
-set path_meldungen=C:\Testtools\HGS\MELDUNGEN
-
-rem d:
-cd %path_meldungen%
 
 
 
 
-
-echo %JAVA% -jar sendMessage.jar -PROJEKTNAME %Projekt%  -MELDUNGSNAME %Meldung% -TESTFALLNAME %Testfall% -MAINPATH %path_meldungen% 
-%JAVA% -jar sendMessage.jar -PROJEKTNAME %Projekt%  -MELDUNGSNAME %Meldung% -TESTFALLNAME %Testfall% -MAINPATH %path_meldungen%
-
-
+Set MELDUNG=%2
+Set PROJEKT=%1
+Set TESTFALL=%3
 
 
-EXIT /B %ERRORLEVEL%
+
+rem definitions:
+set RanorexHost=PCTR007
+set MYLAUFWERK=%~d0
+set MYPATH=%~dp0 
+
+set LAUFWERK=%MYLAUFWERK%
+if "%RanorexHost%"=="%ComputerName%" set LAUFWERK=D:
+
+
+
+Set JAVA=%LAUFWERK%\Testtools\jdk-17.0.11\bin\java
+set MAINPATH=%LAUFWERK%\Testtools\HGS\MELDUNGEN
+
+cd %MAINPATH%
+
+echo %JAVA% -jar sendMessage.jar -PROJEKTNAME %PROJEKT%  -MELDUNGSNAME %MELDUNG% -TESTFALLNAME %TESTFALL% -MAINPATH %MAINPATH% 
+%JAVA% -jar sendMessage.jar -PROJEKTNAME %PROJEKT%  -MELDUNGSNAME %MELDUNG% -TESTFALLNAME %TESTFALL% -MAINPATH %MAINPATH%
+
+set error=%ERRORLEVEL%
+
+%MYLAUFWERK%
+cd %MYPATH%
+
+EXIT /B %error%
